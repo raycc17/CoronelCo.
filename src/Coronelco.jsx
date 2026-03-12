@@ -62,7 +62,11 @@ export default function Coronelco() {
           margin: 0;
           font-size: clamp(2rem, 5.2vw, 3.45rem);
           line-height: 0.95;
-          color: #3e4de7;
+          background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          -webkit-text-fill-color: transparent;
           font-weight: 900;
           letter-spacing: -0.02em;
           text-transform: uppercase;
