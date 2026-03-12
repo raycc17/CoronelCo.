@@ -174,10 +174,10 @@ border: 1px solid rgba(255,255,255,0.35);
           z-index: 0;
         }
 
-        .mid-claim > * {
-          position: relative;
-          z-index: 1;
-        }
+      .mid-claim > *:not(.light-sweep) {
+  position: relative;
+  z-index: 2;
+}
 
 @keyframes movingGradient {
   0% {
@@ -205,7 +205,7 @@ border: 1px solid rgba(255,255,255,0.35);
     transparent
   );
 
-  filter: blur(18px);
+filter: blur(28px);
   opacity: 0.7;
 
   animation: sweep 7s linear infinite;
