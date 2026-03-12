@@ -12,19 +12,25 @@ export default function Coronelco() {
           box-sizing: border-box;
         }
 
-body {
-  margin: 0;
-  color: #101010;
-
-  background:
-    radial-gradient(circle at 30% 20%, rgba(95,47,198,0.08), transparent 40%),
-    radial-gradient(circle at 80% 10%, rgba(15,100,243,0.08), transparent 40%),
-    radial-gradient(circle, rgba(0, 0, 0, 0.18) 1px, transparent 1.2px),
-    radial-gradient(circle, rgba(0, 0, 0, 0.12) 0.8px, transparent 1px);
-
-  background-size: auto, auto, 26px 26px, 38px 38px;
-  background-position: center, center, 0 0, 13px 19px;
-}
+        body {
+          margin: 0;
+          color: #101010;
+          background-color: #ffffff;
+          background-image:
+            radial-gradient(circle at 8% 12%, rgba(0, 0, 0, 0.08) 0 72px, transparent 73px),
+            radial-gradient(circle at 24% 68%, rgba(0, 0, 0, 0.06) 0 34px, transparent 35px),
+            radial-gradient(circle at 39% 18%, rgba(0, 0, 0, 0.07) 0 16px, transparent 17px),
+            radial-gradient(circle at 58% 46%, rgba(0, 0, 0, 0.05) 0 88px, transparent 89px),
+            radial-gradient(circle at 74% 14%, rgba(0, 0, 0, 0.07) 0 26px, transparent 27px),
+            radial-gradient(circle at 83% 62%, rgba(0, 0, 0, 0.06) 0 54px, transparent 55px),
+            radial-gradient(circle at 92% 28%, rgba(0, 0, 0, 0.08) 0 12px, transparent 13px),
+            radial-gradient(circle at 14% 86%, rgba(0, 0, 0, 0.06) 0 44px, transparent 45px),
+            radial-gradient(circle at 48% 84%, rgba(0, 0, 0, 0.07) 0 20px, transparent 21px),
+            radial-gradient(circle at 68% 82%, rgba(0, 0, 0, 0.05) 0 70px, transparent 71px),
+            radial-gradient(circle at 29% 40%, rgba(0, 0, 0, 0.08) 0 10px, transparent 11px),
+            radial-gradient(circle at 91% 91%, rgba(0, 0, 0, 0.07) 0 18px, transparent 19px);
+          background-attachment: fixed;
+        }
 
         .page {
           width: 100%;
@@ -119,145 +125,53 @@ body {
           margin: 0.8rem 0 1.9rem;
         }
 
-       .mid-claim {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: white;
-
-  padding: 0.8rem 1rem;
-
-  background: rgba(255,255,255,0.08);
-
-  border: 1px solid rgba(255,255,255,0.35);
-
-  backdrop-filter: blur(30px) saturate(180%);
-  -webkit-backdrop-filter: blur(30px) saturate(180%);
-
-  box-shadow:
-    0 8px 32px rgba(31,38,135,0.15),
-    inset 0 1px rgba(255,255,255,0.6);
-
-}
-
-.mid-claim::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -60%;
-  width: 60%;
-  height: 100%;
-
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,0.6),
-    transparent
-  );
-
-  filter: blur(25px);
-
-  animation: glassSweep 6s linear infinite;
-
-  pointer-events: none;
-}
-
-@keyframes glassSweep {
-
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(350%);
-  }
-
-}
-        .mid-claim::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(120deg, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0.10) 34%, rgba(255, 255, 255, 0.01) 100%);
-          pointer-events: none;
-          z-index: 0 !important;
+        .glass-banner {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          padding: 0.78rem 1rem;
+          text-align: center;
+          font-size: 0.68rem;
+          line-height: 1.2;
+          letter-spacing: 0.25em;
+          text-transform: uppercase;
+          color: #ffffff;
+          background:
+            linear-gradient(90deg, rgba(195, 173, 255, 0.20) 0%, rgba(214, 198, 255, 0.30) 50%, rgba(195, 173, 255, 0.20) 100%),
+            linear-gradient(135deg, rgba(95, 47, 198, 0.62) 0%, rgba(15, 100, 243, 0.62) 100%);
+          background-size: 220% 220%;
+          animation: movingGradient 8s ease-in-out infinite;
+          backdrop-filter: blur(18px);
+          -webkit-backdrop-filter: blur(18px);
+          border-top: 1px solid rgba(255, 255, 255, 0.20);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+          border-left: 0;
+          border-right: 0;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
         }
 
-        .mid-claim::after {
-          content: '';
+        .light-sweep {
           position: absolute;
-          inset: 2px;
-          border: 1px solid rgba(255, 255, 255, 0.24);
+          top: 0;
+          left: -40%;
+          width: 40%;
+          height: 100%;
+          background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+          filter: blur(20px);
+          animation: sweep 6s linear infinite;
           pointer-events: none;
         }
 
-        .mid-claim::selection {
-          background: rgba(255, 255, 255, 0.2);
+        @keyframes movingGradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
         }
 
-        .mid-claim-noise {
-          position: absolute;
-          inset: 0;
-          background-image: radial-gradient(rgba(255,255,255,0.10) 0.5px, transparent 0.5px);
-          background-size: 3px 3px;
-          mix-blend-mode: soft-light;
-          opacity: 0.45;
-          pointer-events: none;
-          z-index: 0;
+        @keyframes sweep {
+          from { transform: translateX(0); }
+          to { transform: translateX(300%); }
         }
-
-      .mid-claim > *:not(.light-sweep) {
-  position: relative;
-  z-index: 2;
-}
-
-@keyframes movingGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.light-sweep {
-  position: absolute;
-  top: 0;
-  left: -40%;
-  width: 40%;
-  height: 100%;
-
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,0.45),
-    transparent
-  );
-
-filter: blur(28px);
-  opacity: 0.7;
-
-  animation: sweep 7s linear infinite;
-
-  pointer-events: none;
-  z-index: 1;
-}
-
-@keyframes sweep {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(320%);
-  }
-}
 
         .cards-title {
           margin: 0 0 0.55rem;
@@ -622,14 +536,10 @@ filter: blur(28px);
         </section>
 
         <div className="mid-claim-wrap">
-  <p className="mid-claim">
-  <span className="mid-claim-noise" aria-hidden="true" />
-  <span className="light-sweep" aria-hidden="true"></span>
-
-  ESTRATEGIA CON PROPÓSITO
-  <br />
-  CREATIVIDAD CON INTENCIÓN
-</p>
+          <div className="glass-banner">
+            ESTRATEGIA CON PROPÓSITO · CREATIVIDAD CON INTENCIÓN
+            <div className="light-sweep" aria-hidden="true" />
+          </div>
         </div>
 
         <h3 className="cards-title">Trabajamos con...</h3>
