@@ -349,10 +349,41 @@ export default function Coronelco() {
           margin-top: 3rem;
         }
 
-        .cta-band h4 {
-          margin: 0;
-          font-size: 1.45rem;
-          line-height: 1;
+        .ticker {
+          width: 100%;
+          border-radius: 999px;
+          overflow: hidden;
+          background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
+          color: #ffffff;
+          box-shadow: 0 14px 30px rgba(41, 78, 231, 0.28);
+          margin: 0 auto 1.1rem;
+        }
+
+        .ticker-track {
+          display: flex;
+          width: max-content;
+          white-space: nowrap;
+          animation: tickerMove 14s linear infinite;
+          font-size: 0.9rem;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+
+        .ticker-item {
+          padding: 0.9rem 1.3rem;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.55rem;
+        }
+
+        .ticker-sep {
+          opacity: 0.55;
+        }
+
+        @keyframes tickerMove {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
         }
 
         .cta-buttons {
@@ -585,11 +616,14 @@ export default function Coronelco() {
           </div>
 
           <div className="cta-band">
-            <h4>
-              ESTRATEGIA CON <span className="serif">PROPÓSITO</span>
-              <br />
-              CREATIVIDAD CON <span className="serif">INTENCIÓN</span>
-            </h4>
+            <div className="ticker" aria-label="Estrategia con propósito y creatividad con intención">
+              <div className="ticker-track">
+                <span className="ticker-item">ESTRATEGIA CON PROPÓSITO <span className="ticker-sep">•</span> CREATIVIDAD CON INTENCIÓN</span>
+                <span className="ticker-item">ESTRATEGIA CON PROPÓSITO <span className="ticker-sep">•</span> CREATIVIDAD CON INTENCIÓN</span>
+                <span className="ticker-item">ESTRATEGIA CON PROPÓSITO <span className="ticker-sep">•</span> CREATIVIDAD CON INTENCIÓN</span>
+                <span className="ticker-item">ESTRATEGIA CON PROPÓSITO <span className="ticker-sep">•</span> CREATIVIDAD CON INTENCIÓN</span>
+              </div>
+            </div>
             <div className="cta-buttons">
               <span className="pill">Aprende & crece</span>
               <span className="pill">Educa para una mejor toma de decisiones</span>
