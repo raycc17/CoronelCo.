@@ -5,7 +5,7 @@ export default function Coronelco() {
         :root {
           color: #0e0e0e;
           font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-          background: #efefef;
+          background: #ffffff;
         }
 
         * {
@@ -14,14 +14,14 @@ export default function Coronelco() {
 
         body {
           margin: 0;
-          background: #efefef;
+          background: #ffffff;
           color: #101010;
         }
 
         .page {
-          max-width: 980px;
+          max-width: 349px;
           margin: 0 auto;
-          padding: 2.6rem 1.8rem 4rem;
+          padding: 2.6rem 1.7rem 4rem;
           position: relative;
           overflow: hidden;
         }
@@ -147,7 +147,7 @@ export default function Coronelco() {
         }
 
         section {
-          margin: 3.3rem 0;
+          margin: 4.2rem 0;
           position: relative;
         }
 
