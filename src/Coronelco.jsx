@@ -113,18 +113,36 @@ export default function Coronelco() {
 
         .mid-claim {
           width: 100%;
+          position: relative;
+          overflow: hidden;
           text-align: center;
           font-size: 0.68rem;
           line-height: 1.18;
           letter-spacing: 0.08em;
           text-transform: uppercase;
           color: #ffffff;
-          background: linear-gradient(135deg, #4919af 0%, #0f64f3 50%, #4919af 100%);
+          background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 50%, #5f2fc6 100%);
           background-size: 240% 240%;
           animation: movingGradient 6s ease-in-out infinite;
           border-radius: 0;
+          border: 1px solid rgba(255, 255, 255, 0.28);
+          backdrop-filter: blur(10px) saturate(140%);
+          -webkit-backdrop-filter: blur(10px) saturate(140%);
           padding: 0.72rem 1rem;
-          box-shadow: 0 14px 30px rgba(41, 78, 231, 0.24);
+          box-shadow: 0 14px 30px rgba(41, 78, 231, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+        }
+
+        .mid-claim::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(120deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.08) 38%, rgba(255, 255, 255, 0.02) 100%);
+          pointer-events: none;
+        }
+
+        .mid-claim > * {
+          position: relative;
+          z-index: 1;
         }
 
         @keyframes movingGradient {
