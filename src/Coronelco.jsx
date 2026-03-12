@@ -130,7 +130,7 @@ export default function Coronelco() {
           height: auto;
           transform: translate(-50%, -50%);
           border-radius: 999px;
-          background: linear-gradient(135deg, #6d48d4 0%, #4c66ff 55%, #6d48d4 100%);
+          background: linear-gradient(135deg, #37099b 0%, #327eff 55%, #37099b 100%);
           background-size: 240% 240%;
           animation: haloShift 6s ease-in-out infinite;
           filter: blur(75px);
@@ -174,7 +174,7 @@ export default function Coronelco() {
           height: auto;
           transform: translate(-50%, -50%);
           border-radius: 50%;
-          background: linear-gradient(135deg, #6d48d4 0%, #4c66ff 50%, #6d48d4 100%);
+          background: linear-gradient(135deg, #37099b 0%, #327eff 50%, #37099b 100%);
           background-size: 240% 240%;
           animation: haloShift 7s ease-in-out infinite;
           filter: blur(34px);
@@ -193,7 +193,7 @@ export default function Coronelco() {
           height: auto;
           transform: translate(-50%, -50%);
           border-radius: 50%;
-          background: linear-gradient(135deg, rgba(109, 72, 212, 0.88) 0%, rgba(76, 102, 255, 0.92) 50%, rgba(109, 72, 212, 0.88) 100%);
+          background: linear-gradient(135deg, rgba(55, 9, 155, 0.88) 0%, rgba(50, 126, 255, 0.92) 50%, rgba(55, 9, 155, 0.88) 100%);
           background-size: 240% 240%;
           animation: haloShift 5.5s ease-in-out infinite;
           filter: blur(34px);
