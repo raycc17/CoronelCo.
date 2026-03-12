@@ -126,7 +126,8 @@ export default function Coronelco() {
           left: 50%;
           top: 50%;
           width: min(92vw, 920px);
-          height: 260px;
+          aspect-ratio: 1 / 1;
+          height: auto;
           transform: translate(-50%, -50%);
           border-radius: 999px;
           background: linear-gradient(135deg, #6d48d4 0%, #4c66ff 55%, #6d48d4 100%);
@@ -169,7 +170,8 @@ export default function Coronelco() {
           left: 50%;
           top: 50%;
           width: 92%;
-          height: 300%;
+          aspect-ratio: 1 / 1;
+          height: auto;
           transform: translate(-50%, -50%);
           border-radius: 50%;
           background: linear-gradient(135deg, #6d48d4 0%, #4c66ff 50%, #6d48d4 100%);
@@ -187,7 +189,8 @@ export default function Coronelco() {
           left: 50%;
           top: 50%;
           width: 62%;
-          height: 280%;
+          aspect-ratio: 1 / 1;
+          height: auto;
           transform: translate(-50%, -50%);
           border-radius: 50%;
           background: linear-gradient(135deg, rgba(109, 72, 212, 0.88) 0%, rgba(76, 102, 255, 0.92) 50%, rgba(109, 72, 212, 0.88) 100%);
