@@ -119,7 +119,7 @@ export default function Coronelco() {
           letter-spacing: 0.08em;
           text-transform: uppercase;
           color: #ffffff;
-          background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 50%, #5f2fc6 100%);
+          background: linear-gradient(135deg, #4919af 0%, #0f64f3 50%, #4919af 100%);
           background-size: 240% 240%;
           animation: movingGradient 6s ease-in-out infinite;
           border-radius: 0;
