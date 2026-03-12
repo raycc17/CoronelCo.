@@ -59,6 +59,8 @@ export default function Coronelco() {
         }
 
         .hero {
+          position: relative;
+          isolation: isolate;
           display: grid;
           grid-template-columns: 1.1fr 0.9fr;
           gap: 1rem;
@@ -66,15 +68,31 @@ export default function Coronelco() {
           margin: 2rem 0 2.5rem;
         }
 
+        .hero::before {
+          content: '';
+          position: absolute;
+          left: 28%;
+          top: 52%;
+          width: min(56vw, 560px);
+          aspect-ratio: 1 / 1;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          background: linear-gradient(135deg, #37099b 0%, #327eff 55%, #37099b 100%);
+          background-size: 220% 220%;
+          animation: haloShift 7s ease-in-out infinite;
+          filter: blur(72px);
+          opacity: 0.78;
+          z-index: 0;
+          pointer-events: none;
+        }
+
         .hero h1 {
+          position: relative;
+          z-index: 2;
           margin: 0;
           font-size: clamp(4rem, 10.4vw, 6.9rem);
           line-height: 0.95;
-          background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
-          -webkit-background-clip: text;
-          background-clip: text;
-          color: transparent;
-          -webkit-text-fill-color: transparent;
+          color: #ffffff;
           font-weight: 900;
           letter-spacing: -0.02em;
           text-transform: uppercase;
@@ -82,6 +100,7 @@ export default function Coronelco() {
 
         .hero-art {
           position: relative;
+          z-index: 2;
           height: 190px;
           display: flex;
           align-items: center;
