@@ -119,10 +119,18 @@ export default function Coronelco() {
           letter-spacing: 0.08em;
           text-transform: uppercase;
           color: #ffffff;
-          background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
+          background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 50%, #5f2fc6 100%);
+          background-size: 240% 240%;
+          animation: movingGradient 6s ease-in-out infinite;
           border-radius: 0;
           padding: 0.72rem 1rem;
           box-shadow: 0 14px 30px rgba(41, 78, 231, 0.24);
+        }
+
+        @keyframes movingGradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
         }
 
         .cards-title {
