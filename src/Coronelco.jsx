@@ -60,7 +60,7 @@ export default function Coronelco() {
 
         .hero h1 {
           margin: 0;
-          font-size: clamp(2rem, 5.2vw, 3.45rem);
+          font-size: clamp(4rem, 10.4vw, 6.9rem);
           line-height: 0.95;
           background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
           -webkit-background-clip: text;
