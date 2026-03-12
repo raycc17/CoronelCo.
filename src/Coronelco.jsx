@@ -25,6 +25,7 @@ export default function Coronelco() {
           padding: 2.8rem clamp(1rem, 3vw, 2.4rem) 5rem;
           position: relative;
           overflow: hidden;
+          z-index: 1;
         }
 
         .page,
@@ -115,6 +116,26 @@ export default function Coronelco() {
         .mid-claim-wrap {
           width: 100%;
           margin: 0.8rem 0 1.9rem;
+          position: relative;
+          isolation: isolate;
+        }
+
+        .mid-claim-wrap::before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: min(92vw, 920px);
+          height: 260px;
+          transform: translate(-50%, -50%);
+          border-radius: 999px;
+          background: linear-gradient(135deg, #6d48d4 0%, #4c66ff 55%, #6d48d4 100%);
+          background-size: 240% 240%;
+          animation: haloShift 6s ease-in-out infinite;
+          filter: blur(75px);
+          opacity: 0.95;
+          z-index: 0;
+          pointer-events: none;
         }
 
         .glass-banner {
@@ -129,8 +150,8 @@ export default function Coronelco() {
           text-transform: uppercase;
           color: #ffffff;
           background:
-            linear-gradient(90deg, rgba(195, 173, 255, 0.20) 0%, rgba(214, 198, 255, 0.30) 50%, rgba(195, 173, 255, 0.20) 100%),
-            linear-gradient(135deg, rgba(95, 47, 198, 0.62) 0%, rgba(15, 100, 243, 0.62) 100%);
+            linear-gradient(90deg, rgba(195, 173, 255, 0.12) 0%, rgba(214, 198, 255, 0.18) 50%, rgba(195, 173, 255, 0.12) 100%),
+            linear-gradient(135deg, rgba(95, 47, 198, 0.26) 0%, rgba(15, 100, 243, 0.26) 100%);
           background-size: 220% 220%;
           animation: movingGradient 8s ease-in-out infinite;
           backdrop-filter: blur(18px);
@@ -140,23 +161,43 @@ export default function Coronelco() {
           border-left: 0;
           border-right: 0;
           box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+          isolation: isolate;
         }
 
         .banner-halo {
           position: absolute;
           left: 50%;
           top: 50%;
-          width: 78%;
-          height: 360%;
+          width: 92%;
+          height: 300%;
           transform: translate(-50%, -50%);
           border-radius: 50%;
           background: linear-gradient(135deg, #6d48d4 0%, #4c66ff 50%, #6d48d4 100%);
           background-size: 240% 240%;
           animation: haloShift 7s ease-in-out infinite;
-          filter: blur(85px);
-          opacity: 0.7;
+          filter: blur(34px);
+          opacity: 1;
+          mix-blend-mode: screen;
           pointer-events: none;
           z-index: 0;
+        }
+
+        .banner-halo-core {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 62%;
+          height: 280%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          background: linear-gradient(135deg, rgba(109, 72, 212, 0.88) 0%, rgba(76, 102, 255, 0.92) 50%, rgba(109, 72, 212, 0.88) 100%);
+          background-size: 240% 240%;
+          animation: haloShift 5.5s ease-in-out infinite;
+          filter: blur(34px);
+          opacity: 1;
+          mix-blend-mode: screen;
+          pointer-events: none;
+          z-index: 1;
         }
 
         .glass-text {
@@ -174,6 +215,7 @@ export default function Coronelco() {
           filter: blur(20px);
           animation: sweep 6s linear infinite;
           pointer-events: none;
+          z-index: 3;
         }
 
         @keyframes movingGradient {
@@ -558,6 +600,7 @@ export default function Coronelco() {
         <div className="mid-claim-wrap">
           <div className="glass-banner">
             <div className="banner-halo" aria-hidden="true" />
+            <div className="banner-halo-core" aria-hidden="true" />
             <span className="glass-text">ESTRATEGIA CON PROPÓSITO · CREATIVIDAD CON INTENCIÓN</span>
             <div className="light-sweep" aria-hidden="true" />
           </div>
