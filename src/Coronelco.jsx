@@ -127,26 +127,34 @@ export default function Coronelco() {
           text-transform: uppercase;
           color: #ffffff;
           background:
-            linear-gradient(120deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.03) 40%, rgba(255, 255, 255, 0) 100%),
-            linear-gradient(135deg, rgba(95, 47, 198, 0.58) 0%, rgba(15, 100, 243, 0.58) 50%, rgba(95, 47, 198, 0.58) 100%);
+            linear-gradient(120deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.06) 40%, rgba(255, 255, 255, 0.01) 100%),
+            linear-gradient(135deg, rgba(95, 47, 198, 0.34) 0%, rgba(15, 100, 243, 0.34) 50%, rgba(95, 47, 198, 0.34) 100%);
           background-size: 240% 240%;
           animation: movingGradient 6s ease-in-out infinite;
           border-radius: 0;
-          border: 1px solid rgba(255, 255, 255, 0.42);
-          backdrop-filter: blur(14px) saturate(155%);
-          -webkit-backdrop-filter: blur(14px) saturate(155%);
+          border: 1px solid rgba(255, 255, 255, 0.55);
+          backdrop-filter: blur(18px) saturate(170%);
+          -webkit-backdrop-filter: blur(18px) saturate(170%);
           padding: 0.72rem 1rem;
           box-shadow:
-            0 12px 24px rgba(41, 78, 231, 0.16),
-            inset 0 1px 0 rgba(255, 255, 255, 0.46),
-            inset 0 -1px 0 rgba(255, 255, 255, 0.18);
+            0 8px 18px rgba(41, 78, 231, 0.10),
+            inset 0 1px 0 rgba(255, 255, 255, 0.55),
+            inset 0 -1px 0 rgba(255, 255, 255, 0.22);
         }
 
         .mid-claim::before {
           content: '';
           position: absolute;
           inset: 0;
-          background: linear-gradient(120deg, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0.12) 34%, rgba(255, 255, 255, 0.03) 100%);
+          background: linear-gradient(120deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.11) 34%, rgba(255, 255, 255, 0.02) 100%);
+          pointer-events: none;
+        }
+
+        .mid-claim::after {
+          content: '';
+          position: absolute;
+          inset: 2px;
+          border: 1px solid rgba(255, 255, 255, 0.18);
           pointer-events: none;
         }
 
