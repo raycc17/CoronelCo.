@@ -15,21 +15,7 @@ export default function Coronelco() {
         body {
           margin: 0;
           color: #101010;
-          background-color: #ffffff;
-          background-image:
-            radial-gradient(circle at 8% 12%, rgba(0, 0, 0, 0.08) 0 72px, transparent 73px),
-            radial-gradient(circle at 24% 68%, rgba(0, 0, 0, 0.06) 0 34px, transparent 35px),
-            radial-gradient(circle at 39% 18%, rgba(0, 0, 0, 0.07) 0 16px, transparent 17px),
-            radial-gradient(circle at 58% 46%, rgba(0, 0, 0, 0.05) 0 88px, transparent 89px),
-            radial-gradient(circle at 74% 14%, rgba(0, 0, 0, 0.07) 0 26px, transparent 27px),
-            radial-gradient(circle at 83% 62%, rgba(0, 0, 0, 0.06) 0 54px, transparent 55px),
-            radial-gradient(circle at 92% 28%, rgba(0, 0, 0, 0.08) 0 12px, transparent 13px),
-            radial-gradient(circle at 14% 86%, rgba(0, 0, 0, 0.06) 0 44px, transparent 45px),
-            radial-gradient(circle at 48% 84%, rgba(0, 0, 0, 0.07) 0 20px, transparent 21px),
-            radial-gradient(circle at 68% 82%, rgba(0, 0, 0, 0.05) 0 70px, transparent 71px),
-            radial-gradient(circle at 29% 40%, rgba(0, 0, 0, 0.08) 0 10px, transparent 11px),
-            radial-gradient(circle at 91% 91%, rgba(0, 0, 0, 0.07) 0 18px, transparent 19px);
-          background-attachment: fixed;
+          background: #000000;
         }
 
         .page {
