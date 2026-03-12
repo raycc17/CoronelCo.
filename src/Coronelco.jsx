@@ -119,31 +119,65 @@ body {
           margin: 0.8rem 0 1.9rem;
         }
 
-        .mid-claim {
-          width: 100%;
-          position: relative;
-          overflow: hidden;
-          text-align: center;
-          font-size: 0.68rem;
-          line-height: 1.18;
-          letter-spacing: 0.08em;
-          text-transform: uppercase;
-          color: #ffffff;
-color: #ffffff;
-background: rgba(255,255,255,0.12);
-          background-size: 240% 240%;
-          animation: movingGradient 6s ease-in-out infinite;
-          border-radius: 0;
-border: 1px solid rgba(255,255,255,0.45);
-backdrop-filter: blur(40px) saturate(180%);
--webkit-backdrop-filter: blur(40px) saturate(180%);
-          padding: 0.72rem 1rem;
-          box-shadow:
-            0 8px 16px rgba(41, 78, 231, 0.08),
-            inset 0 1px 0 rgba(255, 255, 255, 0.68),
-            inset 0 -1px 0 rgba(255, 255, 255, 0.18);
-        }
+       .mid-claim {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
 
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: white;
+
+  padding: 0.8rem 1rem;
+
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.35);
+
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+
+  box-shadow:
+    0 8px 32px rgba(31,38,135,0.15),
+    inset 0 1px rgba(255,255,255,0.6);
+
+}
+
+.mid-claim::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 60%;
+  height: 100%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+
+  filter: blur(25px);
+
+  animation: glassSweep 6s linear infinite;
+
+  pointer-events: none;
+}
+
+@keyframes glassSweep {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(350%);
+  }
+
+}
         .mid-claim::before {
           content: '';
           position: absolute;
