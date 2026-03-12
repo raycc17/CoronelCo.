@@ -127,35 +127,51 @@ export default function Coronelco() {
           text-transform: uppercase;
           color: #ffffff;
           background:
-            linear-gradient(120deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.06) 40%, rgba(255, 255, 255, 0.01) 100%),
-            linear-gradient(135deg, rgba(95, 47, 198, 0.34) 0%, rgba(15, 100, 243, 0.34) 50%, rgba(95, 47, 198, 0.34) 100%);
+            linear-gradient(120deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.04) 40%, rgba(255, 255, 255, 0.00) 100%),
+            linear-gradient(135deg, rgba(95, 47, 198, 0.20) 0%, rgba(15, 100, 243, 0.20) 50%, rgba(95, 47, 198, 0.20) 100%);
           background-size: 240% 240%;
           animation: movingGradient 6s ease-in-out infinite;
           border-radius: 0;
-          border: 1px solid rgba(255, 255, 255, 0.55);
-          backdrop-filter: blur(18px) saturate(170%);
-          -webkit-backdrop-filter: blur(18px) saturate(170%);
+          border: 1px solid rgba(255, 255, 255, 0.62);
+          backdrop-filter: blur(22px) saturate(185%) contrast(110%);
+          -webkit-backdrop-filter: blur(22px) saturate(185%) contrast(110%);
           padding: 0.72rem 1rem;
           box-shadow:
-            0 8px 18px rgba(41, 78, 231, 0.10),
-            inset 0 1px 0 rgba(255, 255, 255, 0.55),
-            inset 0 -1px 0 rgba(255, 255, 255, 0.22);
+            0 8px 16px rgba(41, 78, 231, 0.08),
+            inset 0 1px 0 rgba(255, 255, 255, 0.68),
+            inset 0 -1px 0 rgba(255, 255, 255, 0.18);
         }
 
         .mid-claim::before {
           content: '';
           position: absolute;
           inset: 0;
-          background: linear-gradient(120deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.11) 34%, rgba(255, 255, 255, 0.02) 100%);
+          background: linear-gradient(120deg, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0.10) 34%, rgba(255, 255, 255, 0.01) 100%);
           pointer-events: none;
+          z-index: 0 !important;
         }
 
         .mid-claim::after {
           content: '';
           position: absolute;
           inset: 2px;
-          border: 1px solid rgba(255, 255, 255, 0.18);
+          border: 1px solid rgba(255, 255, 255, 0.24);
           pointer-events: none;
+        }
+
+        .mid-claim::selection {
+          background: rgba(255, 255, 255, 0.2);
+        }
+
+        .mid-claim-noise {
+          position: absolute;
+          inset: 0;
+          background-image: radial-gradient(rgba(255,255,255,0.10) 0.5px, transparent 0.5px);
+          background-size: 3px 3px;
+          mix-blend-mode: soft-light;
+          opacity: 0.45;
+          pointer-events: none;
+          z-index: 0;
         }
 
         .mid-claim > * {
@@ -533,6 +549,7 @@ export default function Coronelco() {
 
         <div className="mid-claim-wrap">
           <p className="mid-claim">
+            <span className="mid-claim-noise" aria-hidden="true" />
             ESTRATEGIA CON PROPÓSITO
             <br />
             CREATIVIDAD CON INTENCIÓN
