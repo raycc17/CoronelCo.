@@ -14,8 +14,13 @@ export default function Coronelco() {
 
         body {
           margin: 0;
-          background: #ffffff;
           color: #101010;
+          background-color: #ffffff;
+          background-image:
+            radial-gradient(circle, rgba(0, 0, 0, 0.18) 1px, transparent 1.2px),
+            radial-gradient(circle, rgba(0, 0, 0, 0.12) 0.8px, transparent 1px);
+          background-size: 26px 26px, 38px 38px;
+          background-position: 0 0, 13px 19px;
         }
 
         .page {
