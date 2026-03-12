@@ -125,7 +125,7 @@ export default function Coronelco() {
           position: absolute;
           left: 50%;
           top: 50%;
-          width: min(92vw, 920px);
+          width: min(78.2vw, 782px);
           aspect-ratio: 1 / 1;
           height: auto;
           transform: translate(-50%, -50%);
@@ -169,7 +169,7 @@ export default function Coronelco() {
           position: absolute;
           left: 50%;
           top: 50%;
-          width: 92%;
+          width: 78.2%;
           aspect-ratio: 1 / 1;
           height: auto;
           transform: translate(-50%, -50%);
@@ -188,7 +188,7 @@ export default function Coronelco() {
           position: absolute;
           left: 50%;
           top: 50%;
-          width: 62%;
+          width: 52.7%;
           aspect-ratio: 1 / 1;
           height: auto;
           transform: translate(-50%, -50%);
