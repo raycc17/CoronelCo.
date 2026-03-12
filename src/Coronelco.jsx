@@ -62,17 +62,17 @@ export default function Coronelco() {
           position: relative;
           isolation: isolate;
           z-index: 10;
-          display: grid;
-          grid-template-columns: 1.1fr 0.9fr;
-          gap: 1rem;
+          display: flex;
+          justify-content: center;
           align-items: center;
+          min-height: 360px;
           margin: 2rem 0 2.5rem;
         }
 
         .hero::before {
           content: '';
           position: absolute;
-          left: 28%;
+          left: 50%;
           top: 52%;
           width: min(56vw, 560px);
           aspect-ratio: 1 / 1;
@@ -91,6 +91,7 @@ export default function Coronelco() {
           position: relative;
           z-index: 30;
           margin: 0;
+          text-align: center;
           font-size: clamp(4rem, 10.4vw, 6.9rem);
           line-height: 0.95;
           color: #ffffff;
@@ -100,12 +101,16 @@ export default function Coronelco() {
         }
 
         .hero-art {
-          position: relative;
+          position: absolute;
+          right: clamp(0.5rem, 5vw, 4rem);
+          top: 50%;
+          transform: translateY(-50%);
           z-index: 8;
           height: 190px;
           display: flex;
           align-items: center;
           justify-content: center;
+          opacity: 0.95;
         }
 
         .hero-art::before {
@@ -573,6 +578,15 @@ export default function Coronelco() {
           .hero,
           .split {
             grid-template-columns: 1fr;
+          }
+
+          .hero {
+            min-height: 300px;
+          }
+
+          .hero-art {
+            right: 0.2rem;
+            opacity: 0.75;
           }
 
           .cards,
