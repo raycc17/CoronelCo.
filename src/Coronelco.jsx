@@ -142,6 +142,28 @@ export default function Coronelco() {
           box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
         }
 
+        .banner-halo {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 78%;
+          height: 360%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          background: linear-gradient(135deg, #6d48d4 0%, #4c66ff 50%, #6d48d4 100%);
+          background-size: 240% 240%;
+          animation: haloShift 7s ease-in-out infinite;
+          filter: blur(85px);
+          opacity: 0.7;
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        .glass-text {
+          position: relative;
+          z-index: 2;
+        }
+
         .light-sweep {
           position: absolute;
           top: 0;
@@ -163,6 +185,12 @@ export default function Coronelco() {
         @keyframes sweep {
           from { transform: translateX(0); }
           to { transform: translateX(300%); }
+        }
+
+        @keyframes haloShift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
         }
 
         .cards-title {
@@ -529,7 +557,8 @@ export default function Coronelco() {
 
         <div className="mid-claim-wrap">
           <div className="glass-banner">
-            ESTRATEGIA CON PROPÓSITO · CREATIVIDAD CON INTENCIÓN
+            <div className="banner-halo" aria-hidden="true" />
+            <span className="glass-text">ESTRATEGIA CON PROPÓSITO · CREATIVIDAD CON INTENCIÓN</span>
             <div className="light-sweep" aria-hidden="true" />
           </div>
         </div>
