@@ -88,7 +88,7 @@ export default function Coronelco() {
 
         .hero h1 {
           position: relative;
-          z-index: 2;
+          z-index: 12;
           margin: 0;
           font-size: clamp(4rem, 10.4vw, 6.9rem);
           line-height: 0.95;
@@ -100,7 +100,7 @@ export default function Coronelco() {
 
         .hero-art {
           position: relative;
-          z-index: 2;
+          z-index: 8;
           height: 190px;
           display: flex;
           align-items: center;
@@ -224,7 +224,8 @@ export default function Coronelco() {
 
         .glass-text {
           position: relative;
-          z-index: 2;
+          z-index: 12;
+          text-shadow: 0 0 8px rgba(0,0,0,0.45);
         }
 
         .light-sweep {
