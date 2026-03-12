@@ -105,11 +105,23 @@ export default function Coronelco() {
           box-shadow: 0 0 60px rgba(72, 85, 239, 0.42);
         }
 
+        .mid-claim-wrap {
+          width: 100%;
+          margin: 0.8rem 0 1.9rem;
+        }
+
         .mid-claim {
+          width: 100%;
           text-align: center;
-          margin: 0.8rem 0 1.8rem;
-          font-size: 0.64rem;
-          line-height: 1.15;
+          font-size: 0.68rem;
+          line-height: 1.18;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #ffffff;
+          background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
+          border-radius: 999px;
+          padding: 0.72rem 1rem;
+          box-shadow: 0 14px 30px rgba(41, 78, 231, 0.24);
         }
 
         .cards-title {
@@ -349,41 +361,20 @@ export default function Coronelco() {
           margin-top: 3rem;
         }
 
-        .ticker {
+        .cta-static-bar {
           width: 100%;
           border-radius: 999px;
-          overflow: hidden;
           background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
           color: #ffffff;
-          box-shadow: 0 14px 30px rgba(41, 78, 231, 0.28);
+          box-shadow: 0 14px 30px rgba(41, 78, 231, 0.24);
           margin: 0 auto 1.1rem;
-        }
-
-        .ticker-track {
-          display: flex;
-          width: max-content;
-          white-space: nowrap;
-          animation: tickerMove 14s linear infinite;
-          font-size: 0.9rem;
+          padding: 0.9rem 1rem;
+          font-size: 0.82rem;
           letter-spacing: 0.08em;
           text-transform: uppercase;
           font-weight: 700;
-        }
-
-        .ticker-item {
-          padding: 0.9rem 1.3rem;
-          display: inline-flex;
-          align-items: center;
-          gap: 0.55rem;
-        }
-
-        .ticker-sep {
-          opacity: 0.55;
-        }
-
-        @keyframes tickerMove {
-          from { transform: translateX(0); }
-          to { transform: translateX(-50%); }
+          text-align: center;
+          line-height: 1.2;
         }
 
         .cta-buttons {
@@ -493,11 +484,13 @@ export default function Coronelco() {
           <div className="hero-art" />
         </section>
 
-        <p className="mid-claim tiny">
-          ESTRATEGIA CON PROPÓSITO
-          <br />
-          CREATIVIDAD CON INTENCIÓN
-        </p>
+        <div className="mid-claim-wrap">
+          <p className="mid-claim">
+            ESTRATEGIA CON PROPÓSITO
+            <br />
+            CREATIVIDAD CON INTENCIÓN
+          </p>
+        </div>
 
         <h3 className="cards-title">Trabajamos con...</h3>
         <div className="cards">
@@ -616,13 +609,8 @@ export default function Coronelco() {
           </div>
 
           <div className="cta-band">
-            <div className="ticker" aria-label="Estrategia con propósito y creatividad con intención">
-              <div className="ticker-track">
-                <span className="ticker-item">ESTRATEGIA CON PROPÓSITO <span className="ticker-sep">•</span> CREATIVIDAD CON INTENCIÓN</span>
-                <span className="ticker-item">ESTRATEGIA CON PROPÓSITO <span className="ticker-sep">•</span> CREATIVIDAD CON INTENCIÓN</span>
-                <span className="ticker-item">ESTRATEGIA CON PROPÓSITO <span className="ticker-sep">•</span> CREATIVIDAD CON INTENCIÓN</span>
-                <span className="ticker-item">ESTRATEGIA CON PROPÓSITO <span className="ticker-sep">•</span> CREATIVIDAD CON INTENCIÓN</span>
-              </div>
+            <div className="cta-static-bar" aria-label="Nuestro enfoque">
+              MÉTODO CORE · ESTRATEGIA Y CREATIVIDAD CON PROPÓSITO
             </div>
             <div className="cta-buttons">
               <span className="pill">Aprende & crece</span>
