@@ -19,9 +19,10 @@ export default function Coronelco() {
         }
 
         .page {
-          width: min(100%, 1200px);
-          margin: 0 auto;
-          padding: 2.8rem 0 5rem;
+          width: 100%;
+          max-width: none;
+          margin: 0;
+          padding: 2.8rem clamp(1rem, 3vw, 2.4rem) 5rem;
           position: relative;
           overflow: hidden;
         }
@@ -429,7 +430,9 @@ export default function Coronelco() {
         @media (max-width: 980px) {
           .page {
             width: 100%;
-            padding: 1.4rem 0 3rem;
+            max-width: none;
+            margin: 0;
+            padding: 1.4rem 1rem 3rem;
           }
 
           .hero,
