@@ -119,7 +119,7 @@ export default function Coronelco() {
           text-transform: uppercase;
           color: #ffffff;
           background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
-          border-radius: 999px;
+          border-radius: 0;
           padding: 0.72rem 1rem;
           box-shadow: 0 14px 30px rgba(41, 78, 231, 0.24);
         }
@@ -363,7 +363,7 @@ export default function Coronelco() {
 
         .cta-static-bar {
           width: 100%;
-          border-radius: 999px;
+          border-radius: 0;
           background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
           color: #ffffff;
           box-shadow: 0 14px 30px rgba(41, 78, 231, 0.24);
