@@ -19,9 +19,9 @@ export default function Coronelco() {
         }
 
         .page {
-          max-width: 349px;
+          width: min(100%, 1180px);
           margin: 0 auto;
-          padding: 2.6rem 1.7rem 4rem;
+          padding: 2.8rem clamp(1.2rem, 3vw, 2.4rem) 5rem;
           position: relative;
           overflow: hidden;
         }
@@ -52,7 +52,7 @@ export default function Coronelco() {
 
         .hero {
           display: grid;
-          grid-template-columns: 1.2fr 1fr;
+          grid-template-columns: 1.1fr 0.9fr;
           gap: 1rem;
           align-items: center;
           margin: 2rem 0 2.5rem;
@@ -154,7 +154,7 @@ export default function Coronelco() {
         .center-intro {
           text-align: center;
           font-weight: 600;
-          max-width: 700px;
+          max-width: 920px;
           margin: 0 auto 2.7rem;
           line-height: 1.35;
         }
@@ -192,7 +192,7 @@ export default function Coronelco() {
         }
 
         .mini-text {
-          max-width: 420px;
+          max-width: 740px;
           font-size: 0.78rem;
           line-height: 1.5;
           color: #222;
@@ -240,7 +240,7 @@ export default function Coronelco() {
         }
 
         .right-text {
-          max-width: 430px;
+          max-width: 680px;
           font-size: 1.08rem;
           line-height: 1.5;
           color: #2b2b2b;
@@ -250,7 +250,7 @@ export default function Coronelco() {
           margin-top: 1.4rem;
           display: grid;
           gap: 0.9rem;
-          max-width: 500px;
+          max-width: 640px;
         }
 
         .stage-item {
@@ -400,8 +400,9 @@ export default function Coronelco() {
         .d3 { width: 95px; height: 95px; left: -28px; top: 61%; }
         .d4 { width: 66px; height: 66px; right: 12%; top: 68%; }
 
-        @media (max-width: 820px) {
+        @media (max-width: 980px) {
           .page {
+            width: 100%;
             padding: 1.4rem 1rem 3rem;
           }
 
