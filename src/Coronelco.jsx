@@ -14,7 +14,7 @@ export default function Coronelco() {
 
         body {
           margin: 0;
-          color: #101010;
+          color: #ffffff;
           background: #000000;
         }
 
@@ -26,6 +26,12 @@ export default function Coronelco() {
           position: relative;
           overflow: hidden;
         }
+
+        .page,
+        .page * {
+          color: #ffffff;
+        }
+
 
         .serif {
           font-family: 'Times New Roman', Georgia, serif;
