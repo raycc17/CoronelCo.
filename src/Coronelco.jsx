@@ -17,19 +17,10 @@ export default function Coronelco() {
           color: #101010;
           background-color: #ffffff;
           background-image:
-            radial-gradient(circle at 8% 12%, rgba(0, 0, 0, 0.08) 0 72px, transparent 73px),
-            radial-gradient(circle at 24% 68%, rgba(0, 0, 0, 0.06) 0 34px, transparent 35px),
-            radial-gradient(circle at 39% 18%, rgba(0, 0, 0, 0.07) 0 16px, transparent 17px),
-            radial-gradient(circle at 58% 46%, rgba(0, 0, 0, 0.05) 0 88px, transparent 89px),
-            radial-gradient(circle at 74% 14%, rgba(0, 0, 0, 0.07) 0 26px, transparent 27px),
-            radial-gradient(circle at 83% 62%, rgba(0, 0, 0, 0.06) 0 54px, transparent 55px),
-            radial-gradient(circle at 92% 28%, rgba(0, 0, 0, 0.08) 0 12px, transparent 13px),
-            radial-gradient(circle at 14% 86%, rgba(0, 0, 0, 0.06) 0 44px, transparent 45px),
-            radial-gradient(circle at 48% 84%, rgba(0, 0, 0, 0.07) 0 20px, transparent 21px),
-            radial-gradient(circle at 68% 82%, rgba(0, 0, 0, 0.05) 0 70px, transparent 71px),
-            radial-gradient(circle at 29% 40%, rgba(0, 0, 0, 0.08) 0 10px, transparent 11px),
-            radial-gradient(circle at 91% 91%, rgba(0, 0, 0, 0.07) 0 18px, transparent 19px);
-          background-attachment: fixed;
+            radial-gradient(circle, rgba(0, 0, 0, 0.18) 1px, transparent 1.2px),
+            radial-gradient(circle, rgba(0, 0, 0, 0.12) 0.8px, transparent 1px);
+          background-size: 26px 26px, 38px 38px;
+          background-position: 0 0, 13px 19px;
         }
 
         .page {
@@ -125,53 +116,112 @@ export default function Coronelco() {
           margin: 0.8rem 0 1.9rem;
         }
 
-        .glass-banner {
+        .mid-claim {
+          width: 100%;
           position: relative;
           overflow: hidden;
-          width: 100%;
-          padding: 0.78rem 1rem;
           text-align: center;
           font-size: 0.68rem;
-          line-height: 1.2;
-          letter-spacing: 0.25em;
+          line-height: 1.18;
+          letter-spacing: 0.08em;
           text-transform: uppercase;
           color: #ffffff;
           background:
-            linear-gradient(90deg, rgba(195, 173, 255, 0.20) 0%, rgba(214, 198, 255, 0.30) 50%, rgba(195, 173, 255, 0.20) 100%),
-            linear-gradient(135deg, rgba(95, 47, 198, 0.62) 0%, rgba(15, 100, 243, 0.62) 100%);
-          background-size: 220% 220%;
-          animation: movingGradient 8s ease-in-out infinite;
-          backdrop-filter: blur(18px);
-          -webkit-backdrop-filter: blur(18px);
-          border-top: 1px solid rgba(255, 255, 255, 0.20);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.20);
-          border-left: 0;
-          border-right: 0;
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+            linear-gradient(120deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.04) 40%, rgba(255, 255, 255, 0.00) 100%),
+            linear-gradient(135deg, rgba(95, 47, 198, 0.20) 0%, rgba(15, 100, 243, 0.20) 50%, rgba(95, 47, 198, 0.20) 100%);
+          background-size: 240% 240%;
+          animation: movingGradient 6s ease-in-out infinite;
+          border-radius: 0;
+border: 1px solid rgba(255,255,255,0.35);
+          backdrop-filter: blur(22px) saturate(185%) contrast(110%);
+          -webkit-backdrop-filter: blur(22px) saturate(185%) contrast(110%);
+          padding: 0.72rem 1rem;
+          box-shadow:
+            0 8px 16px rgba(41, 78, 231, 0.08),
+            inset 0 1px 0 rgba(255, 255, 255, 0.68),
+            inset 0 -1px 0 rgba(255, 255, 255, 0.18);
         }
 
-        .light-sweep {
+        .mid-claim::before {
+          content: '';
           position: absolute;
-          top: 0;
-          left: -40%;
-          width: 40%;
-          height: 100%;
-          background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-          filter: blur(20px);
-          animation: sweep 6s linear infinite;
+          inset: 0;
+          background: linear-gradient(120deg, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0.10) 34%, rgba(255, 255, 255, 0.01) 100%);
+          pointer-events: none;
+          z-index: 0 !important;
+        }
+
+        .mid-claim::after {
+          content: '';
+          position: absolute;
+          inset: 2px;
+          border: 1px solid rgba(255, 255, 255, 0.24);
           pointer-events: none;
         }
 
-        @keyframes movingGradient {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
+        .mid-claim::selection {
+          background: rgba(255, 255, 255, 0.2);
         }
 
-        @keyframes sweep {
-          from { transform: translateX(0); }
-          to { transform: translateX(300%); }
+        .mid-claim-noise {
+          position: absolute;
+          inset: 0;
+          background-image: radial-gradient(rgba(255,255,255,0.10) 0.5px, transparent 0.5px);
+          background-size: 3px 3px;
+          mix-blend-mode: soft-light;
+          opacity: 0.45;
+          pointer-events: none;
+          z-index: 0;
         }
+
+        .mid-claim > * {
+          position: relative;
+          z-index: 1;
+        }
+
+@keyframes movingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.light-sweep {
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.45),
+    transparent
+  );
+
+  filter: blur(18px);
+  opacity: 0.7;
+
+  animation: sweep 7s linear infinite;
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes sweep {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(320%);
+  }
+}
 
         .cards-title {
           margin: 0 0 0.55rem;
@@ -536,10 +586,14 @@ export default function Coronelco() {
         </section>
 
         <div className="mid-claim-wrap">
-          <div className="glass-banner">
-            ESTRATEGIA CON PROPÓSITO · CREATIVIDAD CON INTENCIÓN
-            <div className="light-sweep" aria-hidden="true" />
-          </div>
+  <p className="mid-claim">
+  <span className="mid-claim-noise" aria-hidden="true" />
+  <span className="light-sweep" aria-hidden="true"></span>
+
+  ESTRATEGIA CON PROPÓSITO
+  <br />
+  CREATIVIDAD CON INTENCIÓN
+</p>
         </div>
 
         <h3 className="cards-title">Trabajamos con...</h3>
