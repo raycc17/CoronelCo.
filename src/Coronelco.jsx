@@ -78,7 +78,7 @@ export default function Coronelco() {
           aspect-ratio: 1 / 1;
           transform: translate(-50%, -50%);
           border-radius: 50%;
-          background: linear-gradient(135deg, #37099b 0%, #327eff 55%, #37099b 100%);
+          background: linear-gradient(135deg, #37099b 0%, #75a8ff 55%, #37099b 100%);
           background-size: 220% 220%;
           animation: haloShift 7s ease-in-out infinite;
           filter: blur(72px);
@@ -155,7 +155,7 @@ export default function Coronelco() {
           height: auto;
           transform: translate(-50%, -50%);
           border-radius: 999px;
-          background: linear-gradient(135deg, #37099b 0%, #327eff 55%, #37099b 100%);
+          background: linear-gradient(135deg, #37099b 0%, #75a8ff 55%, #37099b 100%);
           background-size: 240% 240%;
           animation: haloShift 6s ease-in-out infinite;
           filter: blur(75px);
@@ -199,7 +199,7 @@ export default function Coronelco() {
           height: auto;
           transform: translate(-50%, -50%);
           border-radius: 50%;
-          background: linear-gradient(135deg, #37099b 0%, #327eff 50%, #37099b 100%);
+          background: linear-gradient(135deg, #37099b 0%, #75a8ff 50%, #37099b 100%);
           background-size: 240% 240%;
           animation: haloShift 7s ease-in-out infinite;
           filter: blur(34px);
@@ -218,7 +218,7 @@ export default function Coronelco() {
           height: auto;
           transform: translate(-50%, -50%);
           border-radius: 50%;
-          background: linear-gradient(135deg, rgba(55, 9, 155, 0.88) 0%, rgba(50, 126, 255, 0.92) 50%, rgba(55, 9, 155, 0.88) 100%);
+          background: linear-gradient(135deg, rgba(55, 9, 155, 0.88) 0%, rgba(117, 168, 255, 0.92) 50%, rgba(55, 9, 155, 0.88) 100%);
           background-size: 240% 240%;
           animation: haloShift 5.5s ease-in-out infinite;
           filter: blur(34px);
