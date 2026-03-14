@@ -15,7 +15,12 @@ export default function Coronelco() {
         body {
           margin: 0;
           color: #ffffff;
-          background: #000000;
+          background-color: #000000;
+          background-image: url('/fondoCoronelCo..png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
         }
 
         .page {
