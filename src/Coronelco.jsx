@@ -59,6 +59,7 @@ export default function Coronelco() {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
+          width: fit-content;
           gap: 0.04rem;
           color: #ffffff;
         }
@@ -80,6 +81,8 @@ export default function Coronelco() {
 
         .brand-subtitle {
           margin: 0;
+          align-self: stretch;
+          text-align: left;
           font-size: clamp(0.62rem, 1.2vw, 0.78rem);
           line-height: 1.1;
           letter-spacing: 0.16em;
