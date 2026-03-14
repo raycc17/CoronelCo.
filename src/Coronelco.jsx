@@ -148,7 +148,7 @@ export default function Coronelco() {
           width: 10.8ch;
           text-align: right;
           text-transform: none;
-          font-size: 1.08em;
+          font-size: 1.16em;
           font-weight: inherit;
           letter-spacing: inherit;
           line-height: inherit;
