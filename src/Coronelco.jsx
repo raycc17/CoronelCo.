@@ -210,7 +210,7 @@ export default function Coronelco() {
           letter-spacing: 0.25em;
           text-transform: uppercase;
           color: #ffffff;
-          background: rgba(255, 255, 255, 0.08);
+          background: transparent;
           backdrop-filter: blur(22px) saturate(165%);
           -webkit-backdrop-filter: blur(22px) saturate(165%);
           border-top: 1px solid rgba(255, 255, 255, 0.34);
@@ -225,9 +225,7 @@ export default function Coronelco() {
           content: '';
           position: absolute;
           inset: 0;
-          background: linear-gradient(135deg, rgba(95, 47, 198, 0.24) 0%, rgba(15, 100, 243, 0.24) 100%);
-          background-size: 220% 220%;
-          animation: movingGradient 8s ease-in-out infinite;
+          background: transparent;
           z-index: 1;
           pointer-events: none;
         }
