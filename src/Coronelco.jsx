@@ -124,7 +124,7 @@ export default function Coronelco() {
         .hero h1 {
           position: relative;
           z-index: 30;
-          margin: 0;
+          margin: 0 auto;
           text-align: center;
           font-size: clamp(4rem, 10.4vw, 6.9rem);
           line-height: 0.95;
@@ -132,9 +132,9 @@ export default function Coronelco() {
           font-weight: 900;
           letter-spacing: -0.02em;
           text-transform: uppercase;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          display: grid;
+          justify-items: end;
+          width: max-content;
         }
 
         .hero-line {
@@ -143,9 +143,11 @@ export default function Coronelco() {
 
         .hero-line-sub {
           display: block;
-          width: 11ch;
-          text-align: right;
           text-transform: none;
+          font-size: 1em;
+          font-weight: inherit;
+          letter-spacing: inherit;
+          line-height: inherit;
         }
 
         .hero-art {
