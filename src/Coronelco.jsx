@@ -57,10 +57,25 @@ export default function Coronelco() {
 
         .brand-line {
           display: flex;
-          align-items: baseline;
-          gap: 0.5rem;
-          font-size: 0.7rem;
-          color: #2d2d2d;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.18rem;
+          color: #ffffff;
+        }
+
+        .brand-title {
+          font-size: clamp(1.6rem, 3.2vw, 2rem);
+          line-height: 1;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+        }
+
+        .brand-subtitle {
+          font-size: clamp(0.62rem, 1.2vw, 0.78rem);
+          line-height: 1.1;
+          letter-spacing: 0.16em;
+          text-transform: uppercase;
+          opacity: 0.95;
         }
 
         .hero {
@@ -625,8 +640,8 @@ export default function Coronelco() {
 
         <header className="top">
           <div className="brand-line">
-            <span className="serif">CORONEL&CO.</span>
-            <span>Firma de Estrategia & Creativa de marcas</span>
+            <h2 className="serif brand-title">Coronel & Co.</h2>
+            <h5 className="brand-subtitle">FIRMA DE ESTRATEGIA & CREATIVA DE MARCAS</h5>
           </div>
         </header>
 
