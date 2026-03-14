@@ -210,14 +210,13 @@ export default function Coronelco() {
           letter-spacing: 0.25em;
           text-transform: uppercase;
           color: #ffffff;
-          background: transparent;
-          backdrop-filter: blur(22px) saturate(165%);
-          -webkit-backdrop-filter: blur(22px) saturate(165%);
-          border-top: 1px solid rgba(255, 255, 255, 0.34);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.34);
-          border-left: 0;
-          border-right: 0;
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+          background: rgba(255, 255, 255, 0.06);
+          backdrop-filter: blur(24px) saturate(170%);
+          -webkit-backdrop-filter: blur(24px) saturate(170%);
+          border: 1px solid rgba(255, 255, 255, 0.16);
+          box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.22),
+            0 10px 30px rgba(0, 0, 0, 0.24);
           isolation: isolate;
         }
 
@@ -278,16 +277,7 @@ export default function Coronelco() {
         }
 
         .light-sweep {
-          position: absolute;
-          top: 0;
-          left: -40%;
-          width: 40%;
-          height: 100%;
-          background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-          filter: blur(20px);
-          animation: sweep 6s linear infinite;
-          pointer-events: none;
-          z-index: 3;
+          display: none;
         }
 
         @keyframes movingGradient {
@@ -296,10 +286,6 @@ export default function Coronelco() {
           100% { background-position: 0% 50%; }
         }
 
-        @keyframes sweep {
-          from { transform: translateX(0); }
-          to { transform: translateX(300%); }
-        }
 
         @keyframes haloShift {
           0% { background-position: 0% 50%; }
