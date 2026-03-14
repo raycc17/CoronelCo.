@@ -56,6 +56,7 @@ export default function Coronelco() {
         }
 
         .brand-line {
+          --logo-visible-offset: clamp(0.5rem, 1vw, 0.82rem);
           display: flex;
           flex-direction: column;
           align-items: flex-start;
@@ -82,6 +83,7 @@ export default function Coronelco() {
         .brand-subtitle {
           margin: 0;
           align-self: stretch;
+          padding-left: var(--logo-visible-offset);
           text-align: left;
           font-size: clamp(0.62rem, 1.2vw, 0.78rem);
           line-height: 1.1;
@@ -198,6 +200,7 @@ export default function Coronelco() {
 
         .glass-banner {
           position: relative;
+          z-index: 8;
           overflow: hidden;
           width: 100%;
           padding: 0.78rem 1rem;
@@ -207,22 +210,30 @@ export default function Coronelco() {
           letter-spacing: 0.25em;
           text-transform: uppercase;
           color: #ffffff;
-          background:
-            linear-gradient(90deg, rgba(195, 173, 255, 0.12) 0%, rgba(214, 198, 255, 0.18) 50%, rgba(195, 173, 255, 0.12) 100%),
-            linear-gradient(135deg, rgba(95, 47, 198, 0.26) 0%, rgba(15, 100, 243, 0.26) 100%);
-          background-size: 220% 220%;
-          animation: movingGradient 8s ease-in-out infinite;
-          backdrop-filter: blur(18px);
-          -webkit-backdrop-filter: blur(18px);
-          border-top: 1px solid rgba(255, 255, 255, 0.20);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+          background: rgba(255, 255, 255, 0.08);
+          backdrop-filter: blur(22px) saturate(165%);
+          -webkit-backdrop-filter: blur(22px) saturate(165%);
+          border-top: 1px solid rgba(255, 255, 255, 0.34);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.34);
           border-left: 0;
           border-right: 0;
-          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
           isolation: isolate;
         }
 
+        .glass-banner::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, rgba(95, 47, 198, 0.24) 0%, rgba(15, 100, 243, 0.24) 100%);
+          background-size: 220% 220%;
+          animation: movingGradient 8s ease-in-out infinite;
+          z-index: 1;
+          pointer-events: none;
+        }
+
         .banner-halo {
+          display: none;
           position: absolute;
           left: 50%;
           top: 50%;
@@ -242,6 +253,7 @@ export default function Coronelco() {
         }
 
         .banner-halo-core {
+          display: none;
           position: absolute;
           left: 50%;
           top: 50%;
