@@ -145,10 +145,10 @@ export default function Coronelco() {
 
         .hero-line-sub {
           display: block;
-          width: 100%;
+          width: 10.8ch;
           text-align: right;
           text-transform: none;
-          font-size: 1em;
+          font-size: 1.08em;
           font-weight: inherit;
           letter-spacing: inherit;
           line-height: inherit;
