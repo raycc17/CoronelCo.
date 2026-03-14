@@ -132,6 +132,20 @@ export default function Coronelco() {
           font-weight: 900;
           letter-spacing: -0.02em;
           text-transform: uppercase;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .hero-line {
+          display: block;
+        }
+
+        .hero-line-sub {
+          display: block;
+          width: 11ch;
+          text-align: right;
+          text-transform: none;
         }
 
         .hero-art {
@@ -653,11 +667,10 @@ export default function Coronelco() {
 
         <section className="hero">
           <h1>
-            CREAMOS
-            <br />
-            POSICIONAMOS
-            <br />
-            POTENCIAMOS
+            <span className="hero-line">CREAMOS</span>
+            <span className="hero-line">POSICIONAMOS</span>
+            <span className="hero-line">POTENCIAMOS</span>
+            <span className="hero-line-sub">tu marca</span>
           </h1>
           <div className="hero-art" />
         </section>
