@@ -133,16 +133,20 @@ export default function Coronelco() {
           letter-spacing: -0.02em;
           text-transform: uppercase;
           display: grid;
-          justify-items: end;
+          justify-items: center;
           width: max-content;
         }
 
         .hero-line {
           display: block;
+          width: 100%;
+          text-align: center;
         }
 
         .hero-line-sub {
           display: block;
+          width: 100%;
+          text-align: right;
           text-transform: none;
           font-size: 1em;
           font-weight: inherit;
@@ -287,7 +291,8 @@ export default function Coronelco() {
           display: inline-block;
           position: relative;
           z-index: 30;
-          text-shadow: 0 0 8px rgba(0,0,0,0.55);
+          color: #000000;
+          text-shadow: none;
         }
 
         .light-sweep {
@@ -674,7 +679,6 @@ export default function Coronelco() {
             <span className="hero-line">POTENCIAMOS</span>
             <span className="hero-line-sub">tu marca</span>
           </h1>
-          <div className="hero-art" />
         </section>
 
         <div className="mid-claim-wrap">
