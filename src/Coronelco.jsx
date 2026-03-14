@@ -71,6 +71,13 @@ export default function Coronelco() {
           text-transform: uppercase;
         }
 
+        .brand-logo {
+          width: clamp(180px, 24vw, 290px);
+          height: auto;
+          display: block;
+          object-fit: contain;
+        }
+
         .brand-subtitle {
           margin: 0;
           font-size: clamp(0.62rem, 1.2vw, 0.78rem);
@@ -642,7 +649,7 @@ export default function Coronelco() {
 
         <header className="top">
           <div className="brand-line">
-            <h2 className="serif brand-title">Coronel & Co.</h2>
+            <img className="brand-logo" src="/logoCoronelCo..png" alt="Coronel & Co." />
             <h5 className="brand-subtitle">FIRMA DE ESTRATEGIA & CREATIVA DE MARCAS</h5>
           </div>
         </header>
