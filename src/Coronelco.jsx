@@ -35,8 +35,9 @@ export default function Coronelco() {
 
         .page,
         .page * {
-color: transparent !important;
--webkit-text-fill-color: transparent !important;
+.page,
+.page * {
+  color: #000000 !important;
 }
 
 
