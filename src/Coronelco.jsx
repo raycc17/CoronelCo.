@@ -155,6 +155,7 @@ export default function Coronelco() {
           font-weight: inherit;
           letter-spacing: inherit;
           line-height: inherit;
+          margin-top: -0.12em;
         }
 
         .hero-art {
@@ -197,7 +198,7 @@ export default function Coronelco() {
 
         .mid-claim-wrap {
           width: 100%;
-          margin: calc(0.8rem + 2rem) 0 1.9rem;
+          margin: calc(0.8rem + 3.2rem) 0 1.9rem;
           position: relative;
           isolation: isolate;
         }
