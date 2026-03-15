@@ -107,7 +107,7 @@ export default function Coronelco() {
   content: '';
   position: absolute;
   left: 50%;
-  top: 10%; /* HALO_HERO_POSITION */
+  top: 10%;
   width: min(26.88vw, 268.8px);
   height: min(26.88vw, 268.8px);
           height: min(26.88vw, 268.8px);
