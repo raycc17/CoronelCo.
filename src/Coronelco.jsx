@@ -691,12 +691,12 @@ export default function Coronelco() {
         </header>
 
         <section className="hero">
-          <h2>
+          <h1>
             <span className="hero-line">CREAMOS</span>
             <span className="hero-line">POSICIONAMOS</span>
             <span className="hero-line">POTENCIAMOS</span>
             <span className="hero-line-sub">tu marca</span>
-          </h2>
+          </h1>
         </section>
 
         <div className="mid-claim-wrap">
