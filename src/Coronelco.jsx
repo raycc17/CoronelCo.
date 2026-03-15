@@ -256,10 +256,11 @@ background:
           border: 0;
           backdrop-filter: blur(28px) saturate(180%);
           -webkit-backdrop-filter: blur(28px) saturate(180%);
-          box-shadow:
-            inset 0 1px 0 rgba(255, 255, 255, 0.45),
-            inset 0 -1px 0 rgba(255, 255, 255, 0.12),
-            0 16px 36px rgba(84, 67, 185, 0.20);
+box-shadow:
+  inset 0 1px 0 rgba(255, 255, 255, 0.52),
+  inset 0 -1px 0 rgba(255, 255, 255, 0.10),
+  0 22px 50px rgba(84, 67, 185, 0.22),
+  0 8px 18px rgba(117, 168, 255, 0.10);
           isolation: isolate;
         }
 
