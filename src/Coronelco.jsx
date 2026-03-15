@@ -492,18 +492,17 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         }
 
 .center-intro {
-  text-align: center;
-  width: fit-content;
-  max-width: 100%;
+  display: grid;
+  justify-items: center;
+  row-gap: 0.05em;
   margin: 0 auto 2.7rem;
-  line-height: 1.08;
-  padding: 0 0.4rem;
+  line-height: 1;
+  padding: 0 1rem;
+  overflow: visible;
 }
 
 .intro-light {
   display: block;
-  width: fit-content;
-  margin: 0 auto;
   font-size: clamp(1.7rem, 3.8vw, 2.7rem);
   font-weight: 300;
   letter-spacing: -0.03em;
@@ -518,13 +517,13 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .intro-strong {
   display: block;
-  width: fit-content;
-  margin: -0.08em auto 0;
-  font-size: clamp(1.7rem, 3.8vw, 2.7rem);
+  width: 34ch;
+  max-width: 100%;
+  text-align: left;
+  font-size: clamp(1.62rem, 3.65vw, 2.58rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.05;
-  white-space: nowrap;
   background: linear-gradient(135deg, #0f64f3 0%, #5f2fc6 100%);
   -webkit-background-clip: text;
   background-clip: text;
