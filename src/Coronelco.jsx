@@ -383,6 +383,31 @@ box-shadow:
   }
 }
 
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  margin: 2.2rem 0 3.4rem;
+  position: relative;
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: tickerMove 20s linear infinite;
+  will-change: transform;
+
+  font-size: 0.45rem;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #000000 !important;
+}
+
+.ticker-track span {
+  flex-shrink: 0;
+  padding-right: 4rem;
+}
+
 .cards-title {
   margin: 1.4rem 0.60rem;
   font-size: 1.45rem;
@@ -751,29 +776,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           .steps {
             grid-template-columns: 1fr;
           }
-
-          .ticker {
-  width: 100%;
-  overflow: hidden;
-  margin: 2.2rem 0 3.4rem;
-}
-
-.ticker-track {
-  display: flex;
-  width: max-content;
-  animation: tickerMove 20s linear infinite;
-
-  font-size: 0.55rem;
-  font-weight: 700;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-
-  color: #000000;
-}
-
-.ticker-track span {
-  padding-right: 4rem;
-}
 
           .flow-item {
             grid-template-columns: 1fr;
