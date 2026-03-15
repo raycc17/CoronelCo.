@@ -250,7 +250,7 @@ export default function Coronelco() {
           backdrop-filter: blur(24px) saturate(170%);
           -webkit-backdrop-filter: blur(24px) saturate(170%);
           border: 0;
-          box-shadow: none;
+          box-shadow: 1;
           isolation: isolate;
         }
 
