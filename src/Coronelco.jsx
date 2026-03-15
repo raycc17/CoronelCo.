@@ -107,9 +107,9 @@ export default function Coronelco() {
           content: '';
           position: absolute;
           left: 50%;
-          top: 52%;
-          width: min(44.8vw, 448px);
-          height: min(44.8vw, 448px);
+          top: 50%;
+          width: min(33.6vw, 336px);
+          height: min(33.6vw, 336px);
           transform: translate(-50%, -50%);
           border-radius: 50%;
           background: linear-gradient(135deg, #37099b 0%, #5231c8 26%, #75a8ff 50%, #5231c8 74%, #37099b 100%);
