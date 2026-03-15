@@ -33,8 +33,6 @@ export default function Coronelco() {
           z-index: 1;
         }
 
-        .page,
-        .page * {
 .page,
 .page * {
   color: #000000 !important;
