@@ -23,14 +23,14 @@ export default function Coronelco() {
           background-attachment: fixed;
         }
 
-.page {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  padding: 2.8rem clamp(1rem, 3vw, 2.4rem) 5rem;
-  position: relative;
-  overflow: visible;
-  z-index: 1;
+        .page {
+          width: 100%;
+          max-width: none;
+          margin: 0;
+          padding: 2.8rem clamp(1rem, 3vw, 2.4rem) 5rem;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
         }
 
         .page,
@@ -92,13 +92,24 @@ export default function Coronelco() {
           opacity: 0.95;
         }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: -10%;
-  width: min(26.88vw, 268.8px);
-  height: min(26.88vw, 268.8px);
+        .hero {
+          position: relative;
+          isolation: isolate;
+          z-index: 10;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 360px;
+          margin: 2rem 0 2.5rem;
+        }
+
+        .hero::before {
+          content: '';
+          position: absolute;
+          display: none;
+          left: 50%;
+          top: 46%;
+          width: min(26.88vw, 268.8px);
           height: min(26.88vw, 268.8px);
           transform: translate(-50%, -50%);
           border-radius: 50%;
@@ -196,6 +207,7 @@ export default function Coronelco() {
         .mid-claim-wrap::before {
           content: '';
           position: absolute;
+          display: none;
           left: 50%;
           top: 50%;
           width: min(62.56vw, 625.6px);
@@ -206,7 +218,7 @@ export default function Coronelco() {
           background-size: 280% 280%;
           animation: haloShift 6s ease-in-out infinite;
           filter: blur(75px);
-          opacity: 0.95;
+                    opacity: 0.95;
           z-index: -1;
           pointer-events: none;
         }
@@ -426,7 +438,7 @@ export default function Coronelco() {
         }
 
         .split {
-          display: grid;
+                  display: grid;
           grid-template-columns: 0.85fr 1.15fr;
           gap: 1.5rem;
         }
@@ -647,6 +659,7 @@ export default function Coronelco() {
             padding: 0;
           }
 
+          
           .flow::before {
             left: 8%;
             font-size: 6rem;
@@ -678,8 +691,6 @@ export default function Coronelco() {
 
         <div className="mid-claim-wrap">
           <div className="glass-banner">
-            <div className="banner-halo" aria-hidden="true" />
-            <div className="banner-halo-core" aria-hidden="true" />
             <span className="glass-text">ESTRATEGIA CON PROPÓSITO · CREATIVIDAD CON INTENCIÓN</span>
             <div className="light-sweep" aria-hidden="true" />
           </div>
