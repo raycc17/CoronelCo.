@@ -396,7 +396,7 @@ box-shadow:
   animation: tickerMove 20s linear infinite;
   will-change: transform;
 
-  font-size: 0.45rem;
+  font-size: 0.50rem;
   font-weight: 700;
   letter-spacing: 0.35em;
   text-transform: uppercase;
@@ -861,6 +861,12 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         <div className="ticker">
   <div className="ticker-track">
     <span>
+TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA ATRAYENDO CLIENTES POTENCIALES ● TU MARCA SIENDO ELEGIDA ● TU MARCA EN BOCA DE TODOS
+    </span>
+        <span>
+TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA ATRAYENDO CLIENTES POTENCIALES ● TU MARCA SIENDO ELEGIDA ● TU MARCA EN BOCA DE TODOS
+    </span>
+        <span>
 TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA ATRAYENDO CLIENTES POTENCIALES ● TU MARCA SIENDO ELEGIDA ● TU MARCA EN BOCA DE TODOS
     </span>
   </div>
