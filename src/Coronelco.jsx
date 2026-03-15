@@ -374,6 +374,15 @@ box-shadow:
   }
 }
 
+@keyframes tickerMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .cards-title {
   margin: 1.4rem 0.60rem;
   font-size: 1.45rem;
@@ -435,13 +444,25 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           margin-bottom: 0.45rem;
         }
 
-        .divider-line {
-          font-size: 0.95rem;
-          white-space: nowrap;
-          overflow: hidden;
-          color: #2f2f2f;
-          margin: 1.5rem 0 3rem;
-        }
+.divider-line {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 2.2rem 0 3.4rem;
+
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  position: relative;
+}
+
+.divider-line {
+  animation: tickerMove 18s linear infinite;
+}
 
         section {
           margin: 4.2rem 0;
@@ -815,7 +836,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           </article>
         </div>
 
-        <p className="divider-line serif">CORONEL&CO. Firma de Estrategia & Creativa de marcas · CORONEL&CO. Firma de Estrategia & Creativa de marcas</p>
+        <p className="divider-line serif">TU MARCA EN REDES SOCIALES   ●   TU MARCA SUPERANDO A LA COMPETENCIA   ●   TU MARCA ATRAYENDO CLIENTES POTENCIALES   ●   TU MARCA SIENDO ELEGIDA   ●   TU MARCA EN BOCA DE TODOS</p>
 
         <section>
           <p className="center-intro">
