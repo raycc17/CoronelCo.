@@ -210,12 +210,12 @@ export default function Coronelco() {
           box-shadow: 0 0 60px rgba(72, 85, 239, 0.42);
         }
 
-        .mid-claim-wrap {
-          width: 100%;
-          margin: calc(0.8rem + 3.2rem) 0 1.9rem;
-          position: relative;
-          isolation: isolate;
-        }
+.mid-claim-wrap {
+  width: 100%;
+  margin: calc(0.8rem + 5rem) 0 1.9rem;
+  position: relative;
+  isolation: isolate;
+}
 
         .mid-claim-wrap::before {
           content: '';
