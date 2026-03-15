@@ -688,7 +688,7 @@ background-size: cover;
         <header className="top">
           <div className="brand-line">
             <img className="brand-logo" src="/logoCoronelCo..png" alt="Coronel & Co." />
-            <h5 className="brand-subtitle">FIRMA Estratética & Creativa de Marcas</h5>
+            <h5 className="brand-subtitle">FIRMA Estratégica & Creativa de Marcas</h5>
           </div>
         </header>
 
