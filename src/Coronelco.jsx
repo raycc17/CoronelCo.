@@ -361,7 +361,7 @@ export default function Coronelco() {
 }
 
 .cards-title {
-  margin: 0 0 0.55rem;
+  margin: 1.4rem 0.60rem;
   font-size: 1.45rem;
   display: inline-block;
   animation: floatTitle 2.6s ease-in-out infinite;
