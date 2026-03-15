@@ -381,22 +381,51 @@ box-shadow:
   animation: floatTitle 2.6s ease-in-out infinite;
 }
 
-        .cards {
-          display: grid;
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-          gap: 0.75rem;
-          margin-bottom: 2rem;
-        }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+  margin-bottom: 2.4rem;
+}
 
-        .card {
-          text-align: center;
-          font-size: 0.58rem;
-          line-height: 1.25;
-        }
+.card {
+  text-align: center;
+  font-size: 0.62rem;
+  line-height: 1.35;
 
+  padding: 1.4rem 1.2rem;
+  border-radius: 22px;
+  height: 100%;
+
+  background:
+    linear-gradient(135deg,
+      rgba(255,255,255,0.28) 0%,
+      rgba(255,255,255,0.10) 50%,
+      rgba(255,255,255,0.20) 100%
+    ),
+    rgba(232,228,255,0.10);
+
+  backdrop-filter: blur(26px) saturate(180%);
+  -webkit-backdrop-filter: blur(26px) saturate(180%);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.55),
+    inset 0 -1px 0 rgba(255,255,255,0.08),
+    0 18px 42px rgba(84,67,185,0.18),
+    0 6px 14px rgba(117,168,255,0.08);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.card div {
+  margin-top: 0.45rem;
+  line-height: 1.4;
+}
         .pill {
-          background: #0c0c0c;
-          color: #fff;
+background: #050505;
+box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+color: #fff;
           border-radius: 999px;
           padding: 0.55rem 0.9rem;
           display: inline-block;
