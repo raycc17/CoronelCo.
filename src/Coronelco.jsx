@@ -446,6 +446,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .divider-line {
   width: 100%;
+  animation: tickerMove 18s linear infinite;
   overflow: hidden;
   white-space: nowrap;
   margin: 2.2rem 0 3.4rem;
@@ -458,10 +459,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   color: #000000;
 
   position: relative;
-}
-
-.divider-line {
-  animation: tickerMove 18s linear infinite;
 }
 
         section {
