@@ -143,6 +143,11 @@ export default function Coronelco() {
           text-align: center;
         }
 
+        .hero-line-pot {
+          width: 10.8ch;
+          text-align: center;
+        }
+
         .hero-line-sub {
           display: block;
           width: 10.8ch;
@@ -676,7 +681,7 @@ export default function Coronelco() {
           <h1>
             <span className="hero-line">CREAMOS</span>
             <span className="hero-line">POSICIONAMOS</span>
-            <span className="hero-line">POTENCIAMOS</span>
+            <span className="hero-line hero-line-pot">POTENCIAMOS</span>
             <span className="hero-line-sub">tu marca</span>
           </h1>
         </section>
