@@ -686,7 +686,7 @@ export default function Coronelco() {
         <header className="top">
           <div className="brand-line">
             <img className="brand-logo" src="/logoCoronelCo..png" alt="Coronel & Co." />
-            <h5 className="brand-subtitle">FIRMA DE ESTRATEGIA & CREATIVA DE MARCAS</h5>
+            <h5 className="brand-subtitle">FIRMA Estratética & Creativa de Marcas</h5>
           </div>
         </header>
 
@@ -694,8 +694,8 @@ export default function Coronelco() {
           <h1>
             <span className="hero-line">CREAMOS</span>
             <span className="hero-line">POSICIONAMOS</span>
-            <span className="hero-line">POTENCIAMOS</span>
-            <span className="hero-line-sub">tu marca</span>
+            <span className="hero-line">& POTENCIAMOS</span>
+            <span className="hero-line-sub">tu marca.</span>
           </h1>
         </section>
 
@@ -740,7 +740,7 @@ export default function Coronelco() {
           </article>
         </div>
 
-        <p className="divider-line serif">CORONEL&CO. Firma de Estrategia & Creativa de marcas · CORONEL&CO. Firma de Estrategia & Creativa de marcas</p>
+        <p className="divider-line serif">CORONEL&CO. Firma Estratégica & Creativa de Marcas · CORONEL&CO. Firma Estratégica & Creativa de Marcas</p>
 
         <section>
           <p className="center-intro">
