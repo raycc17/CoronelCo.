@@ -423,8 +423,8 @@ box-shadow:
   line-height: 1.4;
 }
         .pill {
-background: #050505;
-box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+background: #000000;
+box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 color: #fff;
           border-radius: 999px;
           padding: 0.55rem 0.9rem;
