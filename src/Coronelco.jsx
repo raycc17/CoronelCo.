@@ -782,7 +782,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         <header className="top">
           <div className="brand-line">
             <img className="brand-logo" src="/logoCoronelCo..png" alt="Coronel & Co." />
-            <h5 className="brand-subtitle">FIRMA DE ESTRATEGIA & CREATIVA DE MARCAS</h5>
+            <h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
           </div>
         </header>
 
@@ -836,7 +836,17 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           </article>
         </div>
 
-        <p className="divider-line serif">TU MARCA EN REDES SOCIALES   ●   TU MARCA SUPERANDO A LA COMPETENCIA   ●   TU MARCA ATRAYENDO CLIENTES POTENCIALES   ●   TU MARCA SIENDO ELEGIDA   ●   TU MARCA EN BOCA DE TODOS</p>
+        <div className="ticker">
+  <div className="ticker-track">
+    <span>
+TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA ATRAYENDO CLIENTES POTENCIALES ● TU MARCA SIENDO ELEGIDA ● TU MARCA EN BOCA DE TODOS
+    </span>
+
+    <span>
+TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA ATRAYENDO CLIENTES POTENCIALES ● TU MARCA SIENDO ELEGIDA ● TU MARCA EN BOCA DE TODOS
+    </span>
+  </div>
+</div>
 
         <section>
           <p className="center-intro">
