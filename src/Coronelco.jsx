@@ -348,10 +348,24 @@ export default function Coronelco() {
           100% { background-position: 0% 50%; }
         }
 
-        .cards-title {
-          margin: 0 0 0.55rem;
-          font-size: 1.25rem;
-        }
+  @keyframes floatTitle {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.cards-title {
+  margin: 0 0 0.55rem;
+  font-size: 1.25rem;
+  display: inline-block;
+  animation: floatTitle 3.8s ease-in-out infinite;
+}
 
         .cards {
           display: grid;
