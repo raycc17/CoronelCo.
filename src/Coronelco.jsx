@@ -97,6 +97,8 @@ export default function Coronelco() {
           isolation: isolate;
           z-index: 10;
           display: flex;
+            left: 50%;
+  top: -10%;
           justify-content: center;
           align-items: center;
           min-height: 360px;
