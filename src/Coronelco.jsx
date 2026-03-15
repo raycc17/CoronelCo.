@@ -90,6 +90,7 @@ background-size: cover;
           letter-spacing: 0.16em;
           text-transform: uppercase;
           opacity: 0.95;
+          font-weight: 300;
         }
 
         .hero {
