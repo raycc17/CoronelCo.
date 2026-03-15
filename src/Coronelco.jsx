@@ -112,8 +112,8 @@ export default function Coronelco() {
           aspect-ratio: 1 / 1;
           transform: translate(-50%, -50%);
           border-radius: 50%;
-          background: linear-gradient(135deg, #37099b 0%, #75a8ff 55%, #37099b 100%);
-          background-size: 220% 220%;
+          background: linear-gradient(135deg, #37099b 0%, #5231c8 26%, #75a8ff 50%, #5231c8 74%, #37099b 100%);
+          background-size: 280% 280%;
           animation: haloShift 7s ease-in-out infinite;
           filter: blur(72px);
           opacity: 0.78;
@@ -213,8 +213,8 @@ export default function Coronelco() {
           height: auto;
           transform: translate(-50%, -50%);
           border-radius: 999px;
-          background: linear-gradient(135deg, #37099b 0%, #75a8ff 55%, #37099b 100%);
-          background-size: 240% 240%;
+          background: linear-gradient(135deg, #37099b 0%, #5231c8 26%, #75a8ff 50%, #5231c8 74%, #37099b 100%);
+          background-size: 280% 280%;
           animation: haloShift 6s ease-in-out infinite;
           filter: blur(75px);
           opacity: 0.95;
@@ -312,7 +312,9 @@ export default function Coronelco() {
 
         @keyframes haloShift {
           0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
+          25% { background-position: 100% 35%; }
+          50% { background-position: 50% 100%; }
+          75% { background-position: 0% 65%; }
           100% { background-position: 0% 50%; }
         }
 
