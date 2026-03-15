@@ -151,7 +151,6 @@ export default function Coronelco() {
           display: block;
           width: 100%;
           text-align: center;
-          opacity: 0.6;
           font-size: 0.8em;
         }
 
@@ -714,7 +713,7 @@ export default function Coronelco() {
             <span className="hero-line">CREAMOS</span>
             <span className="hero-line">POSICIONAMOS</span>
             <span className="hero-line">POTENCIAMOS</span>
-            <span className="hero-line-sub">tu marca</span>
+            <span className="hero-line-sub">tu marca.</span>
           </h1>
         </section>
 
