@@ -16,8 +16,8 @@ export default function Coronelco() {
           margin: 0;
           color: #000000;
           background-color: #ffffff;
-background-image: url('/fondoCoronelCo..png');
-background-size: cover;
+          background-image: url('/fondoCoronelCo..png');
+          background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
           background-attachment: fixed;
@@ -110,8 +110,8 @@ background-size: cover;
           display: block;
           left: 50%;
           top: 50%;
-          width: min(46.4vw, 490px);
-          height: min(46.4vw, 490px);
+          width: min(46.4vw, 608px);
+          height: min(46.4vw, 608px);
           transform: translate(-50%, -50%);
           border-radius: 50%;
           background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 50%, #5f2fc6 100%);
@@ -151,6 +151,7 @@ background-size: cover;
           display: block;
           width: 100%;
           text-align: center;
+          opacity: 0.6;
           font-size: 0.8em;
         }
 
@@ -165,21 +166,11 @@ background-size: cover;
           letter-spacing: inherit;
           line-height: inherit;
           margin-top: -0.12em;
-          background: linear-gradient(120deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.03) 44%, rgba(255, 255, 255, 0.18) 100%);
+          background: linear-gradient(135deg, #ffffff 0%, #d3daf6 100%);
           -webkit-background-clip: text;
           background-clip: text;
           color: transparent !important;
           -webkit-text-fill-color: transparent !important;
-        }
-
-        .glass-banner::after {
-          content: '';
-          position: absolute;
-          inset: 1px;
-          border-radius: 0px;
-          border: 0px 
-          pointer-events: none;
-          z-index: 2;
         }
 
         .hero-art {
@@ -262,7 +253,7 @@ background-size: cover;
           background:
             linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.18) 100%),
             rgba(232, 228, 255, 0.10);
-          border: 0
+          border: 0;
           backdrop-filter: blur(28px) saturate(180%);
           -webkit-backdrop-filter: blur(28px) saturate(180%);
           box-shadow:
@@ -276,9 +267,19 @@ background-size: cover;
           content: '';
           position: absolute;
           inset: 0;
-          background: transparent;
+          background: linear-gradient(120deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.03) 44%, rgba(255, 255, 255, 0.18) 100%);
           z-index: 1;
           pointer-events: none;
+        }
+
+        .glass-banner::after {
+          content: '';
+          position: absolute;
+          inset: 1px;
+          border-radius: 24px;
+          border: 0;
+          pointer-events: none;
+          z-index: 2;
         }
 
         .banner-halo {
@@ -704,7 +705,7 @@ background-size: cover;
         <header className="top">
           <div className="brand-line">
             <img className="brand-logo" src="/logoCoronelCo..png" alt="Coronel & Co." />
-            <h5 className="brand-subtitle">FIRMA Estratégica & Creativa de Marcas</h5>
+            <h5 className="brand-subtitle">FIRMA DE ESTRATEGIA & CREATIVA DE MARCAS</h5>
           </div>
         </header>
 
@@ -712,8 +713,8 @@ background-size: cover;
           <h1>
             <span className="hero-line">CREAMOS</span>
             <span className="hero-line">POSICIONAMOS</span>
-            <span className="hero-line">& POTENCIAMOS</span>
-            <span className="hero-line-sub">tu marca.</span>
+            <span className="hero-line">POTENCIAMOS</span>
+            <span className="hero-line-sub">tu marca</span>
           </h1>
         </section>
 
@@ -758,7 +759,7 @@ background-size: cover;
           </article>
         </div>
 
-        <p className="divider-line serif">CORONEL&CO. Firma Estratégica & Creativa de Marcas · CORONEL&CO. Firma Estratégica & Creativa de Marcas</p>
+        <p className="divider-line serif">CORONEL&CO. Firma de Estrategia & Creativa de marcas · CORONEL&CO. Firma de Estrategia & Creativa de marcas</p>
 
         <section>
           <p className="center-intro">
