@@ -241,18 +241,24 @@ background-size: cover;
           z-index: 8;
           overflow: hidden;
           width: 100%;
-          padding: 0.78rem 1rem;
+          padding: 0.92rem 1.2rem;
           text-align: center;
           font-size: 0.68rem;
           line-height: 1.2;
           letter-spacing: 0.25em;
           text-transform: uppercase;
           color: #ffffff;
-          background: rgba(255, 255, 255, 0.06);
-          backdrop-filter: blur(24px) saturate(170%);
-          -webkit-backdrop-filter: blur(24px) saturate(170%);
-          border: 0;
-          box-shadow: 1;
+          border-radius: 26px;
+          background:
+            linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.18) 100%),
+            rgba(232, 228, 255, 0.10);
+          border: 1px solid rgba(255, 255, 255, 0.28);
+          backdrop-filter: blur(28px) saturate(180%);
+          -webkit-backdrop-filter: blur(28px) saturate(180%);
+          box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.45),
+            inset 0 -1px 0 rgba(255, 255, 255, 0.12),
+            0 16px 36px rgba(84, 67, 185, 0.20);
           isolation: isolate;
         }
 
