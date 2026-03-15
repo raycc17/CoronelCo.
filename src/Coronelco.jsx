@@ -165,11 +165,21 @@ background-size: cover;
           letter-spacing: inherit;
           line-height: inherit;
           margin-top: -0.12em;
-          background: linear-gradient(135deg, #000000 0%, #000000 100%);
+          background: linear-gradient(120deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.03) 44%, rgba(255, 255, 255, 0.18) 100%);
           -webkit-background-clip: text;
           background-clip: text;
           color: transparent !important;
           -webkit-text-fill-color: transparent !important;
+        }
+
+        .glass-banner::after {
+          content: '';
+          position: absolute;
+          inset: 1px;
+          border-radius: 24px;
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          pointer-events: none;
+          z-index: 2;
         }
 
         .hero-art {
