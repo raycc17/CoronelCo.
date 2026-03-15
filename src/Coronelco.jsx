@@ -23,14 +23,14 @@ export default function Coronelco() {
           background-attachment: fixed;
         }
 
-        .page {
-          width: 100%;
-          max-width: none;
-          margin: 0;
-          padding: 2.8rem clamp(1rem, 3vw, 2.4rem) 5rem;
-          position: relative;
-          overflow: hidden;
-          z-index: 1;
+.page {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 2.8rem clamp(1rem, 3vw, 2.4rem) 5rem;
+  position: relative;
+  overflow: visible;
+  z-index: 1;
         }
 
         .page,
