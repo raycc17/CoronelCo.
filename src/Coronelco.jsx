@@ -166,7 +166,7 @@ export default function Coronelco() {
           letter-spacing: inherit;
           line-height: inherit;
           margin-top: -0.12em;
-          background: linear-gradient(135deg, #ffffff 0%, #d3daf6 100%);
+          background: linear-gradient(135deg, #000000 0%, #000000 100%);
           -webkit-background-clip: text;
           background-clip: text;
           color: transparent !important;
