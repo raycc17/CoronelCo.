@@ -176,7 +176,7 @@ background-size: cover;
           content: '';
           position: absolute;
           inset: 1px;
-          border-radius: 24px;
+          border-radius: 0px;
           border: 0px solid rgba(255, 255, 255, 0.20);
           pointer-events: none;
           z-index: 2;
@@ -262,7 +262,7 @@ background-size: cover;
           background:
             linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.18) 100%),
             rgba(232, 228, 255, 0.10);
-          border: 1px solid rgba(255, 255, 255, 0.28);
+          border: 0
           backdrop-filter: blur(28px) saturate(180%);
           -webkit-backdrop-filter: blur(28px) saturate(180%);
           box-shadow:
