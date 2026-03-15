@@ -364,7 +364,7 @@ export default function Coronelco() {
   margin: 0 0 0.55rem;
   font-size: 1.25rem;
   display: inline-block;
-  animation: floatTitle 3.8s ease-in-out infinite;
+  animation: floatTitle 2.8s ease-in-out infinite;
 }
 
         .cards {
