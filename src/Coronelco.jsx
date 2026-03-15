@@ -116,7 +116,7 @@ background-size: cover;
           border-radius: 50%;
           background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 50%, #5f2fc6 100%);
           background-size: 260% 260%;
-          animation: haloShift 7s ease-in-out infinite;
+          animation: haloShift 5.25s ease-in-out infinite;
           filter: blur(92px);
           opacity: 0.72;
           z-index: -1;
