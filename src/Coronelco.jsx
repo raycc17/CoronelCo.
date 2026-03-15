@@ -495,17 +495,22 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .center-intro {
   text-align: center;
-  max-width: 980px;
+  width: fit-content;
+  max-width: 100%;
   margin: 0 auto 2.7rem;
-  line-height: 1.1;
+  line-height: 1.08;
+  padding: 0 0.4rem;
 }
 
 .intro-light {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
   font-size: clamp(1.7rem, 3.8vw, 2.7rem);
   font-weight: 300;
   letter-spacing: -0.03em;
   line-height: 1.05;
+  white-space: nowrap;
   background: linear-gradient(135deg, #000000 0%, #888585 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -514,11 +519,14 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .intro-strong {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin: -0.08em auto 0;
   font-size: clamp(1.7rem, 3.8vw, 2.7rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.05;
+  white-space: nowrap;
   background: linear-gradient(135deg, #0f64f3 0%, #5f2fc6 100%);
   -webkit-background-clip: text;
   background-clip: text;
