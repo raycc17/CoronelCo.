@@ -109,7 +109,7 @@ export default function Coronelco() {
           left: 50%;
           top: 52%;
           width: min(44.8vw, 448px);
-          aspect-ratio: 1 / 1;
+          height: min(44.8vw, 448px);
           transform: translate(-50%, -50%);
           border-radius: 50%;
           background: linear-gradient(135deg, #37099b 0%, #5231c8 26%, #75a8ff 50%, #5231c8 74%, #37099b 100%);
@@ -209,10 +209,9 @@ export default function Coronelco() {
           left: 50%;
           top: 50%;
           width: min(62.56vw, 625.6px);
-          aspect-ratio: 1 / 1;
-          height: auto;
+          height: min(62.56vw, 625.6px);
           transform: translate(-50%, -50%);
-          border-radius: 999px;
+          border-radius: 50%;
           background: linear-gradient(135deg, #37099b 0%, #5231c8 26%, #75a8ff 50%, #5231c8 74%, #37099b 100%);
           background-size: 280% 280%;
           animation: haloShift 6s ease-in-out infinite;
