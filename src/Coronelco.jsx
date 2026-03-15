@@ -122,6 +122,7 @@ export default function Coronelco() {
         }
 
         .hero h1 {
+          --hero-content-offset: 2rem;
           position: relative;
           z-index: 30;
           margin: 0 auto;
@@ -135,6 +136,7 @@ export default function Coronelco() {
           display: grid;
           justify-items: center;
           width: max-content;
+          transform: translateY(var(--hero-content-offset));
         }
 
         .hero-line {
@@ -143,10 +145,6 @@ export default function Coronelco() {
           text-align: center;
         }
 
-        .hero-line-pot {
-          width: 10.8ch;
-          text-align: center;
-        }
 
         .hero-line-sub {
           display: block;
@@ -199,7 +197,7 @@ export default function Coronelco() {
 
         .mid-claim-wrap {
           width: 100%;
-          margin: 0.8rem 0 1.9rem;
+          margin: calc(0.8rem + 2rem) 0 1.9rem;
           position: relative;
           isolation: isolate;
         }
@@ -681,7 +679,7 @@ export default function Coronelco() {
           <h1>
             <span className="hero-line">CREAMOS</span>
             <span className="hero-line">POSICIONAMOS</span>
-            <span className="hero-line hero-line-pot">POTENCIAMOS</span>
+            <span className="hero-line">POTENCIAMOS</span>
             <span className="hero-line-sub">tu marca</span>
           </h1>
         </section>
