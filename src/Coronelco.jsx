@@ -215,7 +215,7 @@ export default function Coronelco() {
   margin: calc(3.8rem + 5.5rem) 0 1.9rem;
   position: relative;
   isolation: isolate;
-  animation: floatBanner 4.2s ease-in-out infinite;
+  animation: floatBanner 2.2s ease-in-out infinite;
 }
 
         .mid-claim-wrap::before {
