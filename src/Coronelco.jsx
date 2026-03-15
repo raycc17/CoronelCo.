@@ -492,12 +492,11 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         }
 
 .center-intro {
+  width: fit-content;
+  margin: 0 auto 2.7rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 1 auto 2.7rem;
-  padding: 0 1rem;
-  overflow: visible;
+  align-items: stretch;
 }
 
 .intro-light {
@@ -517,20 +516,20 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .intro-strong {
-  display: inline-block;
-  font-size: clamp(1.72rem, 3.85vw, 2.72rem);
+  display: block;
+  text-align: right;
+  margin-top: -0.15em;
+
+  font-size: clamp(1.7rem, 3.8vw, 2.7rem);
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1.02;
-  white-space: nowrap;
-  padding: 0.02em 0.06em 0.10em;
-  margin-top: -0.18em;
+
   background: linear-gradient(135deg, #0f64f3 0%, #5f2fc6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent !important;
   -webkit-text-fill-color: transparent !important;
-  overflow: visible;
 }
 
         .blue {
