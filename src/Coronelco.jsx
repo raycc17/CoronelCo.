@@ -103,12 +103,12 @@ export default function Coronelco() {
           margin: 2rem 0 2.5rem;
         }
 
-        .hero::before {
-          content: '';
-          position: absolute;
-          left: 50%;
-          top: 46%;
-          width: min(26.88vw, 268.8px);
+      .hero::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -90%; /* HALO_HERO_POSITION */
+  width: min(26.88vw, 268.8px);
           height: min(26.88vw, 268.8px);
           transform: translate(-50%, -50%);
           border-radius: 50%;
