@@ -242,15 +242,15 @@ export default function Coronelco() {
           z-index: 8;
           overflow: hidden;
           width: 100%;
-          padding: 0.92rem 1.2rem;
+padding: 1rem 1.35rem;
           text-align: center;
           font-size: 0.68rem;
           line-height: 1.2;
           letter-spacing: 0.25em;
           text-transform: uppercase;
           color: #ffffff;
-          border-radius: 26px;
-          background:
+border-radius: 30px;
+background:
             linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.18) 100%),
             rgba(232, 228, 255, 0.10);
           border: 0;
@@ -355,6 +355,18 @@ export default function Coronelco() {
   }
   50% {
     transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes floatBanner {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-7px);
   }
   100% {
     transform: translateY(0px);
