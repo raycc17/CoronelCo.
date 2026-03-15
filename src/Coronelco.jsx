@@ -212,7 +212,7 @@ export default function Coronelco() {
 
 .mid-claim-wrap {
   width: 100%;
-  margin: calc(3.8rem + 6.5rem) 0 2.4rem;
+  margin: calc(3.8rem + 6.5rem) 0 2.1rem;
   position: relative;
   isolation: isolate;
   animation: floatBanner 4.2s ease-in-out infinite;
