@@ -712,7 +712,7 @@ export default function Coronelco() {
           <h1>
             <span className="hero-line">CREAMOS</span>
             <span className="hero-line">POSICIONAMOS</span>
-            <span className="hero-line">POTENCIAMOS</span>
+            <span className="hero-line">& POTENCIAMOS</span>
             <span className="hero-line-sub">tu marca.</span>
           </h1>
         </section>
