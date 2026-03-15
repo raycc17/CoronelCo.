@@ -218,7 +218,7 @@ export default function Coronelco() {
           background-size: 280% 280%;
           animation: haloShift 6s ease-in-out infinite;
           filter: blur(75px);
-                    opacity: 0.95;
+          opacity: 0.95;
           z-index: -1;
           pointer-events: none;
         }
@@ -438,7 +438,7 @@ export default function Coronelco() {
         }
 
         .split {
-                  display: grid;
+          display: grid;
           grid-template-columns: 0.85fr 1.15fr;
           gap: 1.5rem;
         }
@@ -659,7 +659,6 @@ export default function Coronelco() {
             padding: 0;
           }
 
-          
           .flow::before {
             left: 8%;
             font-size: 6rem;
