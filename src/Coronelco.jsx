@@ -14,8 +14,8 @@ export default function Coronelco() {
 
         body {
           margin: 0;
-          color: #ffffff;
-          background-color: #000000;
+          color: #000000;
+          background-color: #ffffff;
           background-image: url('/fondoCoronelCo..png');
           background-size: cover;
           background-position: center;
@@ -35,7 +35,7 @@ export default function Coronelco() {
 
         .page,
         .page * {
-          color: #ffffff;
+          color: #000000 !important;
         }
 
 
@@ -106,20 +106,26 @@ export default function Coronelco() {
         .hero::before {
           content: '';
           position: absolute;
-          display: none;
+          display: block;
           left: 50%;
-          top: 46%;
-          width: min(26.88vw, 268.8px);
-          height: min(26.88vw, 268.8px);
+          top: 50%;
+          width: min(58vw, 760px);
+          height: min(58vw, 760px);
           transform: translate(-50%, -50%);
           border-radius: 50%;
-          background: linear-gradient(135deg, #37099b 0%, #5231c8 26%, #75a8ff 50%, #5231c8 74%, #37099b 100%);
-          background-size: 280% 280%;
+          background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 50%, #5f2fc6 100%);
+          background-size: 260% 260%;
           animation: haloShift 7s ease-in-out infinite;
-          filter: blur(72px);
-          opacity: 0.78;
+          filter: blur(92px);
+          opacity: 0.72;
           z-index: -1;
           pointer-events: none;
+        }
+
+
+        .hero h1,
+        .hero h1 * {
+          color: #ffffff !important;
         }
 
         .hero h1 {
@@ -157,6 +163,11 @@ export default function Coronelco() {
           letter-spacing: inherit;
           line-height: inherit;
           margin-top: -0.12em;
+          background: linear-gradient(135deg, #ffffff 0%, #c4cdf1 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent !important;
+          -webkit-text-fill-color: transparent !important;
         }
 
         .hero-art {
@@ -239,7 +250,7 @@ export default function Coronelco() {
           backdrop-filter: blur(24px) saturate(170%);
           -webkit-backdrop-filter: blur(24px) saturate(170%);
           border: 0;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
+          box-shadow: none;
           isolation: isolate;
         }
 
@@ -313,9 +324,9 @@ export default function Coronelco() {
 
         @keyframes haloShift {
           0% { background-position: 0% 50%; }
-          25% { background-position: 100% 35%; }
-          50% { background-position: 50% 100%; }
-          75% { background-position: 0% 65%; }
+          25% { background-position: 100% 20%; }
+          50% { background-position: 100% 100%; }
+          75% { background-position: 0% 80%; }
           100% { background-position: 0% 50%; }
         }
 
