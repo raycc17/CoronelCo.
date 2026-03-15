@@ -92,19 +92,6 @@ export default function Coronelco() {
           opacity: 0.95;
         }
 
-        .hero {
-          position: relative;
-          isolation: isolate;
-          z-index: 10;
-          display: flex;
-            left: 50%;
-  top: -10%;
-          justify-content: center;
-          align-items: center;
-          min-height: 360px;
-          margin: 2rem 0 2.5rem;
-        }
-
 .hero::before {
   content: '';
   position: absolute;
