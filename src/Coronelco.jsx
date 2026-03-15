@@ -151,7 +151,7 @@ background-size: cover;
           display: block;
           width: 100%;
           text-align: center;
-          opacity: 0.6;
+          font-size: 0.8em;
         }
 
 
