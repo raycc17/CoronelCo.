@@ -212,7 +212,7 @@ export default function Coronelco() {
 
 .mid-claim-wrap {
   width: 100%;
-  margin: calc(0.8rem + 5rem) 0 1.9rem;
+  margin: calc(3.8rem + 5rem) 0 1.9rem;
   position: relative;
   isolation: isolate;
 }
