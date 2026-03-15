@@ -495,7 +495,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto 2.7rem;
+  margin: 1 auto 2.7rem;
   padding: 0 1rem;
   overflow: visible;
 }
