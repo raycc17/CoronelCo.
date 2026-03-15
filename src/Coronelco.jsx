@@ -837,7 +837,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         </div>
 
         <div className="ticker">
-  <div className="ticker-track">
+  <div className="ticker-track serif">
     <span>
 TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA ATRAYENDO CLIENTES POTENCIALES ● TU MARCA SIENDO ELEGIDA ● TU MARCA EN BOCA DE TODOS
     </span>
