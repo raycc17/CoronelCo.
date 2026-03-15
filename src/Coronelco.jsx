@@ -177,7 +177,7 @@ background-size: cover;
           position: absolute;
           inset: 1px;
           border-radius: 24px;
-          border: 1px solid rgba(255, 255, 255, 0.10);
+          border: 0px solid rgba(255, 255, 255, 0.20);
           pointer-events: none;
           z-index: 2;
         }
