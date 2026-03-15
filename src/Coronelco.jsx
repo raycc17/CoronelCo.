@@ -35,8 +35,9 @@ export default function Coronelco() {
 
         .page,
         .page * {
-          color: #000000 !important;
-        }
+color: transparent !important;
+-webkit-text-fill-color: transparent !important;
+}
 
 
         .serif {
@@ -491,13 +492,38 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           position: relative;
         }
 
-        .center-intro {
-          text-align: center;
-          font-weight: 600;
-          max-width: 920px;
-          margin: 0 auto 2.7rem;
-          line-height: 1.35;
-        }
+.center-intro {
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto 2.7rem;
+  line-height: 1.1;
+}
+
+.intro-light {
+  display: inline-block;
+  font-size: clamp(1.7rem, 3.8vw, 2.7rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  background: linear-gradient(135deg, #000000 0%, #888585 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.intro-strong {
+  display: inline-block;
+  font-size: clamp(1.7rem, 3.8vw, 2.7rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  background: linear-gradient(135deg, #0f64f3 0%, #5f2fc6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+}
 
         .blue {
           color: #3e4de7;
@@ -870,11 +896,15 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 </div>
 
         <section>
-          <p className="center-intro">
-Nos encargamos del crecimiento de tu marca
-            <br />
-de manera estratégica y creativa.
-          </p>
+<p className="center-intro">
+  <span className="intro-light">
+    Nos encargamos del crecimiento de tu marca
+  </span>
+  <br />
+  <span className="intro-strong">
+    de manera estratégica y creativa.
+  </span>
+</p>
 
           <div className="heading-row">
             <h2 className="headline serif">BRAND EVOLUTION</h2>
