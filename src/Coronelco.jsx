@@ -871,11 +871,9 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 
         <section>
           <p className="center-intro">
-            Nos encargamos las redes de tu marca, la web, el contenido,
+Nos encargamos del crecimiento de tu marca
             <br />
-            atracción de clientes y mucho más pero de manera <span className="blue">estratégica</span>
-            <br />
-            y <span className="blue">creativa</span> y así:
+de manera estratégica y creativa.
           </p>
 
           <div className="heading-row">
