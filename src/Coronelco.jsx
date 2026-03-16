@@ -538,7 +538,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   white-space: nowrap;
   overflow: visible;
   align-self: center;
-  transform: translateX(1.4rem);
+  transform: translateX(1.0rem);
   background: linear-gradient(135deg, #0f64f3 0%, #5f2fc6 100%);
   -webkit-background-clip: text;
   background-clip: text;
