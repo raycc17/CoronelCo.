@@ -585,13 +585,13 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #000000;
+  background: #000000 !important;
   flex-shrink: 0;
 }
 
 .evolution-line {
   display: block;
-  height: 2x;
+  height: 2px;
   width: min(100%, 340px);
   background: #000000;
   margin-left: 0;
