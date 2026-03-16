@@ -576,6 +576,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 0;
   padding-top: 0.3rem;
   width: 100%;
 }
@@ -588,13 +589,12 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   flex-shrink: 0;
 }
 
-.evolution-line-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 0;
-  padding-top: 0.3rem;
-  width: 100%;
+.evolution-line {
+  display: block;
+  height: 2x;
+  width: min(100%, 340px);
+  background: #000000;
+  margin-left: 0;
 }
 
         .blue {
