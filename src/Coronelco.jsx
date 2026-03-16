@@ -491,45 +491,70 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           position: relative;
         }
 
-.center-intro {
-  width: fit-content;
+.intro-block {
+  width: min(100%, 980px);
   margin: 0 auto 2.7rem;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
+}
+
+.center-intro {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
 }
 
 .intro-light {
   display: inline-block;
+  margin: 0;
+  padding: 0.08em 0.08em 0.14em;
   font-size: clamp(1.7rem, 3.8vw, 2.7rem);
   font-weight: 300;
   letter-spacing: -0.035em;
-  line-height: 1.08;
+  line-height: 1;
+  text-align: center;
   white-space: nowrap;
-  padding: 0.08em 0.06em 0.12em;
+  overflow: visible;
+
   background: linear-gradient(135deg, #000000 0%, #888585 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent !important;
   -webkit-text-fill-color: transparent !important;
-  overflow: visible;
 }
 
 .intro-strong {
-  display: block;
-  text-align: right;
-  margin-top: -0.15em;
-
-  font-size: clamp(1.7rem, 3.8vw, 2.7rem);
+  display: inline-block;
+  align-self: flex-end;
+  margin: -0.12em 0 0;
+  padding: 0.06em 0.08em 0.14em;
+  font-size: clamp(1.72rem, 3.85vw, 2.72rem);
   font-weight: 800;
   letter-spacing: -0.04em;
-  line-height: 1.10;
+  line-height: 1;
+  text-align: right;
+  white-space: nowrap;
+  overflow: visible;
 
   background: linear-gradient(135deg, #0f64f3 0%, #5f2fc6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent !important;
   -webkit-text-fill-color: transparent !important;
+}
+
+.intro-kicker {
+  margin: 1.2rem 0 0;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #000000 !important;
 }
 
         .blue {
@@ -911,9 +936,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   <span className="intro-strong">
     de manera estratégica y creativa.
   </span>
-    <span className="intro-media">
-Y LO HACEMOS ASÍ
-    </span>
+  <p className="intro-kicker">Y LO HACEMOS ASÍ</p>
 </p>
 
           <div className="heading-row">
