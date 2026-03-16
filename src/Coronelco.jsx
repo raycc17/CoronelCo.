@@ -608,17 +608,19 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.72rem 1.3rem;
-  border-radius: 999px;
+  padding: 0.72rem 1.3rem 0.72rem 1rem;
+
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
 
   background: rgba(255, 255, 255, 0.22);
   backdrop-filter: blur(18px) saturate(160%);
   -webkit-backdrop-filter: blur(18px) saturate(160%);
 
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.45),
-    inset 0 -1px 0 rgba(255,255,255,0.08),
-    0 8px 22px rgba(84,67,185,0.10);
+  box-shadow: none;
+  border: none;
 
   color: #000000 !important;
   font-size: 0.62rem;
