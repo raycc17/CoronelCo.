@@ -602,6 +602,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   margin: 0.45rem 0 1.35rem;
   display: flex;
   justify-content: flex-start;
+  padding-left: 0;
 }
 
 .evolution-pill {
