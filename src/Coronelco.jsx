@@ -530,7 +530,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 .intro-strong {
   display: inline-block;
   align-self: flex-end;
-  margin: -0.12em 0 0;
+  margin: -0.18em 0 0;
   padding: 0.06em 0.08em 0.14em;
   font-size: clamp(1.72rem, 3.85vw, 2.72rem);
   font-weight: 800;
