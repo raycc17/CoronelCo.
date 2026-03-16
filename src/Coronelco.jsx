@@ -504,7 +504,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   font-size: clamp(1.7rem, 3.8vw, 2.7rem);
   font-weight: 300;
   letter-spacing: -0.035em;
-  line-height: 1.08;
+  line-height: 0.90;
   white-space: nowrap;
   padding: 0.08em 0.06em 0.12em;
   background: linear-gradient(135deg, #000000 0%, #888585 100%);
