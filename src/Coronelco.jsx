@@ -523,7 +523,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   font-size: clamp(1.7rem, 3.8vw, 2.7rem);
   font-weight: 800;
   letter-spacing: -0.04em;
-  line-height: 1.02;
+  line-height: 0.78;
 
   background: linear-gradient(135deg, #0f64f3 0%, #5f2fc6 100%);
   -webkit-background-clip: text;
