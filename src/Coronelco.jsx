@@ -597,6 +597,70 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   margin-left: 0;
 }
 
+.evolution-pill-wrap {
+  width: 100%;
+  margin: 0.45rem 0 1.35rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.evolution-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.72rem 1.3rem;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.45),
+    inset 0 -1px 0 rgba(255,255,255,0.08),
+    0 8px 22px rgba(84,67,185,0.10);
+
+  color: #000000 !important;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.evolution-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.8rem;
+  margin-bottom: 2.2rem;
+}
+
+.evolution-card {
+  min-height: 170px;
+  border-radius: 22px;
+  padding: 1.25rem 1rem;
+
+  background:
+    linear-gradient(135deg,
+      rgba(255,255,255,0.28) 0%,
+      rgba(255,255,255,0.10) 50%,
+      rgba(255,255,255,0.20) 100%
+    ),
+    rgba(232,228,255,0.10);
+
+  backdrop-filter: blur(26px) saturate(180%);
+  -webkit-backdrop-filter: blur(26px) saturate(180%);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.55),
+    inset 0 -1px 0 rgba(255,255,255,0.08),
+    0 18px 42px rgba(84,67,185,0.18),
+    0 6px 14px rgba(117,168,255,0.08);
+
+  position: relative;
+  overflow: hidden;
+}
+
         .blue {
           color: #3e4de7;
         }
@@ -875,6 +939,14 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   max-width: 220px;
 }
 
+.evolution-pill-wrap {
+  justify-content: center;
+}
+
+.evolution-cards {
+  grid-template-columns: 1fr;
+}
+
           .hero,
           .split {
             grid-template-columns: 1fr;
@@ -1013,18 +1085,22 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   </div>
 </div>
 
+          <div className="evolution-pill-wrap">
+  <span className="evolution-pill">EVOLUCIÓN DE MARCA</span>
+</div>
+          
           <p className="mini-text">
             En Coronel&Co entendemos que el crecimiento de una marca ocurre por etapas.
             <br />
             Esta se construye en la base de la siguiente.
           </p>
 
-          <div className="steps">
-            <div className="step">Fase 1<br />Construir la marca</div>
-            <div className="step">Fase 2<br />Posicionar la marca</div>
-            <div className="step">Fase 3<br />Potenciar la marca</div>
-            <div className="step">Fase 4<br />Impacto & propósito</div>
-          </div>
+     <div className="evolution-cards">
+  <article className="evolution-card"></article>
+  <article className="evolution-card"></article>
+  <article className="evolution-card"></article>
+  <article className="evolution-card"></article>
+</div>
         </section>
 
         <section className="split">
