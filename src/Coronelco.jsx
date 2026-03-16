@@ -556,6 +556,46 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   color: #000000 !important;
 }
 
+.evolution-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  column-gap: 2rem;
+  width: 100%;
+  margin: 0 auto 1.4rem;
+}
+
+.evolution-image {
+  width: clamp(260px, 34vw, 520px);
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.evolution-line-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 0.3rem;
+  width: 100%;
+}
+
+.evolution-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #000000;
+  flex-shrink: 0;
+}
+
+.evolution-line {
+  display: block;
+  height: 3px;
+  width: min(100%, 340px);
+  background: #000000;
+  margin-left: 0.35rem;
+}
+
         .blue {
           color: #3e4de7;
         }
@@ -815,6 +855,25 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
             padding: 1.4rem 1rem 3rem;
           }
 
+          .evolution-header {
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+
+.evolution-image {
+  width: min(100%, 360px);
+}
+
+.evolution-line-wrap {
+  justify-content: flex-start;
+  padding-top: 0;
+}
+
+.evolution-line {
+  width: 100%;
+  max-width: 220px;
+}
+
           .hero,
           .split {
             grid-template-columns: 1fr;
@@ -940,12 +999,19 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   <p className="intro-kicker">Y LO HACEMOS ASÍ</p>
 </div>
 
-          <div className="heading-row">
-            <h2 className="headline serif">BRAND EVOLUTION</h2>
-            <span className="dot" />
-            <span className="pill">Evolución de marca</span>
-          </div>
-          <p className="subtitle">¿Cómo crecen las marcas?</p>
+          <div className="evolution-header">
+  <img
+    className="evolution-image"
+    src="/brandevolution.png"
+    alt="Brand Evolution"
+  />
+
+  <div className="evolution-line-wrap" aria-hidden="true">
+    <span className="evolution-dot"></span>
+    <span className="evolution-line"></span>
+  </div>
+</div>
+
           <p className="mini-text">
             En Coronel&Co entendemos que el crecimiento de una marca ocurre por etapas.
             <br />
