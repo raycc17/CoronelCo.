@@ -493,7 +493,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .intro-block {
   width: min(100%, 980px);
-  margin: 0 auto 2.7rem;
+  margin: 0 auto 3.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -511,15 +511,14 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 .intro-light {
   display: inline-block;
   margin: 0;
-padding: 0.10em 0.08em 0.18em;
-font-size: clamp(1.7rem, 3.8vw, 2.7rem);
+  padding: 0.08em 0.08em 0.14em;
+  font-size: clamp(1.7rem, 3.8vw, 2.7rem);
   font-weight: 300;
   letter-spacing: -0.035em;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
   overflow: visible;
-
   background: linear-gradient(135deg, #000000 0%, #888585 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -529,17 +528,17 @@ font-size: clamp(1.7rem, 3.8vw, 2.7rem);
 
 .intro-strong {
   display: inline-block;
-  align-self: flex-end;
-  margin: -0.18em 0 0;
-padding: 0.10em 0.08em 0.18em;
-font-size: clamp(1.72rem, 3.85vw, 2.72rem);
+  margin: -0.10em 0 0;
+  padding: 0.06em 0.3em 0.14em 0.08em;
+  font-size: clamp(1.72rem, 3.85vw, 2.72rem);
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
   text-align: right;
   white-space: nowrap;
   overflow: visible;
-
+  align-self: center;
+  transform: translateX(1.4rem);
   background: linear-gradient(135deg, #0f64f3 0%, #5f2fc6 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -548,11 +547,11 @@ font-size: clamp(1.72rem, 3.85vw, 2.72rem);
 }
 
 .intro-kicker {
-  margin: 1.2rem 0 0;
+  margin: 2rem 0 0;
   text-align: center;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.22em;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #000000 !important;
 }
@@ -928,16 +927,18 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 </div>
 
         <section>
-<p className="center-intro">
-  <span className="intro-light">
-    Nos encargamos del crecimiento de tu marca
-  </span>
-  <br />
-  <span className="intro-strong">
-    de manera estratégica y creativa.
-  </span>
+<div className="intro-block">
+  <p className="center-intro">
+    <span className="intro-light">
+      Nos encargamos del crecimiento de tu marca
+    </span>
+    <span className="intro-strong">
+      de manera estratégica y creativa.
+    </span>
+  </p>
+
   <p className="intro-kicker">Y LO HACEMOS ASÍ</p>
-</p>
+</div>
 
           <div className="heading-row">
             <h2 className="headline serif">BRAND EVOLUTION</h2>
