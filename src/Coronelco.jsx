@@ -104,24 +104,9 @@ export default function Coronelco() {
           margin: 2rem 0 2.5rem;
         }
 
-        .hero::before {
-          content: '';
-          position: absolute;
-          display: block;
-          left: 50%;
-          top: 50%;
-          width: min(46.4vw, 608px);
-          height: min(46.4vw, 608px);
-          transform: translate(-50%, -50%);
-          border-radius: 50%;
-          background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 50%, #5f2fc6 100%);
-          background-size: 260% 260%;
-          animation: haloShift 5.25s ease-in-out infinite;
-          filter: blur(92px);
-          opacity: 0.72;
-          z-index: -1;
-          pointer-events: none;
-        }
+.hero::before {
+  display: none;
+}
 
 
         .hero h1,
@@ -902,19 +887,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           margin: 0.35rem 0 1rem;
         }
 
-        .decor {
-          position: absolute;
-          border-radius: 50%;
-          pointer-events: none;
-          background: radial-gradient(circle, rgba(85, 101, 255, 0.52) 0%, rgba(85, 101, 255, 0) 68%);
-          filter: blur(1px);
-        }
-
-        .d1 { width: 180px; height: 180px; right: 15%; top: 31%; }
-        .d2 { width: 120px; height: 120px; right: 38%; top: 46%; }
-        .d3 { width: 95px; height: 95px; left: -28px; top: 61%; }
-        .d4 { width: 66px; height: 66px; right: 12%; top: 68%; }
-
         @media (max-width: 980px) {
           .page {
             width: 100%;
@@ -986,12 +958,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           }
         }
       `}</style>
-
-      <main className="page">
-        <span className="decor d1" />
-        <span className="decor d2" />
-        <span className="decor d3" />
-        <span className="decor d4" />
 
         <header className="top">
           <div className="brand-line">
