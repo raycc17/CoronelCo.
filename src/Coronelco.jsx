@@ -192,37 +192,37 @@ export default function Coronelco() {
   margin: calc(3.8rem + 4.5rem) 0 1.9rem;
   position: relative;
   isolation: isolate;
-  animation: floatBanner 2.0s ease-in-out infinite;
+  animation: floatBanner 2s ease-in-out infinite;
+  z-index: 1;
 }
 
 .mid-claim-wrap::before {
   content: '';
   position: absolute;
   left: 50%;
-  top: -220px;
-  width: min(78vw, 980px);
-  height: min(78vw, 980px);
+  top: -320px;
+  width: min(92vw, 1200px);
+  height: min(92vw, 1200px);
   transform: translateX(-50%);
   border-radius: 50%;
-  background:
-    radial-gradient(
-      circle at 50% 50%,
-      rgba(117, 168, 255, 0.22) 0%,
-      rgba(95, 47, 198, 0.18) 24%,
-      rgba(117, 168, 255, 0.10) 42%,
-      rgba(95, 47, 198, 0.05) 58%,
-      rgba(117, 168, 255, 0) 74%
-    );
-  filter: blur(72px);
-  opacity: 0.9;
+  background: radial-gradient(
+    circle at center,
+    rgba(117, 168, 255, 0.30) 0%,
+    rgba(95, 47, 198, 0.22) 22%,
+    rgba(117, 168, 255, 0.12) 40%,
+    rgba(95, 47, 198, 0.06) 58%,
+    rgba(117, 168, 255, 0) 76%
+  );
+  filter: blur(95px);
+  opacity: 1;
   animation: luxuryGlow 8s ease-in-out infinite;
-  z-index: -1;
+  z-index: 0;
   pointer-events: none;
 }
 
         .glass-banner {
           position: relative;
-          z-index: 8;
+          z-index: 2;
           overflow: hidden;
           width: 100%;
 padding: 1rem 1.35rem;
