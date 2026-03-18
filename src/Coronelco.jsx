@@ -919,7 +919,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           </div>
         </div>
 
-        <h3 className="cards-title">Trabajamos con...</h3>
+        <h3 className="cards-title">Apoyamos y servimos a...</h3>
         <div className="cards">
           <article className="card">
             <span className="pill">Consultorías y profesionales</span>
