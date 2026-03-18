@@ -189,7 +189,7 @@ export default function Coronelco() {
   content: '';
   position: absolute;
   left: 50%;
-  top: 52%;
+  top: 58%;
   width: min(48vw, 608px);
   height: min(48vw, 608px);
   transform: translate(-50%, -50%);
