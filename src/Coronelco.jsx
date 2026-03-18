@@ -123,7 +123,7 @@ export default function Coronelco() {
     rgba(117, 168, 255, 0) 78%
   );
 
-  filter: blur(45px);
+  filter: blur(40px);
   opacity: 1;
 
   animation: luxuryGlowHero 5s ease-in-out infinite;
