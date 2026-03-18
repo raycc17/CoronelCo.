@@ -105,28 +105,8 @@ export default function Coronelco() {
         }
 
 .hero::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 52%;
-  width: min(44vw, 520px);
-  height: min(44vw, 520px);
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
-
-  background:
-    radial-gradient(circle at 32% 34%, rgba(95, 47, 198, 0.95) 0%, rgba(95, 47, 198, 0.65) 18%, rgba(95, 47, 198, 0) 44%),
-    radial-gradient(circle at 68% 64%, rgba(15, 100, 243, 0.95) 0%, rgba(15, 100, 243, 0.65) 18%, rgba(15, 100, 243, 0) 44%),
-    radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 60%);
-
-  filter: blur(42px);
-  opacity: 1;
-  animation: haloDrift 10s ease-in-out infinite alternate;
-} 
-
+  display: none;
+}
         .hero h1,
         .hero h1 * {
           color: #ffffff !important;
@@ -203,6 +183,57 @@ export default function Coronelco() {
 
 .hero-art::after {
   display: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  width: min(42vw, 500px);
+  height: min(42vw, 500px);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+
+  background: conic-gradient(
+    from 0deg,
+    rgba(95, 47, 198, 0.95),
+    rgba(15, 100, 243, 0.15),
+    rgba(95, 47, 198, 0.10),
+    rgba(15, 100, 243, 0.9),
+    rgba(95, 47, 198, 0.95)
+  );
+
+  filter: blur(42px);
+  opacity: 0.95;
+  animation: haloSpinA 10s linear infinite;
+}
+
+.hero-glow {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  width: min(36vw, 420px);
+  height: min(36vw, 420px);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+
+  background: conic-gradient(
+    from 180deg,
+    rgba(15, 100, 243, 0.92),
+    rgba(95, 47, 198, 0.12),
+    rgba(15, 100, 243, 0.08),
+    rgba(95, 47, 198, 0.88),
+    rgba(15, 100, 243, 0.92)
+  );
+
+  filter: blur(34px);
+  opacity: 0.9;
+  animation: haloSpinB 14s linear infinite;
 }
 
 .mid-claim-wrap {
@@ -355,40 +386,21 @@ box-shadow:
   }
 }
 
-@keyframes haloDrift {
-  0% {
-    background:
-      radial-gradient(circle at 28% 32%, rgba(95, 47, 198, 0.95) 0%, rgba(95, 47, 198, 0.65) 18%, rgba(95, 47, 198, 0) 44%),
-      radial-gradient(circle at 72% 66%, rgba(15, 100, 243, 0.95) 0%, rgba(15, 100, 243, 0.65) 18%, rgba(15, 100, 243, 0) 44%),
-      radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 60%);
+@keyframes haloSpinA {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
-
-  25% {
-    background:
-      radial-gradient(circle at 40% 26%, rgba(95, 47, 198, 0.95) 0%, rgba(95, 47, 198, 0.65) 18%, rgba(95, 47, 198, 0) 44%),
-      radial-gradient(circle at 66% 54%, rgba(15, 100, 243, 0.95) 0%, rgba(15, 100, 243, 0.65) 18%, rgba(15, 100, 243, 0) 44%),
-      radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 60%);
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
+}
 
-  50% {
-    background:
-      radial-gradient(circle at 52% 34%, rgba(95, 47, 198, 0.95) 0%, rgba(95, 47, 198, 0.65) 18%, rgba(95, 47, 198, 0) 44%),
-      radial-gradient(circle at 58% 72%, rgba(15, 100, 243, 0.95) 0%, rgba(15, 100, 243, 0.65) 18%, rgba(15, 100, 243, 0) 44%),
-      radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 60%);
+@keyframes haloSpinB {
+  from {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
-
-  75% {
-    background:
-      radial-gradient(circle at 44% 56%, rgba(95, 47, 198, 0.95) 0%, rgba(95, 47, 198, 0.65) 18%, rgba(95, 47, 198, 0) 44%),
-      radial-gradient(circle at 74% 44%, rgba(15, 100, 243, 0.95) 0%, rgba(15, 100, 243, 0.65) 18%, rgba(15, 100, 243, 0) 44%),
-      radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 60%);
-  }
-
-  100% {
-    background:
-      radial-gradient(circle at 34% 68%, rgba(95, 47, 198, 0.95) 0%, rgba(95, 47, 198, 0.65) 18%, rgba(95, 47, 198, 0) 44%),
-      radial-gradient(circle at 64% 38%, rgba(15, 100, 243, 0.95) 0%, rgba(15, 100, 243, 0.65) 18%, rgba(15, 100, 243, 0) 44%),
-      radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 60%);
+  to {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
 }
 
@@ -916,6 +928,8 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         </header>
 
         <section className="hero">
+          <div className="hero-glow" aria-hidden="true"></div>
+          
           <h1>
             <span className="hero-line">CREAMOS</span>
             <span className="hero-line">POSICIONAMOS</span>
