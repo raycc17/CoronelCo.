@@ -183,17 +183,9 @@ export default function Coronelco() {
           top: 12%;
         }
 
-        .hero-art::after {
-          content: '';
-          position: absolute;
-          width: 112px;
-          height: 112px;
-          border-radius: 50%;
-          right: 15%;
-          top: 25%;
-          background: radial-gradient(circle at 30% 30%, #5d6bff 0%, #304ee3 70%);
-          box-shadow: 0 0 60px rgba(72, 85, 239, 0.42);
-        }
+.hero-art::after {
+  display: none;
+}
 
 .mid-claim-wrap {
   width: 100%;
@@ -411,11 +403,9 @@ box-shadow:
   text-align: center;
   font-size: 0.62rem;
   line-height: 1.35;
-
   padding: 1.4rem 1.2rem;
   border-radius: 22px;
   height: 100%;
-
   background:
     linear-gradient(135deg,
       rgba(255,255,255,0.28) 0%,
@@ -423,16 +413,11 @@ box-shadow:
       rgba(255,255,255,0.20) 100%
     ),
     rgba(232,228,255,0.10);
-
   backdrop-filter: blur(26px) saturate(180%);
   -webkit-backdrop-filter: blur(26px) saturate(180%);
-
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.55),
-    inset 0 -1px 0 rgba(255,255,255,0.08),
-    0 18px 42px rgba(84,67,185,0.18),
-    0 6px 14px rgba(117,168,255,0.08);
-
+    inset 0 -1px 0 rgba(255,255,255,0.08);
   position: relative;
   overflow: hidden;
 }
@@ -627,7 +612,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   min-height: 170px;
   border-radius: 22px;
   padding: 1.25rem 1rem;
-
   background:
     linear-gradient(135deg,
       rgba(255,255,255,0.28) 0%,
@@ -635,16 +619,11 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
       rgba(255,255,255,0.20) 100%
     ),
     rgba(232,228,255,0.10);
-
   backdrop-filter: blur(26px) saturate(180%);
   -webkit-backdrop-filter: blur(26px) saturate(180%);
-
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.55),
-    inset 0 -1px 0 rgba(255,255,255,0.08),
-    0 18px 42px rgba(84,67,185,0.18),
-    0 6px 14px rgba(117,168,255,0.08);
-
+    inset 0 -1px 0 rgba(255,255,255,0.08);
   position: relative;
   overflow: hidden;
 }
