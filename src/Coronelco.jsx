@@ -866,6 +866,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         }
       `}</style>
 
+      <main className="page">
         <header className="top">
           <div className="brand-line">
             <img className="brand-logo" src="/logoCoronelCo..png" alt="Coronel & Co." />
