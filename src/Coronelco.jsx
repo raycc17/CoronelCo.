@@ -204,7 +204,7 @@ export default function Coronelco() {
     #5f2fc6 100%
   );
 
-  filter: blur(50px);
+  filter: blur(55px);
   opacity: 1;
 
   animation: haloSpinA 3s linear infinite;
