@@ -125,7 +125,7 @@ export default function Coronelco() {
   filter: blur(42px);
   opacity: 1;
   animation: haloDrift 10s ease-in-out infinite alternate;
-}
+} 
 
         .hero h1,
         .hero h1 * {
