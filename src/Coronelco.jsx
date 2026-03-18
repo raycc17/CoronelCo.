@@ -109,8 +109,8 @@ export default function Coronelco() {
   position: absolute;
   left: 50%;
   top: 52%;
-  width: min(44vw, 520px);
-  height: min(44vw, 520px);
+  width: min(44vw, 608px);
+  height: min(44vw, 608px);
   transform: translate(-50%, -50%);
   border-radius: 50%;
 
