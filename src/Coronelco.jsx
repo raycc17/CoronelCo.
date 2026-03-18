@@ -195,24 +195,23 @@ export default function Coronelco() {
   animation: floatBanner 2.0s ease-in-out infinite;
 }
 
-        .mid-claim-wrap::before {
-          content: '';
-          position: absolute;
-          display: none;
-          left: 50%;
-          top: 50%;
-          width: min(62.56vw, 625.6px);
-          height: min(62.56vw, 625.6px);
-          transform: translate(-50%, -50%);
-          border-radius: 50%;
-          background: linear-gradient(135deg, #37099b 0%, #5231c8 26%, #75a8ff 50%, #5231c8 74%, #37099b 100%);
-          background-size: 280% 280%;
-          animation: haloShift 6s ease-in-out infinite;
-          filter: blur(75px);
-          opacity: 0.95;
-          z-index: -1;
-          pointer-events: none;
-        }
+.mid-claim-wrap::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(62vw, 620px);
+  height: min(62vw, 620px);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: linear-gradient(135deg, #37099b 0%, #5231c8 26%, #75a8ff 50%, #5231c8 74%, #37099b 100%);
+  background-size: 280% 280%;
+  animation: haloShift 6s ease-in-out infinite;
+  filter: blur(75px);
+  opacity: 0.45;
+  z-index: -1;
+  pointer-events: none;
+}
 
         .glass-banner {
           position: relative;
