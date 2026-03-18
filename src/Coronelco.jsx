@@ -210,30 +210,6 @@ export default function Coronelco() {
   animation: haloSpinA 12s linear infinite;
 }
 
-.hero-glow {
-  position: absolute;
-  left: 50%;
-  top: 52%;
-  width: min(36vw, 420px);
-  height: min(36vw, 420px);
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 1;
-
-  background: conic-gradient(
-    from 180deg,
-    #0f64f3 0%,
-    #5f2fc6 50%,
-    #0f64f3 100%
-  );
-
-  filter: blur(28px);
-  opacity: 0.9;
-
-  animation: haloSpinB 18s linear infinite;
-}
-
 .mid-claim-wrap {
   width: 100%;
   margin: calc(3.8rem + 4.5rem) 0 1.9rem;
@@ -390,15 +366,6 @@ box-shadow:
   }
   to {
     transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-@keyframes haloSpinB {
-  from {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(0deg);
   }
 }
 
