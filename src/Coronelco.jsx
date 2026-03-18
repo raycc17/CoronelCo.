@@ -199,16 +199,23 @@ export default function Coronelco() {
   content: '';
   position: absolute;
   left: 50%;
-  top: 50%;
-  width: min(62vw, 620px);
-  height: min(62vw, 620px);
-  transform: translate(-50%, -50%);
+  top: -220px;
+  width: min(78vw, 980px);
+  height: min(78vw, 980px);
+  transform: translateX(-50%);
   border-radius: 50%;
-  background: linear-gradient(135deg, #37099b 0%, #5231c8 26%, #75a8ff 50%, #5231c8 74%, #37099b 100%);
-  background-size: 280% 280%;
-  animation: haloShift 6s ease-in-out infinite;
-  filter: blur(75px);
-  opacity: 0.45;
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(117, 168, 255, 0.22) 0%,
+      rgba(95, 47, 198, 0.18) 24%,
+      rgba(117, 168, 255, 0.10) 42%,
+      rgba(95, 47, 198, 0.05) 58%,
+      rgba(117, 168, 255, 0) 74%
+    );
+  filter: blur(72px);
+  opacity: 0.9;
+  animation: luxuryGlow 8s ease-in-out infinite;
   z-index: -1;
   pointer-events: none;
 }
