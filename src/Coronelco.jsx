@@ -105,9 +105,28 @@ export default function Coronelco() {
         }
 
 .hero::before {
-  display: none;
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(44vw, 520px);
+  height: min(44vw, 520px);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(117, 168, 255, 0.30) 0%,
+    rgba(95, 47, 198, 0.22) 28%,
+    rgba(117, 168, 255, 0.12) 48%,
+    rgba(95, 47, 198, 0.04) 64%,
+    rgba(117, 168, 255, 0) 78%
+  );
+  filter: blur(60px);
+  opacity: 0.95;
+  animation: luxuryGlowHero 6s ease-in-out infinite;
+  z-index: 0;
+  pointer-events: none;
 }
-
 
         .hero h1,
         .hero h1 * {
@@ -197,27 +216,7 @@ export default function Coronelco() {
 }
 
 .mid-claim-wrap::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: -320px;
-  width: min(92vw, 1200px);
-  height: min(92vw, 1200px);
-  transform: translateX(-50%);
-  border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    rgba(117, 168, 255, 0.30) 0%,
-    rgba(95, 47, 198, 0.22) 22%,
-    rgba(117, 168, 255, 0.12) 40%,
-    rgba(95, 47, 198, 0.06) 58%,
-    rgba(117, 168, 255, 0) 76%
-  );
-  filter: blur(95px);
-  opacity: 1;
-  animation: luxuryGlow 8s ease-in-out infinite;
-  z-index: 0;
-  pointer-events: none;
+  display: none;
 }
 
         .glass-banner {
@@ -357,17 +356,17 @@ box-shadow:
   }
 }
 
-@keyframes luxuryGlow {
+@keyframes luxuryGlowHero {
   0% {
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 0.72;
   }
   50% {
-    transform: translateX(-50%) scale(1.08);
-    opacity: 0.98;
+    transform: translate(-50%, -50%) scale(1.08);
+    opacity: 1;
   }
   100% {
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 0.72;
   }
 }
