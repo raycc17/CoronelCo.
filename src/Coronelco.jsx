@@ -199,16 +199,15 @@ export default function Coronelco() {
 
   background: conic-gradient(
     from 0deg,
-    rgba(95, 47, 198, 0.95),
-    rgba(15, 100, 243, 0.15),
-    rgba(95, 47, 198, 0.10),
-    rgba(15, 100, 243, 0.9),
-    rgba(95, 47, 198, 0.95)
+    #5f2fc6 0%,
+    #0f64f3 50%,
+    #5f2fc6 100%
   );
 
-  filter: blur(42px);
+  filter: blur(36px);
   opacity: 0.95;
-  animation: haloSpinA 10s linear infinite;
+
+  animation: haloSpinA 12s linear infinite;
 }
 
 .hero-glow {
@@ -224,16 +223,15 @@ export default function Coronelco() {
 
   background: conic-gradient(
     from 180deg,
-    rgba(15, 100, 243, 0.92),
-    rgba(95, 47, 198, 0.12),
-    rgba(15, 100, 243, 0.08),
-    rgba(95, 47, 198, 0.88),
-    rgba(15, 100, 243, 0.92)
+    #0f64f3 0%,
+    #5f2fc6 50%,
+    #0f64f3 100%
   );
 
-  filter: blur(34px);
+  filter: blur(28px);
   opacity: 0.9;
-  animation: haloSpinB 14s linear infinite;
+
+  animation: haloSpinB 18s linear infinite;
 }
 
 .mid-claim-wrap {
