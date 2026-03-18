@@ -109,24 +109,24 @@ export default function Coronelco() {
   position: absolute;
   left: 50%;
   top: 52%;
-  width: min(40vw, 480px);
-  height: min(40vw, 480px);
+  width: min(42vw, 500px);
+  height: min(42vw, 500px);
   transform: translate(-50%, -50%);
   border-radius: 50%;
 
-  background: radial-gradient(
-    circle at center,
-    rgba(117, 168, 255, 0.55) 0%,
-    rgba(95, 47, 198, 0.50) 22%,
-    rgba(117, 168, 255, 0.35) 40%,
-    rgba(95, 47, 198, 0.18) 60%,
-    rgba(117, 168, 255, 0) 78%
-  );
+  background:
+    radial-gradient(circle at center,
+      rgba(117, 168, 255, 0.85) 0%,
+      rgba(95, 47, 198, 0.80) 20%,
+      rgba(117, 168, 255, 0.55) 40%,
+      rgba(95, 47, 198, 0.25) 60%,
+      rgba(117, 168, 255, 0) 75%
+    );
 
-  filter: blur(40px);
+  filter: blur(38px);
   opacity: 1;
 
-  animation: luxuryGlowHero 5s ease-in-out infinite;
+  animation: luxuryGlowHero 4.5s ease-in-out infinite;
 
   z-index: 0;
   pointer-events: none;
