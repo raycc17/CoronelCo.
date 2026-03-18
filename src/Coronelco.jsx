@@ -357,6 +357,21 @@ box-shadow:
   }
 }
 
+@keyframes luxuryGlow {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.72;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.08);
+    opacity: 0.98;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.72;
+  }
+}
+
 @keyframes tickerMove {
   0% {
     transform: translateX(0);
