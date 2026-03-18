@@ -115,22 +115,22 @@ export default function Coronelco() {
   border-radius: 50%;
 
   background:
-    radial-gradient(circle at 40% 40%,
-      rgba(117, 168, 255, 0.9) 0%,
-      rgba(95, 47, 198, 0.85) 25%,
-      rgba(117, 168, 255, 0.6) 45%,
-      rgba(95, 47, 198, 0.3) 65%,
-      transparent 80%
+    linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%),
+    radial-gradient(circle at center,
+      rgba(255,255,255,0.25) 0%,
+      rgba(255,255,255,0.05) 40%,
+      transparent 70%
     );
 
-  filter: blur(40px);
-  opacity: 1;
+  filter: blur(55px);
+  opacity: 0.9;
 
-  animation: luxuryGlowHero 4s ease-in-out infinite;
+  animation: luxuryGlowHero 5s ease-in-out infinite;
 
   z-index: 0;
   pointer-events: none;
 }
+
         .hero h1,
         .hero h1 * {
           color: #ffffff !important;
