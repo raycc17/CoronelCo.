@@ -204,10 +204,10 @@ export default function Coronelco() {
     #5f2fc6 100%
   );
 
-  filter: blur(36px);
-  opacity: 0.95;
+  filter: blur(30px);
+  opacity: 1;
 
-  animation: haloSpinA 12s linear infinite;
+  animation: haloSpinA 3s linear infinite;
 }
 
 .mid-claim-wrap {
