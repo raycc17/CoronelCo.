@@ -639,25 +639,10 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           margin-bottom: 0.7rem;
         }
 
-        .dot {
-          width: 38px;
-          height: 38px;
-          border-radius: 50%;
-          background: #070707;
-          flex-shrink: 0;
-        }
-
         .headline {
           margin: 0;
           font-size: clamp(1.7rem, 3.6vw, 2.5rem);
           line-height: 1;
-        }
-
-        .subtitle {
-          margin-top: 0.4rem;
-          font-size: 0.7rem;
-          letter-spacing: 0.14em;
-          text-transform: uppercase;
         }
 
         .mini-text {
@@ -695,40 +680,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           font-size: clamp(1.8rem, 3.5vw, 2.6rem);
           line-height: 1;
           text-transform: uppercase;
-        }
-
-        .right-text {
-          max-width: 680px;
-          font-size: 1.08rem;
-          line-height: 1.5;
-          color: #2b2b2b;
-        }
-
-        .stage-list {
-          margin-top: 1.4rem;
-          display: grid;
-          gap: 0.9rem;
-          max-width: 640px;
-        }
-
-        .stage-item {
-          display: grid;
-          grid-template-columns: 34px 1fr;
-          gap: 0.6rem;
-          font-size: 0.86rem;
-          line-height: 1.3;
-        }
-
-        .stage-num {
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          background: #f5f7ff;
-          color: #8c93d9;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 0.62rem;
         }
 
         .diagnosis-note {
@@ -1026,36 +977,6 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   <article className="evolution-card"></article>
   <article className="evolution-card"></article>
 </div>
-        </section>
-
-        <section className="split">
-          <div>
-            <h2 className="left-title serif">¿EN QUÉ ETAPA SE ENCUENTRA TU MARCA?</h2>
-          </div>
-          <div>
-            <div className="heading-row">
-              <h2 className="headline serif">BRAND STAGE</h2>
-              <span className="dot" />
-              <span className="pill">Etapa de marca</span>
-            </div>
-            <p className="subtitle">¿En qué etapa está tu marca?</p>
-
-            <p className="right-text">
-              No todas las marcas necesitan lo mismo. Cada negocio se encuentra en una etapa distinta de desarrollo.
-              Comprender ese momento nos permite aplicar la estrategia correcta.
-            </p>
-
-            <div className="stage-list">
-              <div className="stage-item"><span className="stage-num">01</span><span>Nivel 1 · Búsqueda de identidad básica para marcas que están comenzando.</span></div>
-              <div className="stage-item"><span className="stage-num">02</span><span>Nivel 2 · Búsqueda de identidad estratégica para marcas que desean posicionarse.</span></div>
-              <div className="stage-item"><span className="stage-num">03</span><span>Nivel 3 · Marca con propósito para marcas que desean potenciar su crecimiento.</span></div>
-            </div>
-
-            <p className="diagnosis-note">
-              Si no logras determinar en qué nivel se encuentra tu marca, no te preocupes:
-              podemos brindarte un diagnóstico.
-            </p>
-          </div>
         </section>
 
         <section>
