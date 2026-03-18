@@ -705,17 +705,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           padding-top: 2rem;
         }
 
-        .step::before {
-          content: '';
-          position: absolute;
-          width: 44px;
-          height: 44px;
-          border-radius: 50%;
-          background: radial-gradient(circle, rgba(80, 89, 247, 0.56) 0%, rgba(80, 89, 247, 0) 72%);
-          top: 0;
-          left: calc(50% - 22px);
-        }
-
         .split {
           display: grid;
           grid-template-columns: 0.85fr 1.15fr;
@@ -790,18 +779,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           margin: 0 auto;
           position: relative;
           z-index: 1;
-        }
-
-        .flow::before {
-          content: 'CORE';
-          position: absolute;
-          left: -30px;
-          top: 50px;
-          font-size: 9.5rem;
-          font-weight: 800;
-          color: rgba(75, 91, 235, 0.08);
-          pointer-events: none;
-          letter-spacing: -0.04em;
         }
 
         .flow-item {
