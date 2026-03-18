@@ -51,19 +51,28 @@ export default function Coronelco() {
           text-transform: uppercase;
         }
 
-        .top {
-          margin-bottom: 2.2rem;
-        }
+.top {
+  margin-bottom: 2.2rem;
+  min-height: 96px;
+}
 
-        .brand-line {
-          --logo-visible-offset: clamp(0.5rem, 1vw, 0.82rem);
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          width: fit-content;
-          gap: 0.04rem;
-          color: #ffffff;
-        }
+.brand-line {
+  --logo-visible-offset: clamp(0.5rem, 1vw, 0.82rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  gap: 0.04rem;
+  color: #ffffff;
+  min-height: 88px;
+}
+
+.brand-logo {
+  width: clamp(180px, 24vw, 290px);
+  height: clamp(42px, 5vw, 68px);
+  display: block;
+  object-fit: contain;
+}
 
         .brand-title {
           margin: 0;
@@ -71,13 +80,6 @@ export default function Coronelco() {
           line-height: 1;
           letter-spacing: 0.03em;
           text-transform: uppercase;
-        }
-
-        .brand-logo {
-          width: clamp(180px, 24vw, 290px);
-          height: auto;
-          display: block;
-          object-fit: contain;
         }
 
         .brand-subtitle {
@@ -556,6 +558,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 .evolution-image {
   width: clamp(260px, 34vw, 520px);
   height: auto;
+  aspect-ratio: 520 / 140;
   display: block;
   object-fit: contain;
 }
@@ -887,7 +890,13 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
       <main className="page">
         <header className="top">
           <div className="brand-line">
-            <img className="brand-logo" src="/logoCoronelCo..png" alt="Coronel & Co." />
+<img
+  className="brand-logo"
+  src="/logoCoronelCo..png"
+  alt="Coronel & Co."
+  width="290"
+  height="68"
+/>
             <h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
           </div>
         </header>
@@ -970,12 +979,14 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 </div>
 
           <div className="evolution-header">
-  <img
-    className="evolution-image"
-    src="/brandevolution.png"
-    alt="Brand Evolution"
-  />
-
+<img
+  className="evolution-image"
+  src="/brandevolution.png"
+  alt="Brand Evolution"
+  width="520"
+  height="140"
+/>
+            
   <div className="evolution-line-wrap" aria-hidden="true">
     <span className="evolution-dot"></span>
     <span className="evolution-line"></span>
