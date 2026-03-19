@@ -1,36 +1,9 @@
 import { useEffect, useState } from 'react'
 
 export default function Coronelco() {
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 1800)
-
-    return () => clearTimeout(timer)
-  }, [])
   
     return (
     <>
-      {loading && (
-        <div className="loader-screen">
-          <div className="loader-orb" aria-hidden="true"></div>
-
-          <div className="loader-content">
-            <img
-              className="loader-logo"
-              src="/logoCoronelCo..png"
-              alt="Coronel & Co."
-              width="320"
-              height="76"
-            />
-            <p className="loader-subtitle">
-              Estrategia con propósito · Creatividad con intención
-            </p>
-          </div>
-        </div>
-      )}
       
       <style>{`
         :root {
