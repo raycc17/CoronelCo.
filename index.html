@@ -7,6 +7,90 @@
         <link rel="icon" type="image/png" href="/faviconCoronelCo..png" />
     <link rel="preload" as="image" href="/fondoCoronelCo..png" />
     <style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+  }
+
+  #initial-loader {
+    position: fixed;
+    inset: 0;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 999999;
+  }
+
+  .initial-loader-orb {
+    position: absolute;
+    width: min(34vw, 360px);
+    height: min(34vw, 360px);
+    border-radius: 50%;
+    background: conic-gradient(
+      from 0deg,
+      #5f2fc6 0%,
+      #0f64f3 50%,
+      #5f2fc6 100%
+    );
+    filter: blur(34px);
+    opacity: 1;
+    animation: initialLoaderSpin 3.8s linear infinite;
+  }
+
+  .initial-loader-orb::after {
+    content: '';
+    position: absolute;
+    inset: 12%;
+    border-radius: 50%;
+    background: conic-gradient(
+      from 180deg,
+      #0f64f3 0%,
+      #5f2fc6 50%,
+      #0f64f3 100%
+    );
+    filter: blur(22px);
+    opacity: 0.95;
+    animation: initialLoaderSpinReverse 5.2s linear infinite;
+  }
+
+  .initial-loader-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .initial-loader-logo {
+    width: min(320px, 70vw);
+    height: auto;
+    object-fit: contain;
+  }
+
+  .initial-loader-text {
+    margin: 1rem 0 0;
+    text-align: center;
+    font-family: Inter, Helvetica Neue, Arial, sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #111;
+  }
+
+  @keyframes initialLoaderSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes initialLoaderSpinReverse {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+  }
+</style>
+    <style>
       html, body {
         margin: 0;
         background-color: #ffffff;
@@ -18,8 +102,22 @@
       }
     </style>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<body>
+  <div id="initial-loader">
+    <div class="initial-loader-orb"></div>
+    <div class="initial-loader-content">
+      <img
+        class="initial-loader-logo"
+        src="/logoCoronelCo..png"
+        alt="Coronel & Co."
+      />
+      <p class="initial-loader-text">
+        Estrategia con propósito · Creatividad con intención
+      </p>
+    </div>
+  </div>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
