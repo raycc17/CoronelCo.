@@ -1,6 +1,37 @@
+import { useEffect, useState } from 'react'
+
 export default function Coronelco() {
-  return (
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 1800)
+
+    return () => clearTimeout(timer)
+  }, [])
+  
+    return (
     <>
+      {loading && (
+        <div className="loader-screen">
+          <div className="loader-orb" aria-hidden="true"></div>
+
+          <div className="loader-content">
+            <img
+              className="loader-logo"
+              src="/logoCoronelCo..png"
+              alt="Coronel & Co."
+              width="320"
+              height="76"
+            />
+            <p className="loader-subtitle">
+              Estrategia con propósito · Creatividad con intención
+            </p>
+          </div>
+        </div>
+      )}
+      
       <style>{`
         :root {
           color: #0e0e0e;
@@ -22,6 +53,106 @@ export default function Coronelco() {
           background-repeat: no-repeat;
           background-attachment: fixed;
         }
+
+.loader-screen {
+  position: fixed;
+  inset: 0;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 99999;
+}
+
+.loader-orb {
+  position: absolute;
+  width: min(34vw, 360px);
+  height: min(34vw, 360px);
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #5f2fc6 0%,
+    #0f64f3 50%,
+    #5f2fc6 100%
+  );
+  filter: blur(38px);
+  opacity: 1;
+  animation: loaderSpin 3.8s linear infinite;
+}
+
+.loader-orb::after {
+  content: '';
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 180deg,
+    #0f64f3 0%,
+    #5f2fc6 50%,
+    #0f64f3 100%
+  );
+  filter: blur(26px);
+  opacity: 0.95;
+  animation: loaderSpinReverse 5.5s linear infinite;
+}
+
+.loader-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader-logo {
+  width: min(320px, 70vw);
+  height: auto;
+  object-fit: contain;
+}
+
+.loader-subtitle {
+  margin: 1rem 0 0;
+  text-align: center;
+  font-size: 0.68rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #111111 !important;
+}
+
+.loader-fadeout {
+  animation: loaderFadeOut 0.5s ease forwards;
+}
+
+@keyframes loaderSpin {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes loaderSpinReverse {
+  from {
+    transform: rotate(360deg) scale(1);
+  }
+  to {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes loaderFadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 
         .page {
           width: 100%;
