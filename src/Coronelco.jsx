@@ -767,6 +767,25 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.55),
     inset 0 -1px 0 rgba(255,255,255,0.08);
+  overflow: hidden;
+}
+
+/* este es el hueco real */
+.evolution-card-hole {
+  position: absolute;
+  top: 15.5px;
+  left: 50%;
+  width: 82px;
+  height: 82px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-image: url('/fondoCoronelCo..png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* ventana circular en la tarjeta para que el aro vea el fondo real */
@@ -790,21 +809,22 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .phase-number {
   position: absolute;
-  top: 18px;
+  top: 21px;
   left: 50%;
   transform: translateX(-50%);
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  z-index: 4;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 3;
 
   font-size: 2rem;
   font-weight: 300;
   color: #111 !important;
+
+  background: rgba(255,255,255,0.92);
 }
 
 /* aro transparente / vidrio */
