@@ -175,6 +175,7 @@ export default function Coronelco() {
   width: clamp(180px, 24vw, 290px);
   height: auto;
   display: block;
+  object-fit: contain;
 }
 
         .brand-title {
