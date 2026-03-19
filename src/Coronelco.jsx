@@ -173,24 +173,19 @@ export default function Coronelco() {
   flex-shrink: 0;
 }
 
-.brand-logo-wrap {
+.brand-logo-bg {
   width: var(--brand-logo-width);
   height: var(--brand-logo-height);
   min-width: var(--brand-logo-width);
   max-width: var(--brand-logo-width);
   min-height: var(--brand-logo-height);
   max-height: var(--brand-logo-height);
-  display: block;
-  overflow: hidden;
   flex-shrink: 0;
-}
 
-.brand-logo {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: left center;
+  background-image: url('/logoCoronelCo..png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
 }
 
 .brand-subtitle {
@@ -1010,20 +1005,15 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         <header className="top">
           
 <div className="brand-line">
-  <div className="brand-logo-wrap">
-    <img
-      className="brand-logo"
-      src="/logoCoronelCo..png"
-      alt="Coronel & Co."
-      width="290"
-      height="68"
-      decoding="async"
-      fetchpriority="high"
-    />
-  </div>
+  <div
+    className="brand-logo-bg"
+    role="img"
+    aria-label="Coronel & Co."
+  ></div>
 
   <h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
 </div>
+          
         </header>
 
         <section className="hero">
