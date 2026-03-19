@@ -744,12 +744,18 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .evolution-card {
+  position: relative;
+  min-height: 170px;
+  padding: 0;
+  border-radius: 22px;
+  background: transparent;
+  overflow: visible;
+}
+
+.evolution-card-inner {
   min-height: 170px;
   border-radius: 22px;
-  padding: 1.25rem 1rem;
-  position: relative;
-  overflow: hidden;
-
+  padding: 4.2rem 1rem 1.25rem;
   background:
     linear-gradient(135deg,
       rgba(255,255,255,0.28) 0%,
@@ -757,22 +763,20 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
       rgba(255,255,255,0.20) 100%
     ),
     rgba(232,228,255,0.10);
-
   backdrop-filter: blur(26px) saturate(180%);
   -webkit-backdrop-filter: blur(26px) saturate(180%);
-
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.55),
     inset 0 -1px 0 rgba(255,255,255,0.08);
-
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .phase-number {
-  width: 70px;
-  height: 70px;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
 
   display: flex;
@@ -783,16 +787,11 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   font-weight: 300;
   color: #111 !important;
 
-  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 
-  /* ESTE ES EL TRUCO */
-  background: transparent;
-
-  /* hace el "hueco" */
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-
-  overflow: hidden;
+  z-index: 3;
 }
 
 .phase-number::before {
@@ -800,20 +799,19 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   position: absolute;
   inset: 0;
   border-radius: 50%;
+  border: 5px solid rgba(255,255,255,0.18);
+  box-sizing: border-box;
+  pointer-events: none;
+}
 
-  /* crea el borde */
-  padding: 1.5px;
-
-  background: transparent;
-
-  /* máscara para que SOLO el borde sea visible */
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-
-  border: 1px solid rgba(255,255,255,0.2);
+.phase-number::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 5px solid rgba(255,255,255,0.18);
+  box-sizing: border-box;
+  pointer-events: none;
 }
 
         .blue {
