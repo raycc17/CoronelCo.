@@ -168,11 +168,11 @@ export default function Coronelco() {
   width: fit-content;
   gap: 0.04rem;
   color: #ffffff;
-  min-height: 88px;
 }
 
 .brand-logo {
   width: clamp(180px, 24vw, 290px);
+  max-width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
