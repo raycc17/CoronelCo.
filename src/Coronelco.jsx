@@ -1165,7 +1165,6 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     <div className="phase-number">4</div>
   </article>
 </div>
-</div>
         </section>
 
         <section>
