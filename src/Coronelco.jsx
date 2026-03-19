@@ -158,34 +158,44 @@ export default function Coronelco() {
 }
 
 .brand-line {
+  --brand-logo-width: clamp(180px, 24vw, 290px);
+  --brand-logo-height: clamp(42px, 5vw, 68px);
   --logo-visible-offset: clamp(0.5rem, 1vw, 0.82rem);
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: fit-content;
+  width: var(--brand-logo-width);
+  min-width: var(--brand-logo-width);
+  max-width: var(--brand-logo-width);
   gap: 0.12rem;
-  min-height: 86px;
+  min-height: calc(var(--brand-logo-height) + 1rem);
+  flex-shrink: 0;
 }
 
 .brand-logo-wrap {
-  width: clamp(180px, 24vw, 290px);
-  height: clamp(42px, 5vw, 68px);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  width: var(--brand-logo-width);
+  height: var(--brand-logo-height);
+  min-width: var(--brand-logo-width);
+  max-width: var(--brand-logo-width);
+  min-height: var(--brand-logo-height);
+  max-height: var(--brand-logo-height);
+  display: block;
+  overflow: hidden;
   flex-shrink: 0;
 }
 
 .brand-logo {
+  display: block;
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: contain;
+  object-position: left center;
 }
 
 .brand-subtitle {
   margin: 0;
-  align-self: stretch;
+  width: 100%;
   padding-left: var(--logo-visible-offset);
   text-align: left;
   font-size: clamp(0.62rem, 1.2vw, 0.78rem);
@@ -194,7 +204,6 @@ export default function Coronelco() {
   text-transform: uppercase;
   opacity: 0.95;
   font-weight: 300;
-  min-height: 0.95rem;
 }
 
         .brand-title {
@@ -999,6 +1008,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
       <main className="page">
         <header className="top">
+          
 <div className="brand-line">
   <div className="brand-logo-wrap">
     <img
