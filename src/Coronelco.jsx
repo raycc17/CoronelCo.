@@ -771,8 +771,8 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .phase-number {
-  width: 68px;
-  height: 68px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
 
   display: flex;
@@ -781,16 +781,39 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
   font-size: 2rem;
   font-weight: 300;
-  line-height: 1;
-  color: #111111 !important;
+  color: #111 !important;
 
-  background: rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(22px) saturate(180%);
-  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  position: relative;
 
-  border: 10px solid rgba(255, 255, 255, 0.18);
+  /* ESTE ES EL TRUCO */
+  background: transparent;
 
-  box-shadow: none;
+  /* hace el "hueco" */
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  overflow: hidden;
+}
+
+.phase-number::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+
+  /* crea el borde */
+  padding: 1.5px;
+
+  background: transparent;
+
+  /* máscara para que SOLO el borde sea visible */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  border: 1px solid rgba(255,255,255,0.2);
 }
 
         .blue {
