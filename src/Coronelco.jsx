@@ -998,9 +998,8 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   className="brand-logo"
   src="/logoCoronelCo..png"
   alt="Coronel & Co."
-  width="290"
-  height="68"
 />
+            
             <h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
           </div>
         </header>
