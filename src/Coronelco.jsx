@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react'
-
 export default function Coronelco() {
   
     return (
@@ -157,7 +155,6 @@ export default function Coronelco() {
 
 .top {
   margin-bottom: 2.2rem;
-  min-height: 96px;
 }
 
 .brand-line {
@@ -166,16 +163,38 @@ export default function Coronelco() {
   flex-direction: column;
   align-items: flex-start;
   width: fit-content;
-  gap: 0.04rem;
-  color: #ffffff;
+  gap: 0.12rem;
+  min-height: 86px;
+}
+
+.brand-logo-wrap {
+  width: clamp(180px, 24vw, 290px);
+  height: clamp(42px, 5vw, 68px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
 }
 
 .brand-logo {
-  width: clamp(180px, 24vw, 290px);
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   display: block;
   object-fit: contain;
+}
+
+.brand-subtitle {
+  margin: 0;
+  align-self: stretch;
+  padding-left: var(--logo-visible-offset);
+  text-align: left;
+  font-size: clamp(0.62rem, 1.2vw, 0.78rem);
+  line-height: 1.1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.95;
+  font-weight: 300;
+  min-height: 0.95rem;
 }
 
         .brand-title {
@@ -186,20 +205,7 @@ export default function Coronelco() {
           text-transform: uppercase;
         }
 
-        .brand-subtitle {
-          margin: 0;
-          align-self: stretch;
-          padding-left: var(--logo-visible-offset);
-          text-align: left;
-          font-size: clamp(0.62rem, 1.2vw, 0.78rem);
-          line-height: 1.1;
-          letter-spacing: 0.16em;
-          text-transform: uppercase;
-          opacity: 0.95;
-          font-weight: 300;
-        }
-
-        .hero {
+         .hero {
           position: relative;
           isolation: isolate;
           z-index: 10;
@@ -993,15 +999,21 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
       <main className="page">
         <header className="top">
-          <div className="brand-line">
-<img
-  className="brand-logo"
-  src="/logoCoronelCo..png"
-  alt="Coronel & Co."
-/>
-            
-            <h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
-          </div>
+<div className="brand-line">
+  <div className="brand-logo-wrap">
+    <img
+      className="brand-logo"
+      src="/logoCoronelCo..png"
+      alt="Coronel & Co."
+      width="290"
+      height="68"
+      decoding="async"
+      fetchpriority="high"
+    />
+  </div>
+
+  <h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
+</div>
         </header>
 
         <section className="hero">
