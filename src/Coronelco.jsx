@@ -747,6 +747,9 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   min-height: 170px;
   border-radius: 22px;
   padding: 1.25rem 1rem;
+  position: relative;
+  overflow: hidden;
+
   background:
     linear-gradient(135deg,
       rgba(255,255,255,0.28) 0%,
@@ -754,13 +757,40 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
       rgba(255,255,255,0.20) 100%
     ),
     rgba(232,228,255,0.10);
+
   backdrop-filter: blur(26px) saturate(180%);
   -webkit-backdrop-filter: blur(26px) saturate(180%);
+
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.55),
     inset 0 -1px 0 rgba(255,255,255,0.08);
-  position: relative;
-  overflow: hidden;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.phase-number {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+  color: #111111 !important;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(22px) saturate(180%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  box-shadow: none;
 }
 
         .blue {
@@ -1118,11 +1148,23 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
             Esta se construye en la base de la siguiente.
           </p>
 
-     <div className="evolution-cards">
-  <article className="evolution-card"></article>
-  <article className="evolution-card"></article>
-  <article className="evolution-card"></article>
-  <article className="evolution-card"></article>
+       <div className="evolution-cards">
+  <article className="evolution-card">
+    <div className="phase-number">1</div>
+  </article>
+
+  <article className="evolution-card">
+    <div className="phase-number">2</div>
+  </article>
+
+  <article className="evolution-card">
+    <div className="phase-number">3</div>
+  </article>
+
+  <article className="evolution-card">
+    <div className="phase-number">4</div>
+  </article>
+</div>
 </div>
         </section>
 
