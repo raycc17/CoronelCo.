@@ -746,13 +746,12 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 .evolution-card {
   position: relative;
   min-height: 170px;
-  padding: 0;
   border-radius: 22px;
-  background: transparent;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .evolution-card-inner {
+  position: relative;
   min-height: 170px;
   border-radius: 22px;
   padding: 4.2rem 1rem 1.25rem;
@@ -770,6 +769,25 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     inset 0 -1px 0 rgba(255,255,255,0.08);
 }
 
+/* ventana circular en la tarjeta para que el aro vea el fondo real */
+.evolution-card-inner::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  width: 72px;
+  height: 72px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 2;
+
+  /* esto deja visible solo el aro transparente */
+  box-shadow: 0 0 0 999px rgba(255,255,255,0);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
 .phase-number {
   position: absolute;
   top: 18px;
@@ -778,6 +796,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   width: 72px;
   height: 72px;
   border-radius: 50%;
+  z-index: 4;
 
   display: flex;
   align-items: center;
@@ -786,32 +805,34 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   font-size: 2rem;
   font-weight: 300;
   color: #111 !important;
-
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-
-  z-index: 3;
 }
 
+/* aro transparente / vidrio */
 .phase-number::before {
   content: '';
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 5px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.02);
+  border: 5px solid rgba(255,255,255,0.22);
   box-sizing: border-box;
-  pointer-events: none;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
-.phase-number::before {
+/* centro blanco del círculo */
+.phase-number::after {
   content: '';
   position: absolute;
-  inset: 0;
+  inset: 5px;
   border-radius: 50%;
-  border: 5px solid rgba(255,255,255,0.18);
-  box-sizing: border-box;
-  pointer-events: none;
+  background: rgba(255,255,255,0.92);
+  z-index: 0;
+}
+
+.phase-number span {
+  position: relative;
+  z-index: 2;
 }
 
         .blue {
@@ -1169,23 +1190,28 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
             Esta se construye en la base de la siguiente.
           </p>
 
-       <div className="evolution-cards">
+<div className="evolution-cards">
   <article className="evolution-card">
-    <div className="phase-number">1</div>
+    <div className="evolution-card-inner"></div>
+    <div className="phase-number"><span>1</span></div>
   </article>
 
   <article className="evolution-card">
-    <div className="phase-number">2</div>
+    <div className="evolution-card-inner"></div>
+    <div className="phase-number"><span>2</span></div>
   </article>
 
   <article className="evolution-card">
-    <div className="phase-number">3</div>
+    <div className="evolution-card-inner"></div>
+    <div className="phase-number"><span>3</span></div>
   </article>
 
   <article className="evolution-card">
-    <div className="phase-number">4</div>
+    <div className="evolution-card-inner"></div>
+    <div className="phase-number"><span>4</span></div>
   </article>
 </div>
+          
         </section>
 
         <section>
