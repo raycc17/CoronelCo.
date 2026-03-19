@@ -1,9 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import Coronelco from './Coronelco.jsx'
 
-ReactDOM.createRoot(document.getElementById('app')).render(
+const initialLoader = document.getElementById('initial-loader')
+if (initialLoader) {
+  initialLoader.remove()
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Coronelco />
+  </React.StrictMode>
 )
