@@ -745,14 +745,14 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   border-top-right-radius: 999px;
   border-bottom-right-radius: 999px;
 
-  background: rgba(255, 255, 255, 0.22);
+  background: rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(18px) saturate(160%);
   -webkit-backdrop-filter: blur(18px) saturate(160%);
 
   box-shadow: none;
   border: none;
 
-  color: #000000 !important;
+  color: #ffffff !important;
   font-size: 0.62rem;
   font-weight: 600;
   letter-spacing: 0.16em;
@@ -1011,12 +1011,12 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         }
 
         .mini-text {
-          max-width: 740px;
-          font-size: 0.78rem;
-          line-height: 1.5;
-          color: #222;
-          margin-top: 1.1rem;
-        }
+  max-width: 740px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #222;
+  margin-top: 1.1rem;
+}
 
         .steps {
           margin-top: 1.9rem;
