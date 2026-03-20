@@ -803,8 +803,8 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   top: 18px;
   left: 50%;
   transform: translateX(-50%);
-  width: 56px;
-  height: 56px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
 
   display: flex;
