@@ -1424,7 +1424,6 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   <p className="intro-kicker">Y LO HACEMOS ASÍ</p>
 </div>
 
-<section>
   <div className="evolution-header">
     <img
       className="evolution-image"
