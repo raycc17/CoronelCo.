@@ -1439,7 +1439,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 </div>
 
 <div className="evolution-pill-wrap">
-  <span className="evolution-pill">EVOLUCIÓN DE MARCA</span>
+  <span className="evolution-pill">ETAPA DE MARCA</span>
 </div>
           
 
