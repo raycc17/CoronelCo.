@@ -774,18 +774,17 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   overflow: hidden;
 
   /* 🔥 ESTO CREA EL HUECO REAL */
-  -webkit-mask-image: radial-gradient(
-circle 41px at 50% 54px
-transparent 98%,
-    black 100%
-  );
+-webkit-mask-image: radial-gradient(
+  circle 33px at 50% 46px,
+  transparent 98%,
+  black 100%
+);
 
-  mask-image: radial-gradient(
-circle 41px at 50% 54px
-transparent 98%,
-    black 100%
-  );
-}
+mask-image: radial-gradient(
+  circle 33px at 50% 46px,
+  transparent 98%,
+  black 100%
+);
 
 /* ventana circular en la tarjeta para que el aro vea el fondo real */
 .evolution-card-inner::before {
@@ -819,7 +818,7 @@ transparent 98%,
   align-items: center;
   justify-content: center;
 
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 300;
   color: #111 !important;
 
