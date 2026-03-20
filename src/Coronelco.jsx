@@ -787,24 +787,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   );
 }
 
-/* este es el hueco real */
-.evolution-card-hole {
-  position: absolute;
-  top: 15.5px;
-  left: 50%;
-  width: 82px;
-  height: 82px;
-  transform: translateX(-50%);
-  border-radius: 50%;
-  background-image: url('/fondoCoronelCo..png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  z-index: 2;
-  pointer-events: none;
-}
-
 /* ventana circular en la tarjeta para que el aro vea el fondo real */
 .evolution-card-inner::before {
   content: '';
