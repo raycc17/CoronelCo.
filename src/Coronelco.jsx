@@ -1012,7 +1012,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
         .mini-text {
   max-width: 740px;
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.5;
   color: #222;
   margin-top: 1.1rem;
@@ -1343,7 +1343,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 </div>
           
           <p className="mini-text">
-            En Coronel&Co entendemos que el crecimiento de una marca ocurre por etapas.
+            En Coronel & Co entendemos que el crecimiento de una marca ocurre por etapas.
             <br />
             Esta se construye en la base de la siguiente.
           </p>
