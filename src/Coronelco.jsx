@@ -1658,7 +1658,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
         </div>
         <p className="stage-title">Búsqueda de Identidad básica</p>
         <p className="stage-desc">
-          Para marcas que están comenzando </br> y quieren hacerse notar.
+          Para marcas que están comenzando <br /> y quieren hacerse notar.
         </p>
       </div>
 
@@ -1669,7 +1669,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
         </div>
         <p className="stage-title">Búsqueda de identidad estratégica</p>
         <p className="stage-desc">
-          Para marcas que desean posicionarse </br> con claridad y solidez en la mente </br> de su público objetivo.
+          Para marcas que desean posicionarse <br /> con claridad y solidez en la mente <br /> de su público objetivo.
         </p>
       </div>
 
@@ -1680,7 +1680,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
         </div>
         <p className="stage-title">Marca con real propósito</p>
         <p className="stage-desc">
-          Para marcas que desean potenciar </br> su crecimiento y generar impacto.
+          Para marcas que desean potenciar <br /> su crecimiento y generar impacto.
         </p>
       </div>
     </div>
