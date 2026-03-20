@@ -1191,7 +1191,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   font-size: 0.85rem;
   font-weight: 300;
   line-height: 1.5;
-  opacity: 0.8;
 }
 
         .blue {
