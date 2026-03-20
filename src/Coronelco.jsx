@@ -1410,25 +1410,25 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   </div>
 </div>
 
-        <section>
-<div className="intro-block">
-  <p className="center-intro">
-    <span className="intro-light">
-      Nos encargamos del crecimiento de tu marca
-    </span>
-    <span className="intro-strong">
-      de manera estratégica y creativa.
-    </span>
-  </p>
+<section>
+  <div className="intro-block">
+    <p className="center-intro">
+      <span className="intro-light">
+        Nos encargamos del crecimiento de tu marca
+      </span>
+      <span className="intro-strong">
+        de manera estratégica y creativa.
+      </span>
+    </p>
 
-  <p className="intro-kicker">Y LO HACEMOS ASÍ</p>
-</div>
+    <p className="intro-kicker">Y LO HACEMOS ASÍ</p>
+  </div>
 
   <div className="evolution-header">
     <img
       className="evolution-image"
-      src="/brandstage.png"
-      alt="Brand Stage"
+      src="/brandevolution.png"
+      alt="Brand Evolution"
       width="520"
       height="140"
     />
@@ -1440,7 +1440,81 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   </div>
 
   <div className="evolution-pill-wrap">
-    <span className="evolution-pill">ETAPA DE MARCA</span>
+    <span className="evolution-pill">EVOLUCIÓN DE MARCA</span>
+  </div>
+
+  <p className="mini-text">
+    En Coronel & Co entendemos que el crecimiento de una marca ocurre por etapas.
+    <br />
+    Esta se construye en la base de la siguiente.
+  </p>
+
+  <div className="evolution-cards">
+    <article className="evolution-card">
+      <div className="evolution-card-inner">
+        <div className="phase-content">
+          <p className="phase-sub">PRIMERA FASE</p>
+          <p className="phase-title">CONSTRUIR</p>
+          <p className="phase-desc">LA MARCA</p>
+        </div>
+      </div>
+      <div className="phase-number"><span>1</span></div>
+    </article>
+
+    <article className="evolution-card">
+      <div className="evolution-card-inner">
+        <div className="phase-content">
+          <p className="phase-sub">SEGUNDA FASE</p>
+          <p className="phase-title">POSICIONAR</p>
+          <p className="phase-desc">LA MARCA</p>
+        </div>
+      </div>
+      <div className="phase-number"><span>2</span></div>
+    </article>
+
+    <article className="evolution-card">
+      <div className="evolution-card-inner">
+        <div className="phase-content">
+          <p className="phase-sub">TERCERA FASE</p>
+          <p className="phase-title">POTENCIAR</p>
+          <p className="phase-desc">LA MARCA</p>
+        </div>
+      </div>
+      <div className="phase-number"><span>3</span></div>
+    </article>
+
+    <article className="evolution-card">
+      <div className="evolution-card-inner">
+        <div className="phase-content">
+          <p className="phase-sub">CUARTA FASE</p>
+          <p className="phase-title">COMPARTIR</p>
+          <p className="phase-desc">IMPACTO & PROPÓSITO</p>
+          <p className="phase-desc">DE MARCA</p>
+        </div>
+      </div>
+      <div className="phase-number"><span>4</span></div>
+    </article>
+  </div>
+
+  <div style={{ marginTop: '3rem' }}>
+    <div className="evolution-header">
+      <img
+        className="evolution-image"
+        src="/brandstage.png"
+        alt="Brand Stage"
+        width="520"
+        height="140"
+      />
+
+      <div className="evolution-line-wrap" aria-hidden="true">
+        <span className="evolution-dot"></span>
+        <span className="evolution-line"></span>
+      </div>
+    </div>
+
+    <div className="evolution-pill-wrap">
+      <span className="evolution-pill">ETAPA DE MARCA</span>
+    </div>
   </div>
 
   <p className="mini-text">
@@ -1471,7 +1545,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 
       <div className="stage-item">
         <p className="stage-level">Nivel 2</p>
-         <div className="stage-dot">
+        <div className="stage-dot">
           <span>2</span>
         </div>
         <p className="stage-title">Búsqueda de identidad estratégica</p>
