@@ -125,15 +125,16 @@ export default function Coronelco() {
   }
 }
 
-        .page {
-          width: 100%;
-          max-width: none;
-          margin: 0;
-          padding: 2.8rem clamp(1rem, 3vw, 2.4rem) 5rem;
-          position: relative;
-          overflow: hidden;
-          z-index: 1;
-        }
+.page {
+  --page-x: clamp(1rem, 3vw, 2.4rem);
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 2.8rem var(--page-x) 5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
 
 .page,
 .page * {
@@ -727,8 +728,8 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .evolution-pill-wrap {
-  width: 100%;
-  margin: 0.45rem 0 1.35rem;
+  width: calc(100% + (var(--page-x) * 2));
+  margin: 0.45rem 0 1.35rem calc(var(--page-x) * -1);
   display: flex;
   justify-content: flex-start;
   padding-left: 0;
