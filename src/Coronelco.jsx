@@ -800,7 +800,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .phase-number {
   position: absolute;
-  top: 18px;
+  top: 19px;
   left: 50%;
   transform: translateX(-50%);
   width: 52px;
