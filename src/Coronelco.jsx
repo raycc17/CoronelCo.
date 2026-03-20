@@ -1222,7 +1222,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .mini-text-frase {
   max-width: 740px;
-  font-size: 1.70rem;
+  font-size: 1.10rem;
   line-height: 1.2;
   color: #000;
   margin-top: 1.1rem;
