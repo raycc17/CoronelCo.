@@ -1024,10 +1024,10 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 .mini-text-frase {
   max-width: 740px;
   font-size: 1.70rem;
-  line-height: 1.5;
+  line-height: 1.2;
   color: #000;
   margin-top: 1.1rem;
-  font-weight: 500;
+  font-weight: 1000;
 }
 
         .steps {
