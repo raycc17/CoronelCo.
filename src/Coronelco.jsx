@@ -745,7 +745,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   border-top-right-radius: 999px;
   border-bottom-right-radius: 999px;
 
-  background: rgba(0, 0, 0, 0.10);
+  background: rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(18px) saturate(160%);
   -webkit-backdrop-filter: blur(18px) saturate(160%);
 
