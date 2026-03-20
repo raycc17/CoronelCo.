@@ -845,6 +845,35 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   z-index: 2;
 }
 
+.phase-content {
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+.phase-sub {
+  font-size: 0.55rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.7;
+  margin-bottom: 0.4rem;
+}
+
+.phase-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0.1rem 0;
+}
+
+.phase-desc {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0.15rem 0;
+}
+
         .blue {
           color: #3e4de7;
         }
@@ -1201,25 +1230,52 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
           </p>
 
 <div className="evolution-cards">
+
   <article className="evolution-card">
-    <div className="evolution-card-inner"></div>
+    <div className="evolution-card-inner">
+      <div className="phase-content">
+        <p className="phase-sub">PRIMERA FASE</p>
+        <p className="phase-title">CONSTRUIR</p>
+        <p className="phase-desc">LA MARCA</p>
+      </div>
+    </div>
     <div className="phase-number"><span>1</span></div>
   </article>
 
   <article className="evolution-card">
-    <div className="evolution-card-inner"></div>
+    <div className="evolution-card-inner">
+      <div className="phase-content">
+        <p className="phase-sub">SEGUNDA FASE</p>
+        <p className="phase-title">POSICIONAR</p>
+        <p className="phase-desc">LA MARCA</p>
+      </div>
+    </div>
     <div className="phase-number"><span>2</span></div>
   </article>
 
   <article className="evolution-card">
-    <div className="evolution-card-inner"></div>
+    <div className="evolution-card-inner">
+      <div className="phase-content">
+        <p className="phase-sub">TERCERA FASE</p>
+        <p className="phase-title">POTENCIAR</p>
+        <p className="phase-desc">LA MARCA</p>
+      </div>
+    </div>
     <div className="phase-number"><span>3</span></div>
   </article>
 
   <article className="evolution-card">
-    <div className="evolution-card-inner"></div>
+    <div className="evolution-card-inner">
+      <div className="phase-content">
+        <p className="phase-sub">CUARTA FASE</p>
+        <p className="phase-title">COMPARTIR</p>
+        <p className="phase-desc">IMPACTO & PROPÓSITO</p>
+        <p className="phase-desc">DE MARCA</p>
+      </div>
+    </div>
     <div className="phase-number"><span>4</span></div>
   </article>
+
 </div>
           
         </section>
