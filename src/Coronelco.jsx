@@ -497,23 +497,23 @@ box-shadow:
 @keyframes phaseGlow {
   0% {
     transform: translateX(-50%) scale(0.95);
-    box-shadow: 0 0 0 rgba(95,47,198,0);
+    box-shadow: 0 0 0 rgba(255,255,255,0);
     opacity: 0.6;
   }
 
   50% {
     transform: translateX(-50%) scale(1.05);
     box-shadow: 
-      0 0 18px rgba(95,47,198,0.45),
-      0 0 28px rgba(15,100,243,0.35);
+      0 0 18px rgba(255,255,255,0.45),
+      0 0 28px rgba(255,255,255,0.35);
     opacity: 1;
   }
 
   100% {
     transform: translateX(-50%) scale(1);
     box-shadow: 
-      0 0 10px rgba(95,47,198,0.25),
-      0 0 18px rgba(15,100,243,0.2);
+      0 0 10px rgba(255,255,255,0.25),
+      0 0 18px rgba(255,255,255,0.2);
     opacity: 1;
   }
 }
