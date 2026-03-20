@@ -773,20 +773,18 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
   overflow: hidden;
 
-  /* 🔥 ESTO CREA EL HUECO REAL */
--webkit-mask-image: radial-gradient(
-  circle 33px at 50% 46px,
-  transparent 98%,
-  black 100%
-);
+  -webkit-mask-image: radial-gradient(
+    circle 33px at 50% 46px,
+    transparent 98%,
+    black 100%
+  );
+  mask-image: radial-gradient(
+    circle 33px at 50% 46px,
+    transparent 98%,
+    black 100%
+  );
+}
 
-mask-image: radial-gradient(
-  circle 33px at 50% 46px,
-  transparent 98%,
-  black 100%
-);
-
-/* ventana circular en la tarjeta para que el aro vea el fondo real */
 .evolution-card-inner::before {
   content: '';
   position: absolute;
@@ -798,16 +796,11 @@ mask-image: radial-gradient(
   border-radius: 50%;
   pointer-events: none;
   z-index: 2;
-
-  /* esto deja visible solo el aro transparente */
-  box-shadow: 0 0 0 999px rgba(255,255,255,0);
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
 }
 
 .phase-number {
   position: absolute;
-  top: 18px;
+  top: 26px;
   left: 50%;
   transform: translateX(-50%);
   width: 56px;
@@ -822,8 +815,7 @@ mask-image: radial-gradient(
   font-weight: 300;
   color: #111 !important;
 
-  background: rgba(255,255,255,0.95);
-
+  background: rgba(255,255,255,0.94);
   z-index: 5;
 }
 
@@ -833,11 +825,9 @@ mask-image: radial-gradient(
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: rgba(255,255,255,0.02);
-  border: 5px solid rgba(255,255,255,0.22);
+  border: 5px solid rgba(255,255,255,0.18);
   box-sizing: border-box;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  z-index: 1;
 }
 
 /* centro blanco del círculo */
@@ -846,7 +836,7 @@ mask-image: radial-gradient(
   position: absolute;
   inset: 5px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.92);
+  background: rgba(255,255,255,0.94);
   z-index: 0;
 }
 
