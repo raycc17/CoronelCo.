@@ -1444,7 +1444,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 
                     <p className="mini-text">
 No todas las marcas necesitan lo mismo.
-Cada negocio se encuentra en una etapa  <br /> distinta de desarrollo y comprender ese momento nos permite aplicar la estrategia correcta. <br /> 
+Cada negocio se encuentra en una etapa  <br /> distinta de desarrollo y comprender ese momento nos permite aplicar la estrategia correcta.
 Entonces, ¿qué necesita realmente tu marca? <br />
 Cada marca se encuentra en una etapa distinta y nuestras soluciones  <br />  se adaptan al momento y a los objetivos de cada negocio.  <br /> 
             Esta se construye en la base de la siguiente.
