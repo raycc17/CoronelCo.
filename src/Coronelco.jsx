@@ -997,30 +997,48 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .brand-stages {
   margin-top: 3rem;
-}
-
-/* Línea base */
-.stage-track {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-  padding: 0 1rem;
 }
 
-.stage-line {
+/* GRID PRINCIPAL */
+.stage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+/* LÍNEA QUE CRUZA */
+.stage-grid::before {
+  content: '';
   position: absolute;
-  left: 0;
-  right: 0;
+  top: 48px; /* altura del círculo */
+  left: 5%;
+  right: 5%;
   height: 2px;
   background: #000;
-  top: 50%;
-  transform: translateY(-50%);
   z-index: 0;
 }
 
-/* Círculos */
+/* ITEM */
+.stage-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* NIVEL */
+.stage-level {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 0.6rem;
+}
+
+/* CÍRCULO */
 .stage-dot {
   width: 52px;
   height: 52px;
@@ -1035,36 +1053,29 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   font-size: 1.2rem;
   font-weight: 500;
 
-  z-index: 2;
   position: relative;
+  z-index: 2;
 
   box-shadow:
     0 6px 18px rgba(0,0,0,0.15),
     0 2px 6px rgba(0,0,0,0.08);
+
+  margin-bottom: 1rem;
 }
 
-/* Contenido */
-.stage-content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  text-align: center;
+/* ASEGURA BLANCO */
+.stage-dot span {
+  color: #ffffff !important;
 }
 
-.stage-level {
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  opacity: 0.6;
-  margin-bottom: 0.4rem;
-}
-
+/* TITULO */
 .stage-title {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  margin-bottom: 0.6rem;
 }
 
+/* DESCRIPCIÓN */
 .stage-desc {
   font-size: 0.85rem;
   font-weight: 300;
@@ -1541,32 +1552,41 @@ Cada marca se encuentra en una etapa distinta y nuestras soluciones  <br />  se 
 ¿EN QUÉ ETAPA SE <br /> 
 ENCUENTRA TU MARCA?  
           </p>
+          
 <div className="brand-stages">
-
-  <div className="stage-track">
-    <span className="stage-line"></span>
-
-    <div className="stage-dot">
-      <span>1</span>
-    </div>
-
-    <div className="stage-dot">
-      <span>2</span>
-    </div>
-
-    <div className="stage-dot">
-      <span>3</span>
-    </div>
-  </div>
-
-  <div className="stage-content">
+  <div className="stage-grid">
     <div className="stage-item">
       <p className="stage-level">Nivel 1</p>
+      <div className="stage-dot">
+        <span>1</span>
+      </div>
       <p className="stage-title">Búsqueda de Identidad básica</p>
       <p className="stage-desc">
         Para marcas que están comenzando y quieren hacerse notar.
       </p>
     </div>
+    <div className="stage-item">
+      <p className="stage-level">Nivel 2</p>
+      <div className="stage-dot">
+        <span>2</span>
+      </div>
+      <p className="stage-title">Búsqueda de identidad estratégica</p>
+      <p className="stage-desc">
+        Para marcas que desean posicionarse con claridad y solidez en la mente de su público objetivo.
+      </p>
+    </div>
+    <div className="stage-item">
+      <p className="stage-level">Nivel 3</p>
+      <div className="stage-dot">
+        <span>3</span>
+      </div>
+      <p className="stage-title">Marca con real propósito</p>
+      <p className="stage-desc">
+        Para marcas que desean potenciar su crecimiento y generar impacto.
+      </p>
+    </div>
+  </div>
+</div>
 
     <div className="stage-item">
       <p className="stage-level">Nivel 2</p>
