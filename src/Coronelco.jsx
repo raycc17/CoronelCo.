@@ -775,8 +775,8 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
   /* 🔥 ESTO CREA EL HUECO REAL */
   -webkit-mask-image: radial-gradient(
-    circle 41px at 50% 40px,
-    transparent 98%,
+circle 41px at 50% 54px
+transparent 98%,
     black 100%
   );
 
