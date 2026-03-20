@@ -847,7 +847,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .phase-content {
   text-align: center;
-  margin-top: 0.6rem;
+  margin-top: 1.1rem;
 }
 
 .phase-sub {
