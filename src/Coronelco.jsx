@@ -1605,8 +1605,6 @@ ENCUENTRA TU MARCA?
     </div>
   </div>
 
-</div>
-
           <div className="cta-band">
             <div className="cta-static-bar" aria-label="Nuestro enfoque">
               MÉTODO CORE · ESTRATEGIA Y CREATIVIDAD CON PROPÓSITO
