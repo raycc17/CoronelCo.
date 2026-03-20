@@ -494,6 +494,30 @@ box-shadow:
   }
 }
 
+@keyframes phaseGlow {
+  0% {
+    transform: translateX(-50%) scale(0.95);
+    box-shadow: 0 0 0 rgba(95,47,198,0);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 
+      0 0 18px rgba(95,47,198,0.45),
+      0 0 28px rgba(15,100,243,0.35);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 
+      0 0 10px rgba(95,47,198,0.25),
+      0 0 18px rgba(15,100,243,0.2);
+    opacity: 1;
+  }
+}
+
 .ticker {
   width: 100%;
   overflow: hidden;
@@ -798,7 +822,25 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   z-index: 2;
 }
 
+.evolution-card:nth-child(1) .phase-number {
+  animation-delay: 0.1s;
+}
+
+.evolution-card:nth-child(2) .phase-number {
+  animation-delay: 0.35s;
+}
+
+.evolution-card:nth-child(3) .phase-number {
+  animation-delay: 0.6s;
+}
+
+.evolution-card:nth-child(4) .phase-number {
+  animation-delay: 0.85s;
+}
+
 .phase-number {
+  animation: phaseGlow 0.8s ease forwards;
+  animation-iteration-count: infinite;
   position: absolute;
   top: 19px;
   left: 50%;
