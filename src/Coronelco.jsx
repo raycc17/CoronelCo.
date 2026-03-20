@@ -1012,12 +1012,13 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           line-height: 1;
         }
 
-        .mini-text {
+.mini-text {
   max-width: 740px;
-  font-size: 0.95rem;
+  font-size: 1.40rem;
   line-height: 1.5;
   color: #222;
   margin-top: 1.1rem;
+  font-weight: 300;
 }
 
         .steps {
