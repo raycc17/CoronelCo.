@@ -755,6 +755,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   min-height: 170px;
   border-radius: 22px;
   padding: 4.2rem 1rem 1.25rem;
+
   background:
     linear-gradient(135deg,
       rgba(255,255,255,0.28) 0%,
@@ -762,12 +763,28 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
       rgba(255,255,255,0.20) 100%
     ),
     rgba(232,228,255,0.10);
+
   backdrop-filter: blur(26px) saturate(180%);
   -webkit-backdrop-filter: blur(26px) saturate(180%);
+
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.55),
     inset 0 -1px 0 rgba(255,255,255,0.08);
+
   overflow: hidden;
+
+  /* 🔥 ESTO CREA EL HUECO REAL */
+  -webkit-mask-image: radial-gradient(
+    circle 41px at 50% 40px,
+    transparent 98%,
+    black 100%
+  );
+
+  mask-image: radial-gradient(
+    circle 41px at 50% 40px,
+    transparent 98%,
+    black 100%
+  );
 }
 
 /* este es el hueco real */
@@ -809,22 +826,24 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .phase-number {
   position: absolute;
-  top: 21px;
+  top: 18px;
   left: 50%;
   transform: translateX(-50%);
   width: 72px;
   height: 72px;
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 3;
 
   font-size: 2rem;
   font-weight: 300;
   color: #111 !important;
 
-  background: rgba(255,255,255,0.92);
+  background: rgba(255,255,255,0.95);
+
+  z-index: 5;
 }
 
 /* aro transparente / vidrio */
