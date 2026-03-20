@@ -811,8 +811,8 @@ transparent 98%,
   top: 18px;
   left: 50%;
   transform: translateX(-50%);
-  width: 72px;
-  height: 72px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
 
   display: flex;
