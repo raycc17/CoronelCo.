@@ -1195,6 +1195,26 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .evolution-cards {
   grid-template-columns: 1fr;
+  <div style={{ marginTop: '3rem' }}>
+  <div className="evolution-header">
+    <img
+      className="evolution-image"
+      src="/brandstage.png"
+      alt="Brand Stage"
+      width="520"
+      height="140"
+    />
+
+    <div className="evolution-line-wrap" aria-hidden="true">
+      <span className="evolution-dot"></span>
+      <span className="evolution-line"></span>
+    </div>
+  </div>
+
+  <div className="evolution-pill-wrap">
+    <span className="evolution-pill">ETAPAS DE MARCA</span>
+  </div>
+</div>
 }
 
           .hero,
@@ -1403,25 +1423,25 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
         </section>
 
         <section>
-          <div className="heading-row">
-            <h2 className="headline serif">OUR PROCESS</h2>
-            <span className="dot" />
-            <span className="pill">Nuestro proceso</span>
-          </div>
-          <p className="subtitle">¿Cómo trabajamos?</p>
-          <p className="mini-text">
-            Aplicamos nuestro Método Core para crear, posicionar y potenciar marcas con estrategia y claridad.
-          </p>
+ <div className="evolution-header">
+  <img
+    className="evolution-image"
+    src="/brandevolution.png"
+    alt="Brand Evolution"
+    width="520"
+    height="140"
+  />
 
-          <div className="process-wrap">
-            <p className="method-core tiny">MÉTODO CORE</p>
-            <div className="flow">
-              <div className="flow-item"><strong>Comprensión</strong><span>Analizamos la marca, el mercado, la competencia y los objetivos del negocio.</span></div>
-              <div className="flow-item"><strong>Orientación Estratégica</strong><span>Definimos el camino que inicia el crecimiento de la marca.</span></div>
-              <div className="flow-item"><strong>Realización</strong><span>Convertimos la estrategia en activos reales de ejecución y acción con propósito.</span></div>
-              <div className="flow-item"><strong>Expansión</strong><span>Medimos, optimizamos y potenciamos resultados para lograr mejora continua.</span></div>
-            </div>
-          </div>
+  <div className="evolution-line-wrap" aria-hidden="true">
+    <span className="evolution-dot"></span>
+    <span className="evolution-line"></span>
+  </div>
+</div>
+
+<div className="evolution-pill-wrap">
+  <span className="evolution-pill">EVOLUCIÓN DE MARCA</span>
+</div>
+          
 
           <div className="cta-band">
             <div className="cta-static-bar" aria-label="Nuestro enfoque">
