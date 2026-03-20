@@ -822,25 +822,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   z-index: 2;
 }
 
-.evolution-card:nth-child(1) .phase-number {
-  animation-delay: 0.1s;
-}
-
-.evolution-card:nth-child(2) .phase-number {
-  animation-delay: 0.35s;
-}
-
-.evolution-card:nth-child(3) .phase-number {
-  animation-delay: 0.6s;
-}
-
-.evolution-card:nth-child(4) .phase-number {
-  animation-delay: 0.85s;
-}
-
 .phase-number {
-  animation: phaseGlow 0.8s ease forwards;
-  animation-iteration-count: infinite;
   position: absolute;
   top: 19px;
   left: 50%;
@@ -859,6 +841,101 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
   background: rgba(255,255,255,0.94);
   z-index: 5;
+
+  animation-duration: 2.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.evolution-card:nth-child(1) .phase-number {
+  animation-name: phaseGlow1;
+}
+
+.evolution-card:nth-child(2) .phase-number {
+  animation-name: phaseGlow2;
+}
+
+.evolution-card:nth-child(3) .phase-number {
+  animation-name: phaseGlow3;
+}
+
+.evolution-card:nth-child(4) .phase-number {
+  animation-name: phaseGlow4;
+}
+
+@keyframes phaseGlow1 {
+  0%, 18% {
+    transform: translateX(-50%) scale(1.08);
+    box-shadow:
+      0 0 14px rgba(255,255,255,0.55),
+      0 0 24px rgba(255,255,255,0.38);
+    opacity: 1;
+  }
+  19%, 100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: none;
+    opacity: 0.92;
+  }
+}
+
+@keyframes phaseGlow2 {
+  0%, 24% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: none;
+    opacity: 0.92;
+  }
+  25%, 43% {
+    transform: translateX(-50%) scale(1.08);
+    box-shadow:
+      0 0 14px rgba(255,255,255,0.55),
+      0 0 24px rgba(255,255,255,0.38);
+    opacity: 1;
+  }
+  44%, 100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: none;
+    opacity: 0.92;
+  }
+}
+
+@keyframes phaseGlow3 {
+  0%, 49% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: none;
+    opacity: 0.92;
+  }
+  50%, 68% {
+    transform: translateX(-50%) scale(1.08);
+    box-shadow:
+      0 0 14px rgba(255,255,255,0.55),
+      0 0 24px rgba(255,255,255,0.38);
+    opacity: 1;
+  }
+  69%, 100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: none;
+    opacity: 0.92;
+  }
+}
+
+@keyframes phaseGlow4 {
+  0%, 74% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: none;
+    opacity: 0.92;
+  }
+  75%, 93% {
+    transform: translateX(-50%) scale(1.08);
+    box-shadow:
+      0 0 14px rgba(255,255,255,0.55),
+      0 0 24px rgba(255,255,255,0.38);
+    opacity: 1;
+  }
+  94%, 100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: none;
+    opacity: 0.92;
+  }
 }
 
 /* aro transparente / vidrio */
