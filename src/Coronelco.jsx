@@ -1470,9 +1470,9 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
       </div>
 
       <div className="stage-item">
-        <p className="stage-level">Nivel 2</p>
         <div className="stage-dot">
           <span>2</span>
+        <p className="stage-level">Nivel 2</p>
         </div>
         <p className="stage-title">Búsqueda de identidad estratégica</p>
         <p className="stage-desc">
