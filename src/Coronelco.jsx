@@ -1292,26 +1292,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .evolution-cards {
   grid-template-columns: 1fr;
-  <div style={{ marginTop: '3rem' }}>
-  <div className="evolution-header">
-    <img
-      className="evolution-image"
-      src="/brandstage.png"
-      alt="Brand Stage"
-      width="520"
-      height="140"
-    />
-
-    <div className="evolution-line-wrap" aria-hidden="true">
-      <span className="evolution-dot"></span>
-      <span className="evolution-line"></span>
-    </div>
-  </div>
-
-  <div className="evolution-pill-wrap">
-    <span className="evolution-pill">ETAPAS DE MARCA</span>
-  </div>
-</div>
 }
 
 
@@ -1444,177 +1424,86 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   <p className="intro-kicker">Y LO HACEMOS ASÍ</p>
 </div>
 
-          <div className="evolution-header">
-<img
-  className="evolution-image"
-  src="/brandevolution.png"
-  alt="Brand Evolution"
-  width="520"
-  height="140"
-/>
-            
-  <div className="evolution-line-wrap" aria-hidden="true">
-    <span className="evolution-dot"></span>
-    <span className="evolution-line"></span>
-  </div>
-</div>
+<section>
+  <div className="evolution-header">
+    <img
+      className="evolution-image"
+      src="/brandstage.png"
+      alt="Brand Stage"
+      width="520"
+      height="140"
+    />
 
-          <div className="evolution-pill-wrap">
-  <span className="evolution-pill">EVOLUCIÓN DE MARCA</span>
-</div>
-          
-          <p className="mini-text">
-            En Coronel & Co entendemos que el crecimiento de una marca ocurre por etapas.
-            <br />
-            Esta se construye en la base de la siguiente.
-          </p>
-
-<div className="evolution-cards">
-
-  <article className="evolution-card">
-    <div className="evolution-card-inner">
-      <div className="phase-content">
-        <p className="phase-sub">PRIMERA FASE</p>
-        <p className="phase-title">CONSTRUIR</p>
-        <p className="phase-desc">LA MARCA</p>
-      </div>
-    </div>
-    <div className="phase-number"><span>1</span></div>
-  </article>
-
-  <article className="evolution-card">
-    <div className="evolution-card-inner">
-      <div className="phase-content">
-        <p className="phase-sub">SEGUNDA FASE</p>
-        <p className="phase-title">POSICIONAR</p>
-        <p className="phase-desc">LA MARCA</p>
-      </div>
-    </div>
-    <div className="phase-number"><span>2</span></div>
-  </article>
-
-  <article className="evolution-card">
-    <div className="evolution-card-inner">
-      <div className="phase-content">
-        <p className="phase-sub">TERCERA FASE</p>
-        <p className="phase-title">POTENCIAR</p>
-        <p className="phase-desc">LA MARCA</p>
-      </div>
-    </div>
-    <div className="phase-number"><span>3</span></div>
-  </article>
-
-  <article className="evolution-card">
-    <div className="evolution-card-inner">
-      <div className="phase-content">
-        <p className="phase-sub">CUARTA FASE</p>
-        <p className="phase-title">COMPARTIR</p>
-        <p className="phase-desc">IMPACTO & PROPÓSITO</p>
-        <p className="phase-desc">DE MARCA</p>
-      </div>
-    </div>
-    <div className="phase-number"><span>4</span></div>
-  </article>
-
-</div>
-          
-        </section>
-
-        <section>
- <div className="evolution-header">
-  <img
-    className="evolution-image"
-    src="/brandevolution.png"
-    alt="Brand Evolution"
-    width="520"
-    height="140"
-  />
-
-  <div className="evolution-line-wrap" aria-hidden="true">
-    <span className="evolution-dot"></span>
-    <span className="evolution-line"></span>
-  </div>
-</div>
-
-<div className="evolution-pill-wrap">
-  <span className="evolution-pill">ETAPA DE MARCA</span>
-</div>
-
-                    <p className="mini-text">
-No todas las marcas necesitan lo mismo.
-Cada negocio se encuentra en una etapa  <br /> distinta de desarrollo y comprender ese momento nos permite aplicar la estrategia correcta.
-Entonces, ¿qué necesita realmente tu marca? <br />
-Cada marca se encuentra en una etapa distinta y nuestras soluciones  <br />  se adaptan al momento y a los objetivos de cada negocio.  <br /> 
-            Esta se construye en la base de la siguiente. <br />
-          </p>
-
-    <p className="mini-text-frase">
-¿EN QUÉ ETAPA SE <br /> 
-ENCUENTRA TU MARCA?  
-          </p>
-          
-<div className="brand-stages">
-  <div className="stage-grid">
-    <div className="stage-item">
-      <p className="stage-level">Nivel 1</p>
-      <div className="stage-dot">
-        <span>1</span>
-      </div>
-      <p className="stage-title">Búsqueda de Identidad básica</p>
-      <p className="stage-desc">
-        Para marcas que están comenzando y quieren hacerse notar.
-      </p>
-    </div>
-    <div className="stage-item">
-      <p className="stage-level">Nivel 2</p>
-      <div className="stage-dot">
-        <span>2</span>
-      </div>
-      <p className="stage-title">Búsqueda de identidad estratégica</p>
-      <p className="stage-desc">
-        Para marcas que desean posicionarse con claridad y solidez en la mente de su público objetivo.
-      </p>
-    </div>
-    <div className="stage-item">
-      <p className="stage-level">Nivel 3</p>
-      <div className="stage-dot">
-        <span>3</span>
-      </div>
-      <p className="stage-title">Marca con real propósito</p>
-      <p className="stage-desc">
-        Para marcas que desean potenciar su crecimiento y generar impacto.
-      </p>
-    </div>
-  </div>
-</div>
-
-    <div className="stage-item">
-      <p className="stage-level">Nivel 2</p>
-      <p className="stage-title">Búsqueda de identidad estratégica</p>
-      <p className="stage-desc">
-        Para marcas que desean posicionarse con claridad y solidez en la mente de su público objetivo.
-      </p>
-    </div>
-
-    <div className="stage-item">
-      <p className="stage-level">Nivel 3</p>
-      <p className="stage-title">Marca con real propósito</p>
-      <p className="stage-desc">
-        Para marcas que desean potenciar su crecimiento y generar impacto.
-      </p>
+    <div className="evolution-line-wrap" aria-hidden="true">
+      <span className="evolution-dot"></span>
+      <span className="evolution-line"></span>
     </div>
   </div>
 
-          <div className="cta-band">
-            <div className="cta-static-bar" aria-label="Nuestro enfoque">
-              MÉTODO CORE · ESTRATEGIA Y CREATIVIDAD CON PROPÓSITO
-            </div>
-            <div className="cta-buttons">
-              <span className="pill">Aprende & crece</span>
-              <span className="pill">Educa para una mejor toma de decisiones</span>
-            </div>
-          </div>
-        </section>
+  <div className="evolution-pill-wrap">
+    <span className="evolution-pill">ETAPA DE MARCA</span>
+  </div>
+
+  <p className="mini-text">
+    No todas las marcas necesitan lo mismo. Cada negocio se encuentra en una etapa
+    distinta de desarrollo y comprender ese momento nos permite aplicar la estrategia correcta.
+    Entonces, ¿qué necesita realmente tu marca?
+    Cada marca se encuentra en una etapa distinta y nuestras soluciones se adaptan
+    al momento y a los objetivos de cada negocio.
+  </p>
+
+  <p className="mini-text-frase">
+    ¿EN QUÉ ETAPA SE <br />
+    ENCUENTRA TU MARCA?
+  </p>
+
+  <div className="brand-stages">
+    <div className="stage-grid">
+      <div className="stage-item">
+        <p className="stage-level">Nivel 1</p>
+        <div className="stage-dot">
+          <span>1</span>
+        </div>
+        <p className="stage-title">Búsqueda de Identidad básica</p>
+        <p className="stage-desc">
+          Para marcas que están comenzando y quieren hacerse notar.
+        </p>
+      </div>
+
+      <div className="stage-item">
+        <p className="stage-level">Nivel 2</p>
+        <div className="stage-dot">
+          <span>2</span>
+        </div>
+        <p className="stage-title">Búsqueda de identidad estratégica</p>
+        <p className="stage-desc">
+          Para marcas que desean posicionarse con claridad y solidez en la mente de su público objetivo.
+        </p>
+      </div>
+
+      <div className="stage-item">
+        <p className="stage-level">Nivel 3</p>
+        <div className="stage-dot">
+          <span>3</span>
+        </div>
+        <p className="stage-title">Marca con real propósito</p>
+        <p className="stage-desc">
+          Para marcas que desean potenciar su crecimiento y generar impacto.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div className="cta-band">
+    <div className="cta-static-bar" aria-label="Nuestro enfoque">
+      MÉTODO CORE · ESTRATEGIA Y CREATIVIDAD CON PROPÓSITO
+    </div>
+    <div className="cta-buttons">
+      <span className="pill">Aprende & crece</span>
+      <span className="pill">Educa para una mejor toma de decisiones</span>
+    </div>
+  </div>
+</section>
 
         <footer className="manifest">
           <h3 className="serif">MANIFIESTO</h3>
