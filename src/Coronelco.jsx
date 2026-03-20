@@ -940,6 +940,117 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   }
 }
 
+.stage-dot {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  position: relative;
+  z-index: 2;
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.15),
+    0 2px 6px rgba(0,0,0,0.08);
+
+  margin-bottom: 1rem;
+
+  animation-duration: 2.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.stage-item:nth-child(1) .stage-dot {
+  animation-name: stageGlow1;
+}
+
+.stage-item:nth-child(2) .stage-dot {
+  animation-name: stageGlow2;
+}
+
+.stage-item:nth-child(3) .stage-dot {
+  animation-name: stageGlow3;
+}
+
+@keyframes stageGlow1 {
+  0%, 24% {
+    transform: scale(1.08);
+    box-shadow:
+      0 0 14px rgba(255,255,255,0.55),
+      0 0 24px rgba(255,255,255,0.38),
+      0 6px 18px rgba(0,0,0,0.15),
+      0 2px 6px rgba(0,0,0,0.08);
+    opacity: 1;
+  }
+  25%, 100% {
+    transform: scale(1);
+    box-shadow:
+      0 6px 18px rgba(0,0,0,0.15),
+      0 2px 6px rgba(0,0,0,0.08);
+    opacity: 0.92;
+  }
+}
+
+@keyframes stageGlow2 {
+  0%, 32% {
+    transform: scale(1);
+    box-shadow:
+      0 6px 18px rgba(0,0,0,0.15),
+      0 2px 6px rgba(0,0,0,0.08);
+    opacity: 0.92;
+  }
+  33%, 57% {
+    transform: scale(1.08);
+    box-shadow:
+      0 0 14px rgba(255,255,255,0.55),
+      0 0 24px rgba(255,255,255,0.38),
+      0 6px 18px rgba(0,0,0,0.15),
+      0 2px 6px rgba(0,0,0,0.08);
+    opacity: 1;
+  }
+  58%, 100% {
+    transform: scale(1);
+    box-shadow:
+      0 6px 18px rgba(0,0,0,0.15),
+      0 2px 6px rgba(0,0,0,0.08);
+    opacity: 0.92;
+  }
+}
+
+@keyframes stageGlow3 {
+  0%, 65% {
+    transform: scale(1);
+    box-shadow:
+      0 6px 18px rgba(0,0,0,0.15),
+      0 2px 6px rgba(0,0,0,0.08);
+    opacity: 0.92;
+  }
+  66%, 90% {
+    transform: scale(1.08);
+    box-shadow:
+      0 0 14px rgba(255,255,255,0.55),
+      0 0 24px rgba(255,255,255,0.38),
+      0 6px 18px rgba(0,0,0,0.15),
+      0 2px 6px rgba(0,0,0,0.08);
+    opacity: 1;
+  }
+  91%, 100% {
+    transform: scale(1);
+    box-shadow:
+      0 6px 18px rgba(0,0,0,0.15),
+      0 2px 6px rgba(0,0,0,0.08);
+    opacity: 0.92;
+  }
+}
+
 /* aro transparente / vidrio */
 .phase-number::before {
   content: '';
