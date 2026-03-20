@@ -1228,6 +1228,15 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   font-weight: 1000;
 }
 
+.mini-text-recalcados {
+  max-width: 740px;
+  font-size: 0.60rem;
+  line-height: 1.2;
+  color: #000;
+  margin-top: 1.1rem;
+  font-weight: 1000;
+}
+
         .steps {
           margin-top: 1.9rem;
           display: grid;
@@ -1676,6 +1685,10 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
       </div>
     </div>
   </div>
+
+        <p className="mini-text-recalcados">
+  | Calma, nosotros podemos hacerte un diagnostico gratuito e indicarte en qué nivel se encuentra tu marca o negocio.
+  </p>
 
   <div className="cta-band">
     <div className="cta-static-bar" aria-label="Nuestro enfoque">
