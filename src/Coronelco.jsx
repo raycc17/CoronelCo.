@@ -1016,9 +1016,18 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   max-width: 740px;
   font-size: 1.25rem;
   line-height: 1.5;
-  color: #222;
+  color: #000;
   margin-top: 1.1rem;
   font-weight: 200;
+}
+
+.mini-text-frase {
+  max-width: 740px;
+  font-size: 1.70rem;
+  line-height: 1.5;
+  color: #000;
+  margin-top: 1.1rem;
+  font-weight: 500;
 }
 
         .steps {
@@ -1447,9 +1456,14 @@ No todas las marcas necesitan lo mismo.
 Cada negocio se encuentra en una etapa  <br /> distinta de desarrollo y comprender ese momento nos permite aplicar la estrategia correcta.
 Entonces, ¿qué necesita realmente tu marca? <br />
 Cada marca se encuentra en una etapa distinta y nuestras soluciones  <br />  se adaptan al momento y a los objetivos de cada negocio.  <br /> 
-            Esta se construye en la base de la siguiente.
+            Esta se construye en la base de la siguiente. <br />
           </p>
-          
+
+    <p className="mini-text-frase">
+¿EN QUÉ ETAPA SE <br /> 
+ENCUENTRA TU MARCA?  
+          </p>
+
 
           <div className="cta-band">
             <div className="cta-static-bar" aria-label="Nuestro enfoque">
