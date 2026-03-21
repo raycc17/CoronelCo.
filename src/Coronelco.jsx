@@ -808,7 +808,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   margin: 0.45rem 0 1.35rem calc(var(--page-x) * -1);
   display: flex;
   justify-content: flex-start;
-  padding-left: 0;
+  padding-left: clamp(0rem, 0.2vw, 0.3rem);
 }
 
 .evolution-pill {
@@ -816,8 +816,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   align-items: center;
   justify-content: center;
   padding: 0.72rem 1.3rem 0.72rem 1.9rem;
-  padding-left: 0.15rem;
-
+  
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-top-right-radius: 999px;
