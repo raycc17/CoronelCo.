@@ -14,16 +14,17 @@ export default function Coronelco() {
           box-sizing: border-box;
         }
 
-        body {
-          margin: 0;
-          color: #000000;
-          background-color: #ffffff;
-          background-image: url('/fondoCoronelCo..png');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-        }
+body {
+  margin: 0;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  color: #000000;
+  background-color: #ffffff;
+}
 
 .loader-screen {
   position: fixed;
@@ -626,6 +627,22 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.background-zone {
+  position: relative;
+  z-index: 0;
+
+  background-image: url('/fondoCoronelCo..png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* esto hace que se vea elegante */
+  background-attachment: fixed;
+
+  /* espacio superior para transición suave */
+  padding-top: 2rem;
 }
 
 .center-intro {
@@ -1478,7 +1495,9 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           </h1>
         </section>
 
-        <div className="mid-claim-wrap">
+   <div className="background-zone">
+     
+     <div className="mid-claim-wrap">
           <div className="glass-banner">
             <span className="glass-text">ESTRATEGIA CON PROPÓSITO · CREATIVIDAD CON INTENCIÓN</span>
             <div className="light-sweep" aria-hidden="true" />
@@ -1701,6 +1720,8 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     </div>
   </div>
 </section>
+     </div>
+
 
         <footer className="manifest">
           <h3 className="serif">MANIFIESTO</h3>
