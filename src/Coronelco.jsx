@@ -1,4 +1,17 @@
+import { useEffect, useState } from "react";
+
 export default function Coronelco() {
+  const [showBg, setShowBg] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBg(window.scrollY > 180);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   
     return (
     <>
@@ -227,6 +240,43 @@ body {
 
   z-index: 2;
   pointer-events: none;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+.site-shell {
+  position: relative;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.scroll-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background-image: url('/fondoCoronelCo..png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  opacity: 0;
+  transition: opacity 700ms ease;
+}
+
+.site-shell.bg-visible .scroll-bg {
+  opacity: 1;
+}
+
+.page {
+  position: relative;
+  z-index: 1;
 }
 
          .hero {
@@ -650,16 +700,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 .background-zone {
   position: relative;
   z-index: 0;
-
-  background-image: url('/fondoCoronelCo..png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  /* esto hace que se vea elegante */
-  background-attachment: fixed;
-
-  /* espacio superior para transición suave */
+  background: transparent;
   padding-top: 2rem;
 }
 
@@ -1487,7 +1528,11 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         }
       `}</style>
 
+  <div className={`site-shell ${showBg ? "bg-visible" : ""}`}>
+      <div className="scroll-bg" aria-hidden="true"></div>
+
       <main className="page">
+        
         <header className="top">
           
 <div className="brand-line">
@@ -1748,6 +1793,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
           <p className="big serif">DIAGNÓSTICO</p>
         </footer>
       </main>
-    </>
-  )
+    </div>
+  </>
+)
 }
