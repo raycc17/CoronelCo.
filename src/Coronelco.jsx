@@ -1773,6 +1773,27 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   | Calma, nosotros podemos hacerte un diagnostico gratuito e indicarte en qué nivel se encuentra tu marca o negocio.
   </p>
 
+  <div style={{ marginTop: '3rem' }}>
+  <div className="evolution-header">
+    <img
+      className="evolution-image"
+      src="/ourprocess.png"
+      alt="Our Process"
+      width="520"
+      height="140"
+    />
+
+    <div className="evolution-line-wrap" aria-hidden="true">
+      <span className="evolution-dot"></span>
+      <span className="evolution-line"></span>
+    </div>
+  </div>
+
+  <div className="evolution-pill-wrap">
+    <span className="evolution-pill">OUR PROCESS</span>
+  </div>
+</div>
+
   <div className="cta-band">
     <div className="cta-static-bar" aria-label="Nuestro enfoque">
       MÉTODO CORE · ESTRATEGIA Y CREATIVIDAD CON PROPÓSITO
