@@ -815,7 +815,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.72rem 1.3rem 0.72rem 1rem;
+  padding: 0.72rem 1.3rem 0.72rem 0.2rem;
 
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
