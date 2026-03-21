@@ -1790,7 +1790,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   </div>
 
   <div className="evolution-pill-wrap">
-    <span className="evolution-pill">OUR PROCESS</span>
+    <span className="evolution-pill">NUESTRO PROCESO</span>
   </div>
 </div>
 
