@@ -1840,6 +1840,9 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     </article>
   </div>
 
+    <br />
+  <br />
+
   <div style={{ marginTop: '3rem' }}>
     <div className="evolution-header">
       <img
@@ -1914,6 +1917,9 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
         <p className="mini-text-recalcados">
   | Calma, nosotros podemos hacerte un diagnostico gratuito e indicarte en qué nivel se encuentra tu marca o negocio.
   </p>
+
+    <br />
+  <br />
 
   <div style={{ marginTop: '3rem' }}>
   <div className="evolution-header">
@@ -1991,9 +1997,6 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     </div>
   </div>
 </div>
-
-  <br />
-  <br />
   
     <div className="method-detail">
   <p className="method-label">METODOLOGÍA</p>
