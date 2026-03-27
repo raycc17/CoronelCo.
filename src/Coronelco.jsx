@@ -1384,6 +1384,73 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   }
 }
 
+.method-detail {
+  margin-top: 3rem;
+}
+
+/* título */
+.method-label {
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.method-title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+/* grid CORE */
+.core-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.8rem;
+}
+
+/* tarjetas glass */
+.core-item {
+  height: 110px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.55),
+    inset 0 -1px 0 rgba(255,255,255,0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+/* círculo */
+.core-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  color: #000;
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
         .steps {
           margin-top: 1.9rem;
           display: grid;
@@ -1871,6 +1938,29 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     <div className="method-pill">CORE</div>
     <div className="method-pill">RARE</div>
     <div className="method-pill">CRIT</div>
+  </div>
+</div>
+
+<div className="method-detail">
+  <p className="method-label">METODOLOGÍA</p>
+  <h3 className="method-title">CORE</h3>
+
+  <div className="core-grid">
+    <div className="core-item">
+      <div className="core-circle">C</div>
+    </div>
+
+    <div className="core-item">
+      <div className="core-circle">O</div>
+    </div>
+
+    <div className="core-item">
+      <div className="core-circle">R</div>
+    </div>
+
+    <div className="core-item">
+      <div className="core-circle">E</div>
+    </div>
   </div>
 </div>
 
