@@ -1543,18 +1543,23 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         .cta-static-bar {
           width: 100%;
           border-radius: 0;
-          background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
+          background: linear-gradient(90deg, #5f2fc6 0%, #0f64f3 100%);
           color: #ffffff !important;
           box-shadow: 0 14px 30px rgba(41, 78, 231, 0.24);
           margin: 0 auto 1.1rem;
-          padding: 0.9rem 1rem;
-          font-size: 0.65rem;
+          padding: 0.6rem 1rem;
+          font-size: 0.7rem;
           letter-spacing: 0.12em;
           text-transform: uppercase;
           font-weight: 700;
           text-align: center;
           line-height: 1.2;
-        }
+          }
+
+          .cta-static-bar,
+          .cta-static-bar * {
+          color: #ffffff !important;
+          }
 
         .cta-buttons {
           margin-top: 1.3rem;
