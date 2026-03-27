@@ -1561,7 +1561,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
  .cta-static-bar {
   width: 100%;
-  border-radius: 50%;
+  border-radius: 10%;
   background: linear-gradient(90deg, #5f2fc6 0%, #0f64f3 100%);
   color: #ffffff !important;
 
