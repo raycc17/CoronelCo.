@@ -1325,10 +1325,10 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   width: 100%;
   background: #000000;
   color: #ffffff !important;
-  border-radius: 18px;
+  border-radius: 7px;
   text-align: center;
   padding: 1.15rem 1rem;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   font-weight: 400;
   letter-spacing: 0.45em;
   text-transform: uppercase;
@@ -1347,7 +1347,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   align-items: center;
   justify-content: center;
   min-height: 54px;
-  border-radius: 18px;
+  border-radius: 7px;
 
   background: rgba(255, 255, 255, 0.24);
   backdrop-filter: blur(18px) saturate(160%);
@@ -1357,7 +1357,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     inset 0 1px 0 rgba(255,255,255,0.55),
     inset 0 -1px 0 rgba(255,255,255,0.08);
 
-  color: rgba(0, 0, 0, 0.28) !important;
+  color: rgba(0, 0, 0, 0.70) !important;
   font-size: 0.95rem;
   font-weight: 300;
   letter-spacing: 0.55em;
