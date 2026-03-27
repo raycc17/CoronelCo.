@@ -1314,6 +1314,75 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   font-weight: 1000;
 }
 
+.triple-method-wrap {
+  width: 100%;
+  max-width: 980px;
+  margin: 1.8rem auto 0;
+  position: relative;
+}
+
+.triple-method-bar {
+  width: 100%;
+  background: #000000;
+  color: #ffffff !important;
+  border-radius: 18px;
+  text-align: center;
+  padding: 1.15rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.triple-method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.method-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.55),
+    inset 0 -1px 0 rgba(255,255,255,0.08);
+
+  color: rgba(0, 0, 0, 0.28) !important;
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: 0.55em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 980px) {
+  .triple-method-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .triple-method-bar {
+    font-size: 0.8rem;
+    letter-spacing: 0.28em;
+    padding: 1rem 0.8rem;
+  }
+
+  .method-pill {
+    min-height: 50px;
+    font-size: 0.82rem;
+    letter-spacing: 0.38em;
+  }
+}
+
         .steps {
           margin-top: 1.9rem;
           display: grid;
@@ -1791,6 +1860,16 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 
   <div className="evolution-pill-wrap">
     <span className="evolution-pill">NUESTRO PROCESO</span>
+  </div>
+</div>
+
+  <div className="triple-method-wrap">
+  <div className="triple-method-bar">TRIPLE METODOLOGÍA</div>
+
+  <div className="triple-method-grid">
+    <div className="method-pill">CORE</div>
+    <div className="method-pill">RARE</div>
+    <div className="method-pill">CRIT</div>
   </div>
 </div>
 
