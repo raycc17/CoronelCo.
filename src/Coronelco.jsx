@@ -2012,7 +2012,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 
   <div className="cta-band">
     <div className="cta-static-bar" aria-label="Nuestro enfoque">
-      MÉTODO CORE · ESTRATEGIA Y CREATIVIDAD CON PROPÓSITO
+      ACCEDE A UN DIAGNÓSTICO GRATIS
     </div>
     <div className="cta-buttons">
       <span className="pill">Aprende & crece</span>
