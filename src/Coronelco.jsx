@@ -1358,7 +1358,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     inset 0 1px 0 rgba(255,255,255,0.55),
     inset 0 -1px 0 rgba(255,255,255,0.08);
 
-  color: rgba(0, 0, 0, 0.100) !important;
+  color: rgba(0, 0, 0, 0.99) !important;
   font-size: 0.90rem;
   font-weight: 300;
   letter-spacing: 0.55em;
