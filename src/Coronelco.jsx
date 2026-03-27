@@ -1966,29 +1966,6 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 
   <div className="method-detail">
   <p className="method-label">METODOLOGÍA</p>
-  <h3 className="method-title">CRIT</h3>
-
-  <div className="core-grid">
-    <div className="core-item">
-      <div className="core-circle">C</div>
-    </div>
-
-    <div className="core-item">
-      <div className="core-circle">R</div>
-    </div>
-
-    <div className="core-item">
-      <div className="core-circle">I</div>
-    </div>
-
-    <div className="core-item">
-      <div className="core-circle">T</div>
-    </div>
-  </div>
-</div>
-
-  <div className="method-detail">
-  <p className="method-label">METODOLOGÍA</p>
   <h3 className="method-title">RARE</h3>
 
   <div className="core-grid">
@@ -2006,6 +1983,29 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 
     <div className="core-item">
       <div className="core-circle">E</div>
+    </div>
+  </div>
+</div>
+
+    <div className="method-detail">
+  <p className="method-label">METODOLOGÍA</p>
+  <h3 className="method-title">CRIT</h3>
+
+  <div className="core-grid">
+    <div className="core-item">
+      <div className="core-circle">C</div>
+    </div>
+
+    <div className="core-item">
+      <div className="core-circle">R</div>
+    </div>
+
+    <div className="core-item">
+      <div className="core-circle">I</div>
+    </div>
+
+    <div className="core-item">
+      <div className="core-circle">T</div>
     </div>
   </div>
 </div>
