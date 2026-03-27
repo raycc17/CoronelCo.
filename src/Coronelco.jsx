@@ -1964,6 +1964,29 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   </div>
 </div>
 
+  <div className="method-detail">
+  <p className="method-label">METODOLOGÍA</p>
+  <h3 className="method-title">RARE</h3>
+
+  <div className="core-grid">
+    <div className="core-item">
+      <div className="core-circle">R</div>
+    </div>
+
+    <div className="core-item">
+      <div className="core-circle">A</div>
+    </div>
+
+    <div className="core-item">
+      <div className="core-circle">R</div>
+    </div>
+
+    <div className="core-item">
+      <div className="core-circle">E</div>
+    </div>
+  </div>
+</div>
+
   <div className="cta-band">
     <div className="cta-static-bar" aria-label="Nuestro enfoque">
       MÉTODO CORE · ESTRATEGIA Y CREATIVIDAD CON PROPÓSITO
