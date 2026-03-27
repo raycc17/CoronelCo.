@@ -1346,7 +1346,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 45x;
+  min-height: 49x;
   border-radius: 5px;
 
   background: rgba(255, 255, 255, 0.24);
