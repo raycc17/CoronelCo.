@@ -1992,6 +1992,9 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   </div>
 </div>
 
+  <br />
+  <br />
+  
     <div className="method-detail">
   <p className="method-label">METODOLOGÍA</p>
   <h3 className="method-title">CRIT</h3>
@@ -2014,7 +2017,10 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     </div>
   </div>
 </div>
-
+  
+<br />
+  <br />
+  
   <div className="cta-band">
     <div className="cta-static-bar" aria-label="Nuestro enfoque">
       ACCEDE A UN DIAGNÓSTICO GRATIS
