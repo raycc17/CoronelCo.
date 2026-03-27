@@ -1306,7 +1306,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .mini-text-recalcados {
-  max-width: 740px;
+  max-width: 680px;
   font-size: 0.90rem;
   line-height: 1.2;
   color: #000;
