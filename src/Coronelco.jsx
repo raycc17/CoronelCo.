@@ -1544,7 +1544,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           width: 100%;
           border-radius: 0;
           background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
-          color: #ffffff; important!
+          color: #ffffff !important;
           box-shadow: 0 14px 30px rgba(41, 78, 231, 0.24);
           margin: 0 auto 1.1rem;
           padding: 0.9rem 1rem;
