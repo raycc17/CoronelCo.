@@ -23,6 +23,27 @@ useEffect(() => {
   return () => clearInterval(interval);
 }, []);
 
+const rotatingGoals = [
+  "lanzamiento",
+  "posicionamiento",
+  "recordación",
+  "conversión",
+  "atracción",
+  "crecimiento",
+  "reputación",
+  "fidelización"
+];
+
+const [goalIndex, setGoalIndex] = useState(0);
+
+  useEffect(() => {
+  const interval = setInterval(() => {
+    setGoalIndex((prev) => (prev + 1) % rotatingGoals.length);
+  }, 2200); // un poco más lento que el de arriba
+
+  return () => clearInterval(interval);
+}, []);
+  
   useEffect(() => {
     const handleScroll = () => {
       setShowBg(window.scrollY > 180);
@@ -1116,6 +1137,18 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 0.01em;
+}
+
+/* versión más pequeña del carrusel de abajo */
+.launch-word.small {
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 700;
+}
+
+/* separaciones más finas */
+.launch-message {
+  margin: 3rem auto 0;
+  gap: 0.4rem;
 }
 
 @keyframes launchWordFade {
@@ -2256,6 +2289,32 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   </p>
 </div>
 
+<div className="launch-message">
+  
+  <p className="launch-top">Tu</p>
+
+  <div className="launch-word-wrap">
+    <span key={rotatingWords[wordIndex]} className="launch-word">
+      {rotatingWords[wordIndex]}
+    </span>
+  </div>
+
+  <p className="launch-text">
+    según el <strong>momento u objetivo</strong> de
+  </p>
+
+  <div className="launch-word-wrap small">
+    <span key={rotatingGoals[goalIndex]} className="launch-word small">
+      {rotatingGoals[goalIndex]}
+    </span>
+  </div>
+
+  <p className="launch-text">
+    de tu marca
+  </p>
+
+</div>
+  
 </div>
     <div className="cta-buttons">
       <span className="pill">Aprende & crece</span>
