@@ -1135,16 +1135,18 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .cta-row {
   margin-top: 2.4rem;
-  display: grid;
-  grid-template-columns: 1fr auto;
+
+  display: flex;
   align-items: center;
-  column-gap: 0.8rem;
-  width: min(100%, 1100px);
+  justify-content: center; /* 👈 clave */
+
+  gap: 3rem; /* 👈 controla distancia entre imagen y píldora */
 }
 
 .cta-left {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .cta-image {
@@ -1156,8 +1158,8 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .cta-right {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: center;
 }
 
 .cta-pill {
