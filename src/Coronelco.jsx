@@ -2142,7 +2142,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   {/* DERECHA */}
   <p className="method-text-light right">
     Cada intervención es distinta.
-    <br /><br />
+    <br />
     Puede ir desde la creación de una marca, el desarrollo de su presencia digital o la construcción de sistemas estratégicos, hasta la ejecución de campañas, contenidos y procesos de comunicación que acompañan su crecimiento.
   </p>
 
