@@ -1152,67 +1152,67 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   gap: 0.4rem;
 }
 
-/* CONTENEDOR GENERAL */
 .cta-row {
-  margin-top: 3rem;
-
-  display: flex;
+  margin-top: 2.4rem;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  column-gap: 1.2rem;
+  width: 100%;
 }
 
-/* IZQUIERDA */
 .cta-left {
   display: flex;
   align-items: center;
 }
 
 .cta-image {
-  width: 800px; /* ajustable */
+  width: clamp(280px, 42vw, 620px);
   height: auto;
   object-fit: contain;
+  display: block;
 }
 
-/* DERECHA */
 .cta-right {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
-/* PÍLDORA */
 .cta-pill {
   background: #000000;
   color: #ffffff !important;
-
-  padding: 0.9rem 1.4rem;
+  padding: 1rem 1.6rem;
   border-radius: 999px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   text-align: center;
-
+  min-width: 260px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.18);
 }
 
-/* TEXTO */
+.cta-pill,
+.cta-pill * {
+  color: #ffffff !important;
+}
+
 .cta-line {
-  line-height: 1.1;
+  line-height: 1.08;
 }
 
 .cta-line.light {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 300;
   letter-spacing: 0.08em;
 }
 
 .cta-line.bold {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
 }
 
 @keyframes launchWordFade {
