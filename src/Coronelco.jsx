@@ -1006,6 +1006,35 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   color: #000;
 }
 
+.method-text-block {
+  max-width: 1100px; /* 👈 más ancho para permitir izquierda/derecha */
+  margin: 2.5rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+/* CENTRO */
+.method-text-block .center {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* IZQUIERDA */
+.method-text-block .left {
+  align-self: flex-start;
+  max-width: 520px;
+  text-align: left;
+}
+
+/* DERECHA */
+.method-text-block .right {
+  align-self: flex-end;
+  max-width: 520px;
+  text-align: left; /* 👈 importante: texto sigue leyendo normal */
+}
+
 @keyframes phaseGlow1 {
   0%, 18% {
     transform: translateX(-50%) scale(1.08);
@@ -2097,39 +2126,44 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
       ACCEDE A UN DIAGNÓSTICO GRATIS
     </div>
 
-    <div className="method-text-block">
-  <p className="method-text-strong">
+<div className="method-text-block">
+
+  {/* CENTRO */}
+  <p className="method-text-strong center">
     Intervenimos la marca en distintos niveles. Según su necesidad en el momento resguardando la visión que perdurará en el tiempo.
   </p>
 
-  <p className="method-text-light">
+  {/* IZQUIERDA */}
+  <p className="method-text-light left">
     Una web, una campaña o una pieza de contenido no son el punto de partida.
     Son decisiones estratégicas que dependen del momento de la marca.
   </p>
 
-  <p className="method-text-light">
+  {/* DERECHA */}
+  <p className="method-text-light right">
     Cada intervención es distinta.
-  </p>
-
-  <p className="method-text-light">
+    <br /><br />
     Puede ir desde la creación de una marca, el desarrollo de su presencia digital o la construcción de sistemas estratégicos, hasta la ejecución de campañas, contenidos y procesos de comunicación que acompañan su crecimiento.
   </p>
 
-  <p className="method-text-light">
-    Dependiendo del momento de la marca, el trabajo puede involucrar:
-  </p>
+  {/* IZQUIERDA */}
+  <div className="left">
+    <p className="method-text-light">
+      Dependiendo del momento de la marca, el trabajo puede involucrar:
+    </p>
 
-  <ul className="method-list">
-    <li>desarrollo web y e-commerce</li>
-    <li>diseño de marca e identidad visual</li>
-    <li>creación de contenido y comunicación</li>
-    <li>estrategias de marketing y campañas publicitarias</li>
-    <li>sistemas digitales y estructuración de marca</li>
-    <li>presentaciones estratégicas y comunicación B2B</li>
-    <li>…entre muchos otros.</li>
-  </ul>
+    <ul className="method-list">
+      <li>desarrollo web y e-commerce</li>
+      <li>diseño de marca e identidad visual</li>
+      <li>creación de contenido y comunicación</li>
+      <li>estrategias de marketing y campañas publicitarias</li>
+      <li>sistemas digitales y estructuración de marca</li>
+      <li>presentaciones estratégicas y comunicación B2B</li>
+      <li>…entre muchos otros.</li>
+    </ul>
+  </div>
+
 </div>
-    
     <div className="cta-buttons">
       <span className="pill">Aprende & crece</span>
       <span className="pill">Educa para una mejor toma de decisiones</span>
