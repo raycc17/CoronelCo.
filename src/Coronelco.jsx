@@ -1148,7 +1148,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .cta-image {
-  width: 800px;
+  width: 700px;
   height: auto;
   object-fit: contain;
   display: block;
