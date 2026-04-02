@@ -1032,7 +1032,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 .method-text-block .right {
   align-self: flex-end;
   max-width: 520px;
-  text-align: left; /* 👈 importante: texto sigue leyendo normal */
+  text-align: right; /* 👈 importante: texto sigue leyendo normal */
 }
 
 @keyframes phaseGlow1 {
