@@ -961,6 +961,51 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   animation-name: phaseGlow4;
 }
 
+.method-text-block {
+  max-width: 820px;
+  margin: 2rem 0 0;
+}
+
+/* PRIMER TEXTO (FUERTE) */
+.method-text-strong {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+/* RESTO DEL TEXTO (FINO) */
+.method-text-light {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+/* LISTA */
+.method-list {
+  margin-top: 0.6rem;
+  padding-left: 1.2rem;
+  list-style: none;
+}
+
+.method-list li {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
+/* puntito elegante */
+.method-list li::before {
+  content: "•";
+  position: absolute;
+  left: -1rem;
+  color: #000;
+}
+
 @keyframes phaseGlow1 {
   0%, 18% {
     transform: translateX(-50%) scale(1.08);
@@ -2051,6 +2096,40 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     <div className="cta-static-bar" aria-label="Nuestro enfoque">
       ACCEDE A UN DIAGNÓSTICO GRATIS
     </div>
+
+    <div className="method-text-block">
+  <p className="method-text-strong">
+    Intervenimos la marca en distintos niveles. Según su necesidad en el momento resguardando la visión que perdurará en el tiempo.
+  </p>
+
+  <p className="method-text-light">
+    Una web, una campaña o una pieza de contenido no son el punto de partida.
+    Son decisiones estratégicas que dependen del momento de la marca.
+  </p>
+
+  <p className="method-text-light">
+    Cada intervención es distinta.
+  </p>
+
+  <p className="method-text-light">
+    Puede ir desde la creación de una marca, el desarrollo de su presencia digital o la construcción de sistemas estratégicos, hasta la ejecución de campañas, contenidos y procesos de comunicación que acompañan su crecimiento.
+  </p>
+
+  <p className="method-text-light">
+    Dependiendo del momento de la marca, el trabajo puede involucrar:
+  </p>
+
+  <ul className="method-list">
+    <li>desarrollo web y e-commerce</li>
+    <li>diseño de marca e identidad visual</li>
+    <li>creación de contenido y comunicación</li>
+    <li>estrategias de marketing y campañas publicitarias</li>
+    <li>sistemas digitales y estructuración de marca</li>
+    <li>presentaciones estratégicas y comunicación B2B</li>
+    <li>…entre muchos otros.</li>
+  </ul>
+</div>
+    
     <div className="cta-buttons">
       <span className="pill">Aprende & crece</span>
       <span className="pill">Educa para una mejor toma de decisiones</span>
