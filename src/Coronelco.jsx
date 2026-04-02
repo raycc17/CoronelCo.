@@ -977,7 +977,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 /* RESTO DEL TEXTO (FINO) */
 .method-text-light {
   font-size: 1.30rem;
-  line-height: 0.7;
+  line-height: 1.1;
   font-weight: 300;
   margin-bottom: 1rem;
   color: #000000;
@@ -993,7 +993,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 .method-list li {
   font-size: 1.30rem;
   font-weight: 300;
-  line-height: 0.7;
+  line-height: 1.1;
   margin-bottom: 0.4rem;
   position: relative;
 }
@@ -1008,7 +1008,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 .method-text-block {
   max-width: 1100px; /* 👈 más ancho para permitir izquierda/derecha */
-  margin: 2.5rem auto 0;
+  margin: 1.5rem auto 0;
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
