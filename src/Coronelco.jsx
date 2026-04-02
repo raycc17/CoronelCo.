@@ -1112,7 +1112,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .launch-top {
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.3rem;
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 0.01em;
