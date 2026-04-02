@@ -1104,6 +1104,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translateY(-4px);
 }
 
 .launch-word {
