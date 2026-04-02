@@ -976,7 +976,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 /* RESTO DEL TEXTO (FINO) */
 .method-text-light {
-  font-size: 0.95rem;
+  font-size: 1.30rem;
   line-height: 1.1;
   font-weight: 300;
   margin-bottom: 1rem;
@@ -991,7 +991,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .method-list li {
-  font-size: 0.9rem;
+  font-size: 1.30rem;
   font-weight: 300;
   line-height: 1.1;
   margin-bottom: 0.4rem;
