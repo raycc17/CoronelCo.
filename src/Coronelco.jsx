@@ -1071,7 +1071,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .launch-message {
-  margin: 2.8rem auto 0;
+  margin: 2.0rem auto 0;
   text-align: center;
   display: flex;
   flex-direction: column;
