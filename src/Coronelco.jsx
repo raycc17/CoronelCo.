@@ -451,31 +451,8 @@ html, body, #root {
 }
 
         .glass-banner {
-          position: relative;
-          z-index: 2;
-          overflow: hidden;
-          width: 100%;
-padding: 1rem 1.35rem;
-          text-align: center;
-          font-size: 0.68rem;
-          line-height: 1.2;
-          letter-spacing: 0.25em;
-          text-transform: uppercase;
-          color: #ffffff;
-border-radius: 30px;
-background:
-            linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.18) 100%),
-            rgba(232, 228, 255, 0.10);
-          border: 0;
-          backdrop-filter: blur(28px) saturate(180%);
-          -webkit-backdrop-filter: blur(28px) saturate(180%);
-box-shadow:
-  inset 0 1px 0 rgba(255, 255, 255, 0.52),
-  inset 0 -1px 0 rgba(255, 255, 255, 0.10),
-  0 22px 50px rgba(84, 67, 185, 0.22),
-  0 8px 18px rgba(117, 168, 255, 0.10);
-          isolation: isolate;
-        }
+                  display: none;
+}
 
         .glass-banner::before {
          display: none;
