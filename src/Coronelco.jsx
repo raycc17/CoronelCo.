@@ -968,8 +968,8 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 /* PRIMER TEXTO (FUERTE) */
 .method-text-strong {
-  font-size: 1.05rem;
-  line-height: 1.5;
+  font-size: 1.60rem;
+  line-height: 1.1;
   font-weight: 700;
   margin-bottom: 1.2rem;
 }
