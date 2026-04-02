@@ -977,7 +977,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 /* RESTO DEL TEXTO (FINO) */
 .method-text-light {
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.1;
   font-weight: 300;
   margin-bottom: 1rem;
   color: #000000;
