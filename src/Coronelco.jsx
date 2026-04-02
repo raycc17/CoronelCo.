@@ -1100,7 +1100,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .launch-word-wrap {
-  min-height: 60px;
+  min-height: 58px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1133,7 +1133,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .launch-top {
-  margin: 0 0 0.1rem;
+  margin: -0.2rem;
   font-size: 1.8rem;
   font-weight: 300;
   letter-spacing: 0.01em;
