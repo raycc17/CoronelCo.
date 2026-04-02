@@ -18,7 +18,7 @@ const [wordIndex, setWordIndex] = useState(0);
 useEffect(() => {
   const interval = setInterval(() => {
     setWordIndex((prev) => (prev + 1) % rotatingWords.length);
-  }, 1800);
+  }, 800);
 
   return () => clearInterval(interval);
 }, []);
@@ -39,7 +39,7 @@ const [goalIndex, setGoalIndex] = useState(0);
   useEffect(() => {
   const interval = setInterval(() => {
     setGoalIndex((prev) => (prev + 1) % rotatingGoals.length);
-  }, 2200); // un poco más lento que el de arriba
+  }, 800); // un poco más lento que el de arriba
 
   return () => clearInterval(interval);
 }, []);
