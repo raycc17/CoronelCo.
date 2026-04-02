@@ -1007,11 +1007,11 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .method-text-block {
-  max-width: 1100px; /* 👈 más ancho para permitir izquierda/derecha */
+  max-width: 900px; /* 👈 más ancho para permitir izquierda/derecha */
   margin: 1.5rem auto 0;
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1rem;
 }
 
 /* CENTRO */
