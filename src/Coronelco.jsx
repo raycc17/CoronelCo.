@@ -265,24 +265,6 @@ body {
           text-transform: uppercase;
         }
 
-        .background-zone::before {
-  content: '';
-  position: absolute;
-  top: -80px;
-  left: 0;
-  width: 100%;
-  height: 80px;
-
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    rgba(255,255,255,0) 100%
-  );
-
-  z-index: 2;
-  pointer-events: none;
-}
-
 html, body, #root {
   margin: 0;
   padding: 0;
