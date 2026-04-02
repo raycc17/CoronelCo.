@@ -3,6 +3,26 @@ import { useEffect, useState } from "react";
 export default function Coronelco() {
   const [showBg, setShowBg] = useState(false);
 
+  const rotatingWords = [
+  "logo",
+  "web",
+  "estrategia",
+  "análisis",
+  "presentaciones",
+  "campaña",
+  "contenido"
+];
+
+const [wordIndex, setWordIndex] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setWordIndex((prev) => (prev + 1) % rotatingWords.length);
+  }, 1800);
+
+  return () => clearInterval(interval);
+}, []);
+
   useEffect(() => {
     const handleScroll = () => {
       setShowBg(window.scrollY > 180);
@@ -1047,6 +1067,65 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     transform: translateX(-50%) scale(1);
     box-shadow: none;
     opacity: 0.92;
+  }
+}
+
+.launch-message {
+  margin: 2.8rem auto 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.launch-word-wrap {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.launch-word {
+  display: inline-block;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  text-transform: lowercase;
+
+  background: linear-gradient(135deg, #0f64f3 0%, #5f2fc6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+
+  animation: launchWordFade 0.5s ease;
+}
+
+.launch-text {
+  margin: 0.5rem 0 0;
+  max-width: 700px;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 300;
+  text-align: center;
+}
+
+.launch-top {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+@keyframes launchWordFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -2162,6 +2241,20 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
       <li>…entre muchos otros.</li>
     </ul>
   </div>
+
+  <div className="launch-message">
+  <p className="launch-top">Tu</p>
+
+  <div className="launch-word-wrap">
+    <span key={rotatingWords[wordIndex]} className="launch-word">
+      {rotatingWords[wordIndex]}
+    </span>
+  </div>
+
+  <p className="launch-text">
+    según el momento u objetivo de lanzamiento de tu marca
+  </p>
+</div>
 
 </div>
     <div className="cta-buttons">
