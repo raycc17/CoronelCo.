@@ -1152,6 +1152,69 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   gap: 0.4rem;
 }
 
+/* CONTENEDOR GENERAL */
+.cta-row {
+  margin-top: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* IZQUIERDA */
+.cta-left {
+  display: flex;
+  align-items: center;
+}
+
+.cta-image {
+  width: 220px; /* ajustable */
+  height: auto;
+  object-fit: contain;
+}
+
+/* DERECHA */
+.cta-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* PÍLDORA */
+.cta-pill {
+  background: #000000;
+  color: #ffffff !important;
+
+  padding: 0.9rem 1.4rem;
+  border-radius: 999px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+/* TEXTO */
+.cta-line {
+  line-height: 1.1;
+}
+
+.cta-line.light {
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+}
+
+.cta-line.bold {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
 @keyframes launchWordFade {
   from {
     opacity: 0;
@@ -2302,6 +2365,24 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 </div>
   
 </div>
+
+    <div className="cta-row">
+
+  {/* IZQUIERDA → imagen */}
+  <div className="cta-left">
+    <img src="/tumarca..png" alt="Tu marca" className="cta-image" />
+  </div>
+
+  {/* DERECHA → píldora */}
+  <div className="cta-right">
+    <div className="cta-pill">
+      <span className="cta-line light">accede a una</span>
+      <span className="cta-line bold">asesoría gratuita</span>
+    </div>
+  </div>
+
+</div>
+    
     <div className="cta-buttons">
       <span className="pill">Aprende & crece</span>
       <span className="pill">Educa para una mejor toma de decisiones</span>
