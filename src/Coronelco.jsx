@@ -1120,7 +1120,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   color: transparent !important;
   -webkit-text-fill-color: transparent !important;
 
-  animation: launchWordFade 0.2s ease;
+  animation: launchWordFade 0.1s ease;
 }
 
 .launch-text {
