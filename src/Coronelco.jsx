@@ -986,7 +986,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 /* LISTA */
 .method-list {
   margin-top: 0.6rem;
-  padding-left: 1.2rem;
+  padding-left: 0.8rem;
   list-style: none;
 }
 
