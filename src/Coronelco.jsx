@@ -2275,22 +2275,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     </ul>
   </div>
 
-  <div className="launch-message">
-  <p className="launch-top">Tu</p>
-
-  <div className="launch-word-wrap">
-    <span key={rotatingWords[wordIndex]} className="launch-word">
-      {rotatingWords[wordIndex]}
-    </span>
-  </div>
-
-  <p className="launch-text">
-    según el momento u objetivo de lanzamiento de tu marca
-  </p>
-</div>
-
 <div className="launch-message">
-  
   <p className="launch-top">Tu</p>
 
   <div className="launch-word-wrap">
