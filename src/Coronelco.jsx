@@ -1071,7 +1071,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
 
 .launch-message {
-  margin: 2.0rem auto 0;
+  margin: 2.8rem auto 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1088,7 +1088,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 .launch-word {
   display: inline-block;
   font-size: clamp(2.2rem, 5vw, 4rem);
-  line-height: 1;
+  line-height: 0.5;
   font-weight: 800;
   letter-spacing: -0.04em;
   text-transform: lowercase;
@@ -1099,14 +1099,14 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   color: transparent !important;
   -webkit-text-fill-color: transparent !important;
 
-  animation: launchWordFade 0.3s ease;
+  animation: launchWordFade 0.2s ease;
 }
 
 .launch-text {
   margin: 0.5rem 0 0;
   max-width: 700px;
   font-size: 1.8rem;
-  line-height: 1.3;
+  line-height: 0.5;
   font-weight: 300;
   text-align: center;
 }
@@ -1115,7 +1115,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   margin: 0 0 0.4rem;
   font-size: 1.8rem;
   font-weight: 300;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 @keyframes launchWordFade {
