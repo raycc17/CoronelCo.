@@ -478,13 +478,8 @@ box-shadow:
         }
 
         .glass-banner::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(120deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0.03) 44%, rgba(255, 255, 255, 0.18) 100%);
-          z-index: 1;
-          pointer-events: none;
-        }
+         display: none;
+}
 
         .glass-banner::after {
           content: '';
@@ -1155,11 +1150,10 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 .cta-row {
   margin-top: 2.4rem;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  justify-content: space-between;
-  column-gap: 1.2rem;
-  width: 100%;
+  column-gap: 0.8rem;
+  width: min(100%, 1100px);
 }
 
 .cta-left {
