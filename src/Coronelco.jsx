@@ -1141,8 +1141,8 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 /* versión más pequeña del carrusel de abajo */
 .launch-word.small {
-  font-size: clamp(1.4rem, 3vw, 2.2rem);
-  font-weight: 700;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 800;
 }
 
 /* separaciones más finas */
