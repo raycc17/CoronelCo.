@@ -229,6 +229,70 @@ body {
   flex-shrink: 0;
 }
 
+.top {
+  margin-bottom: 2.2rem;
+}
+
+.top-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.portal-pill {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 46px;
+  padding: 0.85rem 1.3rem;
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
+  background-size: 180% 180%;
+
+  box-shadow:
+    0 10px 24px rgba(15, 100, 243, 0.18),
+    0 8px 20px rgba(95, 47, 198, 0.16);
+
+  animation: portalGradientMove 4s ease-in-out infinite;
+}
+
+.portal-pill span {
+  color: #ffffff !important;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.portal-pill,
+.portal-pill * {
+  color: #ffffff !important;
+}
+
+@keyframes portalGradientMove {
+  0% {
+    background-position: 0% 0%;
+    transform: translateY(0);
+  }
+  50% {
+    background-position: 100% 100%;
+    transform: translateY(-1px);
+  }
+  100% {
+    background-position: 0% 0%;
+    transform: translateY(0);
+  }
+}
+
 .brand-logo-bg {
   width: var(--brand-logo-width);
   height: var(--brand-logo-height);
@@ -1931,18 +1995,22 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
       <main className="page">
         
         <header className="top">
-          
-<div className="brand-line">
-  <div
-    className="brand-logo-bg"
-    role="img"
-    aria-label="Coronel & Co."
-  ></div>
+  <div className="top-bar">
+    <div className="brand-line">
+      <div
+        className="brand-logo-bg"
+        role="img"
+        aria-label="Coronel & Co."
+      ></div>
 
-  <h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
-</div>
-          
-        </header>
+      <h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
+    </div>
+
+    <div className="portal-pill">
+      <span>portal clientes</span>
+    </div>
+  </div>
+</header>
 
         <section className="hero">
           <div className="hero-glow" aria-hidden="true"></div>
