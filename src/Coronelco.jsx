@@ -258,8 +258,8 @@ body {
   /* 👇 AQUÍ está la clave */
   background: linear-gradient(
     135deg,
-    rgba(95, 47, 198, 0.5) 0%,
-    rgba(15, 100, 243, 0.5) 100%
+    rgba(95, 47, 198, 0.1) 0%,
+    rgba(15, 100, 243, 0.1) 100%
   );
 
   background-size: 180% 180%;
@@ -267,8 +267,6 @@ body {
   box-shadow:
     0 10px 24px rgba(15, 100, 243, 0.12),
     0 8px 20px rgba(95, 47, 198, 0.10);
-
-  animation: portalGradientMove 4s ease-in-out infinite;
 }
 
 .portal-pill span {
@@ -283,21 +281,6 @@ body {
 .portal-pill,
 .portal-pill * {
   color: #ffffff !important;
-}
-
-@keyframes portalGradientMove {
-  0% {
-    background-position: 0% 0%;
-    transform: translateY(0);
-  }
-  50% {
-    background-position: 100% 100%;
-    transform: translateY(-1px);
-  }
-  100% {
-    background-position: 0% 0%;
-    transform: translateY(0);
-  }
 }
 
 .brand-logo-bg {
