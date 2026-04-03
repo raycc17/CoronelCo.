@@ -258,19 +258,15 @@ body {
   /* 👇 AQUÍ está la clave */
   background: linear-gradient(
     135deg,
-    rgba(95, 47, 198, 0.1) 0%,
-    rgba(15, 100, 243, 0.1) 100%
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.1) 100%
   );
 
   background-size: 180% 180%;
-
-  box-shadow:
-    0 10px 24px rgba(15, 100, 243, 0.12),
-    0 8px 20px rgba(95, 47, 198, 0.10);
 }
 
 .portal-pill span {
-  color: #ffffff !important;
+  color: #000000;
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -280,7 +276,7 @@ body {
 
 .portal-pill,
 .portal-pill * {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 .brand-logo-bg {
