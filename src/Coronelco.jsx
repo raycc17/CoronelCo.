@@ -258,8 +258,8 @@ body {
   /* 👇 AQUÍ está la clave */
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.1) 100%
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
   );
 
   background-size: 180% 180%;
@@ -267,7 +267,7 @@ body {
 
 .portal-pill span {
   color: #000000;
-  font-size: 0.68rem;
+  font-size: 0.5rem;
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
