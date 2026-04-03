@@ -245,6 +245,7 @@ body {
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
+  margin-top: 0.35rem;
 
   display: inline-flex;
   align-items: center;
@@ -254,12 +255,18 @@ body {
   padding: 0.85rem 1.3rem;
   border-radius: 999px;
 
-  background: linear-gradient(135deg, #5f2fc6 0%, #0f64f3 100%);
+  /* 👇 AQUÍ está la clave */
+  background: linear-gradient(
+    135deg,
+    rgba(95, 47, 198, 0.5) 0%,
+    rgba(15, 100, 243, 0.5) 100%
+  );
+
   background-size: 180% 180%;
 
   box-shadow:
-    0 10px 24px rgba(15, 100, 243, 0.18),
-    0 8px 20px rgba(95, 47, 198, 0.16);
+    0 10px 24px rgba(15, 100, 243, 0.12),
+    0 8px 20px rgba(95, 47, 198, 0.10);
 
   animation: portalGradientMove 4s ease-in-out infinite;
 }
