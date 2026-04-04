@@ -1587,6 +1587,63 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
           line-height: 1;
         }
 
+        /* CONTENEDOR GENERAL */
+.benefits-section {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* IMAGEN */
+.benefits-header img {
+  width: clamp(220px, 28vw, 420px);
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
+
+/* GRID TARJETAS */
+.benefits-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: min(100%, 900px);
+}
+
+/* TARJETAS */
+.benefit-card {
+  padding: 1.6rem 1.4rem;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  min-height: 120px;
+}
+
+/* TEXTO */
+.benefit-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.benefit-card,
+.benefit-card * {
+  color: #ffffff !important;
+}
+
 .mini-text {
   max-width: 740px;
   font-size: 1.10rem;
@@ -2414,6 +2471,33 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
       <span className="cta-line light">ACCEDE A UNA</span>
       <span className="cta-line bold">ASESORÍA GRATUITA</span>
     </div>
+  </div>
+
+</div>
+
+    <div className="benefits-section">
+
+  {/* TÍTULO / IMAGEN */}
+  <div className="benefits-header">
+    <img src="/beneficios.png" alt="Beneficios clientes" />
+  </div>
+
+  {/* TARJETAS */}
+  <div className="benefits-cards">
+
+    <div className="benefit-card">
+      <p>
+        Coronel & Co. Campus<br />
+        Portal Elearning para tu equipo/colaborador
+      </p>
+    </div>
+
+    <div className="benefit-card">
+      <p>
+        Acceso a un espacio de formación diseñado para equipos y colaboradores.
+      </p>
+    </div>
+
   </div>
 
 </div>
