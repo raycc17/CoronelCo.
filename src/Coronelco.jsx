@@ -250,12 +250,11 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 9999px; /* 👈 clave */
+  border-radius: 9999px;
   
-  min-height: 55px; /* antes ~46px */
-  padding: 0.6rem 1.6rem; /* antes 0.85 / 1.3 */
+  min-height: 44px;
+  padding: 0.7rem 2rem;
 
-  /* 👇 AQUÍ está la clave */
   background: linear-gradient(
     135deg,
     rgba(0, 0, 0, 0.012) 0%,
