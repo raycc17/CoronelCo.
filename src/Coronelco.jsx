@@ -235,7 +235,7 @@ body {
 
 .top-bar {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 1.2rem;
   width: 100%;
@@ -245,15 +245,15 @@ body {
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
-  margin-top: 0.35rem;
+  margin-top: 8px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   min-height: 46px;
-  padding: 0.85rem 1.3rem;
-  border-radius: 999px;
+  min-height: 55px; /* antes ~46px */
+  padding: 1rem 1.6rem; /* antes 0.85 / 1.3 */
 
   /* 👇 AQUÍ está la clave */
   background: linear-gradient(
