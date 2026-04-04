@@ -2411,8 +2411,8 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   {/* DERECHA → píldora */}
   <div className="cta-right">
     <div className="cta-pill">
-      <span className="cta-line light">accede a una</span>
-      <span className="cta-line bold">asesoría gratuita</span>
+      <span className="cta-line light">ACCEDE A UNA</span>
+      <span className="cta-line bold">ASESORÍA GRATUITA</span>
     </div>
   </div>
 
