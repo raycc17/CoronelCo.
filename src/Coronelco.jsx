@@ -259,8 +259,8 @@ body {
   /* 👇 AQUÍ está la clave */
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0.05) 0%,
-    rgba(0, 0, 0, 0.05) 100%
+    rgba(0, 0, 0, 0.02) 0%,
+    rgba(0, 0, 0, 0.02) 100%
   );
 
   background-size: 180% 180%;
