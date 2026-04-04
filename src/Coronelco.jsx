@@ -252,15 +252,14 @@ body {
   justify-content: center;
   border-radius: 9999px; /* 👈 clave */
   
-  min-height: 46px;
   min-height: 55px; /* antes ~46px */
-  padding: 1rem 1.6rem; /* antes 0.85 / 1.3 */
+  padding: 0.6rem 1.6rem; /* antes 0.85 / 1.3 */
 
   /* 👇 AQUÍ está la clave */
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0.02) 0%,
-    rgba(0, 0, 0, 0.02) 100%
+    rgba(0, 0, 0, 0.012) 0%,
+    rgba(0, 0, 0, 0.012) 100%
   );
 
   background-size: 180% 180%;
