@@ -250,7 +250,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
+  border-radius: 9999px; /* 👈 clave */
+  
   min-height: 46px;
   min-height: 55px; /* antes ~46px */
   padding: 1rem 1.6rem; /* antes 0.85 / 1.3 */
