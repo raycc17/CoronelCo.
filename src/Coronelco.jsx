@@ -1993,7 +1993,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     </div>
 
     <div className="portal-pill">
-      <span>portal clientes</span>
+      <span>PORTAL BUSINESS</span>
     </div>
   </div>
 </header>
