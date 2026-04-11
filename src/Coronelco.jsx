@@ -2544,7 +2544,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   <p className="word">Contacto</p>
   <p className="big serif">DIAGNÓSTICO</p>
 </footer>
-        </main>
+      </main>
     </div>
   </>
 )
