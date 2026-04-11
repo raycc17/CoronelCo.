@@ -2530,12 +2530,35 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     </div>
   </div>
 
+  <div className="benefits-section">
+    <div className="benefits-header">
+      <img src="/beneficios.png" alt="Beneficios clientes" />
+    </div>
+
+    <div className="benefits-cards">
+      <div className="benefit-card">
+        <p>
+          Coronel & Co. Campus
+          <br />
+          Portal Elearning para tu equipo/colaborador
+        </p>
+      </div>
+
+      <div className="benefit-card">
+        <p>
+          Acceso a un espacio de formación diseñado para equipos y colaboradores.
+        </p>
+      </div>
+    </div>
+  </div>
+
   <div className="cta-buttons">
     <span className="pill">Aprende & crece</span>
     <span className="pill">Educa para una mejor toma de decisiones</span>
   </div>
 </div>
-</section>
+
+      </section>
 </div>
 
 <footer className="manifest">
