@@ -2321,45 +2321,88 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   <p className="method-label">METODOLOGÍA</p>
   <h3 className="method-title">CORE</h3>
 
-  <div className="core-grid">
-    <div className="core-item">
-      <div className="core-circle">C</div>
-    </div>
-
-    <div className="core-item">
-      <div className="core-circle">O</div>
-    </div>
-
-    <div className="core-item">
-      <div className="core-circle">R</div>
-    </div>
-
-    <div className="core-item">
-      <div className="core-circle">E</div>
-    </div>
+ <div className="core-item">
+  <div className="core-circle">C</div>
+  <div className="core-text">
+    <p className="core-title">Cuestionar</p>
+    <p className="core-desc">
+      Entendemos el negocio, el contexto y la esencia de la marca.
+    </p>
   </div>
 </div>
 
+<div className="core-item">
+  <div className="core-circle">O</div>
+  <div className="core-text">
+    <p className="core-title">Orientar</p>
+    <p className="core-desc">
+      Definimos dirección, posicionamiento y enfoque estratégico.
+    </p>
+  </div>
+</div>
+
+<div className="core-item">
+  <div className="core-circle">R</div>
+  <div className="core-text">
+    <p className="core-title">Realizar</p>
+    <p className="core-desc">
+      Construimos la marca: identidad, presencia y sistema.
+    </p>
+  </div>
+</div>
+
+<div className="core-item">
+  <div className="core-circle">E</div>
+  <div className="core-text">
+    <p className="core-title">Expandir</p>
+    <p className="core-desc">
+      Impulsamos crecimiento, posicionamiento y evolución.
+    </p>
+  </div>
+</div>
+  
   <div className="method-detail">
   <p className="method-label">METODOLOGÍA</p>
   <h3 className="method-title">RARE</h3>
 
-  <div className="core-grid">
-    <div className="core-item">
-      <div className="core-circle">R</div>
-    </div>
+ <div className="core-item">
+  <div className="core-circle">R</div>
+  <div className="core-text">
+    <p className="core-title">Reinvestigar</p>
+    <p className="core-desc">
+      Observamos el mercado, entendemos lo que ya existe y detectamos patrones repetidos.
+    </p>
+  </div>
+</div>
 
-    <div className="core-item">
-      <div className="core-circle">A</div>
-    </div>
+<div className="core-item">
+  <div className="core-circle">A</div>
+  <div className="core-text">
+    <p className="core-title">Alternativas</p>
+    <p className="core-desc">
+      Exploramos caminos distintos a lo habitual. <br />
+      Buscamos nuevas formas de abordar la marca.
+    </p>
+  </div>
+</div>
 
-    <div className="core-item">
-      <div className="core-circle">R</div>
-    </div>
+<div className="core-item">
+  <div className="core-circle">R</div>
+  <div className="core-text">
+    <p className="core-title">Reinvención</p>
+    <p className="core-desc">
+      Transformamos ideas en propuestas que rompen lo común y generan diferenciación real.
+    </p>
+  </div>
+</div>
 
-    <div className="core-item">
-      <div className="core-circle">E</div>
-    </div>
+<div className="core-item">
+  <div className="core-circle">E</div>
+  <div className="core-text">
+    <p className="core-title">Expresión</p>
+    <p className="core-desc">
+      Convertimos esa diferencia en comunicación clara, visible y estratégica.
+    </p>
   </div>
 </div>
   
@@ -2367,22 +2410,47 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   <p className="method-label">METODOLOGÍA</p>
   <h3 className="method-title">CRIT</h3>
 
-  <div className="core-grid">
-    <div className="core-item">
-      <div className="core-circle">C</div>
-    </div>
+ <div className="core-item">
+  <div className="core-circle">C</div>
+  <div className="core-text">
+    <p className="core-title">Cuestionar</p>
+    <p className="core-desc">
+      Nada se da por hecho. <br />
+      Cuestionamos ideas, decisiones y estructuras, incluso las propias.
+    </p>
+  </div>
+</div>
 
-    <div className="core-item">
-      <div className="core-circle">R</div>
-    </div>
+<div className="core-item">
+  <div className="core-circle">R</div>
+  <div className="core-text">
+    <p className="core-title">Refinar</p>
+    <p className="core-desc">
+      Tomamos lo que existe y lo mejoramos. <br />
+      Buscamos claridad, coherencia y dirección.
+    </p>
+  </div>
+</div>
 
-    <div className="core-item">
-      <div className="core-circle">I</div>
-    </div>
+<div className="core-item">
+  <div className="core-circle">I</div>
+  <div className="core-text">
+    <p className="core-title">Iterar</p>
+    <p className="core-desc">
+      No nos quedamos en lo obvio. <br />
+      Buscamos una versión más sólida, diferenciada y estratégica.
+    </p>
+  </div>
+</div>
 
-    <div className="core-item">
-      <div className="core-circle">T</div>
-    </div>
+<div className="core-item">
+  <div className="core-circle">T</div>
+  <div className="core-text">
+    <p className="core-title">Trascender</p>
+    <p className="core-desc">
+      No nos quedamos en lo obvio. <br />
+      Buscamos una versión más sólida, diferenciada y estratégica.
+    </p>
   </div>
 </div>
   
