@@ -2557,8 +2557,9 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     <span className="pill">Educa para una mejor toma de decisiones</span>
   </div>
 </div>
+</div>
 
-      </section>
+</section>
 </div>
 
 <footer className="manifest">
