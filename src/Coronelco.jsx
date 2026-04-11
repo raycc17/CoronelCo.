@@ -2457,135 +2457,94 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
 <br />
   <br />
   
-  <div className="cta-band">
-    <div className="cta-static-bar" aria-label="Nuestro enfoque">
-      ACCEDE A UN DIAGNÓSTICO GRATIS
-    </div>
+<div className="cta-band">
+  <div className="cta-static-bar" aria-label="Nuestro enfoque">
+    ACCEDE A UN DIAGNÓSTICO GRATIS
+  </div>
 
-<div className="method-text-block">
-
-  {/* CENTRO */}
-  <p className="method-text-strong center">
-    Intervenimos la marca en distintos niveles. Según su necesidad en el momento resguardando la visión que perdurará en el tiempo.
-  </p>
-
-  {/* IZQUIERDA */}
-  <p className="method-text-light left">
-    Una web, una campaña o una pieza de contenido no son el punto de partida.
-    Son decisiones estratégicas que dependen del momento de la marca.
-  </p>
-
-  {/* DERECHA */}
-  <p className="method-text-light right">
-    Cada intervención es distinta.
-    <br />
-    Puede ir desde la creación de una marca, el desarrollo de su presencia digital o la construcción de sistemas estratégicos, hasta la ejecución de campañas, contenidos y procesos de comunicación que acompañan su crecimiento.
-  </p>
-
-  {/* IZQUIERDA */}
-  <div className="left">
-    <p className="method-text-light">
-      Dependiendo del momento de la marca, el trabajo puede involucrar:
+  <div className="method-text-block">
+    <p className="method-text-strong center">
+      Intervenimos la marca en distintos niveles. Según su necesidad en el momento resguardando la visión que perdurará en el tiempo.
     </p>
 
-    <ul className="method-list">
-      <li>desarrollo web y e-commerce</li>
-      <li>diseño de marca e identidad visual</li>
-      <li>creación de contenido y comunicación</li>
-      <li>estrategias de marketing y campañas publicitarias</li>
-      <li>sistemas digitales y estructuración de marca</li>
-      <li>presentaciones estratégicas y comunicación B2B</li>
-      <li>…entre muchos otros.</li>
-    </ul>
-  </div>
+    <p className="method-text-light left">
+      Una web, una campaña o una pieza de contenido no son el punto de partida.
+      Son decisiones estratégicas que dependen del momento de la marca.
+    </p>
 
-<div className="launch-message">
-  <p className="launch-top">Tu</p>
+    <p className="method-text-light right">
+      Cada intervención es distinta.
+      <br />
+      Puede ir desde la creación de una marca, el desarrollo de su presencia digital o la construcción de sistemas estratégicos, hasta la ejecución de campañas, contenidos y procesos de comunicación que acompañan su crecimiento.
+    </p>
 
-  <div className="launch-word-wrap">
-    <span key={rotatingWords[wordIndex]} className="launch-word">
-      {rotatingWords[wordIndex]}
-    </span>
-  </div>
-
-  <p className="launch-text">
-    según el <strong>momento u objetivo</strong> de
-  </p>
-
-  <div className="launch-word-wrap small">
-    <span key={rotatingGoals[goalIndex]} className="launch-word small">
-      {rotatingGoals[goalIndex]}
-    </span>
-  </div>
-
-  <p className="launch-text">
-    de tu marca
-  </p>
-
-</div>
-  
-</div>
-
-    <div className="cta-row">
-
-  {/* IZQUIERDA → imagen */}
-  <div className="cta-left">
-    <img src="/tumarca..png" alt="Tu marca" className="cta-image" />
-  </div>
-
-  {/* DERECHA → píldora */}
-  <div className="cta-right">
-    <div className="cta-pill">
-      <span className="cta-line light">ACCEDE A UNA</span>
-      <span className="cta-line bold">ASESORÍA GRATUITA</span>
-    </div>
-  </div>
-
-</div>
-
-    <div className="benefits-section">
-
-  {/* TÍTULO / IMAGEN */}
-  <div className="benefits-header">
-    <img src="/beneficios.png" alt="Beneficios clientes" />
-  </div>
-
-  {/* TARJETAS */}
-  <div className="benefits-cards">
-
-    <div className="benefit-card">
-      <p>
-        Coronel & Co. Campus<br />
-        Portal Elearning para tu equipo/colaborador
+    <div className="left">
+      <p className="method-text-light">
+        Dependiendo del momento de la marca, el trabajo puede involucrar:
       </p>
+
+      <ul className="method-list">
+        <li>desarrollo web y e-commerce</li>
+        <li>diseño de marca e identidad visual</li>
+        <li>creación de contenido y comunicación</li>
+        <li>estrategias de marketing y campañas publicitarias</li>
+        <li>sistemas digitales y estructuración de marca</li>
+        <li>presentaciones estratégicas y comunicación B2B</li>
+        <li>…entre muchos otros.</li>
+      </ul>
     </div>
 
-    <div className="benefit-card">
-      <p>
-        Acceso a un espacio de formación diseñado para equipos y colaboradores.
+    <div className="launch-message">
+      <p className="launch-top">Tu</p>
+
+      <div className="launch-word-wrap">
+        <span key={rotatingWords[wordIndex]} className="launch-word">
+          {rotatingWords[wordIndex]}
+        </span>
+      </div>
+
+      <p className="launch-text">
+        según el <strong>momento u objetivo</strong> de
       </p>
-    </div>
 
+      <div className="launch-word-wrap small">
+        <span key={rotatingGoals[goalIndex]} className="launch-word small">
+          {rotatingGoals[goalIndex]}
+        </span>
+      </div>
+
+      <p className="launch-text">de tu marca</p>
+    </div>
   </div>
 
+  <div className="cta-row">
+    <div className="cta-left">
+      <img src="/tumarca..png" alt="Tu marca" className="cta-image" />
+    </div>
+
+    <div className="cta-right">
+      <div className="cta-pill">
+        <span className="cta-line light">accede a una</span>
+        <span className="cta-line bold">asesoría gratuita</span>
+      </div>
+    </div>
+  </div>
+
+  <div className="cta-buttons">
+    <span className="pill">Aprende & crece</span>
+    <span className="pill">Educa para una mejor toma de decisiones</span>
+  </div>
 </div>
-    
-    <div className="cta-buttons">
-      <span className="pill">Aprende & crece</span>
-      <span className="pill">Educa para una mejor toma de decisiones</span>
-    </div>
-  </div>
 </section>
-     </div>
+</div>
 
-
-        <footer className="manifest">
-          <h3 className="serif">MANIFIESTO</h3>
-          <p className="word">Diagnóstico</p>
-          <p className="word">Contacto</p>
-          <p className="big serif">DIAGNÓSTICO</p>
-        </footer>
-      </main>
+<footer className="manifest">
+  <h3 className="serif">MANIFIESTO</h3>
+  <p className="word">Diagnóstico</p>
+  <p className="word">Contacto</p>
+  <p className="big serif">DIAGNÓSTICO</p>
+</footer>
+        </main>
     </div>
   </>
 )
