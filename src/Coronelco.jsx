@@ -2557,12 +2557,13 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     <span className="pill">Educa para una mejor toma de decisiones</span>
   </div>
 </div>
-</div>
+  </div>
+  </div>
 
-</section>
-</div>
+  </section>
+  </div>
 
-<footer className="manifest">
+  <footer className="manifest">
   <h3 className="serif">MANIFIESTO</h3>
   <p className="word">Diagnóstico</p>
   <p className="word">Contacto</p>
