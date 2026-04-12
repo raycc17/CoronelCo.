@@ -2360,6 +2360,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     </p>
   </div>
 </div>
+  </div>
   
   <div className="method-detail">
   <p className="method-label">METODOLOGÍA</p>
@@ -2405,6 +2406,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     </p>
   </div>
 </div>
+  </div>
   
     <div className="method-detail">
   <p className="method-label">METODOLOGÍA</p>
@@ -2453,6 +2455,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     </p>
   </div>
 </div>
+  </div>
   
 <br />
   <br />
