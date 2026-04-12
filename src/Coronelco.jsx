@@ -2458,8 +2458,8 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
   </div>
   
 <br />
-  <br />
-  
+<br />
+
 <div className="cta-band">
   <div className="cta-static-bar" aria-label="Nuestro enfoque">
     ACCEDE A UN DIAGNÓSTICO GRATIS
@@ -2541,7 +2541,7 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     <div className="benefits-cards">
       <div className="benefit-card">
         <p>
-          Coronel & Co. Campus
+          Coronel &amp; Co. Campus
           <br />
           Portal Elearning para tu equipo/colaborador
         </p>
@@ -2560,12 +2560,11 @@ TU MARCA EN REDES SOCIALES ● TU MARCA SUPERANDO A LA COMPETENCIA ● TU MARCA 
     <span className="pill">Educa para una mejor toma de decisiones</span>
   </div>
 </div>
-  </div>
 
-  </section>
-  </div>
+</section>
+</div>
 
-  <footer className="manifest">
+<footer className="manifest">
   <h3 className="serif">MANIFIESTO</h3>
   <p className="word">Diagnóstico</p>
   <p className="word">Contacto</p>
