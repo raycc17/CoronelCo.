@@ -1780,9 +1780,8 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     inset 0 -1px 0 rgba(255,255,255,0.08);
 
   display: flex;
-  align-items: flex-start;
+  align-items: flex;
   justify-content: center;
-  gap: 1rem;
   position: relative;
 }
 
@@ -1791,7 +1790,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   width: 54px;
   height: 54px;
   border-radius: 50%;
-  min-width: 48px; /* 👈 evita que se deforme */
   background: rgba(255, 255, 255, 0.9);
 
   display: flex;
