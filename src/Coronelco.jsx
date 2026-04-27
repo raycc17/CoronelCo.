@@ -1770,7 +1770,6 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 .core-item {
   height: 110px;
   border-radius: 18px;
-
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(18px) saturate(160%);
   -webkit-backdrop-filter: blur(18px) saturate(160%);
@@ -1782,6 +1781,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   display: flex;
   align-items: flex;
   justify-content: center;
+  gap: 1.2rem;
   position: relative;
 }
 
@@ -1791,7 +1791,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   height: 54px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.9);
-
+  min-width: 60px; /* 👈 ESTO ES LO QUE TE FALTABA */
   display: flex;
   align-items: center;
   justify-content: center;
