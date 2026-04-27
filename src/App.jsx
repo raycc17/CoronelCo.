@@ -1,7 +1,7 @@
-import Coronelco from './Coronelco'
 import { Routes, Route } from "react-router-dom"
 import Coronelco from "./Coronelco.jsx"
 import PromLanzamiento from "./PromLanzamiento.jsx"
+
 function App() {
   return (
     <Routes>
@@ -9,9 +9,8 @@ function App() {
       <Route path="/promlanzamiento" element={<PromLanzamiento />} />
     </Routes>
   )
-  
-export default function App() {
-  return <Coronelco />
 }
+
+export default App
 
 
