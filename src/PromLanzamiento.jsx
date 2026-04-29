@@ -8,6 +8,10 @@ export default function PromoLanzamiento() {
       align-items: center; /* ← centra todo */
       gap: 6px;
       margin-bottom: 40px;
+      position: absolute;
+      top: 40px;   /* ← AJUSTA este valor */
+      left: 40px;  /* ← mismo valor que en tu home */
+
 }
 
       .brand-logo-bg {
@@ -44,6 +48,7 @@ export default function PromoLanzamiento() {
          align-items: center;
          padding-top: 120px; /* ajusta este valor a tu gusto */
          justify-content: center;
+         position: relative; /* ← CLAVE para que el absolute funcione */
         }
 
          .promo-hero {
