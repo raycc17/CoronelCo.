@@ -120,16 +120,14 @@ padding: 4px 18px;
 
       <main className="promo-page">
 
-        <div className="brand-line">
-      <div
-        className="brand-logo-bg"
-        role="img"
-        aria-label="Coronel & Co."
-      ></div>
-
-      <h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
+<div className="brand-line”>
+<img src="/logoCoronelCo..png" className="brand-logo-bg" />
+</div>
+<h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
     </div>
-        
+</br>
+</br>
+</br>        
         <section className="promo-hero">
           <h1 className="promo-title">
             ERA DE LANZAMIENTO
