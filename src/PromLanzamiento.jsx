@@ -2,6 +2,48 @@ export default function PromoLanzamiento() {
   return (
     <>
       <style>{`
+      .brand-line {
+  --brand-logo-width: clamp(180px, 24vw, 290px);
+  --brand-logo-height: clamp(42px, 5vw, 68px);
+  --logo-visible-offset: clamp(0.5rem, 1vw, 0.82rem);
+
+
+.brand-logo-bg {
+  width: var(--brand-logo-width);
+  height: var(--brand-logo-height);
+  min-width: var(--brand-logo-width);
+  max-width: var(--brand-logo-width);
+  min-height: var(--brand-logo-height);
+  max-height: var(--brand-logo-height);
+  flex-shrink: 0;
+
+  background-image: url('/logoCoronelCo..png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
+.brand-subtitle {
+  margin: 0;
+  width: 100%;
+  padding-left: var(--logo-visible-offset);
+  text-align: left;
+  font-size: clamp(0.62rem, 1.2vw, 0.78rem);
+  line-height: 1.1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+        .brand-title {
+          margin: 0;
+          font-size: clamp(1.6rem, 3.2vw, 2rem);
+          line-height: 1;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+        }
+        
         .promo-page {
           min-height: 100vh;
           background-image: url('/fondoCoronelCo..png');
@@ -92,7 +134,7 @@ padding: 4px 18px;
 
       <main className="promo-page">
          <div className="brand-header">
-    <img src="/logo.png" className="brand-logo" />
+    <img src="/logoCoronelCo..png" className="brand-logo" />
     <p className="brand-subtitle">
       FIRMA ESTRATÉGICA & CREATIVA DE MARCAS
     </p>
