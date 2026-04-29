@@ -21,7 +21,7 @@ export default function PromoLanzamiento() {
           display: flex;
           flex-direction: column;
           align-items: center;
-          gap: 6px
+          gap: 2px
         }
 
         .promo-title {
