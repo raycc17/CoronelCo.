@@ -10,7 +10,8 @@ export default function PromoLanzamiento() {
           background-repeat: no-repeat;
 
           display: flex;
-          align-items: center;
+          align-items: flex-start;
+          padding-top: 120px; /* ajusta este valor a tu gusto */
           justify-content: center;
         }
 
