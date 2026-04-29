@@ -19,14 +19,14 @@ export default function PromoLanzamiento() {
         }
 
         .brand-subtitle {
-          margin: 0;
-          font-size: 0.7rem;
-          letter-spacing: 0.16em;
-          text-transform: uppercase;
-          font-weight: 300;
-          text-align: left;
-        }
-
+        margin: 0;
+        margin-left: 8px; /* ← AJUSTA este valor hasta que calce perfecto con la C */
+        font-size: 0.7rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: left;
+}
         .promo-page {
           min-height: 100vh;
           background-image: url('/fondoCoronelCo..png');
