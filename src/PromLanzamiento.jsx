@@ -2,27 +2,6 @@ export default function PromoLanzamiento() {
   return (
     <>
       <style>{`
-.brand-logo-bg {
-  width: var(--brand-logo-width);
-  height: var(--brand-logo-height);
-  min-width: var(--brand-logo-width);
-  max-width: var(--brand-logo-width);
-  min-height: var(--brand-logo-height);
-  max-height: var(--brand-logo-height);
-  flex-shrink: 0;
-
-.brand-subtitle {
-  margin: 0;
-  width: 100%;
-  padding-left: var(--logo-visible-offset);
-  text-align: left;
-  font-size: clamp(0.62rem, 1.2vw, 0.78rem);
-  line-height: 1.1;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  opacity: 0.95;
-  font-weight: 300;
-}
         
         .promo-page {
           min-height: 100vh;
