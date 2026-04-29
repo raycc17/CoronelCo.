@@ -90,7 +90,7 @@ export default function PromoLanzamiento() {
 
           .promo-page {
           justify-content: flex-start; /* en vez de centrar */
-          padding-top: 100px; /* ajusta separación con el logo */
+          padding-top: 10px; /* ajusta separación con el logo */
   }
 
           .promo-hero {
