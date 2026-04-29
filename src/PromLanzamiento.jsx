@@ -20,13 +20,17 @@ export default function PromoLanzamiento() {
         }
 
         .promo-title {
-          font-size: 4rem;
-          font-weight: 800;
-          line-height: 1.1;
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
 
-          background: linear-gradient(135deg, #4919af, #0f64f3);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+        font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+        background: linear-gradient(135deg, #4919af, #0f64f3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
         }
 
         /* RESPONSIVE */
