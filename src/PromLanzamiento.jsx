@@ -18,10 +18,14 @@ export default function PromoLanzamiento() {
 
         .promo-hero {
           text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 6px
         }
 
         .promo-title {
-        font-size: 4rem;
+        font-size: clamp(2.2rem, 6vw, 4rem);
         font-weight: 800;
         line-height: 1.1;
         letter-spacing: -0.02em;
@@ -37,9 +41,10 @@ export default function PromoLanzamiento() {
   margin-top: 2px;
 
   display: inline-block;
-  padding: 6px 46px;
+  padding: 5px 14px;
+  text-align: center;
 
-  font-size: 0.7rem;
+  font-size: clamp(0.55rem, 1.5vw, 0.7rem);
   font-weight: 300;
   letter-spacing: 0.20em;
   text-transform: uppercase;
