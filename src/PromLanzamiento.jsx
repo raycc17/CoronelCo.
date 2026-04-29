@@ -11,6 +11,7 @@ export default function PromoLanzamiento() {
           font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 
           display: flex;
+          flex-direction: column;
           align-items: flex-start;
           padding-top: 120px; /* ajusta este valor a tu gusto */
           justify-content: center;
