@@ -89,12 +89,13 @@ export default function PromoLanzamiento() {
           }
 
           .promo-page {
-          justify-content: flex-start; /* en vez de centrar */
+          justify-content: flex-start;  !important; /* en vez de centrar */
           padding-top: 10px; /* ajusta separación con el logo */
   }
 
           .promo-hero {
           margin-top: 10px; /* controla qué tan cerca queda del logo */
+          transform: translateY(-60px); /* ← ESTO es lo que realmente lo sube */
   }
   
           .promo-bar {
