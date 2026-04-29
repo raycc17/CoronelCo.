@@ -25,6 +25,8 @@ export default function PromoLanzamiento() {
         }
 
         .promo-title {
+        margin-bottom: 0;
+        max-width: 90%;
         font-size: clamp(2.2rem, 6vw, 4rem);
         font-weight: 800;
         line-height: 1.1;
@@ -39,7 +41,6 @@ export default function PromoLanzamiento() {
 
 .promo-bar {
   margin-top: 0px;
-  transform: translateY(-40px); /* ajuste ultra fino */
 
   display: inline-block;
   padding: 5px 34px;
@@ -70,6 +71,15 @@ gap: 4px;
 @media (max-width: 480px) {
 .promo-hero {
 gap: 3px;
+  }
+}
+
+.promo-title {
+max-width: 85%;
+  }
+
+.promo-bar {
+padding: 4px 18px;
   }
 }
 
