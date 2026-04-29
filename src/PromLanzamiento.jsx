@@ -34,14 +34,14 @@ export default function PromoLanzamiento() {
 }
 
 .promo-bar {
-  margin-top: 6px;
+  margin-top: 2px;
 
   display: inline-block;
-  padding: 6px 26px;
+  padding: 6px 46px;
 
   font-size: 0.7rem;
   font-weight: 300;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.20em;
   text-transform: uppercase;
 
   color: #ffffff;
