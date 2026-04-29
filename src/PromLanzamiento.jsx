@@ -31,6 +31,24 @@ export default function PromoLanzamiento() {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
+
+.promo-bar {
+  margin-top: 16px;
+
+  display: inline-block;
+  padding: 6px 16px;
+
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  background: linear-gradient(135deg, #4919af, #0f64f3);
+
+  border-radius: 999px; /* ← esto la hace completamente redondeada */
+}
         }
 
         /* RESPONSIVE */
@@ -51,6 +69,11 @@ export default function PromoLanzamiento() {
           <h1 className="promo-title">
             ERA DE LANZAMIENTO
           </h1>
+
+          <div className="promo-bar">
+  INICIAMOS NUESTRAS OPERACIONES
+</div>
+          
         </section>
       </main>
     </>
