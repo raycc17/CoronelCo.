@@ -23,14 +23,6 @@ export default function PromoLanzamiento() {
   opacity: 0.95;
   font-weight: 300;
 }
-
-        .brand-title {
-          margin: 0;
-          font-size: clamp(1.6rem, 3.2vw, 2rem);
-          line-height: 1;
-          letter-spacing: 0.03em;
-          text-transform: uppercase;
-        }
         
         .promo-page {
           min-height: 100vh;
