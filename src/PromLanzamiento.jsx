@@ -90,6 +90,13 @@ padding: 4px 18px;
       `}</style>
 
       <main className="promo-page">
+         <div className="brand-header">
+    <img src="/logo.png" className="brand-logo" />
+    <p className="brand-subtitle">
+      FIRMA ESTRATÉGICA & CREATIVA DE MARCAS
+    </p>
+  </div>
+
         <section className="promo-hero">
           <h1 className="promo-title">
             ERA DE LANZAMIENTO
