@@ -59,7 +59,7 @@ export default function PromoLanzamiento() {
           font-weight: 800;
           line-height: 1.1;
 
-          background: linear-gradient(135deg, #4919af, #0f64f3);
+          background: linear-gradient(135deg, #0f64f3, #4919af);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
