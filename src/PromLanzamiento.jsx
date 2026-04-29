@@ -8,6 +8,7 @@ export default function PromoLanzamiento() {
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
+          font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 
           display: flex;
           align-items: flex-start;
@@ -33,7 +34,7 @@ export default function PromoLanzamiento() {
 }
 
 .promo-bar {
-  margin-top: 16px;
+  margin-top: 6px;
 
   display: inline-block;
   padding: 6px 16px;
