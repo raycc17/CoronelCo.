@@ -2,7 +2,6 @@ export default function PromoLanzamiento() {
   return (
     <>
       <style>{`
-        
         .promo-page {
           min-height: 100vh;
           background-image: url('/fondoCoronelCo..png');
