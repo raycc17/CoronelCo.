@@ -37,7 +37,7 @@ export default function PromoLanzamiento() {
   margin-top: 6px;
 
   display: inline-block;
-  padding: 6px 16px;
+  padding: 6px 6px;
 
   font-size: 0.7rem;
   font-weight: 300;
