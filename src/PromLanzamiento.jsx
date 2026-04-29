@@ -119,7 +119,8 @@ padding: 4px 18px;
       `}</style>
 
       <main className="promo-page">
-    <div className="brand-line">
+
+        <div className="brand-line">
       <div
         className="brand-logo-bg"
         role="img"
