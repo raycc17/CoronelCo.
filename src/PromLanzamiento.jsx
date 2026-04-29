@@ -2,38 +2,29 @@ export default function PromoLanzamiento() {
   return (
     <>
       <style>{`
-      .brand-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* ← centra todo */
-      gap: 6px;
-      margin-bottom: 40px;
-      position: absolute;
-      top: 40px;   /* ← AJUSTA este valor */
-      left: 40px;  /* ← mismo valor que en tu home */
+.brand-fixed {
+  position: absolute;
+  top: 40px;
+  left: 40px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* ← CLAVE: izquierda, no centro */
+  gap: 4px;
 }
 
-      .brand-logo-bg {
-      width: 160px; /* ajusta a gusto */
-      height: 40px;
-      background-image: url('/logoCoronelCo..png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
+.brand-logo-bg {
+  width: 140px; /* AJUSTA si quieres, pero empieza así */
+  height: auto;
 }
 
-      .brand-subtitle {
-      margin: 0;
-      width: 100%;
-      padding-left: var(--logo-visible-offset);
-      text-align: left;
-      font-size: clamp(0.62rem, 1.2vw, 0.78rem);
-      line-height: 1.1;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      opacity: 0.95;
-      font-weight: 300;
+.brand-subtitle {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: left;
 }
 
          .promo-page {
@@ -121,7 +112,6 @@ padding: 4px 18px;
 
   {/* LOGO FIJO */}
   <div className="brand-fixed">
-    <div className="brand-line">
       <img src="/logoCoronelCo..png" className="brand-logo-bg" />
     </div>
     <h5 className="brand-subtitle">
