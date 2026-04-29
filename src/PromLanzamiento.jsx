@@ -42,7 +42,7 @@ export default function PromoLanzamiento() {
   transform: translateY(-40px); /* ajuste ultra fino */
 
   display: inline-block;
-  padding: 5px 14px;
+  padding: 5px 34px;
   text-align: center;
 
   font-size: clamp(0.55rem, 1.5vw, 0.7rem);
