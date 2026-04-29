@@ -57,12 +57,20 @@ export default function PromoLanzamiento() {
 }
         }
 
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-          .promo-title {
-            font-size: 2.5rem;
-          }
-        }
+/* RESPONSIVE */
+/* TABLET */
+@media (max-width: 768px) {
+.promo-hero {
+gap: 4px;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+.promo-hero {
+gap: 3px;
+  }
+}
 
         /* OCULTAR HALO SOLO EN ESTA PÁGINA */
         body:has(.promo-page) .halo {
