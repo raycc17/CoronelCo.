@@ -117,22 +117,27 @@ padding: 4px 18px;
         }
       `}</style>
 
-      <main className="promo-page">
+<main className="promo-page">
 
-<div className="brand-header">
-  <div className="brand-logo-bg"></div>
+  {/* LOGO FIJO */}
+  <div className="brand-fixed">
+    <div className="brand-line">
+      <img src="/logoCoronelCo..png" className="brand-logo-bg" />
+    </div>
+    <h5 className="brand-subtitle">
+      FIRMA ESTRATÉGICA & CREATIVA DE MARCAS
+    </h5>
+  </div>
 
-  <h5 className="brand-subtitle">
-    FIRMA ESTRATÉGICA & CREATIVA DE MARCAS
-  </h5>
-</div>
-        
-          <div className="promo-bar">
-  INICIAMOS NUESTRAS OPERACIONES
-</div>
-          
-        </section>
-      </main>
-    </>
-  )
-}
+  {/* CONTENIDO */}
+  <section className="promo-hero">
+    <h1 className="promo-title">
+      ERA DE LANZAMIENTO
+    </h1>
+
+    <div className="promo-bar">
+      INICIAMOS NUESTRAS OPERACIONES
+    </div>
+  </section>
+
+</main>
