@@ -11,12 +11,6 @@ export default function PromoLanzamiento() {
   max-height: var(--brand-logo-height);
   flex-shrink: 0;
 
-  background-image: url('/logoCoronelCo..png');
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: contain;
-}
-
 .brand-subtitle {
   margin: 0;
   width: 100%;
