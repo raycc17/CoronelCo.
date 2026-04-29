@@ -39,6 +39,7 @@ export default function PromoLanzamiento() {
 
 .promo-bar {
   margin-top: 2px;
+  transform: translateY(-2px); /* ajuste ultra fino */
 
   display: inline-block;
   padding: 5px 14px;
