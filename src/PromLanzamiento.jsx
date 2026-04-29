@@ -2,12 +2,6 @@ export default function PromoLanzamiento() {
   return (
     <>
       <style>{`
-      .brand-line {
-  --brand-logo-width: clamp(180px, 24vw, 290px);
-  --brand-logo-height: clamp(42px, 5vw, 68px);
-  --logo-visible-offset: clamp(0.5rem, 1vw, 0.82rem);
-
-
 .brand-logo-bg {
   width: var(--brand-logo-width);
   height: var(--brand-logo-height);
