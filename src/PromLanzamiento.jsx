@@ -2,18 +2,20 @@ export default function PromoLanzamiento() {
   return (
     <>
       <style>{`
-      .brand-logo-bg {
-      width: var(--brand-logo-width);
-      height: var(--brand-logo-height);
-      min-width: var(--brand-logo-width);
-      max-width: var(--brand-logo-width);
-      min-height: var(--brand-logo-height);
-      max-height: var(--brand-logo-height);
-      flex-shrink: 0;
+      .brand-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* ← centra todo */
+      gap: 6px;
+      margin-bottom: 40px;
+}
 
+      .brand-logo-bg {
+      width: 160px; /* ajusta a gusto */
+      height: 40px;
       background-image: url('/logoCoronelCo..png');
       background-repeat: no-repeat;
-      background-position: left center;
+      background-position: center;
       background-size: contain;
 }
 
@@ -30,61 +32,53 @@ export default function PromoLanzamiento() {
       font-weight: 300;
 }
 
-        .promo-page {
-          min-height: 100vh;
-          background-image: url('/fondoCoronelCo..png');
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          padding-top: 120px; /* ajusta este valor a tu gusto */
-          justify-content: center;
+         .promo-page {
+         min-height: 100vh;
+         background-image: url('/fondoCoronelCo..png');
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding-top: 120px; /* ajusta este valor a tu gusto */
+         justify-content: center;
         }
 
-        .promo-hero {
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 2px
+         .promo-hero {
+         text-align: center;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 2px
         }
 
-        .promo-title {
-        margin-bottom: 0;
-        max-width: 90%;
-        font-size: clamp(2.2rem, 6vw, 4rem);
-        font-weight: 800;
-        line-height: 1.1;
-        letter-spacing: -0.02em;
-
-        font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-
-        background: linear-gradient(135deg, #4919af, #0f64f3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+         .promo-title {
+         margin-bottom: 0;
+         max-width: 90%;
+         font-size: clamp(2.2rem, 6vw, 4rem);
+         font-weight: 800;
+         line-height: 1.1;
+         letter-spacing: -0.02em;
+         font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+         background: linear-gradient(135deg, #4919af, #0f64f3);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
 }
 
-        .promo-bar {
-        margin-top: 0px;
-
-        display: inline-block;
-        padding: 5px 34px;
-        text-align: center;
-
-        font-size: clamp(0.55rem, 1.5vw, 0.7rem);
-        font-weight: 300;
-        letter-spacing: 0.20em;
-        text-transform: uppercase;
-
-        color: #ffffff;
-
-        background: linear-gradient(135deg, #4919af, #0f64f3);
-
-        border-radius: 999px; /* ← esto la hace completamente redondeada */
+         .promo-bar {
+         margin-top: 0px;
+         display: inline-block;
+         padding: 5px 34px;
+         text-align: center;
+         font-size: clamp(0.55rem, 1.5vw, 0.7rem);
+         font-weight: 300;
+         letter-spacing: 0.20em;
+         text-transform: uppercase;
+         color: #ffffff;
+         background: linear-gradient(135deg, #4919af, #0f64f3);
+         border-radius: 999px; /* ← esto la hace completamente redondeada */
 }
         }
 
@@ -120,16 +114,14 @@ padding: 4px 18px;
 
       <main className="promo-page">
 
-<div className="brand-line">
-<img src="/logoCoronelCo..png" className="brand-logo-bg" />
-</div>
-<h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
-   
-        <section className="promo-hero">
-          <h1 className="promo-title">
-            ERA DE LANZAMIENTO
-          </h1>
+<div className="brand-header">
+  <div className="brand-logo-bg"></div>
 
+  <h5 className="brand-subtitle">
+    FIRMA ESTRATÉGICA & CREATIVA DE MARCAS
+  </h5>
+</div>
+        
           <div className="promo-bar">
   INICIAMOS NUESTRAS OPERACIONES
 </div>
