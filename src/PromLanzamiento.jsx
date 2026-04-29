@@ -82,7 +82,7 @@ export default function PromoLanzamiento() {
         /* RESPONSIVE */
         @media (max-width: 480px) {
           .brand-subtitle {
-           margin-left: 3px; /* menor desplazamiento en celular */
+           margin-left: 5px; /* menor desplazamiento en celular */
         
           .promo-title {
             max-width: 85%;
@@ -94,7 +94,7 @@ export default function PromoLanzamiento() {
   }
 
           .promo-hero {
-          margin-top: 40px; /* controla qué tan cerca queda del logo */
+          margin-top: 10px; /* controla qué tan cerca queda del logo */
   }
   
           .promo-bar {
