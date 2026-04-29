@@ -1,8 +1,53 @@
-export default function PromLanzamiento() {
+export default function PromoLanzamiento() {
   return (
-    <div style={{ padding: "2rem" }}>
-      <h1>Promoción Lanzamiento</h1>
-      <p>Aquí irá todo tu contenido estratégico.</p>
-    </div>
+    <>
+      <style>{`
+        .promo-page {
+          min-height: 100vh;
+          background-image: url('/fondoCoronelCo..png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .promo-hero {
+          text-align: center;
+        }
+
+        .promo-title {
+          font-size: 4rem;
+          font-weight: 800;
+          line-height: 1.1;
+
+          background: linear-gradient(135deg, #4919af, #0f64f3);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+          .promo-title {
+            font-size: 2.5rem;
+          }
+        }
+
+        /* OCULTAR HALO SOLO EN ESTA PÁGINA */
+        body:has(.promo-page) .halo {
+          display: none !important;
+        }
+      `}</style>
+
+      <main className="promo-page">
+        <section className="promo-hero">
+          <h1 className="promo-title">
+            ERA DE LANZAMIENTO
+          </h1>
+        </section>
+      </main>
+    </>
   )
 }
