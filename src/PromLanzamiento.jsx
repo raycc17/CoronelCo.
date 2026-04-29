@@ -3,31 +3,31 @@ export default function PromoLanzamiento() {
     <>
       <style>{`
       .brand-logo-bg {
-  width: var(--brand-logo-width);
-  height: var(--brand-logo-height);
-  min-width: var(--brand-logo-width);
-  max-width: var(--brand-logo-width);
-  min-height: var(--brand-logo-height);
-  max-height: var(--brand-logo-height);
-  flex-shrink: 0;
+      width: var(--brand-logo-width);
+      height: var(--brand-logo-height);
+      min-width: var(--brand-logo-width);
+      max-width: var(--brand-logo-width);
+      min-height: var(--brand-logo-height);
+      max-height: var(--brand-logo-height);
+      flex-shrink: 0;
 
-  background-image: url('/logoCoronelCo..png');
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: contain;
+      background-image: url('/logoCoronelCo..png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: contain;
 }
 
-.brand-subtitle {
-  margin: 0;
-  width: 100%;
-  padding-left: var(--logo-visible-offset);
-  text-align: left;
-  font-size: clamp(0.62rem, 1.2vw, 0.78rem);
-  line-height: 1.1;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  opacity: 0.95;
-  font-weight: 300;
+      .brand-subtitle {
+      margin: 0;
+      width: 100%;
+      padding-left: var(--logo-visible-offset);
+      text-align: left;
+      font-size: clamp(0.62rem, 1.2vw, 0.78rem);
+      line-height: 1.1;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      opacity: 0.95;
+      font-weight: 300;
 }
 
         .promo-page {
@@ -68,23 +68,23 @@ export default function PromoLanzamiento() {
         -webkit-text-fill-color: transparent;
 }
 
-.promo-bar {
-  margin-top: 0px;
+        .promo-bar {
+        margin-top: 0px;
 
-  display: inline-block;
-  padding: 5px 34px;
-  text-align: center;
+        display: inline-block;
+        padding: 5px 34px;
+        text-align: center;
 
-  font-size: clamp(0.55rem, 1.5vw, 0.7rem);
-  font-weight: 300;
-  letter-spacing: 0.20em;
-  text-transform: uppercase;
+        font-size: clamp(0.55rem, 1.5vw, 0.7rem);
+        font-weight: 300;
+        letter-spacing: 0.20em;
+        text-transform: uppercase;
 
-  color: #ffffff;
+        color: #ffffff;
 
-  background: linear-gradient(135deg, #4919af, #0f64f3);
+        background: linear-gradient(135deg, #4919af, #0f64f3);
 
-  border-radius: 999px; /* ← esto la hace completamente redondeada */
+        border-radius: 999px; /* ← esto la hace completamente redondeada */
 }
         }
 
@@ -120,13 +120,11 @@ padding: 4px 18px;
 
       <main className="promo-page">
 
-<div className="brand-line”>
+<div className="brand-line">
 <img src="/logoCoronelCo..png" className="brand-logo-bg" />
 </div>
 <h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
-</br>
-</br>
-</br>        
+   
         <section className="promo-hero">
           <h1 className="promo-title">
             ERA DE LANZAMIENTO
