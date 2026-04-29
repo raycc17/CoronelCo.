@@ -124,7 +124,6 @@ padding: 4px 18px;
 <img src="/logoCoronelCo..png" className="brand-logo-bg" />
 </div>
 <h5 className="brand-subtitle">FIRMA ESTRATÉGICA & CREATIVA DE MARCAS</h5>
-    </div>
 </br>
 </br>
 </br>        
