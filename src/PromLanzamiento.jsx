@@ -84,7 +84,7 @@ export default function PromoLanzamiento() {
         @media (max-width: 480px) {
 .brand-fixed {
 position: static !important; /* deja de flotar arriba */
-margin-bottom: 40px;
+margin-bottom: 80px;
 }
 
 .promo-page {
