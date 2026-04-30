@@ -6,8 +6,6 @@ export default function PromoLanzamiento() {
         position: static !important;
         top: 40px;
         left: 40px;
-        margin-bottom: 40px;
-        display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 4px;
@@ -34,8 +32,6 @@ export default function PromoLanzamiento() {
           background-position: center;
           background-repeat: no-repeat;
           font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-          padding-top: 100px;
-          display: block !important; /* rompe el flex */
           align-items: center;
           justify-content: center;
           position: relative;
@@ -47,7 +43,6 @@ export default function PromoLanzamiento() {
           flex-direction: column;
           align-items: center;
           gap: 6px;
-          margin-top: 0;
         }
 
         .promo-title {
@@ -80,6 +75,10 @@ export default function PromoLanzamiento() {
 
         /* RESPONSIVE */
         @media (max-width: 480px) {
+          .brand-fixed {
+          position: static !important; /* deja de flotar arriba */
+          margin-bottom: 40px;
+    
           .brand-subtitle {
            margin-left: 7px; /* menor desplazamiento en celular */
         
@@ -88,13 +87,15 @@ export default function PromoLanzamiento() {
           }
 
           .promo-page {
+          display: block !important; /* rompe el flex */
           justify-content: flex-start;  !important; /* en vez de centrar */
-          padding-top: 10px; /* ajusta separación con el logo */
+          padding-top: 100px; /* ajusta separación con el logo */
   }
 
           .promo-hero {
           margin-top: 10px; /* controla qué tan cerca queda del logo */
           transform: translateY(-120px); /* ← ESTO es lo que realmente lo sube */
+          margin-top: 0;
   }
   
           .promo-bar {
