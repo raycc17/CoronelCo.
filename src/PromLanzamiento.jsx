@@ -85,7 +85,16 @@ export default function PromoLanzamiento() {
 .brand-fixed {
 position: static !important; /* deja de flotar arriba */
 margin-bottom: 80px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ← CENTRA todo */
+    text-align: center;
+    }
+
+      .brand-subtitle {
+    margin-left: 0 !important; /* ← quita el ajuste que hicimos para desktop */
+    text-align: center;
+  }
 
 .promo-page {
 justify-content: flex-start !important; /* rompe el centrado */
