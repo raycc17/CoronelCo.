@@ -3,19 +3,19 @@ export default function PromoLanzamiento() {
     <>
       <style>{`
         .brand-fixed {
-          position: absolute;
-          top: 40px;
-          left: 40px;
-
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 4px;
+        position: static !important;
+        top: 40px;
+        left: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
         }
 
         .brand-logo-bg {
-          width: 140px;
-          height: auto;
+        width: 140px;
+        height: auto;
         }
 
         .brand-subtitle {
@@ -33,13 +33,11 @@ export default function PromoLanzamiento() {
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
-
           font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-
-          display: flex;
+          padding-top: 100px;
+          display: block !important; /* rompe el flex */
           align-items: center;
           justify-content: center;
-
           position: relative;
         }
 
@@ -49,6 +47,7 @@ export default function PromoLanzamiento() {
           flex-direction: column;
           align-items: center;
           gap: 6px;
+          margin-top: 0;
         }
 
         .promo-title {
