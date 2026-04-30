@@ -95,7 +95,7 @@ export default function PromoLanzamiento() {
 
           .promo-hero {
           margin-top: 10px; /* controla qué tan cerca queda del logo */
-          transform: translateY(-60px); /* ← ESTO es lo que realmente lo sube */
+          transform: translateY(-120px); /* ← ESTO es lo que realmente lo sube */
   }
   
           .promo-bar {
