@@ -3,37 +3,44 @@ export default function PromoLanzamiento() {
     <>
       <style>{`
         .brand-fixed {
-        position: static !important;
-        top: 40px;
-        left: 40px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
+          position: absolute;
+          top: 40px;
+          left: 40px;
+
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 4px;
         }
 
         .brand-logo-bg {
-        width: 140px;
-        height: auto;
+          width: 140px;
+          height: auto;
         }
 
-        .brand-subtitle {
-        margin: 0;
-        margin-left: 8px; /* ← AJUSTA este valor hasta que calce perfecto con la C */
-        font-size: 0.7rem;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        font-weight: 300;
-        text-align: left;
+.brand-subtitle {
+  margin: 0;
+  margin-left: 8px; /* ← AJUSTA este valor hasta que calce perfecto con la C */
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: left;
 }
+
         .promo-page {
           min-height: 100vh;
           background-image: url('/fondoCoronelCo..png');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
+
           font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+
+          display: flex;
           align-items: center;
           justify-content: center;
+
           position: relative;
         }
 
@@ -53,7 +60,7 @@ export default function PromoLanzamiento() {
           font-weight: 800;
           line-height: 1.1;
 
-          background: linear-gradient(135deg, #0f64f3, #4919af);
+          background: linear-gradient(135deg, #4919af, #0f64f3);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
@@ -75,29 +82,26 @@ export default function PromoLanzamiento() {
 
         /* RESPONSIVE */
         @media (max-width: 480px) {
-          .brand-fixed {
-          position: static !important; /* deja de flotar arriba */
-          margin-bottom: 40px;
-    
-          .brand-subtitle {
-           margin-left: 7px; /* menor desplazamiento en celular */
-        
-          .promo-title {
+.brand-fixed {
+position: static !important; /* deja de flotar arriba */
+margin-bottom: 40px;
+}
+
+.promo-page {
+justify-content: flex-start !important; /* rompe el centrado */
+padding-top: 100px; /* acerca contenido al logo */
+display: block !important; /* rompe el flex */
+}
+
+.promo-hero {
+margin-top: 0;
+transform: translateY(-60px); /* ← ESTO es lo que realmente lo sube */
+}        
+
+  .promo-title {
             max-width: 85%;
           }
 
-          .promo-page {
-          display: block !important; /* rompe el flex */
-          justify-content: flex-start;  !important; /* en vez de centrar */
-          padding-top: 100px; /* ajusta separación con el logo */
-  }
-
-          .promo-hero {
-          margin-top: 10px; /* controla qué tan cerca queda del logo */
-          transform: translateY(-120px); /* ← ESTO es lo que realmente lo sube */
-          margin-top: 0;
-  }
-  
           .promo-bar {
             padding: 4px 18px;
           }
