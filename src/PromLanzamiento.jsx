@@ -162,8 +162,6 @@ export default function PromoLanzamiento() {
 /* CAJA DEL FAQ (segunda caja real) */
 .faq-box {
   margin-top: 10px;
-    width: 90%;
-    max-width: 320px;
 }
 
 /* quitar estilo individual para que se vea como UNA caja */
