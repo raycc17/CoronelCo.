@@ -326,6 +326,7 @@ export default function PromoLanzamiento() {
   </details>
 
 </div>
+</div>
     
 </div>
           
