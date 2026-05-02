@@ -83,7 +83,7 @@ export default function PromoLanzamiento() {
         /* CAJA DE LISTA */
         .promo-box {
   margin-top: 30px;
-  padding: 24px 20px;
+  padding: 20px 25px;
 
   width: 90%;
   max-width: 420px;
@@ -201,9 +201,10 @@ transform: translateY(-60px); /* ← ESTO es lo que realmente lo sube */
           </div>
 
           <div className="promo-box">
-  <p className="promo-box-title">Análisis de marca</p>
+  <p className="promo-box-title">INCLUYE</p>
 
   <ul className="promo-list">
+        <li>Análisis de marca</li>
     <li>Estrategia de crecimiento</li>
     <li>Parrilla de contenido</li>
     <li>2 plantillas de contenido</li>
