@@ -100,7 +100,7 @@ export default function PromoLanzamiento() {
 
 .promo-box-title {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
@@ -117,8 +117,7 @@ export default function PromoLanzamiento() {
 .promo-list li {
   position: relative;
   padding-left: 20px;
-
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   line-height: 1.3;
   text-transform: uppercase; /* ← TODO en mayúsculas */
   font-weight: 300;          /* ← delgado */
