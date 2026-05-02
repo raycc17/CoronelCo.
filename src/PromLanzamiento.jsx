@@ -100,7 +100,7 @@ export default function PromoLanzamiento() {
 
 .promo-box-title {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 600;
 }
 
