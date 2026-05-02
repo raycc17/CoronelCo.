@@ -297,7 +297,8 @@ export default function PromoLanzamiento() {
     <div className="promo-circle"></div>
 
 {/* CAJA 2 (FAQ) */}
-<div className="accordion">
+<div className="promo-box faq-box">
+  <div className="accordion">
 
   <details>
     <summary>Análisis de marca</summary>
