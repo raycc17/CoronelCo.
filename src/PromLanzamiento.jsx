@@ -38,9 +38,9 @@ export default function PromoLanzamiento() {
           font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 
           display: flex;
-          align-items: center;
+       align-items: flex-start;
           justify-content: center;
-
+padding-top: 160px;
           position: relative;
         }
 
