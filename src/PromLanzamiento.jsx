@@ -210,13 +210,14 @@ export default function PromoLanzamiento() {
 /* TÍTULO */
 .accordion summary {
   list-style: none;
-  font-size: 0.85rem;
-  font-weight: 400;
+  font-size: 0.7rem;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+    align-items: center;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* QUITAR FLECHA DEFAULT */
