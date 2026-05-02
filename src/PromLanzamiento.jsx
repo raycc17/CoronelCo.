@@ -152,6 +152,77 @@ export default function PromoLanzamiento() {
   background: linear-gradient(135deg, #5f2fc6, #0f64f3);
   }
 
+  /* CÍRCULO */
+.promo-circle {
+  margin-top: 40px;
+
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #5f2fc6, #0f64f3);
+}
+
+/* CONTENEDOR */
+.accordion {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 320px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* TARJETAS */
+.accordion details {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+
+  border-radius: 14px;
+  padding: 14px 16px;
+
+  cursor: pointer;
+}
+
+/* TÍTULO */
+.accordion summary {
+  list-style: none;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* QUITAR FLECHA DEFAULT */
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ICONO + */
+.accordion summary::after {
+  content: "+";
+  font-size: 1rem;
+}
+
+/* CUANDO ESTÁ ABIERTO */
+.accordion details[open] summary::after {
+  content: "–";
+}
+
+/* TEXTO INTERNO */
+.accordion p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
         /* RESPONSIVE */
   @media (max-width: 480px) {
   .brand-fixed {
@@ -231,6 +302,39 @@ export default function PromoLanzamiento() {
   Capacitaciones en vivo
   </li>
   </ul>
+
+    <div className="promo-circle"></div>
+
+<div className="accordion">
+
+  <details>
+    <summary>Análisis de marca</summary>
+    <p>Evaluamos el estado actual de tu marca, su posicionamiento y oportunidades de mejora.</p>
+  </details>
+
+  <details>
+    <summary>Estrategia de crecimiento</summary>
+    <p>Definimos el camino estratégico para escalar tu marca de forma sostenible.</p>
+  </details>
+
+  <details>
+    <summary>Parrilla de contenido</summary>
+    <p>Estructuramos el contenido alineado a objetivos, audiencia y comunicación.</p>
+  </details>
+
+  <details>
+    <summary>2 plantillas de contenido</summary>
+    <p>Diseñamos plantillas listas para publicar con coherencia visual y estratégica.</p>
+  </details>
+
+  <details>
+    <summary>Acceso a Campus CC</summary>
+    <p>
+      Plataforma de formación con clases, ebooks y capacitaciones en vivo para tu equipo.
+    </p>
+  </details>
+
+</div>
 </div>
           
         </section>
