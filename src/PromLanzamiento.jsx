@@ -345,9 +345,7 @@ export default function PromoLanzamiento() {
       <p>Clases, ebooks y capacitaciones...</p>
     </details>
 
-  </div>
-</div>
-    
+</div>    
 </div>
           
         </section>
