@@ -207,7 +207,7 @@ padding-top: 160px;
 /* TÍTULO */
 .accordion summary {
   list-style: none;
-  font-size: 0.7rem;
+  font-size: 0.55rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.08em;
