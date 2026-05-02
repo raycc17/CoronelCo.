@@ -80,6 +80,64 @@ export default function PromoLanzamiento() {
           border-radius: 999px;
         }
 
+        /* CAJA DE LISTA */
+        .promo-box {
+  margin-top: 30px;
+  padding: 24px 20px;
+
+  width: 90%;
+  max-width: 420px;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.promo-box-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* LISTA */
+.promo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.promo-list li {
+  position: relative;
+  padding-left: 20px;
+
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+/* CIRCULITOS DEGRADADOS */
+.promo-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #5f2fc6, #0f64f3);
+}
+
         /* RESPONSIVE */
         @media (max-width: 480px) {
 .brand-fixed {
@@ -141,6 +199,26 @@ transform: translateY(-60px); /* ← ESTO es lo que realmente lo sube */
           <div className="promo-bar">
             INICIAMOS NUESTRAS OPERACIONES
           </div>
+
+          <div className="promo-box">
+  <p className="promo-box-title">Análisis de marca</p>
+
+  <ul className="promo-list">
+    <li>Estrategia de crecimiento</li>
+    <li>Parrilla de contenido</li>
+    <li>2 plantillas de contenido</li>
+    <li>
+      Acceso a Campus CC por 1 año:
+      <br />
+      Sistema de clases para tu equipo
+      <br />
+      Ebooks
+      <br />
+      Capacitaciones en vivo
+    </li>
+  </ul>
+</div>
+          
         </section>
 
       </main>
