@@ -186,6 +186,14 @@ export default function PromoLanzamiento() {
   gap: 12px;
 }
 
+.accordion summary {
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
 /* TARJETAS */
 .accordion details {
   background: rgba(255, 255, 255, 0.6);
@@ -193,6 +201,8 @@ export default function PromoLanzamiento() {
   border-radius: 14px;
   padding: 14px 16px;
   cursor: pointer;
+    width: 80%;
+    max-width: 300px;
 }
 
 /* TÍTULO */
@@ -225,10 +235,10 @@ export default function PromoLanzamiento() {
 
 /* TEXTO INTERNO */
 .accordion p {
-  margin-top: 10px;
-  font-size: 0.8rem;
-  line-height: 1.4;
+  font-size: 0.85rem;
   font-weight: 300;
+  letter-spacing: 0.05em;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 }
 
         /* RESPONSIVE */
@@ -295,9 +305,10 @@ export default function PromoLanzamiento() {
 
 {/* CAJA 1 */}
 <div className="promo-box">
-  <p className="promo-box-title">Análisis de marca</p>
+  <p className="promo-box-title">INCLUYE</p>
 
   <ul className="promo-list">
+    <li>Análisis de marca</li>
     <li>Estrategia de crecimiento</li>
     <li>Parrilla de contenido</li>
     <li>2 plantillas de contenido</li>
