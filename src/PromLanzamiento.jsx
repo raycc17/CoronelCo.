@@ -159,6 +159,24 @@ export default function PromoLanzamiento() {
   box-shadow: 0 10px 30px rgba(95, 47, 198, 0.3);
 }
 
+/* CAJA DEL FAQ (segunda caja real) */
+.faq-box {
+  margin-top: 10px;
+}
+
+/* QUITA FONDO INDIVIDUAL A CADA ITEM */
+.accordion details {
+  background: transparent; /* ← clave */
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-radius: 0;
+}
+
+/* último sin línea */
+.accordion details:last-child {
+  border-bottom: none;
+}
+
 /* CONTENEDOR */
 .accordion {
   margin-top: 30px;
