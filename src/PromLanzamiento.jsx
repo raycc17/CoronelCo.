@@ -84,15 +84,11 @@ export default function PromoLanzamiento() {
         .promo-box {
   margin-top: 30px;
   padding: 20px 25px;
-
   width: 60%;
   max-width: 320px;
-
   background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(12px);
-
   border-radius: 13px;
-
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -160,6 +156,7 @@ export default function PromoLanzamiento() {
   height: 70px;
   border-radius: 50%;
   background: linear-gradient(135deg, #5f2fc6, #0f64f3);
+  box-shadow: 0 10px 30px rgba(95, 47, 198, 0.3);
 }
 
 /* CONTENEDOR */
