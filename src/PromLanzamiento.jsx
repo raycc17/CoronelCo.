@@ -2,23 +2,22 @@ export default function PromoLanzamiento() {
   return (
     <>
       <style>{`
-        .brand-fixed {
-          position: absolute;
-          top: 40px;
-          left: 40px;
-
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 4px;
+  .brand-fixed {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
         }
 
-        .brand-logo-bg {
-          width: 140px;
-          height: auto;
+  .brand-logo-bg {
+  width: 140px;
+  height: auto;
         }
 
-.brand-subtitle {
+  .brand-subtitle {
   margin: 0;
   margin-left: 8px; /* ← AJUSTA este valor hasta que calce perfecto con la C */
   font-size: 0.7rem;
@@ -34,14 +33,13 @@ export default function PromoLanzamiento() {
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
-
           font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-
           display: flex;
-       align-items: flex-start;
+          align-items: flex-start;
           justify-content: center;
-padding-top: 160px;
+          padding-top: 160px;
           position: relative;
+          padding-bottom: 120px; /* ← margen inferior */
         }
 
         .promo-hero {
@@ -55,11 +53,9 @@ padding-top: 160px;
         .promo-title {
           margin: 0;
           max-width: 90%;
-
           font-size: clamp(2.2rem, 6vw, 4rem);
           font-weight: 800;
           line-height: 1.1;
-
           background: linear-gradient(135deg, #4919af, #0f64f3);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -67,73 +63,69 @@ padding-top: 160px;
 
         .promo-bar {
           padding: 6px 28px;
-
           font-size: clamp(0.55rem, 1.5vw, 0.7rem);
           font-weight: 300;
           letter-spacing: 0.2em;
           text-transform: uppercase;
-
           color: #fff;
-
           background: linear-gradient(135deg, #4919af, #0f64f3);
-
           border-radius: 999px;
         }
 
         /* CAJA DE LISTA */
         .promo-box {
-  margin-top: 30px;
-  padding: 20px 25px;
-  width: 60%;
-  max-width: 320px;
-  background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(12px);
-  border-radius: 13px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+         margin-top: 30px;
+         padding: 20px 25px;
+         width: 60%;
+         max-width: 320px;
+         background: rgba(255, 255, 255, 0.35);
+         backdrop-filter: blur(12px);
+         border-radius: 13px;
+         display: flex;
+         flex-direction: column;
+         gap: 16px;
 }
 
-.promo-box-title {
-  margin: 0;
-  font-size: 0.8rem;
-  font-weight: 600;
+        .promo-box-title {
+         margin: 0;
+         font-size: 0.8rem;
+         font-weight: 600;
 }
 
-/* LISTA */
-.promo-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+         /* LISTA */
+        .promo-list {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
 }
 
-.promo-list li {
-  position: relative;
-  padding-left: 20px;
-  font-size: 0.6rem;
-  line-height: 1.3;
-  text-transform: uppercase; /* ← TODO en mayúsculas */
-  font-weight: 300;          /* ← delgado */
-  letter-spacing: 0.08em;
+        .promo-list li {
+         position: relative;
+         padding-left: 20px;
+         font-size: 0.6rem;
+         line-height: 1.3;
+         text-transform: uppercase; /* ← TODO en mayúsculas */
+         font-weight: 300;          /* ← delgado */
+         letter-spacing: 0.08em;
 }
 
-.promo-box {
-  align-items: flex-start; /* ← esto alinea TODO a la izquierda */
+        .promo-box {
+         align-items: flex-start; /* ← esto alinea TODO a la izquierda */
 }
 
-.promo-box-title {
-  text-align: left;
+        .promo-box-title {
+         text-align: left;
 }
 
-.promo-list {
-  width: 100%;
+        .promo-list {
+         width: 100%;
 }
 
-.promo-list li {
-  text-align: left;
+        .promo-list li {
+         text-align: left;
 }
 
 /* CIRCULITOS DEGRADADOS */
