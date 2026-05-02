@@ -85,7 +85,7 @@ export default function PromoLanzamiento() {
   margin-top: 30px;
   padding: 20px 25px;
 
-  width: 80%;
+  width: 70%;
   max-width: 320px;
 
   background: rgba(255, 255, 255, 0.35);
