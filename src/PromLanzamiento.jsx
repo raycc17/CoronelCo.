@@ -184,6 +184,7 @@ padding-top: 160px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+   margin: 0 auto
 }
 
 .accordion summary {
