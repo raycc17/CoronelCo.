@@ -202,7 +202,7 @@ export default function PromoLanzamiento() {
   padding: 14px 16px;
   cursor: pointer;
     width: 90%;
-    max-width: 300px;
+    max-width: 320px;
       align-self: center; /* ← CLAVE */
 
 }
