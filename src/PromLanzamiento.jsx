@@ -155,12 +155,10 @@ export default function PromoLanzamiento() {
   /* CÍRCULO */
 .promo-circle {
   margin-top: 40px;
-
+  align-self: center; /* ← CLAVE */
   width: 70px;
   height: 70px;
-
   border-radius: 50%;
-
   background: linear-gradient(135deg, #5f2fc6, #0f64f3);
 }
 
@@ -169,7 +167,6 @@ export default function PromoLanzamiento() {
   margin-top: 30px;
   width: 90%;
   max-width: 320px;
-
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -179,10 +176,8 @@ export default function PromoLanzamiento() {
 .accordion details {
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(12px);
-
   border-radius: 14px;
   padding: 14px 16px;
-
   cursor: pointer;
 }
 
@@ -193,7 +188,6 @@ export default function PromoLanzamiento() {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -305,6 +299,7 @@ export default function PromoLanzamiento() {
 
     <div className="promo-circle"></div>
 
+{/* CAJA 2 (FAQ) */}
 <div className="accordion">
 
   <details>
@@ -314,27 +309,26 @@ export default function PromoLanzamiento() {
 
   <details>
     <summary>Estrategia de crecimiento</summary>
-    <p>Definimos el camino estratégico para escalar tu marca de forma sostenible.</p>
+    <p>Definimos el camino estratégico para escalar tu marca.</p>
   </details>
 
   <details>
     <summary>Parrilla de contenido</summary>
-    <p>Estructuramos el contenido alineado a objetivos, audiencia y comunicación.</p>
+    <p>Organizamos contenido alineado a objetivos.</p>
   </details>
 
   <details>
     <summary>2 plantillas de contenido</summary>
-    <p>Diseñamos plantillas listas para publicar con coherencia visual y estratégica.</p>
+    <p>Plantillas listas para publicar con coherencia visual.</p>
   </details>
 
   <details>
     <summary>Acceso a Campus CC</summary>
-    <p>
-      Plataforma de formación con clases, ebooks y capacitaciones en vivo para tu equipo.
-    </p>
+    <p>Clases, ebooks y capacitaciones para tu equipo.</p>
   </details>
 
 </div>
+    
 </div>
           
         </section>
