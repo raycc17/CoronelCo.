@@ -88,10 +88,10 @@ export default function PromoLanzamiento() {
   width: 90%;
   max-width: 420px;
 
-  background: rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(12px);
 
-  border-radius: 18px;
+  border-radius: 13px;
 
   display: flex;
   flex-direction: column;
