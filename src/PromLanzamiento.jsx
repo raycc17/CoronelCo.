@@ -164,15 +164,14 @@ export default function PromoLanzamiento() {
   margin-top: 10px;
 }
 
-/* QUITA FONDO INDIVIDUAL A CADA ITEM */
+/* quitar estilo individual para que se vea como UNA caja */
 .accordion details {
-  background: transparent; /* ← clave */
+  background: transparent;
   padding: 10px 0;
   border-bottom: 1px solid rgba(0,0,0,0.08);
   border-radius: 0;
 }
 
-/* último sin línea */
 .accordion details:last-child {
   border-bottom: none;
 }
@@ -294,56 +293,59 @@ export default function PromoLanzamiento() {
   INICIAMOS NUESTRAS OPERACIONES
   </div>
 
-  <div className="promo-box">
-  <p className="promo-box-title">INCLUYE</p>
-  <ul className="promo-list">
-  <li>Análisis de marca</li>
-  <li>Estrategia de crecimiento</li>
-  <li>Parrilla de contenido</li>
-  <li>2 plantillas de contenido</li>
-  <li>
-  Acceso a Campus CC por 1 año:
-  <br />
-  Sistema de clases para tu equipo
-  <br />
-  Ebooks
-  <br />
-  Capacitaciones en vivo
-  </li>
-  </ul>
+{/* CAJA 1 */}
+<div className="promo-box">
+  <p className="promo-box-title">Análisis de marca</p>
 
-    <div className="promo-circle"></div>
+  <ul className="promo-list">
+    <li>Estrategia de crecimiento</li>
+    <li>Parrilla de contenido</li>
+    <li>2 plantillas de contenido</li>
+    <li>
+      Acceso a Campus CC por 1 año:
+      <br />
+      Sistema de clases para tu equipo
+      <br />
+      Ebooks
+      <br />
+      Capacitaciones en vivo
+    </li>
+  </ul>
+</div>
+
+{/* CÍRCULO */}
+<div className="promo-circle"></div>
 
 {/* CAJA 2 (FAQ) */}
 <div className="promo-box faq-box">
   <div className="accordion">
 
-  <details>
-    <summary>Análisis de marca</summary>
-    <p>Evaluamos el estado actual de tu marca, su posicionamiento y oportunidades de mejora.</p>
-  </details>
+    <details>
+      <summary>Análisis de marca</summary>
+      <p>Evaluamos el estado actual de tu marca...</p>
+    </details>
 
-  <details>
-    <summary>Estrategia de crecimiento</summary>
-    <p>Definimos el camino estratégico para escalar tu marca.</p>
-  </details>
+    <details>
+      <summary>Estrategia de crecimiento</summary>
+      <p>Definimos el camino estratégico...</p>
+    </details>
 
-  <details>
-    <summary>Parrilla de contenido</summary>
-    <p>Organizamos contenido alineado a objetivos.</p>
-  </details>
+    <details>
+      <summary>Parrilla de contenido</summary>
+      <p>Organizamos el contenido...</p>
+    </details>
 
-  <details>
-    <summary>2 plantillas de contenido</summary>
-    <p>Plantillas listas para publicar con coherencia visual.</p>
-  </details>
+    <details>
+      <summary>2 plantillas de contenido</summary>
+      <p>Plantillas listas para publicar...</p>
+    </details>
 
-  <details>
-    <summary>Acceso a Campus CC</summary>
-    <p>Clases, ebooks y capacitaciones para tu equipo.</p>
-  </details>
+    <details>
+      <summary>Acceso a Campus CC</summary>
+      <p>Clases, ebooks y capacitaciones...</p>
+    </details>
 
-</div>
+  </div>
 </div>
     
 </div>
