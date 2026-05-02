@@ -201,8 +201,10 @@ export default function PromoLanzamiento() {
   border-radius: 14px;
   padding: 14px 16px;
   cursor: pointer;
-    width: 80%;
+    width: 90%;
     max-width: 300px;
+      align-self: center; /* ← CLAVE */
+
 }
 
 /* TÍTULO */
