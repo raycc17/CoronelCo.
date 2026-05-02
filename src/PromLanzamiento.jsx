@@ -123,6 +123,22 @@ export default function PromoLanzamiento() {
   line-height: 1.3;
 }
 
+.promo-box {
+  align-items: flex-start; /* ← esto alinea TODO a la izquierda */
+}
+
+.promo-box-title {
+  text-align: left;
+}
+
+.promo-list {
+  width: 100%;
+}
+
+.promo-list li {
+  text-align: left;
+}
+
 /* CIRCULITOS DEGRADADOS */
 .promo-list li::before {
   content: "";
