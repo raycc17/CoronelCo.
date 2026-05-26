@@ -283,6 +283,92 @@ transform: translateY(0);
 }
 }
 
+/* ORBES LATERALES */
+.side-orb {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+
+  width: 320px;
+  height: 320px;
+
+  pointer-events: none;
+}
+
+/* IZQUIERDA */
+.side-left {
+  left: -140px;
+}
+
+/* DERECHA */
+.side-right {
+  right: -140px;
+}
+
+/* IMÁGENES */
+.orb-img {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  opacity: 0;
+
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* IZQUIERDA */
+.orb-1 {
+  animation-name: orbFade1;
+}
+
+.orb-2 {
+  animation-name: orbFade2;
+}
+
+/* DERECHA */
+.orb-3 {
+  animation-name: orbFade1;
+}
+
+.orb-4 {
+  animation-name: orbFade2;
+}
+
+/* ANIMACIONES */
+@keyframes orbFade1 {
+  0%, 45% {
+    opacity: 1;
+  }
+
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes orbFade2 {
+  0%, 45% {
+    opacity: 0;
+  }
+
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+/* SOLO DESKTOP */
+@media (max-width: 1024px) {
+  .side-orb {
+    display: none;
+  }
+}
+
     /* OCULTAR HALO */
   body:has(.promo-page) .halo {
   display: none !important;
@@ -290,6 +376,17 @@ transform: translateY(0);
   `}</style>
 
    <main className="promo-page">
+
+     {/* CÍRCULOS LATERALES DESKTOP */}
+<div className="side-orb side-left">
+  <img src="/1.png" className="orb-img orb-1" />
+  <img src="/2.png" className="orb-img orb-2" />
+</div>
+
+<div className="side-orb side-right">
+  <img src="/3.png" className="orb-img orb-3" />
+  <img src="/4.png" className="orb-img orb-4" />
+</div>
 
   {/* LOGO */}
   <div className="brand-fixed">
