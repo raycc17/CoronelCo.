@@ -214,17 +214,6 @@ export default function PromoLanzamiento() {
   display: none;
 }
 
-/* ICONO + */
-.accordion summary::after {
-  content: "+";
-  font-size: 1rem;
-}
-
-/* CUANDO ESTÁ ABIERTO */
-.accordion details[open] summary::after {
-  content: "–";
-}
-
 /* TEXTO INTERNO */
 .accordion p {
   font-size: 0.85rem;
@@ -273,9 +262,8 @@ export default function PromoLanzamiento() {
 .faq-item p {
   opacity: 0;
   max-height: 0;
-
   overflow: hidden;
-transform: translateY(10px);
+  transform: translateY(10px);
   animation: faqOpen 0.8s ease forwards;
 }
 
