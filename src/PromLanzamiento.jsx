@@ -264,6 +264,29 @@ export default function PromoLanzamiento() {
   max-width: 85%;
   }
 
+  /* INICIAN OCULTOS */
+.faq-item {
+  opacity: 0;
+  transform: translateY(20px);
+
+  animation: faqReveal 0.8s ease forwards;
+}
+
+/* DELAYS */
+.faq-1 { animation-delay: 0.2s; }
+.faq-2 { animation-delay: 0.6s; }
+.faq-3 { animation-delay: 1s; }
+.faq-4 { animation-delay: 1.4s; }
+.faq-5 { animation-delay: 1.8s; }
+
+/* ANIMACIÓN */
+@keyframes faqReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
   .promo-bar {
   padding: 4px 18px;
   }
