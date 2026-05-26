@@ -290,20 +290,20 @@ transform: translateY(0);
   transform: translateY(-50%);
   z-index: 0;
 
-  width: 320px;
-  height: 320px;
+  width: 420px;
+  height: 420px;
 
   pointer-events: none;
 }
 
 /* IZQUIERDA */
 .side-left {
-  left: -140px;
+  left: -100px;
 }
 
 /* DERECHA */
 .side-right {
-  right: -140px;
+  right: -100px;
 }
 
 /* IMÁGENES */
