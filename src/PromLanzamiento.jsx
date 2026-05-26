@@ -269,6 +269,32 @@ export default function PromoLanzamiento() {
   }
   }
 
+    /* FAQ ANIMADO */
+.faq-item p {
+  opacity: 0;
+  max-height: 0;
+
+  overflow: hidden;
+transform: translateY(10px);
+  animation: faqOpen 0.8s ease forwards;
+}
+
+/* DELAYS */
+.faq-1 p { animation-delay: 0.4s; }
+.faq-2 p { animation-delay: 1.5s; }
+.faq-3 p { animation-delay: 2.2s; }
+.faq-4 p { animation-delay: 2.9s; }
+.faq-5 p { animation-delay: 3.8s; }
+
+/* ANIMACIÓN */
+@keyframes faqOpen {
+  to {
+    opacity: 1;
+    max-height: 200px;
+transform: translateY(0);
+}
+}
+
     /* OCULTAR HALO */
   body:has(.promo-page) .halo {
   display: none !important;
@@ -351,30 +377,6 @@ export default function PromoLanzamiento() {
 </div>    
 </div>
 
-    /* FAQ ANIMADO */
-.faq-item p {
-  opacity: 0;
-  max-height: 0;
-
-  overflow: hidden;
-
-  animation: faqOpen 0.8s ease forwards;
-}
-
-/* DELAYS */
-.faq-1 p { animation-delay: 0.4s; }
-.faq-2 p { animation-delay: 1.5s; }
-.faq-3 p { animation-delay: 2.2s; }
-.faq-4 p { animation-delay: 2.9s; }
-.faq-5 p { animation-delay: 3.8s; }
-
-/* ANIMACIÓN */
-@keyframes faqOpen {
-  to {
-    opacity: 1;
-    max-height: 200px;
-  }
-}
           
         </section>
 
