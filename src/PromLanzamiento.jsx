@@ -361,12 +361,12 @@ export default function PromoLanzamiento() {
       <p>Organizamos el contenido...</p>
     </details>
 
-    <details>
+ <details open className="faq-item faq-4">
       <summary>2 plantillas de contenido</summary>
       <p>Plantillas listas para publicar...</p>
     </details>
 
-    <details>
+ <details open className="faq-item faq-5">
       <summary>Acceso a Campus CC</summary>
       <p>Clases, ebooks y capacitaciones...</p>
     </details>
