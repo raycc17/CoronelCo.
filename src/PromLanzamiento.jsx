@@ -346,18 +346,18 @@ export default function PromoLanzamiento() {
 <div className="promo-box faq-box">
   <div className="accordion">
 
-    <details>
-      <summary>Análisis de marca</summary>
+ <details open className="faq-item faq-1">
+  <summary>Análisis de marca</summary>
       <p>Evaluamos el estado actual de tu marca...</p>
     </details>
 
-    <details>
-      <summary>Estrategia de crecimiento</summary>
+<details open className="faq-item faq-2">
+  <summary>Estrategia de crecimiento</summary>
       <p>Definimos el camino estratégico...</p>
     </details>
 
-    <details>
-      <summary>Parrilla de contenido</summary>
+<details open className="faq-item faq-3">
+  <summary>Parrilla de contenido</summary>
       <p>Organizamos el contenido...</p>
     </details>
 
