@@ -111,29 +111,45 @@
 
 }
 
-/* SOLO PRIMERA CAJA */
-.promo-box:not(.faq-box) {
-  animation: softPulse 2s ease-in-out infinite;
+/* SOLO CAJA INCLUYE */
+.promo-box:not(.faq-box)::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: 13px;
+
+  background: rgba(255,255,255,0.35);
+
+  backdrop-filter: blur(12px);
+
+  z-index: 0;
+
+  animation: softPulseBg 2s ease-in-out infinite;
 }
 
-@keyframes softPulse {
+/* CONTENIDO ENCIMA */
+.promo-box:not(.faq-box) > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes softPulseBg {
 
   0% {
-    transform: scale(1);
-    backdrop-filter: blur(12px);
-    background: rgba(255,255,255,0.35);
+    opacity: 0.7;
+    filter: brightness(1);
   }
 
   50% {
-    transform: scale(1.025);
-    backdrop-filter: blur(16px);
-    background: rgba(255,255,255,0.42);
+    opacity: 1;
+    filter: brightness(1.15);
   }
 
   100% {
-    transform: scale(1);
-    backdrop-filter: blur(12px);
-    background: rgba(255,255,255,0.35);
+    opacity: 0.7;
+    filter: brightness(1);
   }
 }
 
