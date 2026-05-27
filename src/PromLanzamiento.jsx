@@ -110,7 +110,7 @@
 }
 
 /* CAPA QUE LATE */
-.promo-box::before {
+.promo-box: {
   content: "";
   position: absolute;
   inset: 0;
