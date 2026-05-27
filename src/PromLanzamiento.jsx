@@ -466,7 +466,7 @@ transform: translateY(0);
     </details>
 
  <details open className="faq-item faq-5">
-      <summary><center>Acceso a Campus CC</center></summary>
+      <summary>Acceso a Campus CC</summary>
       <p>Clases, ebooks y capacitaciones...</p>
     </details>
 
