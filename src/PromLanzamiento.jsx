@@ -112,7 +112,7 @@
 }
 
 /* SOLO PRIMERA CAJA */
-.promo-box:first-of-type {
+.promo-box:not(.faq-box) {
   animation: softPulse 2s ease-in-out infinite;
 }
 
