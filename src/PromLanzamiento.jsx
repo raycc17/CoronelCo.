@@ -172,18 +172,6 @@
          align-items: center
 }
 
-/* CAPA QUE LATE */
-.promo-box::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 13px;
-  background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(12px);
-  z-index: -1;
-  animation: softBoxPulse 2s ease-in-out infinite;
-}
-
         .promo-box-title {
          text-align: center;
 }
