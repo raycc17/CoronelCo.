@@ -128,7 +128,7 @@
   }
 
   50% {
-    transform: scale(2.025);
+    transform: scale(1.050);
   }
 
   100% {
