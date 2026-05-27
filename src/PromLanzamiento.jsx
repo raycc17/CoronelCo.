@@ -125,16 +125,21 @@
          justify-content: center;
 }
 
-        .promo-list li {
-         position: relative;
-         padding-left: 20px;
-         font-size: 0.6rem;
-         line-height: 1.3;
-         text-transform: uppercase; /* ← TODO en mayúsculas */
-         font-weight: 300;          /* ← delgado */
-         letter-spacing: 0.08em;
-         text-align: center;
-         justify-content: center;
+.promo-list li {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 0.6rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-align: center;
 }
 
         .promo-box {
@@ -156,16 +161,15 @@
 /* CIRCULITOS DEGRADADOS */
 .promo-list li::before {
   content: "";
-  position: absolute;
-  left: 0;
-  top: 6px;
+
+  position: relative;
+
   width: 8px;
   height: 8px;
+
   border-radius: 50%;
   background: linear-gradient(135deg, #5f2fc6, #0f64f3);
-  text-align: center;
-  justify-content: center;
-  }
+}
 
   /* CÍRCULO */
 .promo-circle {
