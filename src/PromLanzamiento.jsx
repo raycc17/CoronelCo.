@@ -150,7 +150,7 @@
 }
 
         .promo-list li {
-         text-align: left;
+         text-align: center;
 }
 
 /* CIRCULITOS DEGRADADOS */
