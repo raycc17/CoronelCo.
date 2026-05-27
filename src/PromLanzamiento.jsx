@@ -121,21 +121,18 @@
   0% {
     transform: scale(1);
     backdrop-filter: blur(12px);
-
     background: rgba(255,255,255,0.35);
   }
 
   50% {
     transform: scale(1.025);
     backdrop-filter: blur(16px);
-
     background: rgba(255,255,255,0.42);
   }
 
   100% {
     transform: scale(1);
     backdrop-filter: blur(12px);
-
     background: rgba(255,255,255,0.35);
   }
 }
