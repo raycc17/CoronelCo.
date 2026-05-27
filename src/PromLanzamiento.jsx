@@ -1,4 +1,25 @@
-export default function PromoLanzamiento() {
+  import { useEffect } from "react"
+  export default function PromoLanzamiento() {
+    useEffect(() => {
+  const items = document.querySelectorAll(".faq-item")
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show")
+        }
+      })
+    },
+    {
+      threshold: 0.2,
+    }
+  )
+
+  items.forEach((item) => observer.observe(item))
+
+  return () => observer.disconnect()
+}, [])
   return (
     <>
       <style>{`
@@ -260,29 +281,19 @@ export default function PromoLanzamiento() {
   }
   }
 
-    /* FAQ ANIMADO */
-.faq-item p {
+ /* FAQ SCROLL REVEAL */
+.faq-item {
   opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transform: translateY(10px);
-  animation: faqOpen 0.8s ease forwards;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
-/* DELAYS */
-.faq-1 p { animation-delay: 0.4s; }
-.faq-2 p { animation-delay: 1.5s; }
-.faq-3 p { animation-delay: 2.2s; }
-.faq-4 p { animation-delay: 2.9s; }
-.faq-5 p { animation-delay: 3.8s; }
-
-/* ANIMACIÓN */
-@keyframes faqOpen {
-  to {
-    opacity: 1;
-    max-height: 200px;
-transform: translateY(0);
-}
+/* CUANDO APARECE */
+.faq-item.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ORBES LATERALES */
@@ -447,28 +458,28 @@ transform: translateY(0);
 <div className="promo-box faq-box">
   <div className="accordion">
 
- <details open className="faq-item faq-1">
+<details open className="faq-item">
   <summary>Análisis de marca</summary>
       <p>Evaluamos el estado actual de tu marca...</p>
     </details>
 
-<details open className="faq-item faq-2">
+<details open className="faq-item">
   <summary>Estrategia de crecimiento</summary>
       <p>Definimos el camino estratégico...</p>
     </details>
 
-<details open className="faq-item faq-3">
+<details open className="faq-item">
   <summary>Parrilla de contenido</summary>
       <p>Organizamos el contenido...</p>
     </details>
 
- <details open className="faq-item faq-4">
-      <summary>2 plantillas de contenido</summary>
+<details open className="faq-item">
+  <summary>2 plantillas de contenido</summary>
       <p>Plantillas listas para publicar...</p>
     </details>
 
- <details open className="faq-item faq-5">
-      <summary>Acceso a Campus CC</summary>
+<details open className="faq-item">
+  <summary>Acceso a Campus CC</summary>
       <p>Clases, ebooks y capacitaciones...</p>
     </details>
 
