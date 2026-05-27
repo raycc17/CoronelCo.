@@ -138,7 +138,7 @@
 }
 
         .promo-box {
-         align-items: flex-start; /* ← esto alinea TODO a la izquierda */
+         align-items: center
 }
 
         .promo-box-title {
@@ -163,6 +163,8 @@
   height: 8px;
   border-radius: 50%;
   background: linear-gradient(135deg, #5f2fc6, #0f64f3);
+  text-align: center;
+  justify-content: center;
   }
 
   /* CÍRCULO */
