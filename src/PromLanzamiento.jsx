@@ -457,6 +457,9 @@
   </ul>
 </div>
 
+    {/* CÍRCULO */}
+<div className="promo-circle"></div>
+
 {/* CAJA 2 (FAQ) */}
 <div className="promo-box faq-box">
   <div className="accordion">
