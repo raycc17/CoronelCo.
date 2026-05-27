@@ -163,9 +163,9 @@
   content: "";
   position: relative;
   width: 69px;
-  height: 2px;
+  height: 1px;
   border-radius: 999px;
-  opacity: 0.4;
+  opacity: 0.3;
   background: linear-gradient(135deg, #ffffff, #5f2fc6, #ffffff);
 }
 
