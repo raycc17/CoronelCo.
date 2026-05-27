@@ -161,13 +161,10 @@
 /* CIRCULITOS DEGRADADOS */
 .promo-list li::before {
   content: "";
-
   position: relative;
-
-  width: 8px;
-  height: 8px;
-
-  border-radius: 50%;
+  width: 32px;
+  height: 2px;
+  border-radius: 999px;
   background: linear-gradient(135deg, #5f2fc6, #0f64f3);
 }
 
