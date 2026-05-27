@@ -138,7 +138,7 @@
 }
 
         .promo-box-title {
-         text-align: left;
+         text-align: center;
 }
 
         .promo-list {
