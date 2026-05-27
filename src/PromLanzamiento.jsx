@@ -114,58 +114,38 @@
   overflow: hidden;
 }
 
-/* CAPA ANIMADA */
-.promo-box::after {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  border-radius: 13px;
-
-  background: rgba(255, 255, 255, 0.08);
-
-  z-index: 0;
-
-  animation: softPulse 2s ease-in-out infinite;
-}
-
-/* CONTENIDO ENCIMA */
-.promo-box > * {
+/* LATIDO SUAVE SOLO DE LA CAJA */
+.promo-box {
   position: relative;
-  z-index: 1;
+
+  animation: boxGlow 2s ease-in-out infinite;
 }
 
 /* ANIMACIÓN */
-@keyframes softPulse {
+@keyframes boxGlow {
+
   0% {
-    opacity: 0.4;
-    transform: scale(1);
+    box-shadow:
+      0 0 0 rgba(95, 47, 198, 0),
+      0 0 0 rgba(15, 100, 243, 0);
+
+    background: rgba(255,255,255,0.35);
   }
 
   50% {
-    opacity: 0.7;
-    transform: scale(1.015);
+    box-shadow:
+      0 0 35px rgba(95, 47, 198, 0.18),
+      0 0 55px rgba(15, 100, 243, 0.12);
+
+    background: rgba(255,255,255,0.42);
   }
 
   100% {
-    opacity: 0.4;
-    transform: scale(1);
-  }
-}
+    box-shadow:
+      0 0 0 rgba(95, 47, 198, 0),
+      0 0 0 rgba(15, 100, 243, 0);
 
-/* ANIMACIÓN */
-@keyframes softPulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.015);
-  }
-
-  100% {
-    transform: scale(1);
+    background: rgba(255,255,255,0.35);
   }
 }
 
