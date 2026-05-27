@@ -138,18 +138,24 @@
 @keyframes softPulseBg {
 
   0% {
-    opacity: 0.7;
+    opacity: 0.75;
     filter: brightness(1);
+
+    transform: scale(1);
   }
 
   50% {
     opacity: 1;
-    filter: brightness(1.15);
+    filter: brightness(1.12);
+
+    transform: scale(1.025);
   }
 
   100% {
-    opacity: 0.7;
+    opacity: 0.75;
     filter: brightness(1);
+
+    transform: scale(1);
   }
 }
 
