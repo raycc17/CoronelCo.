@@ -317,6 +317,7 @@ transform: translateY(0);
   object-fit: contain;
 
   opacity: 0;
+  filter: blur(12px);
 
   animation-duration: 8s;
   animation-iteration-count: infinite;
@@ -342,23 +343,33 @@ transform: translateY(0);
 }
 
 /* ANIMACIONES */
+/* ANIMACIÓN 1 */
 @keyframes orbFade1 {
   0%, 45% {
     opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
   }
 
   50%, 100% {
     opacity: 0;
+    filter: blur(14px);
+    transform: scale(1.03);
   }
 }
 
+/* ANIMACIÓN 2 */
 @keyframes orbFade2 {
   0%, 45% {
     opacity: 0;
+    filter: blur(14px);
+    transform: scale(1.03);
   }
 
   50%, 100% {
     opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
   }
 }
 
