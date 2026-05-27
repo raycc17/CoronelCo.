@@ -136,8 +136,9 @@
   }
 
   50% {
-    transform: scale(1.050);
-  }
+transform: scale(1.03);
+filter: brightness(1.08);
+}
 
   100% {
     transform: scale(1);
