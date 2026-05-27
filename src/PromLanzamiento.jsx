@@ -232,6 +232,11 @@
   margin-top: 10px;
 }
 
+.faq-box {
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(12px);
+}
+
 /* quitar estilo individual para que se vea como UNA caja */
 .accordion details {
   background: transparent;
