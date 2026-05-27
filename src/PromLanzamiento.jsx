@@ -319,7 +319,7 @@ transform: translateY(0);
   opacity: 0;
   filter: blur(12px);
 
-  animation-duration: 8s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
