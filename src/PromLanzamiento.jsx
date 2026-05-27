@@ -99,53 +99,46 @@
          padding: 20px 25px;
          width: 60%;
          max-width: 320px;
-         background: rgba(255, 255, 255, 0.35);
-         backdrop-filter: blur(12px);
          border-radius: 13px;
          display: flex;
          flex-direction: column;
          gap: 16px;
+         position: relative;
+         overflow: visible;
+         isolation: isolate;
+
 }
 
-/* LATIDO SUAVE */
-/* NECESARIO */
-.promo-box {
-  position: relative;
-  overflow: hidden;
+/* CAPA QUE LATE */
+.promo-box::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: 13px;
+
+  background: rgba(255, 255, 255, 0.35);
+
+  backdrop-filter: blur(12px);
+
+  z-index: -1;
+
+  animation: softBoxPulse 2s ease-in-out infinite;
 }
 
-/* LATIDO SUAVE SOLO DE LA CAJA */
-.promo-box {
-  position: relative;
-
-  animation: boxGlow 2s ease-in-out infinite;
-}
-
-/* ANIMACIÓN */
-@keyframes boxGlow {
+@keyframes softBoxPulse {
 
   0% {
-    box-shadow:
-      0 0 0 rgba(95, 47, 198, 0),
-      0 0 0 rgba(15, 100, 243, 0);
-
-    background: rgba(255,255,255,0.35);
+    transform: scale(1);
   }
 
   50% {
-    box-shadow:
-      0 0 35px rgba(95, 47, 198, 0.18),
-      0 0 55px rgba(15, 100, 243, 0.12);
-
-    background: rgba(255,255,255,0.42);
+    transform: scale(1.025);
   }
 
   100% {
-    box-shadow:
-      0 0 0 rgba(95, 47, 198, 0),
-      0 0 0 rgba(15, 100, 243, 0);
-
-    background: rgba(255,255,255,0.35);
+    transform: scale(1);
   }
 }
 
@@ -186,6 +179,24 @@
 
         .promo-box {
          align-items: center
+}
+
+/* CAPA QUE LATE */
+.promo-box::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: 13px;
+
+  background: rgba(255, 255, 255, 0.35);
+
+  backdrop-filter: blur(12px);
+
+  z-index: -1;
+
+  animation: softBoxPulse 2s ease-in-out infinite;
 }
 
         .promo-box-title {
