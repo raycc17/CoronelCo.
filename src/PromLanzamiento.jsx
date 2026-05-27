@@ -165,7 +165,7 @@
   width: 69px;
   height: 2px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #5f2fc6, #0f64f3);
+  background: linear-gradient(135deg, #ffffff, #5f2fc6, #ffffff);
 }
 
   /* CÍRCULO */
