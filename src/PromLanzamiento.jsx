@@ -111,39 +111,32 @@
 
 }
 
-/* CAPA QUE LATE */
-.promo-box:first-of-type::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 13px;
-  background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(12px);
-  z-index: -1;
-  animation: softBoxPulse 2s ease-in-out infinite;
+/* SOLO PRIMERA CAJA */
+.promo-box:first-of-type {
+  animation: softPulse 2s ease-in-out infinite;
 }
 
-/* CONTENIDO ENCIMA */
-.promo-box:first-of-type > * {
-  position: relative;
-  z-index: 1;
-}
-
-@keyframes softBoxPulse {
+@keyframes softPulse {
 
   0% {
     transform: scale(1);
-    filter: brightness(1);
+    backdrop-filter: blur(12px);
+
+    background: rgba(255,255,255,0.35);
   }
 
   50% {
-    transform: scale(1.03);
-    filter: brightness(1.08);
-}
+    transform: scale(1.025);
+    backdrop-filter: blur(16px);
+
+    background: rgba(255,255,255,0.42);
+  }
 
   100% {
     transform: scale(1);
-    filter: brightness(1);
+    backdrop-filter: blur(12px);
+
+    background: rgba(255,255,255,0.35);
   }
 }
 
