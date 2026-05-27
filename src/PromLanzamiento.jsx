@@ -129,7 +129,11 @@
   animation: softPulseBg 2s ease-in-out infinite;
 }
 
-
+/* CONTENIDO ENCIMA */
+.promo-box:not(.faq-box) > * {
+  position: relative;
+  z-index: 1;
+}
 
 @keyframes softPulseBg {
 
