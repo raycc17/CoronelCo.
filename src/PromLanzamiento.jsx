@@ -108,8 +108,50 @@
 }
 
 /* LATIDO SUAVE */
+/* NECESARIO */
 .promo-box {
+  position: relative;
+  overflow: hidden;
+}
+
+/* CAPA ANIMADA */
+.promo-box::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: 13px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  z-index: 0;
+
   animation: softPulse 2s ease-in-out infinite;
+}
+
+/* CONTENIDO ENCIMA */
+.promo-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ANIMACIÓN */
+@keyframes softPulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: scale(1.015);
+  }
+
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
 }
 
 /* ANIMACIÓN */
