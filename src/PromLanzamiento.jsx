@@ -106,8 +106,6 @@
          position: relative;
          overflow: visible;
          isolation: isolate;
-         background: rgba(255,255,255,0.35);
-         backdrop-filter: blur(12px);
 
 }
 
