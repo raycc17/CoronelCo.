@@ -117,8 +117,14 @@
   border-radius: 13px;
   background: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(12px);
-  z-index: -1;
+  z-index: 0;
   animation: softBoxPulse 2s ease-in-out infinite;
+}
+
+/* CONTENIDO ENCIMA */
+.promo-box:first-of-type > * {
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes softBoxPulse {
