@@ -107,6 +107,26 @@
          gap: 16px;
 }
 
+/* LATIDO SUAVE */
+.promo-box {
+  animation: softPulse 2s ease-in-out infinite;
+}
+
+/* ANIMACIÓN */
+@keyframes softPulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.015);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
         .promo-box-title {
          margin: 0;
          font-size: 0.8rem;
