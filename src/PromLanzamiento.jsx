@@ -165,6 +165,7 @@
   width: 69px;
   height: 2px;
   border-radius: 999px;
+  opacity: 0.9;
   background: linear-gradient(135deg, #ffffff, #5f2fc6, #ffffff);
 }
 
