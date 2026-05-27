@@ -310,7 +310,7 @@ transform: translateY(0);
 .orb-img {
   position: absolute;
   inset: 0;
-  mix-blend-mode: screen;
+  mix-blend-mode: lighten;
   width: 100%;
   height: 100%;
 
