@@ -205,8 +205,10 @@ export default function PromoLanzamiento() {
   letter-spacing: 0.08em;
   display: flex;
   justify-content: space-between;
-    align-items: center;
-    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* QUITAR FLECHA DEFAULT */
