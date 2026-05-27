@@ -112,18 +112,12 @@
 /* CAPA QUE LATE */
 .promo-box::before {
   content: "";
-
   position: absolute;
   inset: 0;
-
   border-radius: 13px;
-
   background: rgba(255, 255, 255, 0.35);
-
   backdrop-filter: blur(12px);
-
   z-index: -1;
-
   animation: softBoxPulse 2s ease-in-out infinite;
 }
 
@@ -134,7 +128,7 @@
   }
 
   50% {
-    transform: scale(1.025);
+    transform: scale(2.025);
   }
 
   100% {
@@ -162,13 +156,10 @@
 
 .promo-list li {
   position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   gap: 8px;
-
   font-size: 0.6rem;
   line-height: 1.3;
   text-transform: uppercase;
@@ -184,18 +175,12 @@
 /* CAPA QUE LATE */
 .promo-box::before {
   content: "";
-
   position: absolute;
   inset: 0;
-
   border-radius: 13px;
-
   background: rgba(255, 255, 255, 0.35);
-
   backdrop-filter: blur(12px);
-
   z-index: -1;
-
   animation: softBoxPulse 2s ease-in-out infinite;
 }
 
