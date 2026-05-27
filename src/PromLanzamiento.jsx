@@ -446,27 +446,27 @@ transform: translateY(0);
   <div className="accordion">
 
  <details open className="faq-item faq-1">
-  <summary>Análisis de marca</summary>
+  <summary><center>Análisis de marca</center></summary>
       <p>Evaluamos el estado actual de tu marca...</p>
     </details>
 
 <details open className="faq-item faq-2">
-  <summary>Estrategia de crecimiento</summary>
+  <summary><center>Estrategia de crecimiento</center></summary>
       <p>Definimos el camino estratégico...</p>
     </details>
 
 <details open className="faq-item faq-3">
-  <summary>Parrilla de contenido</summary>
+  <summary><center>Parrilla de contenido</center></summary>
       <p>Organizamos el contenido...</p>
     </details>
 
  <details open className="faq-item faq-4">
-      <summary>2 plantillas de contenido</summary>
+      <summary><center>2 plantillas de contenido</center></summary>
       <p>Plantillas listas para publicar...</p>
     </details>
 
  <details open className="faq-item faq-5">
-      <summary>Acceso a Campus CC</summary>
+      <summary><center></center>Acceso a Campus CC</center></summary>
       <p>Clases, ebooks y capacitaciones...</p>
     </details>
 
