@@ -448,7 +448,7 @@ transform: translateY(0);
   <div className="accordion">
 
  <details open className="faq-item faq-1">
-  <summary><Análisis de marca</summary>
+  <summary>Análisis de marca</summary>
       <p>Evaluamos el estado actual de tu marca...</p>
     </details>
 
