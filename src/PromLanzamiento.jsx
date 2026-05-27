@@ -121,6 +121,8 @@
          display: flex;
          flex-direction: column;
          gap: 10px;
+         text-align: center;
+         justify-content: center;
 }
 
         .promo-list li {
@@ -131,6 +133,8 @@
          text-transform: uppercase; /* ← TODO en mayúsculas */
          font-weight: 300;          /* ← delgado */
          letter-spacing: 0.08em;
+         text-align: center;
+         justify-content: center;
 }
 
         .promo-box {
