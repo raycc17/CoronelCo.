@@ -218,7 +218,17 @@
   text-transform: uppercase;
   opacity: 60;
   color: #ffffff;
-  line-height: 5;
+  line-height: 1;
+}
+.text-emergency2 {
+  margin-top: -9px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  opacity: 60;
+  color: #ffffff;
+  line-height: 1;
 }
 
   /* CÍRCULO */
@@ -569,7 +579,7 @@
 
 <div className="text-emergency">
     <span className="text-emergency">Diseñado para marcas que quieren dejar de improvisar</span>
-    <span className="text-emergency">y comenzar a crecer con dirección.</span>
+    <span className="text-emergency2">y comenzar a crecer con dirección.</span>
   </div>
 
 {/* CAJA 2 (FAQ) */}
