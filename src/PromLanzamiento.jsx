@@ -354,13 +354,13 @@
 
 .text-currency {
   margin-top: -9px;
-  font-size: 1.35rem;
+  font-size: 0.75rem;
   font-weight: 100;
   letter-spacing: 0.20em;
   text-transform: uppercase;
   opacity: 0.9;
   color: #ffffff;
-  line-height: 1;
+  line-height: 3;
 }
 
 
