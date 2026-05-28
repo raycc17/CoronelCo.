@@ -327,7 +327,7 @@
 
 .new-price {
   font-size: clamp(2.4rem, 5vw, 3.4rem);
-  font-weight: 800;
+  font-weight: 950;
   line-height: 1;
   color: #ffffff;
   letter-spacing: -0.03em;
@@ -349,7 +349,7 @@
   text-transform: uppercase;
   opacity: 0.9;
   color: #ffffff;
-  line-height: 1;
+  line-height: 3;
 }
 
 
