@@ -212,7 +212,7 @@
 
 .text-emergency {
   margin-top: -9px;
-  font-size: 1.75rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -222,7 +222,7 @@
 }
 .text-emergency2 {
   margin-top: -9px;
-  font-size: 1.75rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -577,14 +577,6 @@
     {/* CÍRCULO */}
 <div className="promo-circle"></div>
 
-<div className="text-emergency">
-    <span className="text-emergency">Diseñado para marcas que quieren dejar de improvisar</span>
-</div>
-    
- <div className="text-emergency2"> 
-    <span className="text-emergency2">y comenzar a crecer con dirección.</span>
-  </div>
-
 {/* CAJA 2 (FAQ) */}
 <div className="promo-box faq-box">
   <div className="accordion">
@@ -625,6 +617,14 @@
     <span className="text-currency">VÁLIDO POR ERA DE LANZAMIENTO</span>
   </div>
 </div>
+
+    <div className="text-emergency">
+    <span className="text-emergency">Diseñado para marcas que quieren dejar de improvisar</span>
+</div>
+    
+ <div className="text-emergency2"> 
+    <span className="text-emergency2">y comenzar a crecer con dirección.</span>
+  </div>
     
         </section>
 
