@@ -344,7 +344,7 @@
 .price-currency {
   margin-top: -4px;
   font-size: 1.35rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   opacity: 0.9;
@@ -355,10 +355,10 @@
 .text-currency {
   margin-top: -9px;
   font-size: 0.75rem;
-  font-weight: 100;
+  font-weight: 200;
   letter-spacing: 0.20em;
   text-transform: uppercase;
-  opacity: 0;
+  opacity: 100;
   color: #ffffff;
   line-height: 5;
 }
