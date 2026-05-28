@@ -358,9 +358,9 @@
   font-weight: 100;
   letter-spacing: 0.20em;
   text-transform: uppercase;
-  opacity: 0.9;
+  opacity: 100;
   color: #ffffff;
-  line-height: 3;
+  line-height: 5;
 }
 
 
