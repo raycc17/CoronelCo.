@@ -562,7 +562,7 @@
 
 <details open className="faq-item">
   <summary>Análisis de marca</summary>
-      <p>Evaluamos el estado actual de tu marca...</p>
+      <p>Evaluamos el estado actual de tu marca para identificar qué está funcionando, qué está limitando su crecimiento y qué oportunidades estratégicas pueden ayudarte a posicionarte mejor en el mercado.</p>
     </details>
 
 <details open className="faq-item">
