@@ -349,7 +349,7 @@
   text-transform: uppercase;
   opacity: 0.9;
   color: #ffffff;
-  line-height: 3;
+  line-height: 1;
 }
 
 
