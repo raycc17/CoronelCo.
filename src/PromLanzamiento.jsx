@@ -210,6 +210,17 @@
   background: linear-gradient(135deg, #ffffff, #5f2fc6, #ffffff);
 }
 
+.text-emergency {
+  margin-top: -9px;
+  font-size: 0.75rem;
+  font-weight: 200;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  opacity: 100;
+  color: #ffffff;
+  line-height: 5;
+}
+
   /* CÍRCULO */
 .promo-circle {
   margin-top: 40px;
@@ -556,33 +567,37 @@
     {/* CÍRCULO */}
 <div className="promo-circle"></div>
 
+<div className="text-emergency">
+    <span className="text-emergency">Diseñado para marcas que quieren dejar de improvisar y comenzar a crecer con dirección.</span>
+  </div>
+
 {/* CAJA 2 (FAQ) */}
 <div className="promo-box faq-box">
   <div className="accordion">
 
 <details open className="faq-item">
   <summary>Análisis de marca</summary>
-      <p>Evaluamos el estado actual de tu marca para identificar qué está funcionando, qué está limitando su crecimiento y qué oportunidades estratégicas pueden ayudarte a posicionarte mejor en el mercado.</p>
+      <p>Evaluamos el estado actual de tu marca para identificar qué está funcionando, qué está limitando su crecimiento y qué oportunidades estratégicas pueden ayudarte a posicionarte mejor en el mercado y frente a la competencia.</p>
     </details>
 
 <details open className="faq-item">
   <summary>Estrategia de crecimiento</summary>
-      <p>Definimos el camino estratégico...</p>
+      <p>Definimos una dirección estratégica clara para ayudarte a crecer con intención, conectar con el público correcto y tomar decisiones alineadas a los objetivos reales de tu marca.</p>
     </details>
 
 <details open className="faq-item">
   <summary>Parrilla de contenido</summary>
-      <p>Organizamos el contenido...</p>
+      <p>Organizamos estratégicamente tu contenido para que tu comunicación tenga coherencia, intención y continuidad, permitiéndote conectar mejor con tu audiencia y fortalecer tu presencia digital.</p>
     </details>
 
 <details open className="faq-item">
   <summary>2 plantillas de contenido</summary>
-      <p>Plantillas listas para publicar...</p>
+      <p>Recibe dos plantillas listas para personalizar y publicar, diseñadas para ayudarte a comunicar tu marca de forma más profesional, atractiva y alineada a tu identidad.</p>
     </details>
 
 <details open className="faq-item">
   <summary>Acceso a Campus CC</summary>
-      <p>Clases, ebooks y capacitaciones...</p>
+      <p>Accede a nuestro espacio de formación con clases, ebooks y capacitaciones pensadas para ayudarte a fortalecer conocimientos clave en áreas como marketing, contenido, estrategia y crecimiento de marca.</p>
     </details>
 
 </div>    
