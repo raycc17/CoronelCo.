@@ -232,7 +232,7 @@
   background: linear-gradient(135deg, #4919af, #0f64f3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  line-height: 1.5;
+  line-height: 1;
 }
 
   /* CÍRCULO */
