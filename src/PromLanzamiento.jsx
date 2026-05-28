@@ -341,17 +341,6 @@
   line-height: 1;
 }
 
-.price-currency {
-  margin-top: -4px;
-  font-size: 1.35rem;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  opacity: 0.9;
-  color: #ffffff;
-  line-height: 1;
-}
-
 .text-currency {
   margin-top: -9px;
   font-size: 0.75rem;
@@ -609,8 +598,7 @@
   <span className="old-price">S/369.90</span>
 
   <div className="new-price-wrap">
-    <span className="new-price">35.00</span>
-    <span className="price-currency">soles</span>
+    <span className="new-price">S/35.00</span>
     <span className="text-currency">VÁLIDO POR ERA DE LANZAMIENTO</span>
   </div>
 </div>
