@@ -319,27 +319,38 @@
 .old-price {
   font-size: 1.1rem;
   font-weight: 500;
-
   color: #ffd54a;
-
   opacity: 0.69;
-
   text-decoration: line-through;
-
   letter-spacing: 0.05em;
 }
 
 .new-price {
   font-size: clamp(2.4rem, 5vw, 3.4rem);
-
   font-weight: 800;
-
   line-height: 1;
-
   color: #ffffff;
-
   letter-spacing: -0.03em;
 }
+
+.new-price-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  line-height: 1;
+}
+
+.price-currency {
+  margin-top: -4px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  color: #ffffff;
+}
+
 
         /* RESPONSIVE */
   @media (max-width: 480px) {
@@ -582,9 +593,13 @@
 </div>    
 </div>
 
-    <div className="promo-price">
+<div className="promo-price">
   <span className="old-price">369.90 soles</span>
-  <span className="new-price">35.00 soles</span>
+
+  <div className="new-price-wrap">
+    <span className="new-price">35.00</span>
+    <span className="price-currency">soles</span>
+  </div>
 </div>
           
         </section>
