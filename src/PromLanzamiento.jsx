@@ -579,6 +579,9 @@
 
 <div className="text-emergency">
     <span className="text-emergency">Diseñado para marcas que quieren dejar de improvisar</span>
+</div>
+    
+ <div className="text-emergency2"> 
     <span className="text-emergency2">y comenzar a crecer con dirección.</span>
   </div>
 
