@@ -595,7 +595,7 @@
 </div>
 
 <div className="promo-price">
-  <span className="old-price">369.90 soles</span>
+  <span className="old-price">S/369.90</span>
 
   <div className="new-price-wrap">
     <span className="new-price">35.00</span>
