@@ -342,7 +342,7 @@
 }
 
 .price-currency {
-  margin-top: -6px;
+  margin-top: -4px;
   font-size: 1.35rem;
   font-weight: 300;
   letter-spacing: 0.12em;
