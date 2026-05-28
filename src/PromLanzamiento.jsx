@@ -217,8 +217,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   opacity: 60;
-  color; #ffffff
-  line-height: 6;
+  background: linear-gradient(135deg, #4919af, #0f64f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  line-height: 6;
 }
 .text-emergency2 {
   margin-top: -9px;
@@ -227,7 +228,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   opacity: 60;
-  color; #ffffff
+  background: linear-gradient(135deg, #4919af, #0f64f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  line-height: 6;
   line-height: 1.5;
 }
 
