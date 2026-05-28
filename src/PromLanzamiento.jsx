@@ -112,18 +112,12 @@
 /* SOLO CAJA INCLUYE */
 .promo-box:not(.faq-box)::before {
   content: "";
-
   position: absolute;
   inset: 0;
-
   border-radius: 13px;
-
   background: rgba(255,255,255,0.35);
-
   backdrop-filter: blur(12px);
-
   z-index: 0;
-
   animation: softPulseBg 2s ease-in-out infinite;
 }
 
@@ -407,7 +401,7 @@
 /* ORBES LATERALES */
 .side-orb {
   position: fixed;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   z-index: 0;
 
