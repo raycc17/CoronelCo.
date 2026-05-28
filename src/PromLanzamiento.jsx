@@ -401,7 +401,7 @@
 /* ORBES LATERALES */
 .side-orb {
   position: fixed;
-  top: 60%;
+  top: 65%;
   transform: translateY(-50%);
   z-index: 0;
 
