@@ -212,23 +212,23 @@
 
 .text-emergency {
   margin-top: -9px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   opacity: 60;
   color: #ffffff;
-  line-height: 1;
+  line-height: 2;
 }
 .text-emergency2 {
   margin-top: -9px;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   opacity: 60;
   color: #ffffff;
-  line-height: 1;
+  line-height: 2;
 }
 
   /* CÍRCULO */
