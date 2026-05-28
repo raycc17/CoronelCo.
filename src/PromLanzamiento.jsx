@@ -352,6 +352,17 @@
   line-height: 1;
 }
 
+.text-currency {
+  margin-top: -9px;
+  font-size: 1.35rem;
+  font-weight: 100;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  opacity: 0.9;
+  color: #ffffff;
+  line-height: 1;
+}
+
 
         /* RESPONSIVE */
   @media (max-width: 480px) {
@@ -600,9 +611,10 @@
   <div className="new-price-wrap">
     <span className="new-price">35.00</span>
     <span className="price-currency">soles</span>
+    <span className="text-currency">VÁLIDO POR ERA DE LANZAMIENTO</span>
   </div>
 </div>
-          
+    
         </section>
 
       </main>
