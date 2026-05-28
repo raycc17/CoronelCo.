@@ -217,7 +217,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   opacity: 60;
-  color: #ffffff;
+  background: linear-gradient(135deg, #4919af, #0f64f3);
   line-height: 5;
 }
 .text-emergency2 {
@@ -227,7 +227,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   opacity: 60;
-  color: #ffffff;
+  background: linear-gradient(135deg, #4919af, #0f64f3);
   line-height: 2;
 }
 
