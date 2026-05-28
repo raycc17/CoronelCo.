@@ -218,7 +218,7 @@
   text-transform: uppercase;
   opacity: 60;
   color: #ffffff;
-  line-height: 2;
+  line-height: 5;
 }
 .text-emergency2 {
   margin-top: -9px;
