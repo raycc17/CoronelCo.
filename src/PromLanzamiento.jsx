@@ -342,13 +342,14 @@
 }
 
 .price-currency {
-  margin-top: -4px;
-  font-size: 0.9rem;
+  margin-top: -6px;
+  font-size: 1.35rem;
   font-weight: 300;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  opacity: 0.85;
+  opacity: 0.9;
   color: #ffffff;
+  line-height: 1;
 }
 
 
