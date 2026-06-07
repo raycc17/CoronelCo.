@@ -157,7 +157,7 @@ export default function ComingSoon() {
         top:-15%;
         left:-5%;
         width:600px;
-        z-index:1;
+        z-index:0;
         transform:rotate(-18deg);
       }
 
