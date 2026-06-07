@@ -172,16 +172,16 @@ export default function ComingSoon() {
 
     .cone-1{
         bottom:14%;
-        left:2%;
-        width:80px;
+        left:14%;
+        width:200px;
         transform:rotate(-12deg);
       }
 
       .cone-2{
-        top:60%;
+        top:90%;
         right:-20%;
         width:800px;
-        z-index:0;
+        z-index:0
         transform:rotate(15deg);
       }
 
