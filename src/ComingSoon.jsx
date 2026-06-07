@@ -194,16 +194,16 @@ export default function ComingSoon() {
           height:300px;
         }
 
-        .helmet{
-          width:55px;
+        .helmet-1{
+          width:103px;
         }
 
-        .cone{
-          width:50px;
+        .cone-2{
+          width:150px;
         }
 
-        .helmet-3,
-        .cone-3{
+        .helmet-1,
+        .cone-2{
           display:none;
         }
       }
