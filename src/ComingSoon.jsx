@@ -156,13 +156,13 @@ export default function ComingSoon() {
       .helmet-1{
         top:14%;
         left:8%;
+        width:205px;
         transform:rotate(-18deg);
       }
 
       .helmet-2{
         bottom:22%;
         right:12%;
-        width:115px;
         transform:rotate(15deg);
       }
 
@@ -254,13 +254,13 @@ export default function ComingSoon() {
         {/* CASCOS */}
 
         <img
-          src="/casco1.png"
+          src="/casco.png"
           className="helmet helmet-1"
           alt=""
         />
 
         <img
-          src="/casco.png"
+          src="/casco1.png"
           className="helmet helmet-2"
           alt=""
         />
