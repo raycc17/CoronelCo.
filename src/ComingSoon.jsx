@@ -280,7 +280,7 @@ export default function ComingSoon() {
         />
 
         <img
-          src="/cono.png"
+          src="/cono1.png"
           className="cone cone-2"
           alt=""
         />
