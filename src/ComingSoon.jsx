@@ -268,7 +268,7 @@ export default function ComingSoon() {
         />
 
         <img
-          src="/casco.png"
+          src="/casco1.png"
           className="helmet helmet-3"
           alt=""
         />
@@ -288,7 +288,7 @@ export default function ComingSoon() {
         />
 
         <img
-          src="/cono.png"
+          src="/cono1.png"
           className="cone cone-3"
           alt=""
         />
