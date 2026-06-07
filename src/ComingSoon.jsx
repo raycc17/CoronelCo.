@@ -162,9 +162,9 @@ export default function ComingSoon() {
       }
 
       .helmet-2{
-        bottom:2%;
+        bottom:7%;
         width:205px;
-        right:42%;
+        right:32%;
         transform:rotate(35deg);
       }
 
@@ -172,7 +172,7 @@ export default function ComingSoon() {
 
     .cone-1{
         bottom:14%;
-        left:14%;
+        left:24%;
         width:200px;
         transform:rotate(-12deg);
       }
