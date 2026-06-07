@@ -178,7 +178,7 @@ export default function ComingSoon() {
       }
 
       .cone-2{
-        top:80%;
+        top:40%;
         right:-20%;
         width:800px;
         z-index:0
