@@ -6,7 +6,7 @@ import ComingSoon from "./ComingSoon"
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Coronelco />} />
+      <Route path="/" element={<ComingSoon />} />
       <Route path="/promlanzamiento" element={<PromLanzamiento />} />
     </Routes>
   )
