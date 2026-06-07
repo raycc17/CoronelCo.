@@ -154,7 +154,7 @@ export default function ComingSoon() {
       /* CASCOS */
 
       .helmet-1{
-        top:14%;
+        top:60%;
         left:8%;
         width:700px;
         z-index:1;
