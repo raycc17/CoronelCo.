@@ -198,14 +198,14 @@ export default function ComingSoon() {
  
        .helmet-1{
          width:350px;
-         left:-70px;
+         left:-40px;
          top:3%;
   }
 
       .cone-2{
         width:320px;
-        right:-70px;
-        top:35%;
+        right:-50px;
+        top:15%;
   }
 
 }
