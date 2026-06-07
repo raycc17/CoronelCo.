@@ -156,7 +156,7 @@ export default function ComingSoon() {
       .helmet-1{
         top:-35%;
         left:2%;
-        width:700px;
+        width:600px;
         z-index:1;
         transform:rotate(-18deg);
       }
