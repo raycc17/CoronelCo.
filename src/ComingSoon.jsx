@@ -154,8 +154,8 @@ export default function ComingSoon() {
       /* CASCOS */
 
       .helmet-1{
-        top:-40%;
-        left:8%;
+        top:-35%;
+        left:4%;
         width:700px;
         z-index:1;
         transform:rotate(-18deg);
@@ -194,7 +194,7 @@ export default function ComingSoon() {
 
       .cone-3{
         bottom:28%;
-        left:6%;
+        left:2%;
         width:205px;
         opacity:.45;
         z-index:2;
