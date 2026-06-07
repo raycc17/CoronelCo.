@@ -254,7 +254,7 @@ export default function ComingSoon() {
         {/* CASCOS */}
 
         <img
-          src="/casco.png"
+          src="/casco1.png"
           className="helmet helmet-1"
           alt=""
         />
