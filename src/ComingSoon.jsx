@@ -194,7 +194,7 @@ export default function ComingSoon() {
       .cone-3{
         bottom:28%;
         left:6%;
-        width:55px;
+        width:25px;
         opacity:.45;
         z-index:2;
       }
