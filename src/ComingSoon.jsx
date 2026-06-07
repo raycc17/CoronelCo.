@@ -171,15 +171,15 @@ export default function ComingSoon() {
       /* CONOS */
 
     .cone-1{
-        bottom:2%;
+        bottom:14%;
         left:2%;
         width:80px;
         transform:rotate(-12deg);
       }
 
       .cone-2{
-        top:35%;
-        right:2%;
+        top:60%;
+        right:-20%;
         width:800px;
         z-index:0;
         transform:rotate(15deg);
