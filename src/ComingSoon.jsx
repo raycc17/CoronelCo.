@@ -185,7 +185,8 @@ export default function ComingSoon() {
         }
 
         .coming-title{
-          font-size:3rem;
+          font-size:2.6rem;
+          line-height:1;
           max-width:90%;
         }
 
@@ -195,11 +196,19 @@ export default function ComingSoon() {
         }
 
  
+       .helmet-1{
+         width:250px;
+         left:-80px;
+         top:10%;
+  }
 
-        .helmet-1,
-        .cone-2{
-          display:none;
-        }
+      .cone-2{
+        width:320px;
+        right:-120px;
+        top:5%;
+  }
+
+}
       }
 
       `}</style>
