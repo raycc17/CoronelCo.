@@ -163,8 +163,8 @@ export default function ComingSoon() {
       .helmet-2{
         bottom:1%;
         width:250px;
-        right:52%;
-        transform:rotate(15deg);
+        right:32%;
+        transform:rotate(35deg);
       }
 
       .helmet-3{
