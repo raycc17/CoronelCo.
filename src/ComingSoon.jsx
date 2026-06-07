@@ -161,21 +161,7 @@ export default function ComingSoon() {
         transform:rotate(-18deg);
       }
 
-      .helmet-2{
-        bottom:7%;
-        width:205px;
-        right:32%;
-        transform:rotate(35deg);
-      }
-
       /* CONOS */
-
-    .cone-1{
-        bottom:14%;
-        left:24%;
-        width:200px;
-        transform:rotate(-12deg);
-      }
 
       .cone-2{
         top:10%;
@@ -248,19 +234,7 @@ export default function ComingSoon() {
           alt=""
         />
 
-        <img
-          src="/casco1.png"
-          className="helmet helmet-2"
-          alt=""
-        />
-
         {/* CONOS */}
-
-        <img
-          src="/cono1.png"
-          className="cone cone-1"
-          alt=""
-        />
 
         <img
           src="/cono1.png"
