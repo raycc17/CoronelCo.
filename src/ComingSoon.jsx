@@ -154,7 +154,7 @@ export default function ComingSoon() {
       /* CASCOS */
 
       .helmet-1{
-        top:-15%;
+        top:15%;
         left:-5%;
         width:600px;
         z-index:0;
@@ -164,7 +164,7 @@ export default function ComingSoon() {
       /* CONOS */
 
       .cone-2{
-        top:10%;
+        top:6%;
         right:-20%;
         width:800px;
         z-index:0
