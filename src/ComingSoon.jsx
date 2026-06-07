@@ -161,19 +161,11 @@ export default function ComingSoon() {
         transform:rotate(-18deg);
       }
 
-            .helmet-2{
+      .helmet-2{
         bottom:-8%;
         width:205px;
         right:22%;
         transform:rotate(35deg);
-      }
-
-      .helmet-3{
-        top:20%;
-        right:22%;
-        width:65px;
-        opacity:.5;
-        z-index:2;
       }
 
       /* CONOS */
@@ -190,14 +182,6 @@ export default function ComingSoon() {
         width:355px;
         z-index:0;
         transform:rotate(15deg);
-      }
-
-      .cone-3{
-        bottom:28%;
-        left:2%;
-        width:205px;
-        opacity:.45;
-        z-index:2;
       }
 
       /* MOBILE */
@@ -269,12 +253,6 @@ export default function ComingSoon() {
           alt=""
         />
 
-        <img
-          src="/casco1.png"
-          className="helmet helmet-3"
-          alt=""
-        />
-
         {/* CONOS */}
 
         <img
@@ -286,12 +264,6 @@ export default function ComingSoon() {
         <img
           src="/cono1.png"
           className="cone cone-2"
-          alt=""
-        />
-
-        <img
-          src="/cono1.png"
-          className="cone cone-3"
           alt=""
         />
 
