@@ -254,13 +254,13 @@ export default function ComingSoon() {
         {/* CASCOS */}
 
         <img
-          src="/casco.png"
+          src="/casco1.png"
           className="helmet helmet-1"
           alt=""
         />
 
         <img
-          src="/casco1.png"
+          src="/casco.png"
           className="helmet helmet-2"
           alt=""
         />
@@ -274,13 +274,13 @@ export default function ComingSoon() {
         {/* CONOS */}
 
         <img
-          src="/cono.png"
+          src="/cono1.png"
           className="cone cone-1"
           alt=""
         />
 
         <img
-          src="/cono1.png"
+          src="/cono.png"
           className="cone cone-2"
           alt=""
         />
