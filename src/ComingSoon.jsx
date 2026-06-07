@@ -302,7 +302,7 @@ export default function ComingSoon() {
         </h1>
 
         <p className="coming-subtitle">
-          Volvemos pronto
+          Iniciamos web pronto
         </p>
 
       </main>
