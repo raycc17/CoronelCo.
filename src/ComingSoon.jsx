@@ -1,127 +1,214 @@
 export default function ComingSoon() {
   return (
-    <style>{`
+    <>
+      <style>{`
+        .coming-page{
+          min-height:100vh;
+          background-image:url('/fondoCoronelCo..png');
+          background-size:cover;
+          background-position:center;
 
-.coming-page{
-  min-height:100vh;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
 
-  background-image:url('/fondoCoronelCo..png');
-  background-size:cover;
-  background-position:center;
+          position:relative;
+          overflow:hidden;
+        }
 
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+        .coming-title{
+          font-size:clamp(3rem,8vw,7rem);
+          font-weight:800;
+          text-align:center;
+          line-height:.95;
 
-  position:relative;
-  overflow:hidden;
-}
+          background:linear-gradient(
+            135deg,
+            #4919af,
+            #0f64f3
+          );
 
-.coming-title{
-  font-size:clamp(3rem,8vw,7rem);
-  font-weight:800;
-  text-align:center;
-  line-height:0.95;
+          -webkit-background-clip:text;
+          -webkit-text-fill-color:transparent;
 
-  background:linear-gradient(
-    135deg,
-    #4919af,
-    #0f64f3
-  );
+          position:relative;
+          z-index:2;
+        }
 
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+        .coming-subtitle{
+          margin-top:15px;
 
-  z-index:2;
-}
+          font-size:1rem;
+          letter-spacing:.2em;
+          text-transform:uppercase;
 
-.coming-subtitle{
-  margin-top:15px;
+          position:relative;
+          z-index:2;
+        }
 
-  font-size:1rem;
+        .blur-orb{
+          position:absolute;
 
-  letter-spacing:.2em;
+          width:500px;
+          height:500px;
 
-  text-transform:uppercase;
+          border-radius:50%;
 
-  z-index:2;
-}
+          background:linear-gradient(
+            135deg,
+            #5f2fc6,
+            #0f64f3
+          );
 
-.blur-orb{
-  position:absolute;
+          filter:blur(120px);
 
-  width:500px;
-  height:500px;
+          opacity:.75;
 
-  border-radius:50%;
+          z-index:1;
 
-  background:linear-gradient(
-    135deg,
-    #5f2fc6,
-    #0f64f3
-  );
+          animation:pulse 4s ease-in-out infinite;
+        }
 
-  filter:blur(120px);
+        @keyframes pulse{
+          0%{
+            transform:scale(1);
+          }
 
-  opacity:.75;
-}
+          50%{
+            transform:scale(1.08);
+          }
 
-@keyframes float{
-  0%{transform:translateY(0)}
-  50%{transform:translateY(-20px)}
-  100%{transform:translateY(0)}
-}
+          100%{
+            transform:scale(1);
+          }
+        }
 
-.helmet,
-.cone{
-  position:absolute;
-  animation:float 4s ease-in-out infinite;
-}
+        @keyframes float{
+          0%{
+            transform:translateY(0);
+          }
 
-.helmet-1{
-  top:20%;
-  left:10%;
-}
+          50%{
+            transform:translateY(-20px);
+          }
 
-.helmet-2{
-  top:25%;
-  right:10%;
-}
+          100%{
+            transform:translateY(0);
+          }
+        }
 
-.cone-1{
-  bottom:18%;
-  left:12%;
-}
+        .helmet,
+        .cone{
+          position:absolute;
+          animation:float 4s ease-in-out infinite;
+          z-index:2;
+        }
 
-.cone-2{
-  bottom:15%;
-  right:12%;
-}
+        .helmet{
+          width:90px;
+        }
 
-`}</style>
-    
-    <main className="coming-page">
+        .cone{
+          width:80px;
+        }
 
-      <div className="blur-orb"></div>
+        .helmet-1{
+          top:18%;
+          left:10%;
+        }
 
-      <img src="/casco.png" className="helmet helmet-1" />
-      <img src="/casco.png" className="helmet helmet-2" />
+        .helmet-2{
+          top:18%;
+          right:10%;
+        }
 
-      <img src="/cono.png" className="cone cone-1" />
-      <img src="/cono.png" className="cone cone-2" />
+        .cone-1{
+          bottom:18%;
+          left:12%;
+        }
 
-      <h1 className="coming-title">
-        ESTAMOS
-        <br />
-        CONSTRUYENDO
-      </h1>
+        .cone-2{
+          bottom:18%;
+          right:12%;
+        }
 
-      <p className="coming-subtitle">
-        Volvemos pronto.
-      </p>
+        @media (max-width:768px){
 
-    </main>
+          .coming-title{
+            font-size:3rem;
+          }
+
+          .helmet{
+            width:60px;
+          }
+
+          .cone{
+            width:55px;
+          }
+
+          .helmet-1{
+            left:5%;
+          }
+
+          .helmet-2{
+            right:5%;
+          }
+
+          .cone-1{
+            left:5%;
+          }
+
+          .cone-2{
+            right:5%;
+          }
+
+          .blur-orb{
+            width:320px;
+            height:320px;
+          }
+        }
+      `}</style>
+
+      <main className="coming-page">
+
+        <div className="blur-orb"></div>
+
+        <img
+          src="/casco.png"
+          className="helmet helmet-1"
+          alt=""
+        />
+
+        <img
+          src="/casco.png"
+          className="helmet helmet-2"
+          alt=""
+        />
+
+        <img
+          src="/cono.png"
+          className="cone cone-1"
+          alt=""
+        />
+
+        <img
+          src="/cono.png"
+          className="cone cone-2"
+          alt=""
+        />
+
+        <h1 className="coming-title">
+          ESTAMOS
+          <br />
+          CONSTRUYENDO
+        </h1>
+
+        <p className="coming-subtitle">
+          Volvemos pronto
+        </p>
+
+      </main>
+    </>
   )
 }
-
