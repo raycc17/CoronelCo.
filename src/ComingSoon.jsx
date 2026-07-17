@@ -146,7 +146,7 @@ export default function ComingSoon() {
 
 
       .cone{
-        width:160px;
+        width:80px;
       }
 
 
