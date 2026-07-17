@@ -157,45 +157,40 @@ export default function ComingSoon() {
         top:6%;
         right:-15%;
         width:1300px;
-        z-index:-1
+        z-index:-1;
         transform:rotate(15deg);
       }
 
       /* MOBILE */
 
-      @media(max-width:768px){
+@media (max-width:768px){
 
-        .brand-fixed{
-          top:25px;
-          left:25px;
-        }
-
-        .brand-logo{
-          width:110px;
-        }
-
-        .coming-title{
-          font-size:2.6rem;
-          line-height:1;
-          max-width:90%;
-        }
-
-        .blur-orb{
-          width:300px;
-          height:300px;
-        }
-
- 
+  .brand-fixed{
+    top:25px;
+    left:25px;
   }
 
-      .cone-2{
-        width:320px;
-        right:25px;
-        top:58%;
+  .brand-logo{
+    width:110px;
   }
 
+  .coming-title{
+    font-size:2.6rem;
+    line-height:1;
+    max-width:90%;
+  }
+
+  .blur-orb{
+    width:300px;
+    height:300px;
+  }
+
+  .cone-2{
+    width:320px;
+    right:25px;
+    top:58%;
+  }
 }
-      }
 
       `}</style>
 
