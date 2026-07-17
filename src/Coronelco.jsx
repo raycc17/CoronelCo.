@@ -16,16 +16,23 @@ export default function Coronelco() {
 
 const [wordIndex, setWordIndex] = useState(0);
 
-  useEffect(() => {
+useEffect(() => {
 
-  if (!showBg) return;
+  // Si el usuario está en el hero
+  if (!showBg) {
+    setShowFloating(false);
+    return;
+  }
 
-  // aparece inmediatamente
+  // Primera aparición
   setShowFloating(true);
+
+  let visible = true;
 
   const interval = setInterval(() => {
 
-    setShowFloating(prev => !prev);
+    visible = !visible;
+    setShowFloating(visible);
 
   }, 4000);
 
