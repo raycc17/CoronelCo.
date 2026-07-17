@@ -106,11 +106,11 @@ text-shadow:
 
         text-transform:uppercase;
 
-        letter-spacing:.25em;
+        letter-spacing:.31em;
 
-        font-size:.8rem;
+        font-size:.9rem;
 
-        font-weight:500;
+        font-weight:300;
       }
 
       /* ELEMENTOS */
