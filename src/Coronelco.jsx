@@ -1748,7 +1748,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   justify-content:center;
   align-items:center;
 
-  gap:14px;
+  gap:10px;
 
   padding:18px 8px;
 
