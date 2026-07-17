@@ -155,7 +155,7 @@ export default function ComingSoon() {
 
       .cone-2{
         top:9%;
-        right:-10%;
+        right:10%;
         width:777px;
         z-index:0;
         transform:rotate(15deg);
