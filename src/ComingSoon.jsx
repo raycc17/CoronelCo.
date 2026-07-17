@@ -137,15 +137,8 @@ text-shadow:
           transform:translateY(0px);
         }
 
-        25%{
-          transform:translateY(-31px);
-
         50%{
           transform:translateX(-20px);
-        }
-
-        75%{
-          transform:translateX(20px);
         }
         
         100%{
