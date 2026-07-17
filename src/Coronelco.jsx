@@ -1728,84 +1728,73 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 =========================== */
 
 .floating-diagnosis{
+  position: fixed;
+  top: 50%;
+  right: -95px;
 
-  position:fixed;
+  transform: translateY(-50%);
 
-  top:50%;
-  right:-82px;
+  width: 95px;
+  height: 320px;
 
-  transform:translateY(-50%);
+  background: #050505;
 
-  width:82px;
-  height:300px;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
 
-  background:#050505;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
 
-  border-top-left-radius:34px;
-  border-bottom-left-radius:34px;
+  z-index: 999;
 
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:18px;
+  text-decoration: none;
+  color: white;
 
-  padding:18px 8px;
-
-  z-index:999;
-
-  text-decoration:none;
-
-  transition:right .55s cubic-bezier(.22,.61,.36,1);
-
+  transition: right .55s cubic-bezier(.22,.61,.36,1);
 }
 
 .site-shell.bg-visible .floating-diagnosis{
   right:0;
 }
 
+/* Todo el contenido se gira */
+.floating-content{
+  transform: rotate(90deg);
+
+  display:flex;
+  align-items:center;
+  gap:18px;
+
+  white-space:nowrap;
+}
+
 .floating-logo{
-
-  writing-mode:vertical-rl;
-  text-orientation:mixed;
-
   font-family:'Cormorant Garamond', serif;
-
-  font-size:0.95rem;
-
+  font-size:2rem;
   font-weight:300;
-
-  letter-spacing:.03em;
-
-  color:#ffffff;
-
+  color:#fff;
 }
 
 .floating-text{
-
-  writing-mode:vertical-rl;
-  text-orientation:mixed;
-
   font-family:'Inter','Helvetica Neue',Arial,sans-serif;
-
-  font-size:.52rem;
-
+  font-size:.75rem;
   font-weight:700;
-
   letter-spacing:.18em;
-
   text-transform:uppercase;
-
-  color:#ffffff;
-
-  line-height:1.15;
-
+  color:#fff;
 }
 
-.floating-diagnosis:hover{
-
-  right:0;
-
+/* Evita que el enlace herede estilos */
+.floating-diagnosis,
+.floating-diagnosis:link,
+.floating-diagnosis:visited,
+.floating-diagnosis:hover,
+.floating-diagnosis:active{
+  color:#fff;
+  text-decoration:none;
 }
 
 @media (max-width: 980px) {
