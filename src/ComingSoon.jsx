@@ -154,7 +154,7 @@ export default function ComingSoon() {
       /* CONOS */
 
       .cone-2{
-        top:26%;
+        top:9%;
         right:-10%;
         width:777px;
         z-index:0;
