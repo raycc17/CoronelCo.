@@ -160,7 +160,7 @@ text-shadow:
         top:9%;
         right:13%;
         width:777px;
-        z-index:0;
+        z-index:1;
         transform:rotate(15deg);
       }
 
