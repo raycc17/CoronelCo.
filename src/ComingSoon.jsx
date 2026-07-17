@@ -88,7 +88,7 @@ export default function ComingSoon() {
 
         font-weight:1300;
 
-        letter-spacing:-0.02em;
+        letter-spacing:-0.01em;
 
    color: #ffffff;
 
@@ -112,7 +112,7 @@ text-shadow:
 
         font-weight:300;
 
-         color: #ffffff;
+         color: #000000;
 
 text-shadow:
   0 0 20px rgba(255,255,255,0.08),
