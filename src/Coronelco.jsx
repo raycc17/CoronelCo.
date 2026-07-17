@@ -247,7 +247,7 @@ body {
   overflow:hidden;
   flex-shrink:0;
 
-  margin-top:6px;
+  margin-top:5px;
 
   display:inline-flex;
   align-items:center;
