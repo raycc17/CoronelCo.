@@ -242,30 +242,18 @@ body {
 }
 
 .portal-pill{
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-
-  margin-top: 8px;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  min-height: 44px;
-  padding: 0.75rem 2rem;
-
-  border-radius: 999px;
-
   background: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    #f1f1f1 100%
+      135deg,
+      #ffffff 0%,
+      #f8f8f8 45%,
+      #efefef 100%
   );
 
-  border: 1px solid rgba(0,0,0,0.05);
+  border-radius:999px;
 
-  box-shadow: none;
+  border:1px solid rgba(255,255,255,.75);
+
+  box-shadow:none;
 }
 
 .portal-pill span{
