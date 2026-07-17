@@ -1736,8 +1736,8 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
   transform:translateY(-50%);
 
-  width:78px;
-  height:305px;
+  width:60px;
+  height:236px;
 
   background:#050505;
 
