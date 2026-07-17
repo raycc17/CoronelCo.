@@ -241,36 +241,48 @@ body {
   width: 100%;
 }
 
-.portal-pill {
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-  margin-top: 8px;
+.portal-pill{
 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  
-  min-height: 44px;
-  padding: 0.7rem 2rem;
+  position:relative;
+  overflow:hidden;
+  flex-shrink:0;
 
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.012) 0%,
-    rgba(0, 0, 0, 0.012) 100%
-  );
+  margin-top:8px;
 
-  background-size: 180% 180%;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  min-height:44px;
+  padding:0.7rem 2rem;
+
+  border-radius:999px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,.28) 0%,
+      rgba(255,255,255,.12) 50%,
+      rgba(255,255,255,.22) 100%
+    );
+
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+
+  border:1px solid rgba(255,255,255,.35);
+
+  box-shadow:
+      inset 0 1px 0 rgba(255,255,255,.55),
+      0 10px 30px rgba(95,47,198,.12);
 }
 
-.portal-pill span {
-  color: #000000;
-  font-size: 0.55rem;
-  font-weight: 600;
-  letter-spacing: 0.17em;
-  text-transform: uppercase;
-  line-height: 1;
+.portal-pill span{
+    color:#111;
+    font-size:.58rem;
+    font-weight:700;
+    letter-spacing:.20em;
+    text-transform:uppercase;
+    line-height: 1;
 }
 
 .portal-pill,
@@ -2047,7 +2059,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
     </div>
 
     <div className="portal-pill">
-      <span>PORTAL BUSINESS</span>
+      <span>CLIENT PORTAL</span>
     </div>
   </div>
 </header>
