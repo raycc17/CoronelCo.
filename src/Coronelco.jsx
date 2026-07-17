@@ -253,7 +253,7 @@ body {
   justify-content: center;
 
   min-height: 44px;
-  padding: 0.75rem 2rem;
+  padding: 0.175rem 2rem;
 
   border-radius: 999px;
 
