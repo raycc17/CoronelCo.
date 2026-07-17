@@ -242,47 +242,38 @@ body {
 }
 
 .portal-pill{
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
 
-  position:relative;
-  overflow:hidden;
-  flex-shrink:0;
+  margin-top: 8px;
 
-  margin-top:5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
+  min-height: 44px;
+  padding: 0.75rem 2rem;
 
-  min-height:44px;
-  padding:0.7rem 2rem;
+  border-radius: 999px;
 
-  border-radius:999px;
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f1f1f1 100%
+  );
 
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255,255,255,.28) 0%,
-      rgba(255,255,255,.12) 50%,
-      rgba(255,255,255,.22) 100%
-    );
+  border: 1px solid rgba(0,0,0,0.05);
 
-  backdrop-filter:blur(18px);
-  -webkit-backdrop-filter:blur(18px);
-
-  border:1px solid rgba(255,255,255,.35);
-
-  box-shadow:
-      inset 0 1px 0 rgba(255,255,255,.55),
-      0 10px 30px rgba(95,47,198,.12);
+  box-shadow: none;
 }
 
 .portal-pill span{
-    color:#111;
-    font-size:.58rem;
-    font-weight:700;
-    letter-spacing:.20em;
-    text-transform:uppercase;
-    line-height: 1;
+  color:#000000;
+  font-size:.58rem;
+  font-weight:600;
+  letter-spacing:.18em;
+  text-transform:uppercase;
 }
 
 .portal-pill,
