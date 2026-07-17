@@ -7,11 +7,13 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<ComingSoon />} />
+
+      <Route path="/home" element={<Coronelco />} />
+
       <Route path="/promlanzamiento" element={<PromLanzamiento />} />
     </Routes>
   )
 }
 
 export default App
-
 
