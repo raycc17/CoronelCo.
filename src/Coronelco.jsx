@@ -2118,7 +2118,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   <div className={`site-shell ${showBg ? "bg-visible" : ""}`}>
       <div className="scroll-bg" aria-hidden="true"></div>
 <a
-  href="https://wa.me/51948100719"
+  href="https://wa.me/51994702575"
   target="_blank"
   rel="noopener noreferrer"
   className="floating-diagnosis"
