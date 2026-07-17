@@ -259,8 +259,8 @@ body {
 
   background: linear-gradient(
     135deg,
-    #ffffff 100%,
-    #f1f1f1 0%
+    #f1f1f1 0%,
+    #ffffff 100%
   );
   
   box-shadow: none;
