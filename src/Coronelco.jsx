@@ -253,14 +253,14 @@ body {
   justify-content: center;
 
   min-height: 44px;
-  padding: 0.75rem 2rem;
+  padding: 0.175rem 2rem;
 
   border-radius: 999px;
 
   background: linear-gradient(
     135deg,
-    #ffffff 0%,
-    #f1f1f1 100%
+    #ffffff 100%,
+    #f1f1f1 0%
   );
   
   box-shadow: none;
