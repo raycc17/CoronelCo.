@@ -1723,6 +1723,119 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   text-transform: uppercase;
 }
 
+/* ===========================
+   FLOATING DIAGNOSTIC CTA
+=========================== */
+
+.floating-diagnosis{
+
+  position:fixed;
+
+  top:50%;
+
+  right:-170px;
+
+  transform:translateY(-50%);
+
+  width:170px;
+
+  height:520px;
+
+  background:#050505;
+
+  border-top-left-radius:55px;
+  border-bottom-left-radius:55px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:40px 20px;
+
+  z-index:999;
+
+  transition:
+      right .65s cubic-bezier(.22,.61,.36,1);
+
+}
+
+.site-shell.bg-visible .floating-diagnosis{
+
+  right:0;
+
+}
+
+.floating-logo{
+
+  writing-mode:vertical-rl;
+
+  text-orientation:mixed;
+
+  font-size:2rem;
+
+  font-weight:200;
+
+  letter-spacing:.02em;
+
+  color:white;
+
+}
+
+.floating-divider{
+
+  width:55%;
+
+  height:1px;
+
+  background:rgba(255,255,255,.18);
+
+}
+
+.floating-pill{
+
+  writing-mode:vertical-rl;
+
+  text-orientation:mixed;
+
+  background:linear-gradient(
+      135deg,
+      #ffffff,
+      #f1f1f1
+  );
+
+  color:#000 !important;
+
+  border-radius:999px;
+
+  padding:22px 12px;
+
+  font-size:.62rem;
+
+  font-weight:700;
+
+  letter-spacing:.20em;
+
+  text-transform:uppercase;
+
+  text-align:center;
+
+  transition:.3s;
+
+}
+
+.floating-diagnosis:hover{
+
+    width:185px;
+
+}
+
+.floating-pill:hover{
+
+    transform:scale(1.04);
+
+}
+
 @media (max-width: 980px) {
   .triple-method-grid {
     grid-template-columns: 1fr;
@@ -2032,6 +2145,25 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
   <div className={`site-shell ${showBg ? "bg-visible" : ""}`}>
       <div className="scroll-bg" aria-hidden="true"></div>
+    <a
+  href="https://wa.me/51994702575"
+  className="floating-diagnosis"
+>
+
+<img
+    src="/logoVertical.png"
+    className="floating-logo"
+/>
+
+  <div className="floating-divider"></div>
+
+  <div className="floating-pill">
+      <br />
+      DIAGNÓSTICO GRATIS
+
+  </div>
+
+</a>
 
       <main className="page">
         
