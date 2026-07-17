@@ -1728,73 +1728,69 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 =========================== */
 
 .floating-diagnosis{
-  position: fixed;
-  top: 50%;
-  right: -95px;
 
-  transform: translateY(-50%);
+  position:fixed;
 
-  width: 95px;
-  height: 320px;
+  top:50%;
+  right:-78px;
 
-  background: #050505;
+  transform:translateY(-50%);
 
-  border-top-left-radius: 35px;
-  border-bottom-left-radius: 35px;
+  width:78px;
+  height:305px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 28px;
+  background:#050505;
 
-  z-index: 999;
+  border-top-left-radius:34px;
+  border-bottom-left-radius:34px;
 
-  text-decoration: none;
-  color: white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 
-  transition: right .55s cubic-bezier(.22,.61,.36,1);
+  gap:14px;
+
+  padding:18px 8px;
+
+  cursor:pointer;
+
+  z-index:999;
+
+  transition:right .55s cubic-bezier(.22,.61,.36,1);
+
 }
 
 .site-shell.bg-visible .floating-diagnosis{
   right:0;
 }
 
-/* Todo el contenido se gira */
-.floating-content{
-  transform: rotate(90deg);
+.floating-text{
 
-  display:flex;
-  align-items:center;
-  gap:18px;
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
 
-  white-space:nowrap;
+  color:#fff;
+
+  font-family:'Inter','Helvetica Neue',Arial,sans-serif;
+
+  font-size:.55rem;
+
+  font-weight:700;
+
+  letter-spacing:.16em;
+
+  text-transform:uppercase;
+
 }
 
 .floating-logo{
-  font-family:'Cormorant Garamond', serif;
-  font-size:2rem;
-  font-weight:300;
-  color:#fff;
-}
 
-.floating-text{
-  font-family:'Inter','Helvetica Neue',Arial,sans-serif;
-  font-size:.75rem;
-  font-weight:700;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  color:#fff;
-}
+  height:185px;
 
-/* Evita que el enlace herede estilos */
-.floating-diagnosis,
-.floating-diagnosis:link,
-.floating-diagnosis:visited,
-.floating-diagnosis:hover,
-.floating-diagnosis:active{
-  color:#fff;
-  text-decoration:none;
+  width:auto;
+
+  object-fit:contain;
+
 }
 
 @media (max-width: 980px) {
@@ -2106,27 +2102,22 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
   <div className={`site-shell ${showBg ? "bg-visible" : ""}`}>
       <div className="scroll-bg" aria-hidden="true"></div>
-<a
-  href="https://wa.me/51994702575"
-  target="_blank"
-  rel="noopener noreferrer"
+<div
   className="floating-diagnosis"
+  onClick={() => window.open("https://wa.me/51994702575","_blank")}
 >
 
-<img
-    src="/logoVertical.png"
-    className="floating-logo"
-/>
-
-  <div className="floating-divider"></div>
-
-  <div className="floating-pill">
-      <br />
-      DIAGNÓSTICO GRATIS
-
+  <div className="floating-text">
+    DIAGNÓSTICO GRATIS
   </div>
 
-</a>
+  <img
+    src="/logoVertical.png"
+    className="floating-logo"
+    alt="Coronel & Co."
+  />
+
+</div>
 
       <main className="page">
         
