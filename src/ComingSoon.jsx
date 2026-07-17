@@ -90,14 +90,11 @@ export default function ComingSoon() {
 
         letter-spacing:-0.03em;
 
-        background:linear-gradient(
-          135deg,
-          #4919af,
-          #0f64f3
-        );
+   color: #ffffff;
 
-        -webkit-background-clip:text;
-        -webkit-text-fill-color:transparent;
+text-shadow:
+  0 0 20px rgba(255,255,255,0.08),
+  0 0 40px rgba(255,255,255,0.04);
       }
 
       .coming-subtitle{
