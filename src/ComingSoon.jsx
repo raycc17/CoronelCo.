@@ -86,9 +86,9 @@ export default function ComingSoon() {
 
         line-height:.9;
 
-        font-weight:800;
+        font-weight:1000;
 
-        letter-spacing:-0.03em;
+        letter-spacing:-0.02em;
 
    color: #ffffff;
 
@@ -111,6 +111,12 @@ text-shadow:
         font-size:.9rem;
 
         font-weight:300;
+
+         color: #ffffff;
+
+text-shadow:
+  0 0 20px rgba(255,255,255,0.08),
+  0 0 40px rgba(255,255,255,0.04);
       }
 
       /* ELEMENTOS */
