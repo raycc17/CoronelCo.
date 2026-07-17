@@ -110,7 +110,7 @@ text-shadow:
 
         font-size:.8rem;
 
-        font-weight:300;
+        font-weight:500;
       }
 
       /* ELEMENTOS */
