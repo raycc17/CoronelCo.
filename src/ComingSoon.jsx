@@ -82,7 +82,7 @@ export default function ComingSoon() {
 
         text-align:center;
 
-        font-size:clamp(3rem,8vw,6rem);
+        font-size:clamp(2rem,8vw,6rem);
 
         line-height:.9;
 
@@ -90,8 +90,7 @@ export default function ComingSoon() {
 
         letter-spacing:-0.01em;
 
-            color: #000000;
-
+   color: #ffffff;
 
 text-shadow:
   0 0 20px rgba(255,255,255,0.08),
