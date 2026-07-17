@@ -1731,7 +1731,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
   position:fixed;
 
-  top:50%;
+  top:68%;
   right:-78px;
 
   transform:translateY(-50%);
@@ -1748,7 +1748,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   justify-content:center;
   align-items:center;
 
-  gap:10px;
+  gap:7px;
 
   padding:18px 8px;
 
@@ -1786,9 +1786,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 .floating-logo{
 
   height:185px;
-
   width:auto;
-
   object-fit:contain;
 
 }
