@@ -134,15 +134,15 @@ text-shadow:
       @keyframes float{
 
         0%{
-          transform:translateY(0px);
+          transform:translateX(0px);
         }
 
         50%{
-          transform:translateY(-20px);
+          transform:translateX(-20px);
         }
 
         100%{
-          transform:translateY(0px);
+          transform:translateX(0px);
         }
       }
 
