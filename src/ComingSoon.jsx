@@ -118,7 +118,7 @@ export default function ComingSoon() {
 
       /* ELEMENTOS */
 
-      .helmet,
+
       .cone{
 
         position:absolute;
@@ -143,23 +143,13 @@ export default function ComingSoon() {
         }
       }
 
-      .helmet{
-        width:90px;
-      }
+
 
       .cone{
         width:80px;
       }
 
-      /* CASCOS */
 
-      .helmet-1{
-        top:15%;
-        left:-5%;
-        width:600px;
-        z-index:0;
-        transform:rotate(-18deg);
-      }
 
       /* CONOS */
 
@@ -225,13 +215,7 @@ export default function ComingSoon() {
 
         <div className="blur-orb"></div>
 
-        {/* CASCOS */}
 
-        <img
-          src="/casco1.png"
-          className="helmet helmet-1"
-          alt=""
-        />
 
         {/* CONOS */}
 
