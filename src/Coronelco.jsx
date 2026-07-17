@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function Coronelco() {
   const [showBg, setShowBg] = useState(false);
+  const [showFloating, setShowFloating] = useState(false);
 
   const rotatingWords = [
   "logo",
@@ -15,7 +16,25 @@ export default function Coronelco() {
 
 const [wordIndex, setWordIndex] = useState(0);
 
+  useEffect(() => {
+
+  if (!showBg) return;
+
+  // aparece inmediatamente
+  setShowFloating(true);
+
+  const interval = setInterval(() => {
+
+    setShowFloating(prev => !prev);
+
+  }, 4000);
+
+  return () => clearInterval(interval);
+
+}, [showBg]);
+
 useEffect(() => {
+  
   const interval = setInterval(() => {
     setWordIndex((prev) => (prev + 1) % rotatingWords.length);
   }, 800);
@@ -1760,8 +1779,13 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 
 }
 
-.site-shell.bg-visible .floating-diagnosis{
-  right:0;
+.floating-diagnosis{
+    right:-78px;
+    transition:right .8s ease;
+}
+
+.floating-diagnosis.visible{
+    right:0;
 }
 
 .floating-text{
@@ -2101,7 +2125,7 @@ box-shadow: 0 6px 14px rgba(0,0,0,0.15);
   <div className={`site-shell ${showBg ? "bg-visible" : ""}`}>
       <div className="scroll-bg" aria-hidden="true"></div>
 <div
-  className="floating-diagnosis"
+  className={`floating-diagnosis ${showFloating ? "visible" : ""}`}
   onClick={() => window.open("https://wa.me/51994702575","_blank")}
 >
 
