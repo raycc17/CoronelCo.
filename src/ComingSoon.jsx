@@ -86,7 +86,7 @@ export default function ComingSoon() {
 
         line-height:.9;
 
-        font-weight:1000;
+        font-weight:1300;
 
         letter-spacing:-0.02em;
 
