@@ -179,7 +179,7 @@ text-shadow:
 
   .coming-title{
     font-size:2.6rem;
-    line-height:1;
+    line-height:2;
     max-width:90%;
   }
 
