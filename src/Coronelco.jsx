@@ -252,7 +252,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  min-height: 44px;
+  min-height: 40px;
   padding: 0.175rem 2rem;
 
   border-radius: 999px;
