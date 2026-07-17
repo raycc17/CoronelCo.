@@ -158,7 +158,7 @@ text-shadow:
 
       .cone-2{
         top:9%;
-        right:10%;
+        right:13%;
         width:777px;
         z-index:0;
         transform:rotate(15deg);
