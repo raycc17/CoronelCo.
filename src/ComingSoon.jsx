@@ -157,7 +157,7 @@ text-shadow:
       /* CONOS */
 
       .cone-2{
-        top:9%;
+        top:7%;
         right:22.5%;
         width:777px;
         z-index:1;
